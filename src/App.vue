@@ -1,18 +1,64 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from "vue-router";
+// import 'boxicons'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <header class="header">
+    <div class="header__inner">
+      <nav class="nav">
+        <RouterLink to="/" class="nav__logo">
+          <img alt="Vue logo" class="logo" src="@/assets/images/nav_logo.png" />
+        </RouterLink>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <ul class="nav___list">
+          <li class="nav__item">
+            <RouterLink class="nav__link">
+              <div class="nav__text-container"><span class="nav__text">Home</span></div>
+            </RouterLink>
+          </li>
+          <li class="nav__item">
+            <RouterLink class="nav__link">
+              <div class="nav__text-container">
+                <span class="nav__text">Diensten</span>
+              </div>
+            </RouterLink>
+          </li>
+          <li class="nav__item">
+            <RouterLink class="nav__link">
+              <div class="nav__text-container">
+                <span class="nav__text">Partners</span>
+              </div>
+            </RouterLink>
+          </li>
+          <li class="nav__item">
+            <RouterLink class="nav__link">
+              <div class="nav__text-container">
+                <span class="nav__text">Over ons</span>
+              </div>
+            </RouterLink>
+          </li>
+          <li class="nav__item">
+            <RouterLink class="nav__link">
+              <div class="nav__text-container">
+                <span class="nav__text">Contact</span>
+              </div>
+            </RouterLink>
+          </li>
+          <li class="nav__item">
+            <RouterLink class="nav__link">
+              <div class="nav__text-container">
+                <span class="nav__text">
+                
+                  Bellen
+                </span>
+              </div>
+            </RouterLink>
+          </li>
+        </ul>
+
+        <button class="nav__trigger"></button>
       </nav>
     </div>
   </header>

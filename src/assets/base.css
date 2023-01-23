@@ -1,6 +1,6 @@
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--color-primary-blue);
+  --color-background: var(--color-white);
 
   --color-primary-blue: #0096D7;
   --color-secondary-blue: #BAC6FF;
