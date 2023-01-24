@@ -16,6 +16,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@prismicio/helpers": "^2.3.8",
 		"boxicons": "^2.1.4"
 	}
 }
