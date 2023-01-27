@@ -1,3 +1,16 @@
+# Welkom bij The Tech Stack wiki!
+## 🧭 Navigeer door deze wiki heen.
+* [👀 Analyseren](https://github.com/M4TThys123/SPRINT-18-Webapplicatie/wiki/%F0%9F%91%80-Analyseren)
+* [🎨 Ontwerpen](https://github.com/M4TThys123/SPRINT-18-Webapplicatie/wiki/%F0%9F%8E%A8-Ontwerpen)
+* [🔨 Bouwen](https://github.com/M4TThys123/SPRINT-18-Webapplicatie/wiki/%F0%9F%94%A8-Bouwen)
+* [⚙️ Integreren & Testen ✨](https://github.com/M4TThys123/SPRINT-18-Webapplicatie/wiki/%E2%9A%99%EF%B8%8F-Integreren-&-Testen-%E2%9C%A8)
+
+## 🧭 Navigeer door deze repository heen.
+* [💻 Code](https://github.com/M4TThys123/SPRINT-18-Webapplicatie)
+* [🛑 Issues](https://github.com/M4TThys123/SPRINT-18-Webapplicatie/issues)
+* [📕 Project-Board](https://github.com/users/M4TThys123/projects/6/views/1?layout=board)
+* [🌐 Live Versie](https://jbinstallatieservice.vercel.app/)
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
