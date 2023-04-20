@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <section class="container">
     <h1>Over Page</h1>
-  </div>
+  </section>
 </template>
 
 <script>

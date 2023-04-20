@@ -5,7 +5,7 @@
 
   <div>
     <!-- Hero section -->
-    <div class="hero-section">
+    <section class="hero-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
@@ -15,10 +15,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Overview section -->
-    <div class="overview-section">
+    <section class="overview-section">
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2 text-center">
@@ -27,10 +27,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Recent work section -->
-    <div class="recent-work-section">
+    <section class="recent-work-section">
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2 text-center">
@@ -68,7 +68,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
