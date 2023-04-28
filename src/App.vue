@@ -1,52 +1,97 @@
 <template>
-  <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <router-link to="/" class="navbar-brand">My App</router-link>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <router-link to="/" class="nav-link">Home</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/over" class="nav-link">Over</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/diensten" class="nav-link">Diensten</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/partners" class="nav-link">Partners</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/contact" class="nav-link">Contact</router-link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <router-view/>
-  </div>
+<!--  <HeaderTwee></HeaderTwee>-->
+<!--  <Header></Header>-->
+  <HeaderDrie></HeaderDrie>r
+    <main>
+      <router-view class="views"/>
+    </main>
 </template>
 
 <script>
 
+// import Header from "@/components/Header.vue";
+// import HeaderTwee from "@/components/HeaderTwee.vue";
+import HeaderDrie from "@/components/HeaderDrie.vue"
+
 export default {
   name: 'App',
+  data() {
+    return {
+      headerScroll: true,
+    }
+  },
   components: {
-  }
+    // HeaderTwee,
+    // HeaderComponent
+    // Header
+    HeaderDrie
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+:root{
+  --color-primary-blue: #0096D7;
+  --color-secondary-blue: #BAC6FF;
+  --color-border: #E5E5E6;
+  --color-border-fill: #F9F9FB;
+  --color-white: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*font-family: Avenir, Helvetica, Arial, sans-serif;*/
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--color-primary-blue);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+/* Ensure focus highlights are visible */
+*:focus {
+  outline: 2px solid dodgerblue;
+  outline-offset: 4px;
 }
 </style>
