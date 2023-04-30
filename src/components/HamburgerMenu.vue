@@ -1,5 +1,5 @@
 <template>
-  <button id="nav-icon3" @click="toggleNav" :class="{ 'open': isNavOpen }">
+  <button id="ham-burger" @click="toggleNav" :class="{ 'open': isNavOpen }">
     <span></span>
     <span></span>
     <span></span>
@@ -11,18 +11,28 @@
 
 export default {
   name: "HamburgerMenu",
-
+  data() {
+    return {
+      isNavOpen: false
+    }
+  },
+  methods: {
+    toggleNav() {
+      console.log('toggle nav')
+      this.isNavOpen = !this.isNavOpen;
+    }
+  }
 }
+
 </script>
 
 <style scoped>
 
 
-#nav-icon3 {
-  width: 60px;
-  height: 45px;
+#ham-burger {
+  width: 32px;
+  height: 32px;
   position: relative;
-  margin: 50px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -34,13 +44,13 @@ export default {
   cursor: pointer;
 }
 
-#nav-icon3 span {
+#ham-burger span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 5px;
   width: 100%;
-  background: #d3531a;
-  border-radius: 9px;
+  background: #BAC6FF;
+  border-radius: 4px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -54,40 +64,40 @@ export default {
 }
 
 /* Icon 3 */
-#nav-icon3 span:nth-child(1) {
+#ham-burger span:nth-child(1) {
   top: 0px;
 }
 
-#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
-  top: 18px;
+#ham-burger span:nth-child(2),#ham-burger span:nth-child(3) {
+  top: 10px;
 }
 
-#nav-icon3 span:nth-child(4) {
-  top: 36px;
+#ham-burger span:nth-child(4) {
+  top: 20px;
 }
 
-#nav-icon3.open span:nth-child(1) {
-  top: 18px;
+#ham-burger.open span:nth-child(1) {
+  top: 10px;
   width: 0%;
   left: 50%;
 }
 
-#nav-icon3.open span:nth-child(2) {
+#ham-burger.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#nav-icon3.open span:nth-child(3) {
+#ham-burger.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-#nav-icon3.open span:nth-child(4) {
-  top: 18px;
+#ham-burger.open span:nth-child(4) {
+  top: 10px;
   width: 0%;
   left: 50%;
 }

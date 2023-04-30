@@ -23,8 +23,10 @@
 </template>
 
 <script>
+
 export default {
   name: 'HomeView',
+  components: {},
   data() {
     return {
       backgroundImage: "/assets/images/hero/hero_image.png"
@@ -49,6 +51,8 @@ export default {
   flex-direction: column;
   justify-content: flex-end;
   padding: 13em 1em;
+
+  height: 100%;
 }
 .hero__header h1{
   font-size: 50px;
@@ -72,10 +76,16 @@ export default {
   height: 50%;
   width: 100%;
   background: #0096D7;
+
+  display: flex;
+  justify-content: center;
+  padding: 2em;
 }
 .hero__bottom figure{
-  width: 80%;
-  height: 50%;
+  width: 100%;
+  height: 191px;
+  background: #BAC6FF;
+  border-radius: 18px;
 }
 @media screen and (min-width: 750px) {
   .hero__wrapper {
@@ -90,6 +100,20 @@ export default {
   .hero__bottom {
     height: 100%;
     width: 100%;
+    align-items: center;
+  }
+  .hero__bottom figure {
+    width: 361px;
+    height: 461px;
+  }
+  .hero__header {
+    display: flex;
+    justify-content: center;
+  }
+  }
+@media screen and (min-width: 1200px) {
+  .hero__wrapper{
+    max-height: none;
   }
 }
 </style>

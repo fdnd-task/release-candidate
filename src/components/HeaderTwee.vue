@@ -195,7 +195,6 @@ svg {
 }
 
 .nav__list {
-
 }
 
 .nav__list--parent {
@@ -333,13 +332,6 @@ svg {
 /*  backdrop-filter: blur(24px);*/
 /*  transform: translateY(-0.5rem);*/
 /*}*/
-.logo{
-  width: 100%;
-}
-.logo__wrapper {
-  max-width: 108px;
-  max-height: 32px;
-}
 
 .mobile__nav > li{
   font-size: 48px;

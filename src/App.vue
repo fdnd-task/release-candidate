@@ -1,7 +1,7 @@
 <template>
 <!--  <HeaderTwee></HeaderTwee>-->
 <!--  <Header></Header>-->
-  <HeaderDrie></HeaderDrie>r
+  <HeaderDrie></HeaderDrie>
     <main>
       <router-view class="views"/>
     </main>
@@ -22,7 +22,6 @@ export default {
   },
   components: {
     // HeaderTwee,
-    // HeaderComponent
     // Header
     HeaderDrie
   },
@@ -73,7 +72,7 @@ a:hover {
 }
 
 button {
-  background-color: blue;
+  background: none;
   color: white;
   padding: 10px;
   border: none;
