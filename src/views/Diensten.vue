@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'ServicesView',
+  name: 'DienstenView',
   data() {
     return {
       services: [

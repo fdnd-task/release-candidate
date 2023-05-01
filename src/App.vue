@@ -1,6 +1,4 @@
 <template>
-<!--  <HeaderTwee></HeaderTwee>-->
-<!--  <Header></Header>-->
   <HeaderDrie></HeaderDrie>
     <main>
       <router-view class="views"/>
@@ -9,8 +7,6 @@
 
 <script>
 
-// import Header from "@/components/Header.vue";
-// import HeaderTwee from "@/components/HeaderTwee.vue";
 import HeaderDrie from "@/components/HeaderDrie.vue"
 
 export default {
@@ -21,8 +17,6 @@ export default {
     }
   },
   components: {
-    // HeaderTwee,
-    // Header
     HeaderDrie
   },
 }
@@ -65,10 +59,6 @@ p {
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 button {
