@@ -2,7 +2,7 @@
   <header class="header header.is-active">
     <div class="header__inner">
       <nav class="nav nav--top blur" aria-label="Top navigation">
-        <a class="nav__logo" href="/">
+        <a class="nav__logo" href="/public">
         </a>
         <ul class="nav__list nav__list--parent mobile__nav blur">
           <li class="nav__item inter ">

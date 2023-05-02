@@ -7,7 +7,7 @@
 
 <script>
 
-import HeaderDrie from "@/components/HeaderDrie.vue"
+import HeaderDrie from "@/components/header/HeaderDrie.vue"
 
 export default {
   name: 'App',
