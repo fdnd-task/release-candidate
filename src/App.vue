@@ -3,11 +3,13 @@
     <main>
       <router-view class="views"/>
     </main>
+  <footer-component></footer-component>
 </template>
 
 <script>
 
 import HeaderDrie from "@/components/HeaderDrie.vue"
+import FooterComponent from "@/components/Footer.vue";
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     }
   },
   components: {
+    FooterComponent,
     HeaderDrie
   },
 }
