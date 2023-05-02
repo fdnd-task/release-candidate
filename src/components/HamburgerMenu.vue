@@ -27,8 +27,6 @@ export default {
 </script>
 
 <style scoped>
-
-
 #ham-burger {
   width: 32px;
   height: 32px;
@@ -49,7 +47,7 @@ export default {
   position: absolute;
   height: 5px;
   width: 100%;
-  background: #BAC6FF;
+  background: #14151a;
   border-radius: 4px;
   opacity: 1;
   left: 0;
@@ -65,19 +63,19 @@ export default {
 
 /* Icon 3 */
 #ham-burger span:nth-child(1) {
-  top: 0px;
+  top: 5px;
 }
 
 #ham-burger span:nth-child(2),#ham-burger span:nth-child(3) {
-  top: 10px;
+  top: 15px;
 }
 
 #ham-burger span:nth-child(4) {
-  top: 20px;
+  top: 25px;
 }
 
 #ham-burger.open span:nth-child(1) {
-  top: 10px;
+  top: 15px;
   width: 0%;
   left: 50%;
 }
@@ -101,6 +99,4 @@ export default {
   width: 0%;
   left: 50%;
 }
-
-
 </style>

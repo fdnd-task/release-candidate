@@ -1,7 +1,7 @@
 <template>
-  <header class="blur">
+  <header :class="{ 'blur': isBlur }">
     <nav>
-      <router-link to="/">
+      <router-link to="/" class="logo__link">
         <svg class="logo__svg" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488.41 171.94">
         <g id="Layer_1-2" data-name="Layer 1">
           <g>
@@ -14,10 +14,10 @@
           </g> a
         </g>
       </svg>
-      </router-link>
+      </router-link  >
 
       <div class="nav__menu">
-        <ul class="nav__list">
+        <ul class="nav__list"  :class="{'nav__list--open' : isNavOpen}" >
           <li class="nav__item"
               v-for="(route, index) in router().options.routes" :key="index">
             <router-link class="nav__link" :to="route.path"> {{ route.name}}</router-link>
@@ -34,7 +34,8 @@
           </li>
         </ul>
       </div>
-      <button @click="openNav" style="display: none"></button>
+
+      <hamburger-menu  @click="openNav" class="menu__trigger"></hamburger-menu>
     </nav>
   </header>
 </template>
@@ -42,12 +43,15 @@
 <script>
 // import HamburgerMenu from "@/components/HamburgerMenu.vue";
 import router from '/src/router/index.js'
+import HamburgerMenu from "@/components/HamburgerMenu.vue";
 
 export default {
   name: "HeaderDrie.vue",
+  components: {HamburgerMenu},
   methods: {
     openNav(){
       console.log('click op de button')
+      this.isNavOpen = !this.isNavOpen
     },
     router() {
       return router
@@ -56,7 +60,8 @@ export default {
   data() {
     return {
       isMenuOpen: false,
-      scroll: true,
+      isBlur: true,
+      isNavOpen: false
     }
   },
 
@@ -75,18 +80,19 @@ header{
   width: 100%;
   z-index: 999;
   padding: 0.75rem 1rem;
+
+  /*padding: 1.5rem 1.875rem 1rem;*/
 }
 
 /*Nav*/
 nav{
   position: relative;
-  height: 32px;
+  height: 45px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .nav__menu{
   display: flex;
   justify-content: center;
@@ -101,7 +107,10 @@ nav{
 margin-right: 2em;
 }
 
-/*svg style*/
+/*logo style*/
+.logo__link{
+  z-index: 999999;
+}
 .logo__svg{
   max-height: 32px;
   width: 100%;
@@ -109,11 +118,6 @@ margin-right: 2em;
 .default-1 {
   fill: #192321;
 }
-.scroll-1 {
-  fill: #fff;
-
-}
-
 
 .nav__link{
   color: #192321;
@@ -146,22 +150,67 @@ font-size: 18px;
   margin-left: .25em;
 }
 
-.blur{
-  backdrop-filter: blur(24px);
+.menu__trigger{
+  display: none;
+  z-index: 99999;
 }
 
-@media screen and (min-width: 1024px) {
+
+.blur{
+  backdrop-filter: blur(24px);
+  background-color: rgba(61, 149, 209, 0.4);
+
+}
+
+@media screen and (max-width: 1024px) {
+  .menu__trigger{
+    display: block;
+  }
+
   header{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 1.5rem 1.875rem 1rem;
+    padding: 0.75rem 1rem;
   }
 
   nav {
-    position: relative;
-    height: 45px;
+    height: 32px;
+  }
+  .nav__menu{
+    transition: .4s;
+    margin-top: 2em;
+  }
+  .nav__list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 100vh;
+    padding: 4rem 1rem;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: rgba(61, 149, 209, 0.8);
+    backdrop-filter: blur(24px);
+
+    transition: transform .3s ease-out;
+    transform: translateY(-100%);
+  }
+  .nav__list--open{
+    transform: translateY(0);
+  }
+  .nav__item{
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Inter, sans-serif;
   }
 }
+
+
+
+
+
 
 </style>
