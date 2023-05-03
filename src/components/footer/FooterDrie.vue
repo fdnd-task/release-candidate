@@ -66,15 +66,15 @@
         <section class="col-12 col-md-4">
           <section class="row">
             <section class="col-12 col-sm-6 mb-3 mb-sm-0">
-              <logo-s-v-g ></logo-s-v-g>
+              <logo-s-v-g fill="#fff"></logo-s-v-g>
             </section>
           </section>
         </section>
 
         <section class="col-12 col-md-6 order-md-2 mb-3 mb-md-0">
           <ul class="list-inline text-center text-md-end mb-0">
-            <li class="list-inline-item"><a href="#"><i class='bx bxl-github'></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class='bx bxl-linkedin-square' ></i></a></li>
+<!--            <li class="list-inline-item"><a href="#"><i class='bx bxl-github'></i></a></li>-->
+<!--            <li class="list-inline-item"><a href="#"><i class='bx bxl-linkedin-square' ></i></a></li>-->
           </ul>
         </section>
 
