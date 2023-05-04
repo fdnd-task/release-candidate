@@ -3,12 +3,7 @@
     <main>
       <router-view class="views"/>
     </main>
-<!--  <footer-component></footer-component>-->
-  <br>
-  <footer-een></footer-een>
-  <br>
-  <footer-twee></footer-twee>
-  <br>
+
   <FooterDrie></FooterDrie>
 </template>
 
@@ -16,9 +11,6 @@
 
 
 import HeaderDrie from "@/components/header/HeaderDrie.vue"
-// import FooterComponent from "@/components/footer/Footer.vue";
-import FooterEen from "@/components/footer/FooterEen.vue";
-import FooterTwee from "@/components/footer/FooterTwee.vue";
 import FooterDrie from "@/components/footer/FooterDrie.vue";
 
 export default {
@@ -30,9 +22,6 @@ export default {
   },
   components: {
     FooterDrie,
-    FooterTwee,
-    FooterEen,
-    // FooterComponent,
     HeaderDrie
   },
 }
