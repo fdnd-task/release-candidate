@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section class="home__section">
     <section class="hero__wrapper">
       <section class="hero__header">
         <section class="hero__header-text">
@@ -19,7 +19,8 @@
         </figure>
       </section>
     </section>
-  </div>
+  </section>
+
   <DienstenView></DienstenView>
   <ContactView></ContactView>
   <OverView></OverView>

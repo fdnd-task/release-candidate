@@ -1,7 +1,7 @@
 <template>
   <HeaderDrie></HeaderDrie>
     <main>
-      <router-view class="views"/>
+        <router-view class="views"/>
     </main>
 
   <FooterDrie></FooterDrie>

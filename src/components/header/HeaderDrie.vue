@@ -9,7 +9,7 @@
         <ul class="nav__list"  :class="{'nav__list--open' : isNavOpen}" >
           <li class="nav__item"
               v-for="(route, index) in router().options.routes" :key="index">
-            <router-link class="nav__link" :to="route.path"> {{ route.name}}</router-link>
+            <router-link class="nav__link" :to="route.path" @click="clickNav"> {{ route.name}}</router-link>
           </li>
           <li>
             <call-button></call-button>
@@ -32,22 +32,24 @@ import LogoSVG from "@/components/LogoSVG.vue";
 export default {
   name: "HeaderDrie.vue",
   components: {LogoSVG, CallButton, HamburgerMenu},
-  methods: {
-    openNav(){
-      console.log('click op de button')
-      this.isNavOpen = !this.isNavOpen
-    },
-    router() {
-      return router
-    }
-  },
   data() {
     return {
-      isMenuOpen: false,
       isBlur: true,
       isNavOpen: false
     }
   },
+  methods: {
+    openNav(){
+      this.isNavOpen = !this.isNavOpen
+    },
+    clickNav(){
+      this.isNavOpen = !this.isNavOpen
+    },
+    router() {
+      return router
+    },
+  },
+
 
 }
 
