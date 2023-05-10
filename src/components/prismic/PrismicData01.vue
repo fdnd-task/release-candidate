@@ -32,6 +32,15 @@ export default {
         // Fetchen van documenten
         const response = await api.query(Prismic.Predicates.at('document.type', 'dienst'))
 
+        if (response.results.length > 0) {
+          const result = response.results[0];
+
+          // Update the data
+          this.title = result.data.dienst_title[0].text;
+          this.text = result.data.dienst_text[0].text;
+        }
+
+
         console.log(response)
         console.log(response.results)
         console.log(response.results[0])
@@ -48,17 +57,6 @@ export default {
         console.log(response.results[0].data.dienst_text)
         console.log(response.results[0].data.dienst_text[0])
         console.log(response.results[0].data.dienst_text[0].text)
-
-
-        // Verwekren van de response
-        // const data = response.results.map(result => {
-        //   return{
-        //
-        //   }
-        // })
-
-
-        // this.data = data
       } catch (error) {
         console.error('Error fetching datat from Prismic:', error)
       }
