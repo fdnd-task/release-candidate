@@ -8,28 +8,39 @@
 </template>
 
 <script>
-import Prismic from 'prismic-javascript'
+import Prismic from 'prismic-javascript';
+// import axios from 'axios';
 
 export default {
   name: "PrismicData1",
-  data() {
-    return {
-      document: null
+  methods: {
+    async fetchData() {
+      try {
+        // Connecten van de Prismic API
+        const apiEndpoint = 'https://jbinstallatieservice.cdn.prismic.io/api/v2'
+        const api = await Prismic.api(apiEndpoint)
+
+        // Fetchen van documenten
+        const response = await api.query(Prismic.Predicates.at('document.type', 'homepage'))
+        console.log(response)
+        // Verwekren van de response
+        // const data = response.results.map(result => {
+        //   return{
+        //
+        //   }
+        // })
+
+
+        // this.data = data
+      } catch (error) {
+        console.error('Error fetching datat from Prismic:', error)
+      }
     }
   },
-  async fetch() {
-    const apiEndpoint = 'https://jbinstallatieservice.cdn.prismic.io/api/v2'
-    const client = Prismic.client(apiEndpoint)
-
-    const document = await client.getSingle('dienst')
-
-    this.document = document
-
-    console.log(document)
+  mounted() {
+    this.fetchData();
   }
 }
-// console.log(document)
-
 </script>
 
 <style scoped>
