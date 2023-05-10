@@ -30,7 +30,6 @@ export default {
         const api = await Prismic.api(apiEndpoint)
 
         // Fetchen van documenten
-        const response = await api.query(Prismic.Predicates.at('document.type', 'homepage'))
         const response = await api.query(Prismic.Predicates.at('document.type', 'dienst'))
 
         console.log(response)
