@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@prismicio/vue": "^3.1.4",
+    "axios": "^1.4.0",
     "bootstrap": "^5.2.1",
     "core-js": "^3.8.3",
     "prismic-javascript": "^3.0.2",
