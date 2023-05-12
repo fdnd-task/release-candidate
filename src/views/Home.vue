@@ -21,6 +21,11 @@
     </section>
   </section>
 
+  <section class="container">
+    <p>Wij zijn een regionaal opererend installatiebedrijf dat zich voornamelijk bezig houdt met installatiewerk, service en onderhoud.
+    </p>
+  </section>
+
   <DienstenView></DienstenView>
   <ContactView></ContactView>
   <OverView></OverView>

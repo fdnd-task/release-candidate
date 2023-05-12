@@ -88,4 +88,24 @@ li {
   outline: 2px solid dodgerblue;
   outline-offset: 4px;
 }
+/* Default styling for screen readers and non-screen reader users */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Override styling for non-screen reader users */
+@media not screen and (min-width: 0\0) {
+  .sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+  }
+}
 </style>
