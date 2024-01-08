@@ -2,7 +2,7 @@
 	export let data;
 	console.log(data)
 	import StekjesInfo from '$lib/molecules/InfoStekjes.svelte'
-	import FilterFunctie from '$lib/atoms/filter.svelte'
+	import FilterFunctie from '$lib/atoms/filters/filter.svelte'
 </script>
 
 <StekjesInfo/>

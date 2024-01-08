@@ -2,7 +2,7 @@
 	import Vector from '$lib/assets/vector.svg';
 	import VectorPlant from '$lib/assets/vectorplant.svg';
 
-	import ParagraphKast from '$lib/atoms/Pkast.svelte'
+	import ParagraphKast from '$lib/atoms/paragraphs/Pkast.svelte'
 </script>
 
 <div class="info-workshop">

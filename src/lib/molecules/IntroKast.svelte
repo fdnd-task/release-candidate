@@ -1,5 +1,4 @@
 <div class="top-info">
-    
     <div class="wrapper_info">
         <div class="container_info">
             <h1>

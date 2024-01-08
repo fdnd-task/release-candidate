@@ -1,7 +1,7 @@
 <script>
 	export let data;
-	import Background from '$lib/atoms/ImageWorkshop.svelte';
-	import Button from '$lib/atoms/ButtonWorkshop.svelte'
+	import Background from '$lib/atoms/headers/ImageWorkshop.svelte';
+	import Button from '$lib/atoms/buttons/ButtonWorkshop.svelte'
 
 	
 

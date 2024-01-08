@@ -1,6 +1,6 @@
 <script>
   export let data
-  console.log(data.workshopHeaders)
+  // console.log(data.workshopHeaders)
 </script>
 
 <header>

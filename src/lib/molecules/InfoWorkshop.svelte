@@ -2,7 +2,7 @@
 	import Vector from '$lib/assets/vector.svg';
 	import VectorPlant from '$lib/assets/vectorplant.svg';
 
-	import Paragraph from '$lib/atoms/Pworkshops.svelte'
+	import Paragraph from '$lib/atoms/paragraphs/Pworkshops.svelte'
 </script>
 
 <div class="info-workshop">

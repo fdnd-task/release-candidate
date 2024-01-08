@@ -2,7 +2,6 @@
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
   import { onMount } from "svelte";
-  import img from "$lib/assets/stekjes.jpg"
 
   gsap.registerPlugin(ScrollTrigger);
 
