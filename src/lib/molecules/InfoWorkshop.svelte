@@ -30,12 +30,7 @@
 		height: 15rem;
 		margin: var(--margin) var(--margin) 0 var(--margin);
 		padding: var(--padding);
-
 		overflow: hidden;
-	}
-
-	.info-paragraph {
-		width: 60%;
 	}
 
 	#one {
@@ -69,10 +64,5 @@
 		.vector img {
 			width: 30px;
 		}
-
-		.info-paragraph {
-			width: 100%;
-		}
-
 	} 
 </style>
