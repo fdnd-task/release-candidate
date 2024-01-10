@@ -1,17 +1,10 @@
 <script>
 	import { onMount } from "svelte";
-
-	onMount(() => {
-	}) 
-
-
 </script>
 
-
-
-
-<button>
-	Meld je aan <svg
+<a href="/contact">
+	Meld je aan 
+	<svg
 		width="20"
 		height="21"
 		viewBox="0 0 20 21"
@@ -23,17 +16,10 @@
 			fill=""
 		/>
 	</svg>
-</button>
-
-<form action="/">
-	<fieldset>
-		<label for="email">email</label>
-		<input type="email" name="" id="">
-	</fieldset>
-</form>
+</a>
 
 <style>
-	button {
+	a {
 		position: absolute;
 		background-color: var(--button-color);
 		color: var(--text-color);
@@ -46,14 +32,15 @@
 		font-size: 1rem;
 		transition: 0.2s;
 		cursor: pointer;
+		text-decoration: none	;
 	}
 
-	button:hover {
+	a:hover {
 		background-color: var(--text-color);
 		color: orange;
 	}
 
-	button:hover svg {
+	a:hover svg {
 		fill: orange;
 	}
 
@@ -63,13 +50,6 @@
 		fill: var(--text-color);
 	}
 
-	form {
-		display: none;
-	}
-
-	.form {
-		display: block;
-	}
 
 	/* @media screen and (max-width: 767px) {
 		button {
