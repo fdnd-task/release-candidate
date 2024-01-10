@@ -108,6 +108,13 @@
 
 <style>
 
+:root {
+		--oba__Blue: #0064C8;
+		--oba__White: #FFFFFF;
+		--oba__Background__Blue: #F2F5FF ;
+		--oba__Black: #222222;
+	}
+
 /* mobile first */
 
 
@@ -125,21 +132,21 @@ p {
 }
 
 span {
-    color: #0064C8;
+    color: var(--oba__Blue);
 }
 
 .oba-button{
     padding: 15px 32px;
     border: none;
 
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: var(--oba__Black);
+    color: var(--oba__White);
     text-align: center;
     text-decoration: none;
 }
 .oba-button:hover {
-    background-color: #0064C8;
-    color: #FFFFFF;
+    background-color: var(--oba__Blue);
+    color: var(--oba__White);
 }
 
 
@@ -180,7 +187,7 @@ span {
 .readinglist-books-section:nth-of-type(odd) {
     margin: 0;
 
-    background: #FFFFFF;
+    background: var(--oba__White);
 }
 
 .about-section {
@@ -194,7 +201,6 @@ span {
 
     text-align: center;
 }
-
 
 
 /* tablet breakpoint */
