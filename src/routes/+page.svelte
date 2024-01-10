@@ -109,10 +109,14 @@
 <style>
 
 :root {
-		--oba__Blue: #0064C8;
-		--oba__White: #FFFFFF;
-		--oba__Background__Blue: #F2F5FF ;
-		--oba__Black: #222222;
+         /* die blauw ipv rood, gebruikt voor span */
+		--primary-accent-color: #0064C8; 
+        /* achtergrondkleur website */
+		--primary-background-color: #F2F5FF ;
+        /* net niet zwart, voor achtergrond kleur buttons en primary tekst kleur */
+		--primary-dark-color: #222222;
+        /* gewoon wit */
+		--primary-light-color: #FFFFFF;
 	}
 
 /* mobile first */
@@ -132,21 +136,21 @@ p {
 }
 
 span {
-    color: var(--oba__Blue);
+    color: var(--primary-accent-color);
 }
 
 .oba-button{
     padding: 15px 32px;
     border: none;
 
-    background-color: var(--oba__Black);
-    color: var(--oba__White);
+    background-color: var(--primary-dark-color);
+    color: var(--primary-light-color);
     text-align: center;
     text-decoration: none;
 }
 .oba-button:hover {
-    background-color: var(--oba__Blue);
-    color: var(--oba__White);
+    background-color: var(--primary-accent-color);
+    color: var(--primary-light-color);
 }
 
 
@@ -187,7 +191,7 @@ span {
 .readinglist-books-section:nth-of-type(odd) {
     margin: 0;
 
-    background: var(--oba__White);
+    background: var(--primary-light-color);
 }
 
 .about-section {
