@@ -276,6 +276,15 @@ span {
           width: 200px;
         }   
 
+        .readinglist-books-section {
+            padding: 100px 25px 100px 25px;
+
+            display: grid;
+            grid:
+            "text carousel" 1fr
+            / 1fr 1fr;
+        }
+
 
 
     }
