@@ -140,7 +140,7 @@ span {
 }
 
 .oba-button{
-    padding: 15px 32px;
+    padding: 1em 2em;
     border: none;
 
     background-color: var(--primary-dark-color);
@@ -155,14 +155,14 @@ span {
 
 
 .hero-section {
-    padding: 100px 25px;
+    padding: 6.25em 1.5em;
 
     display: grid;
     grid:
     "text" auto
     "img" 1fr
     / 1fr;
-    gap: 10px;
+    gap: 1em;
 }
 
 .hero-section-large {
@@ -179,7 +179,7 @@ span {
 }
 
 .readinglist-books-section {
-    padding: 100px 25px 100px 25px;
+    padding: 6.25em 1.5em;
 
     display: grid;
     grid:
@@ -195,7 +195,7 @@ span {
 }
 
 .about-section {
-    padding: 100px 25px 100px 25px;
+    padding: 6.25em 1.5em;
 
     display: grid;
     grid:
@@ -212,7 +212,7 @@ span {
 
 
         .hero-section {
-            padding: 100px 25px;
+            padding: 6.25em 1.5em;
 
             display: grid;
             grid:
@@ -249,12 +249,12 @@ span {
         }
 
         p {
-            padding: 25px 0px;
+            padding: 1.5em 0em;
             font-size: 1.1em;
         }
 
         .hero-section-large {
-            padding: 100px 25px;
+            padding: 9em;
             display: grid;
             grid:
             "text" 1fr
@@ -281,7 +281,7 @@ span {
         }   
 
         .readinglist-books-section {
-            padding: 100px 25px 100px 25px;
+            padding: 9em;
 
             display: grid;
             grid:
