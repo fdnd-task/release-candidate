@@ -4,11 +4,11 @@
 
 <TwoColumnLayout title={'Players'}>
 	<section slot="sub-title-left">
-		<h2>sut title Left</h2>
+		<h2>sub title Left</h2>
 	</section>
 
 	<section slot="sub-title-right">
-		<h2>sut title Right</h2>
+		<h2>sub title Right</h2>
 	</section>
 
 	<section slot="left">

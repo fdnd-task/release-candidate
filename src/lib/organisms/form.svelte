@@ -51,7 +51,7 @@
   form {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1rem;
     padding: 0.5rem 2rem 0.5rem 5px;
     padding-top: 1.5rem;
   }

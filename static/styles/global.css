@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Sora';
+    src: url('../fonts/Sora/Sora.woff2') format('woff2'), 
+         url('../fonts/Sora/Sora.woff') format('woff'), 
+         url('../fonts/Sora/Sora.ttf') format('truetype');
+    font-weight: 100 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand/Quicksand.woff2') format('woff2'), 
+         url('../fonts/Quicksand/Quicksand.woff') format('woff'), 
+         url('../fonts/Quicksand/Quicksand.ttf') format('truetype');
+    font-weight: 300 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter.woff2') format('woff2'), 
+         url('../fonts/Inter/Inter.woff') format('woff'), 
+         url('../fonts/Inter/Inter.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+:root {
+    /* COLORS */
+    --background-color: #F4F5FA;
+    --input-background-color: #FFFFFF;
+    --element-background-color: #FFFFFF;
+    --primary-font-color: #444D7B;
+    --button-background-color: #63C6A7;
+    --button-font-color: #FFFFFF;
+    --selected-background-color: #D6DCFF;
+    --hover-background-color: #E7FFF7;
+    --bio-player-font-color: #C3C3C3;
+    --sub-text-color: #D8D6D6;
+    --scored-by-color:#18D02B;
+    --assist-by-color: #2974E4; 
+    --turnover-by-color: #ED4444;
+    --block-by-color: #FFC738;
+
+    /* FONTS */
+    --primary-font-family: 'Sora', sans-serif;
+    --secondary-font-family: 'Quicksand', sans-serif;
+    --tertiary-font-family: 'Inter', sans-serif;
+
+    /* BOX SHADOW */
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	background-color: #f4f5fa;
+	height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+}
+
+h1, 
+h2 {
+    font-family: var(--primary-font-family);
+    font-size: clamp(1rem, 4.2vw, 4rem);
+    font-weight: 800;
+    color: var(--primary-font-color);
+}
+
+
+h3 {
+    font-family: var(--primary-font-family);
+    font-size: clamp(1rem, 4.2vw, 1.5rem);
+    font-weight: 800;
+    color: var(--primary-font-color);
+}
+
+.subtitle-large{
+    font-family: var(--primary-font-family);
+    font-size: clamp(0.8rem, 2vw, 3.5rem);
+    font-weight: 800;
+    color: var(--primary-font-color);
+}
+
+.subtitle-medium {
+    font-family: var(--secondary-font-family);
+    font-size: clamp(0.7rem, 2vw, 3rem);
+    font-weight: 400;
+    color: var(--primary-font-color);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle-small {
+    font-family: var(--secondary-font-family);
+    font-size: clamp(0.6rem, 1.5vw, 2.5rem);
+    font-weight: 400;
+    color: var(--primary-font-color);
+}
+
+p {
+	font-weight: 600;
+	font-size: 1rem;
+}

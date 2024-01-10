@@ -2,34 +2,34 @@
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<a href="/" class="currentTournament">
 		<h2>Current Tournament</h2>
-		<p>Check the current tournaments</p>
+		<p class="subtitle-medium">Check the current tournaments</p>
 	</a>
 
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<a href="/" class="creatTournament">
 		<h2>Create Tournament</h2>
-		<p>Create your tournament</p>
+		<p class="subtitle-medium">Create your tournament</p>
 	</a>
 
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<a href="/players/new" class="creatPlayer">
 		<h3>Create Player</h3>
-		<p>Create your players</p>
+		<p class="subtitle-medium">Create your players</p>
 	</a>
 
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<a href="/" class="creatTeam">
 		<h3>Create Team</h3>
-		<p>Create your team</p>
+		<p class="subtitle-medium">Create your team</p>
 	</a>
 
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<a href="/" class="completedTournaments">
 		<h2>Completed Tournaments</h2>
-		<p>View the completed tournaments</p>
+		<p class="subtitle-medium">View the completed tournaments</p>
 	</a>
 
-	<img class="frisbee" src="../frisbee.png" alt="frisbee" />
+	<img class="frisbee" src="../images/frisbee.png" alt="frisbee" />
 </main>
 
 <style>

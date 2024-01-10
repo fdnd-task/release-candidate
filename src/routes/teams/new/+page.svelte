@@ -1,45 +1,25 @@
 <script>
+	import TwoColumnLayout from '$lib/layouts/TwoColumnLayout.svelte';
 	import Form from '$lib/organisms/form.svelte';
 	import Button from '$lib/atoms/button.svelte';
 </script>
 
-<main>
-	<h1>New Player</h1>
+<TwoColumnLayout title={'new player'}>
+	<h2 slot="sub-title-left">Add player content</h2>
 
-	<h2 class="sub-header-left">Add player content</h2>
+	<h2 slot="sub-title-right">Add player to team</h2>
 
-	<h2>Add player to team</h2>
-
-	<section>
+	<section slot="left">
 		<Form FormID="FormID" Method="get" Action="/AllPlayers" />
 	</section>
 
-	<section>
+	<section slot="right">
 		<p>test rechts</p>
 	</section>
-	<footer><Button ButtonType="submit" FormID="FormID" ButtonText="save" /></footer>
-</main>
+	<h2 slot="footer"><Button ButtonType="submit" FormID="FormID" ButtonText="save" /></h2>
+</TwoColumnLayout>
 
 <style>
-	main {
-		display: grid;
-		grid-template-rows: auto auto 1fr auto;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 2rem;
-		padding: 4rem 4%;
-		width: 100%;
-		height: 100%;
-	}
-
-	h1,
-	footer {
-		grid-column: span 2;
-	}
-
-	h1 {
-		font-size: 3rem;
-	}
-
 	h2 {
 		font-size: 1.5rem;
 	}
