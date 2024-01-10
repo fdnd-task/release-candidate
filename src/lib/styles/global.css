@@ -1,0 +1,60 @@
+:root {
+
+    /* SPACINGS */
+    --spacing: .5rem;
+
+    /* COLORS */
+    --background-color: #F4F5FA;
+    --input-background-color: #FFFFFF;
+    --element-background-color: #FFFFFF;
+    --primary-font-color: #444D7B;
+    --button-background-color: #63C6A7;
+    --button-font-color: #FFFFFF;
+    --selected-background-color: #B1BBDD;
+    --hover-background-color: #E7FFF7;
+    --bio-player-font-color: #C3C3C3;
+    --sub-text-color: #D8D6D6;
+
+    /* FONTS */
+    --primary-font-family: 'Sora', sans-serif;
+    --secondary-font-family: 'Quicksand', sans-serif;
+    --tertiary-font-family: 'Inter', sans-serif;
+
+    /* BOX SHADOW */
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    --size: 30%;
+
+    font-family: Arial, san-serif;
+    height: 100dvh;
+    background: linear-gradient(43deg, #009dff 0%, #ff00d0 50%, #ff6200 100%);
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        repeating-radial-gradient(
+            circle at 25% 25%, 
+            transparent calc(var(--size) - 0.4em),
+            rgba(0, 0, 0, .2) var(--size), 
+            transparent calc(var(--size) + 0.4em)
+        );
+    z-index: -1;
+}
