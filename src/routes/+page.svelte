@@ -1,12 +1,12 @@
 
 <section class="hero-section">
 
-    <section class="hero-text">
+    <article class="hero-text">
         <h1>
              Welkom <span>Mark Vos</span> bij OBA!
          </h1>
          <p> Ontdek een wereld vol kennis en verhalen. Onze collectie staat tot uw beschikking, en ons team helpt u graag bij uw zoektocht naar wijsheid. Laat de pagina's uw gids zijn op een avontuurlijke reis door het geschreven woord.</p>
-    </section>
+    </article>
     
     <section class="hero-image">
         <svg width="auto" height="auto" viewBox="0 0 349 288" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -41,12 +41,12 @@
 
 
 <section class="readinglist-books-section">
-    <section class="readinglist-text">  
+    <article class="readinglist-text">  
         <h2>
         Jouw recente leeslijst: <span>boeken<span>
          </h2>
         <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog lezen!</p>
-    </section>
+    </article>
 
     <section class="readinglist-carousel">
         <!-- carousel plaatsen -->
@@ -56,12 +56,12 @@
 </section>
 
 <section class="readinglist-books-section">
-    <section class="readinglist-text">  
+    <article class="readinglist-text">  
         <h2>
         Jouw recente leeslijst: <span>e-boeken<span>
          </h2>
         <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog lezen via jouw telefoon of e-reader!</p>
-    </section>
+    </article>
 
     <section class="readinglist-carousel">
            <!-- carousel plaatsen -->
@@ -72,12 +72,12 @@
 </section>
 
 <section class="readinglist-books-section">
-    <section class="readinglist-text">  
+    <article class="readinglist-text">  
         <h2>
         Jouw recente leeslijst: <span>luisterboeken<span>
          </h2>
         <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog luisteren!</p>
-    </section>
+    </article>
 
     <section class="readinglist-carousel">
         <!-- carousel plaatsen -->
@@ -87,21 +87,24 @@
 </section>
 
 <section class="about-section">
-    <section class="about-text"> 
+    <article class="about-text"> 
         <h2>
         Ontdek de Wereld van Leren bij <span>OBA!</span>
         </h2>
         <p>
             Bij OBA bieden we niet alleen een schat aan boeken, maar ook een wereld van kennis en leren. Ontdek onze cursussen, van talen en schoolvakken tot rijles theorie en meer. Investeer in jezelf, breid je vaardigheden uit en verrijk je leven met onze educatieve programma's. Kom langs en begin vandaag nog met leren!
         </p>
-    </section>
+    </article>
 
     <section class="about-carousel">
         <!-- carousel plaatsen -->
     </section>
 
-    <a href='https://www.oba.nl/' class="oba-button">Meer bekijken</a>
-   
+    <section class="about-text">
+          <a href='https://www.oba.nl/' class="oba-button">Meer bekijken</a>
+    </section>
+
+  
 </section>
 
 <style>
@@ -126,7 +129,7 @@ span {
     color: #0064C8;
 }
 
-.oba-button {
+.oba-button{
     padding: 15px 32px;
     border: none;
 
@@ -135,6 +138,11 @@ span {
     text-align: center;
     text-decoration: none;
 }
+.oba-button:hover {
+    background-color: #0064C8;
+    color: #FFFFFF;
+}
+
 
 .hero-section {
     padding: 100px 25px;
@@ -153,6 +161,7 @@ span {
 
 .hero-img {
     grid-area: img;
+
 }
 
 .readinglist-books-section {
@@ -179,12 +188,42 @@ span {
     "text" 1fr
        "carousel" 1fr
     / 1fr;
+
+    text-align: center;
 }
 
 
 
 /* tablet breakpoint */
-    @media (min-width: 45em) {
+    @media (min-width: 40em) {
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+
+        p {
+            padding: 25px 0px;
+            font-size: 1em;
+        }
+
+
+        .hero-section {
+            padding: 100px 25px;
+
+            display: grid;
+            grid:
+            "text img" 1fr
+            / 1fr 1fr;
+            gap: 30px;
+        }
+
+        .oba-button {
+          width: 250px;
+        }   
 
     }
 
