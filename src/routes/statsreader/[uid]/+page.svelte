@@ -1,10 +1,12 @@
 <script>
+	import PlayersList from '$lib/organisms/PlayersList.svelte';
+
 	export let data;
 
 	const { match, statistics } = data;
 </script>
 
-<section class="page">
+<main class="page">
 	<header class="page__header">
 		<h1>Commentator Dashboard</h1>
 	</header>
@@ -21,7 +23,8 @@
 			</header>
 
 			<div class="team__content">
-				<pre>{JSON.stringify(match.team_a, null, 2)}</pre>
+				<!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
+				<PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
 			</div>
 		</section>
 
@@ -81,11 +84,17 @@
 			</header>
 
 			<div class="team__content">
-				<pre>{JSON.stringify(match.team_b, null, 2)}</pre>
+				<!-- <pre>{JSON.stringify(match.team_b, null, 2)}</pre> -->
+				<PlayersList
+					players={match.team_b.players}
+					match={match.id}
+					team={match.team_b.id}
+					reversed={true}
+				/>
 			</div>
 		</section>
 	</div>
-</section>
+</main>
 
 <style>
 	.page {
