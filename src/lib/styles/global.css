@@ -1,42 +1,32 @@
-
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* You can add global styles to this file, and also import other style files */
 @font-face {
     font-family: 'Sora';
-    src: url('../fonts/Sora/Sora.woff2') format('woff2'), 
-         url('../fonts/Sora/Sora.woff') format('woff'), 
-         url('../fonts/Sora/Sora.ttf') format('truetype');
+    src: url('/fonts/Sora/Sora.woff2') format('woff2'), 
+         url('/fonts/Sora/Sora.woff') format('woff'), 
+         url('/fonts/Sora/Sora.ttf') format('truetype');
     font-weight: 100 800;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Quicksand';
-    src: url('../fonts/Quicksand/Quicksand.woff2') format('woff2'), 
-         url('../fonts/Quicksand/Quicksand.woff') format('woff'), 
-         url('../fonts/Quicksand/Quicksand.ttf') format('truetype');
+    src: url('/fonts/Quicksand/Quicksand.woff2') format('woff2'), 
+         url('/fonts/Quicksand/Quicksand.woff') format('woff'), 
+         url('/fonts/Quicksand/Quicksand.ttf') format('truetype');
     font-weight: 300 700;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter/Inter.woff2') format('woff2'), 
-         url('../fonts/Inter/Inter.woff') format('woff'), 
-         url('../fonts/Inter/Inter.ttf') format('truetype');
+    src: url('/fonts/Inter/Inter.woff2') format('woff2'), 
+         url('/fonts/Inter/Inter.woff') format('woff'), 
+         url('/fonts/Inter/Inter.ttf') format('truetype');
     font-weight: 100 900;
     font-display: swap;
 }
 
 :root {
-    /* SPACINGS */
-    --spacing: .5rem;
-
     /* COLORS */
     --background-color: #F4F5FA;
     --input-background-color: #FFFFFF;
@@ -44,10 +34,14 @@
     --primary-font-color: #444D7B;
     --button-background-color: #63C6A7;
     --button-font-color: #FFFFFF;
-    --selected-background-color: #B1BBDD;
+    --selected-background-color: #D6DCFF;
     --hover-background-color: #E7FFF7;
     --bio-player-font-color: #C3C3C3;
     --sub-text-color: #D8D6D6;
+    --scored-by-color:#18D02B;
+    --assist-by-color: #2974E4; 
+    --turnover-by-color: #ED4444;
+    --block-by-color: #FFC738;
 
     /* FONTS */
     --primary-font-family: 'Sora', sans-serif;
@@ -56,37 +50,19 @@
 
     /* BOX SHADOW */
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+  }
 
-html {
-    font-size: 16px;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    --size: 30%;
-
-    font-family: Arial, san-serif;
-    height: 100dvh;
-    background: linear-gradient(43deg, #009dff 0%, #ff00d0 50%, #ff6200 100%);
+	display: flex;
+	background-color: #f4f5fa;
+	height: 100vh;
 }
-
-body::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-        repeating-radial-gradient(
-            circle at 25% 25%, 
-            transparent calc(var(--size) - 0.4em),
-            rgba(0, 0, 0, .2) var(--size), 
-            transparent calc(var(--size) + 0.4em)
-        );
-    z-index: -1;
-}
-
 
 h1, 
 h2 {
