@@ -36,4 +36,10 @@
 		height: 100%;
 		list-style: none;
 	}
+
+	@media only screen and (max-width: 500px){
+		nav{
+			display: none;
+		}
+	}
 </style>
