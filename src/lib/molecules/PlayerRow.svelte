@@ -27,6 +27,7 @@
 	<td>
 		<Statistic number={player.turnovers} type={'turnovers'} />
 	</td>
+	
 	{#if open}
 		<td transition:slide={{ duration: 200 }} colspan="6"> Extra verhaal en statstieken. </td>
 	{/if}

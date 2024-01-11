@@ -1,9 +1,9 @@
 <script>
-	export let number = 0;
+	export let number;
 	export let type = 'goals';
 </script>
 
-<span class={type}>{number}</span>
+<span class={type}>{number || ''}</span>
 
 <style>
 	span {
