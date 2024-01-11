@@ -108,16 +108,16 @@
 
 <style>
 
-:root {
+/* :root { */
          /* die blauw ipv rood, gebruikt voor span */
-		--primary-accent-color: #0064C8; 
+		/* --primary-accent-color: #0064C8;  */
         /* achtergrondkleur website */
-		--primary-background-color: #F2F5FF ;
+		/* --primary-background-color: #F2F5FF ; */
         /* net niet zwart, voor achtergrond kleur buttons en primary tekst kleur */
-		--primary-dark-color: #222222;
+		/* --primary-dark-color: #222222; */
         /* gewoon wit */
-		--primary-light-color: #FFFFFF;
-	}
+		/* --primary-light-color: #FFFFFF; */
+	/* } */
 
 /* mobile first */
 
