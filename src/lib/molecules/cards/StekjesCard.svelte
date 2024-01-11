@@ -5,25 +5,36 @@
   import FilterFunctie from '$lib/atoms/filters/filter.svelte';
 </script>
 
-<StekjesInfo />
-
-{#each data.stekjes as stekje}
-  <article class={stekje.categories.naam}>
-    <img
-      src={stekje.fotos[0].url}
-      alt="een volwassen {stekje.naam} stekje "
-    />
-    <a href={stekje.slug}>
-      Bekijk stekje <i class="fa-solid fa-play"></i>
-    </a>
-    <h3>{stekje.naam}</h3>
-  </article>
-{/each}
+<section>
+  <StekjesInfo />
+  {#each data.stekjes as stekje}
+    <article class={stekje.categories.naam}>
+      <img
+        src={stekje.fotos[0].url}
+        loading="lazy"
+        height="70vh"
+        width="40%"
+        alt="een volwassen {stekje.naam} stekje "
+      />
+      <a href={stekje.slug}>
+        Bekijk stekje <i class="fa-solid fa-play"></i>
+      </a>
+      <h3>{stekje.naam}</h3>
+    </article>
+  {/each}
+</section>
 
 <style>
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
   article {
     position: relative;
-    width: 24.2%;
+    width: 24%;
     min-height: 70vh;
     padding: 1rem;
     border-radius: var(--bradius);
@@ -50,7 +61,7 @@
 
   article a {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     left: 1rem;
     text-decoration: none;
     color: white;
