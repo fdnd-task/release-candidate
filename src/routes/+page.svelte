@@ -1,17 +1,19 @@
-
+<script>
+    import { Card, LinkButton, Logo } from '$lib/index.js'
+</script>
 <!-- mobile en tablet hero section -->
 
 <section class="hero-section">
 
     <article class="hero-text">
         <h1>
-             Welkom <span>Mark Vos</span> bij OBA!
-         </h1>
-         <p> Ontdek een wereld vol kennis en verhalen. Onze collectie staat tot uw beschikking, en ons team helpt u graag bij uw zoektocht naar wijsheid. Laat de pagina's uw gids zijn op een avontuurlijke reis door het geschreven woord.</p>
+            Welkom <span>Mark Vos</span> bij OBA!
+        </h1>
+        <p> Ontdek een wereld vol kennis en verhalen. Onze collectie staat tot uw beschikking, en ons team helpt u graag bij uw zoektocht naar wijsheid. Laat de pagina's uw gids zijn op een avontuurlijke reis door het geschreven woord.</p>
     </article>
     
     <section class="hero-image">
-        <img src="/oba.png" alt="oba logo" width="100%">
+        <img src="{Logo}" alt="oba logo" width="100%">
 
     </section>
 
@@ -26,9 +28,9 @@
 
     <article class="hero-text">
         <h1>
-             Welkom <span>Mark Vos</span> bij OBA!
-         </h1>
-         <p> Ontdek een wereld vol kennis en verhalen. Onze collectie staat tot uw beschikking, en ons team helpt u graag bij uw zoektocht naar wijsheid. Laat de pagina's uw gids zijn op een avontuurlijke reis door het geschreven woord.</p>
+        Welkom <span>Mark Vos</span> bij OBA!
+        </h1>
+        <p> Ontdek een wereld vol kennis en verhalen. Onze collectie staat tot uw beschikking, en ons team helpt u graag bij uw zoektocht naar wijsheid. Laat de pagina's uw gids zijn op een avontuurlijke reis door het geschreven woord.</p>
     </article>
     
 </section>
@@ -40,14 +42,14 @@
     <article class="readinglist-text">  
         <h2>
         Jouw recente leeslijst: <span>boeken<span>
-         </h2>
+        </h2>
         <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog lezen!</p>
     </article>
 
     <section class="readinglist-carousel">
-        <!-- carousel plaatsen -->
+        <Card bookUrl="/book1.jpg" bookTitle="De avonturen van Alice in Wonderland" bookAuthor="Lewis Carroll" bookInleverdatum="20-05-2021" bookUitleendatum="20-04-2021" buttonText="verlengen"/>
     </section>
-    <a href='/' class="oba-button">Bekijk Leeslijst</a>
+    <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
     
 </section>
 
@@ -55,12 +57,12 @@
     <article class="readinglist-text">  
         <h2>
         Jouw recente leeslijst: <span>e-boeken<span>
-         </h2>
+        </h2>
         <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog lezen via jouw telefoon of e-reader!</p>
     </article>
 
     <section class="readinglist-carousel">
-           <!-- carousel plaatsen -->
+        <!-- carousel plaatsen -->
     </section>
 
     <a href='/' class="oba-button">Bekijk Leeslijst</a>
@@ -71,7 +73,7 @@
     <article class="readinglist-text">  
         <h2>
         Jouw recente leeslijst: <span>luisterboeken<span>
-         </h2>
+        </h2>
         <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog luisteren!</p>
     </article>
 
@@ -100,24 +102,13 @@
     </section>
 
     <section class="about-text">
-          <a href='https://www.oba.nl/' class="oba-button">Meer bekijken</a>
+        <a href='https://www.oba.nl/' class="oba-button">Meer bekijken</a>
     </section>
 
-  
+
 </section>
 
 <style>
-
-/* :root { */
-         /* die blauw ipv rood, gebruikt voor span */
-		/* --primary-accent-color: #0064C8;  */
-        /* achtergrondkleur website */
-		/* --primary-background-color: #F2F5FF ; */
-        /* net niet zwart, voor achtergrond kleur buttons en primary tekst kleur */
-		/* --primary-dark-color: #222222; */
-        /* gewoon wit */
-		/* --primary-light-color: #FFFFFF; */
-	/* } */
 
 /* mobile first */
 
