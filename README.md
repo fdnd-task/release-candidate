@@ -1,18 +1,48 @@
-# create-svelte
+# INK - First release candidate
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+<img width="468" alt="Scherm­afbeelding 2024-01-11 om 14 08 21" src="https://github.com/JalalToufik/INK-lets-jam-webapplicatie/assets/112856590/868fa7ff-0189-4c69-a7e7-c8f50795fe76">
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Beschrijving :
+<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+<!-- Voeg een mooie poster visual toe 📸 -->
+In deze Readme is alle informatie te vinden voor de website die wij gaan maken aan de hand van de component library. 
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+* Library aan componenten
+* Atomic design
+* Framework Svelte & CMS Hygraph
+* Static site generator
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+
+ ## Wiki :
+
+* [ Analyseren](https://github.com/anoukbruinn/INK-component-library/wiki/%F0%9F%8C%BA-Analyseren/)
+* [ Ontwerpen](https://github.com/anoukbruinn/INK-component-library/wiki/%F0%9F%8C%BA-Ontwerpen/)
+* [ Intergreren](https://github.com/anoukbruinn/INK-component-library/wiki/%F0%9F%8C%BA-Intergreren/)
+* [ Bouwen](https://github.com/anoukbruinn/INK-component-library/wiki/%F0%9F%8C%BA-Bouwen/)
+* [ Testen](https://github.com/anoukbruinn/INK-component-library/wiki/%F0%9F%8C%BA-Testen/)
+
+
+## Tools :
+
+* VSCode
+* Miro
+* Figma
+
+## Gebruikte technieken :
+
+* Svelte
+* Sveltekit
+* Hygragh
+* JS
+* CSS
+  
+## Communicatie middelen :
+
+* Team Canvas
+* Microsoft Teams
+* Calls
+
 
 ## Developing
 
@@ -33,6 +63,3 @@ To create a production version of your app:
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
