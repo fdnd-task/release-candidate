@@ -1,5 +1,39 @@
-:root {
 
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Sora';
+    src: url('../fonts/Sora/Sora.woff2') format('woff2'), 
+         url('../fonts/Sora/Sora.woff') format('woff'), 
+         url('../fonts/Sora/Sora.ttf') format('truetype');
+    font-weight: 100 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand/Quicksand.woff2') format('woff2'), 
+         url('../fonts/Quicksand/Quicksand.woff') format('woff'), 
+         url('../fonts/Quicksand/Quicksand.ttf') format('truetype');
+    font-weight: 300 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter.woff2') format('woff2'), 
+         url('../fonts/Inter/Inter.woff') format('woff'), 
+         url('../fonts/Inter/Inter.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+:root {
     /* SPACINGS */
     --spacing: .5rem;
 
@@ -22,12 +56,6 @@
 
     /* BOX SHADOW */
     --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -57,4 +85,48 @@ body::after {
             transparent calc(var(--size) + 0.4em)
         );
     z-index: -1;
+}
+
+
+h1, 
+h2 {
+    font-family: var(--primary-font-family);
+    font-size: clamp(1rem, 4.2vw, 4rem);
+    font-weight: 800;
+    color: var(--primary-font-color);
+}
+
+
+h3 {
+    font-family: var(--primary-font-family);
+    font-size: clamp(1rem, 4.2vw, 1.5rem);
+    font-weight: 800;
+    color: var(--primary-font-color);
+}
+
+.subtitle-large{
+    font-family: var(--primary-font-family);
+    font-size: clamp(0.8rem, 2vw, 3.5rem);
+    font-weight: 800;
+    color: var(--primary-font-color);
+}
+
+.subtitle-medium {
+    font-family: var(--secondary-font-family);
+    font-size: clamp(0.7rem, 2vw, 3rem);
+    font-weight: 400;
+    color: var(--primary-font-color);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle-small {
+    font-family: var(--secondary-font-family);
+    font-size: clamp(0.6rem, 1.5vw, 2.5rem);
+    font-weight: 400;
+    color: var(--primary-font-color);
+}
+
+p {
+	font-weight: 600;
+	font-size: 1rem;
 }
