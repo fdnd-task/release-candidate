@@ -25,12 +25,13 @@
 		transition: 0.2s;
 		padding: 1em;
 		color: var(--primary-font-color);
+		font-family: var(--secondary-font-family);
 		text-decoration: none;
 		width: 100%;
 		aspect-ratio: 1;
 	}
 
-	a:hover {
+	a:is(:hover, :focus) {
 		background: rgba(0, 0, 0, 0.1);
 	}
 </style>
