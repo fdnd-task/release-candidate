@@ -50,9 +50,7 @@
 <option value="Colombia">Colombia</option>
 <option value="Comoros">Comoros</option>
 <option value="Congo">Congo</option>
-<option value="Congo, The Democratic Republic of The"
-  >Congo, The Democratic Republic of The</option
->
+<option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
 <option value="Cook Islands">Cook Islands</option>
 <option value="Costa Rica">Costa Rica</option>
 <option value="Cote D'ivoire">Cote D'ivoire</option>
