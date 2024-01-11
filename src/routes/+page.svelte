@@ -121,20 +121,6 @@
 
 /* mobile first */
 
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.8em;
-}
-
-p {
-    padding: 25px 0px;
-    font-size: 1em;
-}
-
 span {
     color: var(--primary-accent-color);
 }
@@ -239,19 +225,6 @@ span {
 
 /* laptop breakpoint */
     @media (min-width: 68em) {
-
-        h1 {
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-size: 2.2em;
-        }
-
-        p {
-            padding: 1.5em 0em;
-            font-size: 1.1em;
-        }
 
         .hero-section-large {
             padding: 9em;
