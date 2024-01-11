@@ -8,12 +8,13 @@
 
 <style>
     button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 1em 2em;
         border: none;
-
         background-color: var(--primary-dark-color);
         color: var(--primary-light-color);
-        text-align: center;
         text-decoration: none;
     }
 
@@ -25,12 +26,14 @@
     @media (min-width: 40em) {
         button {
             width: 250px;
+            height: fit-content;
         }  
     }
 
     @media (min-width: 68em) {
         button {
             width: 200px;
+            height: fit-content;
         }   
     }
 </style>
