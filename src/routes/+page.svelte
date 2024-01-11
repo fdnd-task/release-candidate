@@ -173,7 +173,7 @@ span {
     grid-area: text;
 }
 
-.hero-img {
+.hero-image {
     grid-area: img;
 
 }
