@@ -1,3 +1,7 @@
+<script>
+    import { Button } from '$lib/index.js';
+</script>
+
 <h1>Betalingen</h1>
 
 
@@ -12,7 +16,7 @@
     </p>
     <div class="tegoed-flex">
     <h3>Jouw tegoed: €24.50</h3>
-    <button>Toevoegen aan tegoed</button>
+    <Button buttonText="Toevoegen aan tegoed"/>
     </div>
 
 </section>
