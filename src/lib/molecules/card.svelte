@@ -21,6 +21,7 @@
         flex-direction: column;
         margin: 1rem 3rem 1rem 0;
         width: 12rem;
+        height: 20rem;
         padding: 1rem;
         border-radius: 0.5rem;
         background-color: var(--primary-accent-color);
@@ -33,7 +34,7 @@
 
     article img {
         object-fit: cover;
-        height: 50%;
+        height: 80%;
     }
     
     article:hover {
@@ -45,6 +46,9 @@
 
     .info > p {
         font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .p__title {

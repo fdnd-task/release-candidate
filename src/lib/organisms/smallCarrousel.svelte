@@ -11,16 +11,23 @@
             bookAuthor="{book.author}"
         />
     {/each}
+    {#each (cardData) as book}
+        <Card 
+            bookUrl="{book.image.url}"
+            bookTitle="{book.title}"
+            bookAuthor="{book.author}"
+        />
+    {/each}
 </section>
 
 <style>
     section  {
+        position: relative;
         display: flex;
         flex-direction: row;
-        overflow-x: scroll;
-        overflow-y: hidden;
+        overflow: scroll;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-        height: 50%;
+        height: 100%;
     }
 </style>

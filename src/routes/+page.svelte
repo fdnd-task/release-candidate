@@ -47,7 +47,9 @@
     </article>
 
     <section class="readinglist-carousel">
-        <SmallCarrousel cardData={data.uitleengeschiedenis1} />
+        <div class="extraPadding">
+            <SmallCarrousel cardData={data.uitleengeschiedenis1} />
+        </div>
     </section>
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
     
@@ -62,10 +64,11 @@
     </article>
 
     <section class="readinglist-carousel">
-        <!-- carousel plaatsen -->
+        <div class="extraPadding">
+            <SmallCarrousel cardData={data.uitleengeschiedenis1} />
+        </div>
     </section>
-
-    <a href='/' class="oba-button">Bekijk Leeslijst</a>
+    <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
 
 </section>
 
@@ -78,10 +81,11 @@
     </article>
 
     <section class="readinglist-carousel">
-        <!-- carousel plaatsen -->
+        <div class="extraPadding">
+            <SmallCarrousel cardData={data.uitleengeschiedenis1} />
+        </div>
     </section>
-
-    <a href='/' class="oba-button">Bekijk Leeslijst</a>
+    <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
 </section>
 
 
@@ -254,6 +258,11 @@ span {
 
         }
 
+        .extraPadding {
+            max-width: 100%;
+            padding: 0 2rem;
+        }
+
         .hero-section-large img {
             position: absolute;
             right: 0;
@@ -280,7 +289,7 @@ span {
             / 1fr 1fr;
         }
 
-
+        
 
     }
     
