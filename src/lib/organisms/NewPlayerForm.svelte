@@ -52,6 +52,9 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    padding: 7px;
+    padding-right: 1rem;
   }
 
   section {

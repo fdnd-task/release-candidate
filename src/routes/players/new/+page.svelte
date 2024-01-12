@@ -2,6 +2,7 @@
 	import Form from '$lib/organisms/NewPlayerForm.svelte';
 	import Button from '$lib/atoms/button.svelte';
 	import InputRequired from '$lib/atoms/input-required.svelte';
+	import TeamCard from '$lib/molecules/TeamCard.svelte';
 </script>
 
 <main>
@@ -22,6 +23,10 @@
 			LableFor="FindTeam"
 			LableText="* Search team ..."
 		/>
+
+		<ul>
+			<TeamCard />
+		</ul>
 	</section>
 	<footer><Button ButtonType="submit" FormID="FormID" ButtonText="save" /></footer>
 </main>
@@ -52,23 +57,40 @@
 	}
 
 	section {
-		overflow-x: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		overflow-x: hidden;
 		padding: 7px;
-		padding-right: 1rem;
-		margin-right: 0;
+	}
+	
+	@media (pointer: fine) {
+		section {
+		gap: 1rem;
 	}
 
-	section::-webkit-scrollbar-track {
-		border-radius: 10px;
-	}
+		section::-webkit-scrollbar-track,
+		ul::-webkit-scrollbar-track {
+			border-radius: 10px;
+		}
 
-	section::-webkit-scrollbar {
-		width: 12px;
-	}
+		section::-webkit-scrollbar,
+		ul::-webkit-scrollbar {
+			width: 12px;
+		}
 
-	section::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-		/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
-		background-color: #a7a7a7;
+		section::-webkit-scrollbar-thumb,
+		ul::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background-color: #a7a7a7;
+		}
+	}
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		margin: 0 -6px -6px -6px;
+		padding: 0 6px 6px 6px;
+		overflow-x: auto;
 	}
 </style>
