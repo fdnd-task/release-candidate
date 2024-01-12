@@ -3,9 +3,6 @@
     export let bookUrl
     export let bookTitle
     export let bookAuthor
-    export let bookInleverdatum
-    export let bookUitleendatum
-    export let buttonText
 </script>
 
 <article>
@@ -13,17 +10,6 @@
     <section class="info">
         <p class="p__title">{bookTitle}</p>
         <p>{bookAuthor}</p>
-        <section class="s__date">
-            <section>
-                <p class="p__title">Uitleendatum:</p>
-                <p>{bookUitleendatum}</p>
-            </section>
-            <section>
-                <p class="p__title">Inleverdatum:</p>
-                <p>{bookInleverdatum}</p>
-            </section>
-        </section>
-        <LinkButton buttonText="verlengen" buttonLink="#"/>
     </section>
 </article>
 
@@ -37,7 +23,8 @@
         width: 12rem;
         padding: 1rem;
         border-radius: 0.5rem;
-        background-color: #FFFFFF;
+        background-color: var(--primary-accent-color);
+        color: var(--primary-light-color);
         scroll-snap-align: start;
         transition: 0.3s;
         justify-content: space-between;
@@ -51,8 +38,9 @@
     
     article:hover {
         scale: 103%;
-        background-color:red;
+        /* background-color:red; */
         color: #FFFFFF;
+        box-shadow: var(--primary-dark-color) 0px 0px 10px 0px;
     }
 
     .info > p {
@@ -61,18 +49,6 @@
 
     .p__title {
         font-weight: bold;
-    }
-
-    .s__date section {
-        padding: 0 0.5rem 0 0;
-    }
-
-    .s__date section > p {
-        font-size: 0.75rem;
-    }
-
-    .s__date {
-        display: flex;
     }
 
     .info  {
@@ -87,16 +63,8 @@
             width: 13rem;
         }
 
-        .s__date {
-            flex-direction: column;
-        }
-
         .info > p {
         font-size: 0.75rem;
-        }
-
-        .s__date section > p {
-        font-size: 0.6rem;
         }
 }
 
@@ -108,10 +76,6 @@
 
     article {
         width: 13rem;
-    }
-
-    .s__date section > p {
-        font-size: 0.7rem;
     }
 }
 </style>

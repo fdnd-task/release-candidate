@@ -1,5 +1,6 @@
 <script>
-    import { Card, LinkButton, Logo } from '$lib/index.js'
+    import { Card,  LinkButton, Logo, SmallCarrousel } from '$lib/index.js'
+    export let data;
 </script>
 <!-- mobile en tablet hero section -->
 
@@ -14,7 +15,6 @@
     
     <section class="hero-image">
         <img src="{Logo}" alt="oba logo" width="100%">
-
     </section>
 
 </section>
@@ -47,7 +47,7 @@
     </article>
 
     <section class="readinglist-carousel">
-        <Card bookUrl="/book1.jpg" bookTitle="De avonturen van Alice in Wonderland" bookAuthor="Lewis Carroll" bookInleverdatum="20-05-2021" bookUitleendatum="20-04-2021" buttonText="verlengen"/>
+        <SmallCarrousel cardData={data.uitleengeschiedenis1} />
     </section>
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
     
