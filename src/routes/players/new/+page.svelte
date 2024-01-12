@@ -1,6 +1,7 @@
 <script>
-	import Form from '$lib/organisms/form.svelte';
+	import Form from '$lib/organisms/NewPlayerForm.svelte';
 	import Button from '$lib/atoms/button.svelte';
+	import InputRequired from '$lib/atoms/input-required.svelte';
 </script>
 
 <main>
@@ -15,7 +16,12 @@
 	</section>
 
 	<section>
-		<p>test rechts</p>
+		<InputRequired
+			InputType="search"
+			InputID="FindTeam"
+			LableFor="FindTeam"
+			LableText="* Search team ..."
+		/>
 	</section>
 	<footer><Button ButtonType="submit" FormID="FormID" ButtonText="save" /></footer>
 </main>
@@ -25,7 +31,8 @@
 		display: grid;
 		grid-template-rows: auto auto 1fr auto;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 2rem;
+		column-gap: 2rem;
+		row-gap: 1rem;
 		padding: 4rem 4%;
 		width: 100%;
 		height: 100%;
@@ -46,6 +53,9 @@
 
 	section {
 		overflow-x: auto;
+		padding: 7px;
+		padding-right: 1rem;
+		margin-right: 0;
 	}
 
 	section::-webkit-scrollbar-track {
