@@ -5,69 +5,73 @@
 </script> -->
 
 <li class="s-Scjmd4kYnGrj">
-	<a href="#" class="s-Scjmd4kYnGrj">	
-		<img src="../images/Dark Emperors.png" alt="">
-		<label for="">Dark Emperors</label></a>
+	<button>
+		<img src="../images/Dark Emperors.png" alt="" />
+		<label for="" class="subtitle-small">Dark Emperors</label>
+	</button>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<a href="#" class="s-Scjmd4kYnGrj">	
-		<img src="../images/Dark Emperors.png" alt="">
-		<label for="">Dark Emperors</label></a>
+	<button>
+		<img src="../images/Dark Emperors.png" alt="" />
+		<label for="" class="subtitle-small">Dark Emperors</label>
+	</button>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<a href="#" class="s-Scjmd4kYnGrj">	
-		<img src="../images/Dark Emperors.png" alt="">
-		<label for="">Dark Emperors</label></a>
+	<button>
+		<img src="../images/Dark Emperors.png" alt="" />
+		<label for="" class="subtitle-small">Dark Emperors</label>
+	</button>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<a href="#" class="s-Scjmd4kYnGrj">	
-		<img src="../images/Dark Emperors.png" alt="">
-		<label for="">Dark Emperors</label></a>
+	<button>
+		<img src="../images/Dark Emperors.png" alt="" />
+		<label for="" class="subtitle-small">Dark Emperors</label>
+	</button>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<a href="#" class="s-Scjmd4kYnGrj">	
-		<img src="../images/Dark Emperors.png" alt="">
-		<label for="">Dark Emperors</label></a>
+	<button>
+		<img src="../images/Dark Emperors.png" alt="" />
+		<label for="" class="subtitle-small">Dark Emperors</label>
+	</button>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<a href="#" class="s-Scjmd4kYnGrj">	
-		<img src="../images/Dark Emperors.png" alt="">
-		<label for="">Dark Emperors</label></a>
+	<button>
+		<img src="../images/Dark Emperors.png" alt="" />
+		<label for="" class="subtitle-small">Dark Emperors</label>
+	</button>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<a href="#" class="s-Scjmd4kYnGrj">	
-		<img src="../images/Dark Emperors.png" alt="">
-		<label for="">Dark Emperors</label></a>
+	<button>
+		<img src="../images/Dark Emperors.png" alt="" />
+		<label for="" class="subtitle-small">Dark Emperors</label>
+	</button>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<a href="#" class="s-Scjmd4kYnGrj">	
-		<img src="../images/Dark Emperors.png" alt="">
-		<label for="">Dark Emperors</label></a>
+	<button>
+		<img src="../images/Dark Emperors.png" alt="" />
+		<label for="" class="subtitle-small">Dark Emperors</label>
+	</button>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<a href="#" class="s-Scjmd4kYnGrj">	
-		<img src="../images/Dark Emperors.png" alt="">
-		<label for="">Dark Emperors</label></a>
+	<button>
+		<img src="../images/Dark Emperors.png" alt="" />
+		<label for="" class="subtitle-small">Dark Emperors</label>
+	</button>
 </li>
 
 <li class="s-Scjmd4kYnGrj">
-	<a href="#" class="s-Scjmd4kYnGrj">	
-		<img src="../images/Dark Emperors.png" alt="">
-		<label for="">Dark Emperors</label></a>
-</li>
-
-<li class="s-Scjmd4kYnGrj">
-	<a href="#" class="s-Scjmd4kYnGrj">	
-		<img src="../images/Dark Emperors.png" alt="">
-		<label for="">Dark Emperors</label></a>
+	<button>
+		<img src="../images/Dark Emperors.png" alt="" />
+		<label for="" class="subtitle-small">Dark Emperors</label>
+	</button>
 </li>
 
 <style>
@@ -75,7 +79,7 @@
 		display: flex;
 	}
 
-	a {
+	button {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
@@ -84,20 +88,25 @@
 		transition: 0.2s;
 		box-shadow: var(--box-shadow);
 		border-radius: 0.9rem;
+		border: none;
 		background-color: var(--element-background-color);
 		padding: 1em;
 		aspect-ratio: 1;
 		width: 100%;
-		color: var(--primary-font-color);
-		font-family: var(--secondary-font-family);
-		text-decoration: none;
 	}
 
-	a:is(:hover, :focus) {
+	button:is(:hover, :focus) {
 		background: var(--hover-background-color);
 	}
 
-	label{
+	img {
+		width: 100%;
+		height: auto;
+		height: 4rem;
+		object-fit: contain;
+	}
+
+	label {
 		text-align: center;
 	}
 </style>

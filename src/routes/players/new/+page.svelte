@@ -63,11 +63,21 @@
 		overflow-x: hidden;
 		padding: 7px;
 	}
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		margin: 0 -6px -6px -6px;
+		padding: 0 6px 6px 6px;
+		overflow-x: auto;
+		padding-right: 1rem;
+	}
 	
 	@media (pointer: fine) {
-		section {
-		gap: 1rem;
-	}
+		section{
+			padding-right: 1rem;
+		}
 
 		section::-webkit-scrollbar-track,
 		ul::-webkit-scrollbar-track {
@@ -85,12 +95,5 @@
 			background-color: #a7a7a7;
 		}
 	}
-	ul {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 1rem;
-		margin: 0 -6px -6px -6px;
-		padding: 0 6px 6px 6px;
-		overflow-x: auto;
-	}
+
 </style>
