@@ -10,4 +10,8 @@
 
 <style>
 	@import '$lib/styles/global.css';
+
+	header {
+		height: 100%;
+	}
 </style>
