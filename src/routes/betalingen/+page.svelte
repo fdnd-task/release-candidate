@@ -102,9 +102,7 @@
 /* laptop breakpoint */
 @media (min-width: 68em) {
     
-    section{
-        /* margin-left: 9rem; */
-    }
+
 
 }
 
