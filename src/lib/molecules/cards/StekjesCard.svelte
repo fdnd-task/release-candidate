@@ -12,8 +12,8 @@
       <img
         src={stekje.fotos[0].url}
         loading="lazy"
-        height="70vh"
-        width="40%"
+        height="60vh"
+        width="25%"
         alt="een volwassen {stekje.naam} stekje "
       />
       <a href={stekje.slug}>
@@ -29,13 +29,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
   }
   article {
     position: relative;
-    width: 24%;
-    min-height: 70vh;
+    min-height: 60vh;
+    width: 25%;
     padding: 1rem;
     border-radius: var(--bradius);
     overflow: hidden;
@@ -96,6 +96,12 @@
   @media (max-width: 750px) {
     article {
       width: 100%;
+    }
+  }
+
+  @media (min-width: 820px) {
+    article {
+      width: 40%;
     }
   }
 </style>
