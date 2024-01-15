@@ -1,4 +1,6 @@
-
+<script>
+    import Searsh from "../lib/molecules/search.svelte"
+</script>
 <!-- mobile en tablet hero section -->
 
 <section class="hero-section">
@@ -33,6 +35,7 @@
     
 </section>
 
+<Searsh />
 
 <!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
 
@@ -105,6 +108,8 @@
 
   
 </section>
+
+
 
 <style>
 
