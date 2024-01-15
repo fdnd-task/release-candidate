@@ -98,15 +98,13 @@
 
 <style>
 	.page {
-		margin-right: calc(10% + 2rem);
 		height: 100vh;
-		font-size: 0.75rem;
+		/* font-size: 0.75rem; */
 	}
 
 	/* Inclusively Hidden */
 	.page__header,
 	.statistics__header,
-	.team__content table thead,
 	.status h3,
 	.timeline h3,
 	.scoreboard h3 {
@@ -122,6 +120,7 @@
 	.page__content {
 		display: grid;
 		grid-template-columns: repeat(3, minmax(0, 1fr));
+		flex: 1;
 		gap: 1em;
 		padding: 1rem;
 		height: 100%;
@@ -162,50 +161,6 @@
 
 	.team__content {
 		flex: 1;
-	}
-
-	.team__content table {
-		border: 1px solid transparent;
-		border-radius: 1em;
-		border-collapse: collapse;
-		background: white;
-		width: 100%;
-		height: 100%;
-	}
-
-	.team__content table tbody {
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-between;
-		height: 100%;
-	}
-
-	.team__content table tr {
-		display: flex;
-		flex: 1 1 0px;
-		flex-flow: row nowrap;
-		align-items: center;
-		border-bottom: 1px solid #d3d3d3;
-	}
-
-	.team__content table tr:last-child {
-		border-bottom: none;
-	}
-
-	.team:last-child .team__content table tr {
-		flex-flow: row-reverse nowrap;
-	}
-
-	.team__content table td {
-		padding: 0.5em;
-	}
-
-	.team__content table td:nth-child(2) {
-		flex: 1;
-	}
-
-	.team:last-child .team__content table td:nth-child(2) {
-		text-align: right;
 	}
 
 	.jersey-number,
