@@ -4,37 +4,26 @@
   import StekjesInfo from '$lib/molecules/InfoStekjes.svelte';
 </script>
 
-<section>
-  <StekjesInfo />
-  {#each data.stekjes as stekje}
-    <article class={stekje.categories.naam}>
-      <img
-        src={stekje.fotos[0].url}
-        loading="lazy"
-        height="60vh"
-        width="25%"
-        alt="een volwassen {stekje.naam} stekje "
-      />
-      <a href={stekje.slug}>
-        Bekijk stekje <i class="fa-solid fa-play"></i>
-      </a>
-      <h3>{stekje.naam}</h3>
-    </article>
-  {/each}
-</section>
+<StekjesInfo />
+
+{#each data.stekjes as stekje}
+  <article class={stekje.categories.naam}>
+    <img
+      src={stekje.fotos[0].url}
+      alt="een volwassen {stekje.naam} stekje "
+    />
+    <a href={stekje.slug}>
+      Bekijk stekje <i class="fa-solid fa-play"></i>
+    </a>
+    <h3>{stekje.naam}</h3>
+  </article>
+{/each}
 
 <style>
-  section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
   article {
     position: relative;
-    min-height: 60vh;
-    width: 25%;
+    width: 24.2%;
+    min-height: 70vh;
     padding: 1rem;
     border-radius: var(--bradius);
     overflow: hidden;
@@ -60,7 +49,7 @@
 
   article a {
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
     left: 1rem;
     text-decoration: none;
     color: white;
@@ -95,12 +84,6 @@
   @media (max-width: 750px) {
     article {
       width: 100%;
-    }
-  }
-
-  @media (min-width: 820px) {
-    article {
-      width: 40%;
     }
   }
 </style>

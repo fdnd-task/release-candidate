@@ -15,12 +15,13 @@
 			<h2>{workshop.naam}</h2>
 	
 			<ul>
-				<li><i class="fa-solid fa-location-crosshairs" style="color: #ffffff;"></i>{workshop.locatie}</li>
-				<li><i class="fa-solid fa-sack-dollar" style="color: #ffffff;"></i>{workshop.kosten}</li>
-				<li><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>{workshop.datum}</li>
+				<li><i class="fa-solid fa-location-crosshairs" style="color: #ffffff;"></i><span>{workshop.locatie}</span></li>
+				<li><i class="fa-solid fa-euro-sign" style="color: #ffffff;"></i><span>{workshop.kosten}</span></li>
+				<li><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i><span>{workshop.datum}</span></li>
 			</ul>
-	
-			<Button />
+			
+
+			<Button/>
 		</section>
 	{/each}
 </div>
@@ -58,7 +59,10 @@
 
 	i {
 		margin-right: 1rem;
+		width: 0.5%;
 	}
+
+
 
 	@media screen and (min-width: 1800px) {
 		div {
@@ -84,6 +88,10 @@
 
 		section ul {
 			padding-bottom: 5rem;
+		}
+
+		i {
+			margin-right: 1.5rem;
 		}
 	}
 
