@@ -1,11 +1,12 @@
 <script>
-    import {LinkButton} from '$lib/index'
+    // Geeft de lege varaiabelen mee zodat deze later in de pagina een waarde toegewezen kunnen krijgen zodat dit component ook dynamisch is
     export let bookUrl
     export let bookTitle
     export let bookAuthor
 </script>
 
 <article>
+    <!-- In de html elementen benoem ik lege js variabeles en deze geef ik leeg mee aan de pagina waar dit component wordt gebruikt -->
     <img src="{bookUrl}" alt="foto van {bookTitle}" loading="lazy">
     <section class="info">
         <p class="p__title">{bookTitle}</p>

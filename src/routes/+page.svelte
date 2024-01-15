@@ -1,5 +1,7 @@
 <script>
-    import { Card,  LinkButton, Logo, SmallCarrousel } from '$lib/index.js'
+    // Hier import ik de components die nodig zijn in deze pagina
+    import { Card,  LinkButton, Logo } from '$lib/index.js'
+    // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
     export let data;
 </script>
 <!-- mobile en tablet hero section -->
@@ -47,9 +49,12 @@
     </article>
 
     <section class="readinglist-carousel">
-        <div class="extraPadding">
-            <SmallCarrousel cardData={data.uitleengeschiedenis1} />
-        </div>
+        <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
+        <Card 
+            bookAuthor={data.uitleengeschiedenis1[0].author}
+            bookTitle={data.uitleengeschiedenis1[0].title}
+            bookUrl={data.uitleengeschiedenis1[0].image?.url}
+        />
     </section>
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
     
@@ -64,9 +69,12 @@
     </article>
 
     <section class="readinglist-carousel">
-        <div class="extraPadding">
-            <SmallCarrousel cardData={data.uitleengeschiedenis1} />
-        </div>
+        <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
+        <Card 
+            bookAuthor={data.uitleengeschiedenis1[1].author}
+            bookTitle={data.uitleengeschiedenis1[1].title}
+            bookUrl={data.uitleengeschiedenis1[1].image?.url}
+        />
     </section>
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
 
@@ -81,9 +89,12 @@
     </article>
 
     <section class="readinglist-carousel">
-        <div class="extraPadding">
-            <SmallCarrousel cardData={data.uitleengeschiedenis1} />
-        </div>
+        <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
+        <Card 
+            bookAuthor={data.uitleengeschiedenis1[2].author}
+            bookTitle={data.uitleengeschiedenis1[2].title}
+            bookUrl={data.uitleengeschiedenis1[2].image.url}
+        />
     </section>
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
 </section>
@@ -288,9 +299,5 @@ span {
             "text carousel" 1fr
             / 1fr 1fr;
         }
-
-        
-
     }
-    
 </style>

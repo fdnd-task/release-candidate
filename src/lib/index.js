@@ -12,7 +12,6 @@ export { default as Card } from './molecules/card.svelte'
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
-export { default as SmallCarrousel } from './organisms/smallCarrousel.svelte'
 
 
 
