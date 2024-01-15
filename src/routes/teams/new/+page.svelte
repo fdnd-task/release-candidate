@@ -12,7 +12,7 @@
 	<!-- <h2>Add player to team</h2> -->
 
 	<section>
-		<Form FormID="FormID" Method="get" Action="/AllPlayers" />
+		<Form FormID="FormID" Method="get" Action="/teams" />
 	</section>
 
 

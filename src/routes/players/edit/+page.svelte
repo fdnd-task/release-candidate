@@ -1,20 +1,23 @@
 <script>
 	import Form from '$lib/organisms/NewPlayerForm.svelte';
 	import Button from '$lib/atoms/button.svelte';
-	import InputRequired from '$lib/atoms/input-required.svelte';
-	import TeamCard from '$lib/molecules/TeamCard.svelte';
+
+	import WarningButton from '$lib/atoms/WarningButton.svelte';
 </script>
 
 <main>
 	<h1>New Player</h1>
 
-	<h2 class="sub-header-left">Add player content</h2>
+	<h2 class="sub-header-left">Update player content</h2>
 
 	<section>
 		<Form FormID="FormID" Method="get" Action="/players" />
 	</section>
 
-	<footer><Button ButtonType="submit" FormID="FormID" ButtonText="save" /></footer>
+	<footer>
+		<Button ButtonType="submit" FormID="FormID" ButtonText="save" />
+		<WarningButton ButtonType="Button" FormID="unset" ButtonText="Delete" />
+	</footer>
 </main>
 
 <style>
@@ -61,8 +64,8 @@
 
 	@media (pointer: fine) {
 		section::-webkit-scrollbar-track {
-			border-radius: 10px;
 			margin: 10px 0;
+			border-radius: 10px;
 		}
 
 		section::-webkit-scrollbar {
