@@ -1,6 +1,8 @@
 <script>
-	import Form from '$lib/organisms/form.svelte';
+	import Form from '$lib/organisms/NewPlayerForm.svelte';
 	import Button from '$lib/atoms/button.svelte';
+	import InputRequired from '$lib/atoms/input-required.svelte';
+	import TeamCard from '$lib/molecules/TeamCard.svelte';
 </script>
 
 <main>
@@ -15,7 +17,16 @@
 	</section>
 
 	<section>
-		<p>test rechts</p>
+		<InputRequired
+			InputType="search"
+			InputID="FindTeam"
+			LableFor="FindTeam"
+			LableText="* Search team ..."
+		/>
+
+		<ul>
+			<TeamCard />
+		</ul>
 	</section>
 	<footer><Button ButtonType="submit" FormID="FormID" ButtonText="save" /></footer>
 </main>
@@ -25,7 +36,8 @@
 		display: grid;
 		grid-template-rows: auto auto 1fr auto;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 2rem;
+		column-gap: 2rem;
+		row-gap: 1rem;
 		padding: 4rem 4%;
 		width: 100%;
 		height: 100%;
@@ -45,20 +57,43 @@
 	}
 
 	section {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		overflow-x: hidden;
+		padding: 7px;
+	}
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+		margin: 0 -6px -6px -6px;
+		padding: 0 6px 6px 6px;
 		overflow-x: auto;
+		padding-right: 1rem;
+	}
+	
+	@media (pointer: fine) {
+		section{
+			padding-right: 1rem;
+		}
+
+		section::-webkit-scrollbar-track,
+		ul::-webkit-scrollbar-track {
+			border-radius: 10px;
+		}
+
+		section::-webkit-scrollbar,
+		ul::-webkit-scrollbar {
+			width: 12px;
+		}
+
+		section::-webkit-scrollbar-thumb,
+		ul::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background-color: #a7a7a7;
+		}
 	}
 
-	section::-webkit-scrollbar-track {
-		border-radius: 10px;
-	}
-
-	section::-webkit-scrollbar {
-		width: 12px;
-	}
-
-	section::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-		/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
-		background-color: #a7a7a7;
-	}
 </style>

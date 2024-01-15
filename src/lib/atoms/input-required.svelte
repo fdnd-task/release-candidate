@@ -21,6 +21,7 @@
     left: 1.5rem;
     transition: 0.3s ease-in-out;
     cursor: text;
+    font-family: var(--tertiary-font-family);
   }
 
   input {
