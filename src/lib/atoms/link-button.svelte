@@ -17,6 +17,8 @@
     font-size: 1rem;
     box-shadow: var(--box-shadow);
     text-decoration: none;
+    font-family: var(--secondary-font-family);
+    
   }
 
   a:hover {
