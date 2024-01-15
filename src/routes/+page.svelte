@@ -18,7 +18,7 @@
 	</a>
 
 	<!-- svelte-ignore a11y-missing-attribute -->
-	<a href="/teams/new" class="creatTeam">
+	<a href="/teams/new" class="createTeam">
 		<h3>Create Team</h3>
 		<p class="subtitle-small">Create your team</p>
 	</a>
@@ -35,28 +35,44 @@
 <style>
 	main {
 		display: grid;
-		grid-template-rows: 1fr 1fr 1fr;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
 		grid-template-areas:
 			'currentTournament'
 			'completedTournaments'
-			'creatTournament'
-			'creatTeam'
+			'createTournament'
+			'createTeam'
 			'createPlayer'
 			'frisbee';
 		gap: 1rem;
-		background: var(back);
 		padding: 2rem;
 		width: 100%;
 		height: 100%;
-		overflow-x: scroll;
+		overflow-y: scroll;
+	}
+
+	@media (pointer: fine) {
+		main::-webkit-scrollbar-track {
+			border-radius: 10px;
+			margin: 2rem 0;
+		}
+
+		main::-webkit-scrollbar {
+			width: 12px;
+		}
+
+		main::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background-color: #a7a7a7;
+		}
 	}
 
 	a {
+		transition: all 0.3s ease-in-out;
+		transition: padding 0.3s ease-in-out;
 		box-shadow: var(--box-shadow);
 		border-radius: 15px;
 		background-color: white;
-		padding: 1rem 0.5rem;
+		padding: 1rem;
 		text-decoration: none;
 	}
 
@@ -112,19 +128,20 @@
 		main {
 			display: grid;
 			grid-template-rows: 1fr 1fr 1fr;
-			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-columns: 1fr 1fr;
 			grid-template-areas:
-				' currentTournament currentTournament currentTournament currentTournament'
-				'completedTournaments completedTournaments creatTournament creatTournament'
-				'creatTeam creatTeam createPlayer createPlayer'
-				' frisbee frisbee frisbee frisbee';
+				' currentTournament currentTournament'
+				' completedTournaments completedTournaments'
+				' createTournament createTournament'
+				' createTeam  createPlayer'
+				' frisbee frisbee';
 			gap: 2rem;
 			padding: 2rem;
 		}
-		
+
 		a {
 			border-radius: 25px;
-			padding: 1frisbee5rem 2.5rem;
+			padding: 1.5rem 2.5rem;
 		}
 	}
 	@media only screen and (min-width: 1100px) {
@@ -133,9 +150,9 @@
 			grid-template-rows: 1fr 1fr 1fr;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 			grid-template-areas:
-				'creatTournament creatTournament completedTournaments completedTournaments'
-				'creatTeam createPlayer completedTournaments completedTournaments'
-				'currentTournament currentTournament currentTournament frisbee';
+				'currentTournament currentTournament currentTournament frisbee'
+				'createTournament createTournament completedTournaments completedTournaments'
+				'createTeam createPlayer completedTournaments completedTournaments';
 			gap: 2rem;
 			padding: 2rem;
 		}
