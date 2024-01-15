@@ -4,7 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ebf8b61-0d02-4f46-a32d-932e410259c1" name="Changes" comment="" />
+    <list default="true" id="9ebf8b61-0d02-4f46-a32d-932e410259c1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svelte-kit/ambient.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.svelte-kit/ambient.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svelte-kit/generated/server/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/.svelte-kit/generated/server/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-36XSJPWN.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-36XSJPWN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-36XSJPWN.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-36XSJPWN.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-CBLXLE7Z.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-CBLXLE7Z.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-CBLXLE7Z.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-CBLXLE7Z.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-FI7FPNA6.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-FI7FPNA6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-FI7FPNA6.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-FI7FPNA6.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-POMM4CDA.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-POMM4CDA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-POMM4CDA.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-POMM4CDA.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-XNHBATJA.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-XNHBATJA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-XNHBATJA.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-XNHBATJA.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/devalue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/devalue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/devalue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/devalue.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/esm-env.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/esm-env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/esm-env.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/esm-env.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/gsap.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/gsap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/gsap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/gsap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/gsap_dist_ScrollTrigger.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/gsap_dist_ScrollTrigger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/gsap_dist_ScrollTrigger.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/gsap_dist_ScrollTrigger.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/prettier.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/prettier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/prettier.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/prettier.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_animate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_animate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_animate.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_animate.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_easing.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_easing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_easing.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_easing.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_internal.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_internal.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_internal_disclose-version.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_internal_disclose-version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_internal_disclose-version.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_internal_disclose-version.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_motion.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_motion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_motion.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_motion.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_store.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_store.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_store.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_transition.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_transition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_transition.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/svelte_transition.js.map" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +58,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2azVDaMth22O9O0TjWLxJ3Kmsjq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,6 +70,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "home-page",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,6 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705321279154</updated>
       <workItem from="1705321285229" duration="959000" />
+      <workItem from="1705324988740" duration="405000" />
     </task>
     <servers />
   </component>
