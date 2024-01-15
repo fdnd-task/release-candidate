@@ -17,12 +17,7 @@
 
             <h3>Toen de kast gemaakt werd...</h3>
 			<p>
-				Het proces van het stekken van planten is een boeiende manier om nieuwe planten te laten
-				groeien uit delen van bestaande exemplaren. Het begint met het selecteren van gezonde
-				moederplanten. Knip een stukje van de plant, meestal een takje of een blad, met scherpe,
-				schone scharen of een mes. Zorg ervoor dat het stekje minstens één knooppunt (waar bladeren
-				groeien) heeft. Verwijder eventuele bladeren aan de onderkant van het stekje om wortelgroei
-				te bevorderen.
+				Een van de begeleiders van de Maakplaats 021 bedacht het ontwerp van de kast, die - met het oog op duurzaamheid - volledig gemaakt is van een gebruikte pallet en afvalhout. De kinderen mochten zelf de kleurontwerpen bedenken. Hierdoor heeft de kast een volledig uniek uiterlijk waar de stekjes vanuit alle kanten van de bieb te bewonderen zijn
 			</p>
 		</div>
 	</div>
