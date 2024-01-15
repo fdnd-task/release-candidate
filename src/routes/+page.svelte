@@ -18,7 +18,7 @@
 	</a>
 
 	<!-- svelte-ignore a11y-missing-attribute -->
-	<a href="/" class="creatTeam">
+	<a href="/teams/new" class="creatTeam">
 		<h3>Create Team</h3>
 		<p class="subtitle-medium">Create your team</p>
 	</a>
