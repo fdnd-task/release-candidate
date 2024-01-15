@@ -73,7 +73,9 @@
 			border-radius: 10px;
 			background-color: #a7a7a7;
 		}
-		@media only screen and (min-width: 850px) {
+	}
+
+	@media only screen and (min-width: 850px) {
 			main {
 				grid-template-columns: repeat(2, minmax(0, 1fr));
 				grid-template-areas:
@@ -84,5 +86,4 @@
 
 			}
 		}
-	}
 </style>
