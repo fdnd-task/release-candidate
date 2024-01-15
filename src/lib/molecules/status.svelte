@@ -13,12 +13,11 @@
     <div title="status line container">
     {#each data.statusupdates as statusupdate}
 
-        <span class="circle"></span>
+        <span id="circle"></span>
+        <span id="line"></span>
 
-    {/each}
-    <span class="line"></span>
-
-    </div>
+            {/each}
+        </div>
     <Statuslabel {data}/>
 
 
@@ -36,7 +35,7 @@
         justify-content: space-between;
         align-items: center;
     }
-    .circle{
+    #circle{
         width: 2em;
         height: 2em;
         background-color: rgba(13, 158, 255, 0.5);
@@ -44,10 +43,9 @@
         border-radius: 50%;
         margin-top: 2.3em
     }
-    .line {
+    #line {
         position: absolute;
-        top: 50%; 
-        left: 50%;
+        top: 50%; left: 50%;
         transform: translate(-50%, -40%);
         width: .4em;
         height: 70%;

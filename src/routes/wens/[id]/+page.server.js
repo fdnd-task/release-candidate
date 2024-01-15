@@ -3,8 +3,7 @@ import { hygraph } from '$lib/utils/hygraph.js';
 
 export async function load({ params }) {
 	const { id } = params;
-	const variables = { id };
-	const test = JSON.stringify(variables.id);
+
 	let query = gql`
 		query getWish($id: ID!) {
 			wish(where: { id: $id }) {
@@ -28,19 +27,12 @@ export async function load({ params }) {
 				uid
 				id
 			}
-			sdgs(where: {uid: "${id}"}) {
-				id
-				uid
-				image {
-				  url
-				}
-			  }
 		}
 	`;
 
-	
+	const variables = { id };
+
 	const request = await hygraph.request(query, variables);
-	console.log(test);
 
 	return {
 		wish: request.wish, // Hier halen we de enkele wens op

@@ -9,7 +9,7 @@
 	export let data;
 	export const test = writable(1);
 
-	console.log(data);
+	// console.log(data);
 </script>
 
 <Navbar />
