@@ -1,5 +1,6 @@
 <script>
-    import Searsh from "../lib/molecules/search.svelte"
+    import { Search } from '$lib/index.js';
+    export let data;
 </script>
 <!-- mobile en tablet hero section -->
 
@@ -35,7 +36,8 @@
     
 </section>
 
-<Searsh />
+<Search 
+cardData={data.uitleengeschiedenis1}/>
 
 <!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
 
