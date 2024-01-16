@@ -85,8 +85,8 @@ function submitted(event) {
         top:9.5%;
         width: 70vw;
         height: 50vh;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 0.875rem 1.75rem, rgba(0, 0, 0, 0.22) 0px 0.625rem 0.625rem;
+        border-radius: 0.625rem;
         padding: 1rem;
         overflow-y: auto;
     }
