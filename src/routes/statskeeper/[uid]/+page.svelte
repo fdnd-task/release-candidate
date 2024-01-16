@@ -365,11 +365,11 @@
 		background-color: #2974e4;
 	}
 
-	.blocks {
+	.turnovers {
 		background-color: #ed4444;
 	}
 
-	.turnovers {
+	.blocks {
 		background-color: #ffc738;
 	}
 
