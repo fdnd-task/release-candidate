@@ -28,10 +28,10 @@
 			'h2 h2'
 			'CartContainer CartContainer';
 		row-gap: 1rem;
+		transition: all 0.3s ease-in-out;
 		padding: 2rem 4%;
 		width: 100%;
 		height: 100%;
-		transition: all .3s ease-in-out;
 	}
 
 	h1 {
@@ -47,8 +47,8 @@
 	.CardContainer {
 		grid-area: CartContainer;
 		margin: -10px;
-		/* margin-right: 0; */
 		padding: 10px;
+		/* margin-right: 0; */
 		height: 100%;
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -99,7 +99,6 @@
 				'CartContainer CartContainer';
 			column-gap: 2rem;
 			padding: 4rem 4%;
-
 		}
 
 		.NewTeams {
