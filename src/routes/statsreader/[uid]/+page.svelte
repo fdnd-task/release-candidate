@@ -36,7 +36,6 @@
 			<div class="statistics__content">
 				<section class="status">
 					<h3>Match status</h3>
-
 					<p>LIVE</p>
 					<p>Mixed | 2 | Arena | Finale</p>
 				</section>
@@ -64,7 +63,6 @@
 								<p class="jersey-number">{stat.jersey_number}</p>
 								<p>{stat.name}</p>
 								<p>{stat.time}</p>
-
 								<p>8 - 3</p>
 							</li>
 						{/each}
@@ -166,7 +164,6 @@
 	.jersey-number,
 	[class^='statistic-'] {
 		--size: 2.167em;
-
 		display: inline-block;
 		vertical-align: middle;
 		border: 1px solid black;
