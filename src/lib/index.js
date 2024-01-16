@@ -7,6 +7,7 @@
 // Hier export je alle molecules ------------------------------------------------------------------------------------------------------------
 export { default as Search } from './molecules/search.svelte';
 export { default as Card } from './molecules/card.svelte';
+export { default as Table } from './molecules/table.svelte';
 
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
