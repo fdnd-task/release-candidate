@@ -117,28 +117,28 @@
 		<ul class="player-list">
 			{#if activeTeam === match.team_a.name}
 				{#each match.team_a.players as player}
-					<button class="player" class:selected-player={activePlayer === player.firstname} on:click={()=> selectPlayer(player.firstname)}>
+					<button class="player" class:selected-player={activePlayer === player.id} on:click={()=> selectPlayer(player.id)}>
 						<span class="jersey-number">{player.jersey_number}</span>
 						<span class="player-name">{player.firstname} {player.lastname}</span>
 						<div class="stats">
-							<span class="statkeeper-stat goals">{playerStats[player.firstname]?.points || ''}</span>
-							<span class="statkeeper-stat assists">{playerStats[player.firstname]?.assists || ''}</span>
-							<span class="statkeeper-stat turnovers">{playerStats[player.firstname]?.turnovers || ''}</span>
-							<span class="statkeeper-stat blocks">{playerStats[player.firstname]?.blocks || ''}</span>
+							<span class="statkeeper-stat goals">{playerStats[player.id]?.points || ''}</span>
+							<span class="statkeeper-stat assists">{playerStats[player.id]?.assists || ''}</span>
+							<span class="statkeeper-stat turnovers">{playerStats[player.id]?.turnovers || ''}</span>
+							<span class="statkeeper-stat blocks">{playerStats[player.id]?.blocks || ''}</span>
 						</div>
 					</button>
 				{/each}
 			{/if}
 			{#if activeTeam === match.team_b.name}
 				{#each match.team_b.players as player}
-					<button class="player" class:selected-player={activePlayer === player.firstname} on:click={()=> selectPlayer(player.firstname)}>
+					<button class="player" class:selected-player={activePlayer === player.id} on:click={()=> selectPlayer(player.id)}>
 						<span class="jersey-number">{player.jersey_number}</span>
 						<span class="player-name">{player.firstname} {player.lastname}</span>
 						<div class="stats">
-							<span class="statkeeper-stat goals">{playerStats[player.firstname]?.points || ''}</span>
-							<span class="statkeeper-stat assists">{playerStats[player.firstname]?.assists || ''}</span>
-							<span class="statkeeper-stat turnovers">{playerStats[player.firstname]?.turnovers || ''}</span>
-							<span class="statkeeper-stat blocks">{playerStats[player.firstname]?.blocks || ''}</span>
+							<span class="statkeeper-stat goals">{playerStats[player.id]?.points || ''}</span>
+							<span class="statkeeper-stat assists">{playerStats[player.id]?.assists || ''}</span>
+							<span class="statkeeper-stat turnovers">{playerStats[player.id]?.turnovers || ''}</span>
+							<span class="statkeeper-stat blocks">{playerStats[player.id]?.blocks || ''}</span>
 						</div>
 					</button>
 				{/each}
