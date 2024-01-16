@@ -1,5 +1,8 @@
 <script>
     import { Card } from "$lib/index.js"
+    import { onMount } from 'svelte';
+
+    
     export let cardData;
     let value = '';
     let error = '';
@@ -33,15 +36,15 @@ function submitted(event) {
 
 </script>
 <section>
-
-  <button on:click={openDialog}>Zoeken</button>
+  <div on:click={openDialog} class="button">
+    <form action="" on:submit={submitted}>
+      <input type="text" placeholder="Search.." name="search" bind:value >
+      <button type="submit">Search</button>
+   </form> 
+  </div>
   {#if showDialog}
         <div class="model">
-            <form action="" on:submit={submitted}>
-                <input type="text" placeholder="Search.." name="search" bind:value >
-                <button type="submit">Search</button>
-                <p>You are searching: <span>{value}</span></p>
-             </form> 
+                <p>You are searching: <span>{value}</span></p> 
             {#if error}
                 <h2>{error}</h2>
                 {:else}
@@ -52,22 +55,22 @@ function submitted(event) {
                         <p>{card.title}</p>
                     </li>
               {/each}
+              <button>Toon meer</button>
             </ul>
             {/if}
-        </div>
-     
-
-   <button on:click={closeDialog}>Sluiten</button>
+            <button on:click={closeDialog} class="close-button">Sluiten</button>
+            
+        </div>   
 {/if}
 
 </section>
 
 <style>
-    button{
+    .button{
         all: unset;
         position: fixed;
-        right: 2%;
-        top: 80%;
+        left: 25%;
+        top: 0;
         padding: 2rem;
         background-color: var(--primary-accent-color);
         color: var(--primary-light-color);
@@ -78,30 +81,32 @@ function submitted(event) {
     .model{
         background-color: var(--primary-background-color);
         position: fixed;
-        right: 2%;
-        top:50%;
+        left: 25%;
+        top:9.5%;
         width: 70vw;
         height: 50vh;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         border-radius: 10px;
-        padding: 2px;
+        padding: 1rem;
         overflow-y: auto;
     }
     form{
     text-align: center;
     }
 
-    .model input{
-        width: 50vw;
-        padding: 1rem .5rem;
-        margin: .5rem 0;
-    
+    input{
+        padding: 1rem .5rem; 
     }
-    .model button{
+    button{
         all: unset;
         padding: 1rem .5rem;
        background-color: var(--primary-accent-color);
        color: var(--primary-light-color);
+    }
+    .close-button{
+      position: absolute;
+      right: 3%;
+      bottom: 3%;
     }
     ul{
         padding: 1.5rem ;
