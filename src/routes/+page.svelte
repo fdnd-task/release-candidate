@@ -1,6 +1,6 @@
 <script>
 	import {
-		MainHead,
+		MainHero,
 		MainAbout,
 		PlayerCarrousel,
 		MainStats,
@@ -13,7 +13,7 @@
 
 <svelte:head><title>INK - Legends</title></svelte:head>
 
-<MainHead />
+<MainHero />
 <MainAbout {data} />
 <PlayerCarrousel {data} />
 <MainStats {data} />
