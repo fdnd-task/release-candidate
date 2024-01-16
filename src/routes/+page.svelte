@@ -40,7 +40,7 @@
 </section>
 
 <Search 
-cardData={data.uitleengeschiedenis1}/>
+cardData={data.hygraphData.uitleengeschiedenis1}/>
 
 <!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
 
