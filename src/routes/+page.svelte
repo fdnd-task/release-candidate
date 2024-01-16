@@ -1,6 +1,9 @@
 <script>
     import { Search } from '$lib/index.js';
     export let data;
+
+
+    console.log(JSON.stringify(data, null, 2));
 </script>
 <!-- mobile en tablet hero section -->
 
