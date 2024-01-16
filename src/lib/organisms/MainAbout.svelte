@@ -5,12 +5,12 @@
 </script>
 
 {#each data.homepages as homepage}
-	<section class="intro-about">
+	<section  id="intro-about">
 		<div class="intro">
 			<p class="intro-text">
 				{homepage.mainIntroAboutUs.introTextAbout}
 			</p>
-			<BtnSecondary href="{base}/about" title="About Us " class="btn-About"></BtnSecondary>
+			<BtnSecondary href="{base}/about" title="About Us"></BtnSecondary>
 		</div>
 	</section>
 {/each}
