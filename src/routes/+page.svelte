@@ -1,12 +1,13 @@
 <script>
     // Hier import ik de components die nodig zijn in deze pagina
     import { Card,  LinkButton, Logo, Search } from '$lib/index.js'
-	import { hygraph } from '$lib/utils/hygraph';
+	import { slide } from 'svelte/transition';
     // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
     export let data;
 
 
-    console.log(JSON.stringify(data.searchData, null, 2));
+    // console.log(JSON.stringify(data.apiBooks, null, 2));
+    console.log(JSON.stringify(data.apiEBooks.results[0], null, 2))
 </script>
 <!-- mobile en tablet hero section -->
 
@@ -22,6 +23,14 @@
     <section class="hero-image">
         <img src="{Logo}" alt="oba logo" width="100%">
     </section>
+
+    {#each data.apiBooks.results as book}
+        <Card 
+            bookAuthor={book.authors}
+            bookTitle={book.titles}
+            bookUrl={book.coverimages}
+        />
+    {/each}
 
 </section>
 
@@ -56,11 +65,13 @@ cardData={data.hygraphData.uitleengeschiedenis1}/>
 
     <section class="readinglist-carousel">
         <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
-        <Card 
-            bookAuthor={data.hygraphData.uitleengeschiedenis1[0].author}
-            bookTitle={data.hygraphData.uitleengeschiedenis1[0].title}
-            bookUrl={data.hygraphData.uitleengeschiedenis1[0].image?.url}
-        />
+        {#each data.apiBooks.results.slice(0, 5) as book}
+            <Card 
+                bookAuthor={book.authors}
+                bookTitle={book.titles}
+                bookUrl={book.coverimages}
+            />
+        {/each}
     </section>
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
     
@@ -76,11 +87,13 @@ cardData={data.hygraphData.uitleengeschiedenis1}/>
 
     <section class="readinglist-carousel">
         <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
-        <Card 
-            bookAuthor={data.hygraphData.uitleengeschiedenis1[1].author}
-            bookTitle={data.hygraphData.uitleengeschiedenis1[1].title}
-            bookUrl={data.hygraphData.uitleengeschiedenis1[1].image?.url}
-        />
+        {#each data.apiEBooks.results.slice(0, 5) as book}
+            <Card 
+                bookAuthor={book.authors}
+                bookTitle={book.titles}
+                bookUrl={book.coverimages}
+            />
+        {/each}
     </section>
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
 
@@ -96,13 +109,14 @@ cardData={data.hygraphData.uitleengeschiedenis1}/>
 
     <section class="readinglist-carousel">
         <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
-        <Card 
-            bookAuthor={data.hygraphData.uitleengeschiedenis1[2].author}
-            bookTitle={data.hygraphData.uitleengeschiedenis1[2].title}
-            bookUrl={data.hygraphData.uitleengeschiedenis1[2].image.url}
-        />
+        {#each data.apiAudioBooks.results.slice(0, 5) as book}
+            <Card 
+                bookAuthor={book.authors}
+                bookTitle={book.titles}
+                bookUrl={book.coverimages}
+            />
+        {/each}
     </section>
-    <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
 </section>
 
 
@@ -180,7 +194,7 @@ span {
 }
 
 .hero-section-large {
-    display: none;
+    /* display: none; */
 }
 
 .hero-text {
@@ -275,11 +289,6 @@ span {
             / 1fr 1fr;
             gap: 30px;
 
-        }
-
-        .extraPadding {
-            max-width: 100%;
-            padding: 0 2rem;
         }
 
         .hero-section-large img {
