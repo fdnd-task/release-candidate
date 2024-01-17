@@ -11,7 +11,7 @@
 		<h1>Commentator Dashboard</h1>
 	</header>
 
-	<div class="page__content">
+	<div class="page__content fluid-type">
 		<section class="team">
 			<header class="team__header">
 				<h2>
@@ -36,6 +36,7 @@
 			<div class="statistics__content">
 				<section class="status">
 					<h3>Match status</h3>
+
 					<p>LIVE</p>
 					<p>Mixed | 2 | Arena | Finale</p>
 				</section>
@@ -63,6 +64,7 @@
 								<p class="jersey-number">{stat.jersey_number}</p>
 								<p>{stat.name}</p>
 								<p>{stat.time}</p>
+
 								<p>8 - 3</p>
 							</li>
 						{/each}
@@ -164,6 +166,7 @@
 	.jersey-number,
 	[class^='statistic-'] {
 		--size: 2.167em;
+
 		display: inline-block;
 		vertical-align: middle;
 		border: 1px solid black;
@@ -319,4 +322,43 @@
 	.timeline-list__item--b p:nth-of-type(3) {
 		grid-area: e;
 	}
+
+
+
+/* определения */
+:root {
+  --fz-min: 12;
+  --fz-max: 16;
+}
+
+* {
+  --fz-min-px: calc(var(--fz-min) * 1px); /* font-size-minimum */
+  --fz-max-px: calc(var(--fz-max) * 1px); /* font-size-maximum */
+  --fz-diff: calc(var(--fz-max) - var(--fz-min)); /* font-size-difference */
+  font-size: clamp(
+    var(--fz-min-px),
+    calc(var(--fz-min-px) + var(--fz-diff) * ((100vw - 320px) / (1280 - 320))),
+    var(--fz-max-px)
+  );
+}
+/* .container {
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+} */
+/* а теперь юзаем  */
+
+h1 {
+  --fz-min: 28;
+  --fz-max: 40;
+  line-height: 1.2;
+}
+
+main {
+  --fz-min: 6;
+  --fz-max: 14;
+  line-height: 1.614;
+}
+
+
 </style>
