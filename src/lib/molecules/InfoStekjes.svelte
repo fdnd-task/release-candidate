@@ -28,8 +28,8 @@
     gap: var(--padding);
     background-color: var(--background-color-light);
     border-radius: var(--bradius);
-    width: 24.2%;
-    height: 70vh;
+    width: 25%;
+    height: 60vh;
     padding: var(--padding);
     overflow: hidden;
     margin-top: 1rem;
@@ -67,4 +67,10 @@
       width: 100%;
     }
   }
+
+  /* @media (min-width: 820px) {
+    .info-Stekjes {
+      width: 40%;
+    }
+  } */
 </style>
