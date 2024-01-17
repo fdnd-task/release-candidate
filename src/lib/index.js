@@ -6,8 +6,8 @@ export { default as LinkButton } from './atoms/linkButton.svelte'
 // Hier export je alle molecules ------------------------------------------------------------------------------------------------------------
 // Hier export je alle molecules ------------------------------------------------------------------------------------------------------------
 // Hier export je alle molecules ------------------------------------------------------------------------------------------------------------
-export { default as Card } from './molecules/card.svelte'
-
+export { default as Search } from './molecules/search.svelte';
+export { default as Card } from './molecules/card.svelte';
 
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------
 // Hier export je alle organisms ------------------------------------------------------------------------------------------------------------

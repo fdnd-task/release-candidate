@@ -1,8 +1,12 @@
 <script>
     // Hier import ik de components die nodig zijn in deze pagina
-    import { Card,  LinkButton, Logo } from '$lib/index.js'
+    import { Card,  LinkButton, Logo, Search } from '$lib/index.js'
+	import { hygraph } from '$lib/utils/hygraph';
     // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
     export let data;
+
+
+    console.log(JSON.stringify(data.searchData, null, 2));
 </script>
 <!-- mobile en tablet hero section -->
 
@@ -37,6 +41,8 @@
     
 </section>
 
+<Search 
+cardData={data.hygraphData.uitleengeschiedenis1}/>
 
 <!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
 
@@ -51,9 +57,9 @@
     <section class="readinglist-carousel">
         <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
         <Card 
-            bookAuthor={data.uitleengeschiedenis1[0].author}
-            bookTitle={data.uitleengeschiedenis1[0].title}
-            bookUrl={data.uitleengeschiedenis1[0].image?.url}
+            bookAuthor={data.hygraphData.uitleengeschiedenis1[0].author}
+            bookTitle={data.hygraphData.uitleengeschiedenis1[0].title}
+            bookUrl={data.hygraphData.uitleengeschiedenis1[0].image?.url}
         />
     </section>
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
@@ -71,9 +77,9 @@
     <section class="readinglist-carousel">
         <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
         <Card 
-            bookAuthor={data.uitleengeschiedenis1[1].author}
-            bookTitle={data.uitleengeschiedenis1[1].title}
-            bookUrl={data.uitleengeschiedenis1[1].image?.url}
+            bookAuthor={data.hygraphData.uitleengeschiedenis1[1].author}
+            bookTitle={data.hygraphData.uitleengeschiedenis1[1].title}
+            bookUrl={data.hygraphData.uitleengeschiedenis1[1].image?.url}
         />
     </section>
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
@@ -91,9 +97,9 @@
     <section class="readinglist-carousel">
         <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
         <Card 
-            bookAuthor={data.uitleengeschiedenis1[2].author}
-            bookTitle={data.uitleengeschiedenis1[2].title}
-            bookUrl={data.uitleengeschiedenis1[2].image.url}
+            bookAuthor={data.hygraphData.uitleengeschiedenis1[2].author}
+            bookTitle={data.hygraphData.uitleengeschiedenis1[2].title}
+            bookUrl={data.hygraphData.uitleengeschiedenis1[2].image.url}
         />
     </section>
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
@@ -122,6 +128,8 @@
 
 
 </section>
+
+
 
 <style>
 
