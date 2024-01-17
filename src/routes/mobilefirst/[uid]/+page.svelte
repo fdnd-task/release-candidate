@@ -7,6 +7,7 @@
 	const { match, statistics } = data;
 
     const isActiveTab = (tab) => {
+        console.log($page.url.hash === tab || $page.url.hash == '')
         return $page.url.hash === tab || $page.url.hash == '';
     }
 
@@ -19,23 +20,7 @@
         </header>
     
         <div class="page__content">
-            {#if isActiveTab("#info") }
-            <section class="team">
-                <header class="team__header">
-                    <h2>
-                        <img alt="" height="32" width="32" />
-                        <span>{match.team_a.name}</span>
-                    </h2>
-    
-                    <p>{match.team_a.country.name} | City</p>
-                </header>
-    
-                <div class="team__content">
-                    <!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
-                    <PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
-                </div>
-            </section>
-            {/if}
+            
     
             <section class="statistics">
                 <header class="statistics__header">
@@ -95,6 +80,24 @@
 
                 </div>
             </section>
+
+            {#if isActiveTab("#info") }
+            <section class="team">
+                <header class="team__header">
+                    <h2>
+                        <img alt="" height="32" width="32" />
+                        <span>{match.team_a.name}</span>
+                    </h2>
+    
+                    <p>{match.team_a.country.name} | City</p>
+                </header>
+    
+                <div class="team__content">
+                    <!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
+                    <PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
+                </div>
+            </section>
+            {/if}
             
             {#if isActiveTab("#info") }
             <section class="team">
@@ -123,24 +126,6 @@
 		
 
 <style>
-	.view-switcher-list {
-		list-style: none;
-	}
-
-	.view-switcher-list li {
-		display: inline-block;
-	}
-	.view-switcher__radio {
-		visibility: hidden;
-	}
-
-	.view-switcher__radio:checked + label {
-		background-color: red;
-	}
-
-    .view-switcher__radio:not(:checked) + label:hover {
-        background-color: blue;
-    }
 
 	main {
 		font-size: 12px;
@@ -167,8 +152,9 @@
 	}
 
 	.page__content {
+        --grid-columns: 1;
 		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
 		flex: 1;
 		gap: 1em;
 		padding: 1rem;
@@ -370,4 +356,10 @@
 	.timeline-list__item--b p:nth-of-type(3) {
 		grid-area: e;
 	}
+
+    @media only screen and (min-width: 48rem){
+        .page__content {
+            --grid-columns: 3;
+        }
+    }
 </style>
