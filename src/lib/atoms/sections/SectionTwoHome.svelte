@@ -73,7 +73,7 @@
     img {
         width: 100%;
         padding: var(--padding);
-        border-radius: 40px;
+        border-radius: 60px;
     }
 
     /* MEDIA TABLET*/
