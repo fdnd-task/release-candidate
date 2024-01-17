@@ -1,33 +1,36 @@
 <script>
 	import Form from '$lib/organisms/NewPlayerForm.svelte';
 	import Button from '$lib/atoms/button.svelte';
-	import InputRequired from '$lib/atoms/input-required.svelte';
-	import TeamCard from '$lib/molecules/TeamCard.svelte';
+
+	import WarningButton from '$lib/atoms/WarningButton.svelte';
 </script>
 
 <main>
 	<h1>New Player</h1>
 
-	<h2 class="sub-header-left">Add player content</h2>
+	<h2 class="sub-header-left">Update player content</h2>
 
 	<section>
 		<Form FormID="FormID" Method="get" Action="/players" />
 	</section>
 
-	<footer><Button ButtonType="submit" FormID="FormID" ButtonText="save" /></footer>
+	<footer>
+		<Button ButtonType="submit" FormID="FormID" ButtonText="save" />
+		<WarningButton ButtonType="Button" FormID="unset" ButtonText="Delete" />
+	</footer>
 </main>
 
 <style>
 	main {
 		display: grid;
 		grid-template-rows: auto auto 1fr auto;
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 
 		grid-template-areas:
-			'h1'
-			'h2'
-			'form'
-			'footer';
+			'h1 h1'
+			'h2 h2'
+			'form .'
+			'footer footer';
 		column-gap: 2rem;
 		row-gap: 1rem;
 		padding: 4rem 4%;
@@ -74,16 +77,4 @@
 			background-color: #a7a7a7;
 		}
 	}
-
-	@media only screen and (min-width: 850px) {
-			main {
-				grid-template-columns: repeat(2, minmax(0, 1fr));
-				grid-template-areas:
-					'h1 h1'
-					'h2 h2'
-					'form .'
-					'footer footer';
-
-			}
-		}
 </style>
