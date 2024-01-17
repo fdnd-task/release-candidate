@@ -1,6 +1,5 @@
 <script>
     import ContactInfo from '$lib/atoms/sections/NewContactInfo.svelte';
-    import ContactInfo from '$lib/atoms/ContactInfo.svelte';
 </script>
 
 <section>
