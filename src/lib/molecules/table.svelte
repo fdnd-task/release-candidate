@@ -8,7 +8,7 @@
             {#each Object.values(tableData) as row}
                 <tr>
                     {#if 'image' in row}
-                        <td><img src={row.image.url} width="50px" alt="afbeelding van {row.title}"></td>
+                        <td><img src={row.image.url} width="50px" alt="afbeelding van {row.title}" loading="lazy"></td>
                     {/if}
                     {#each Object.values(row) as cell}
                         {#if typeof cell !== 'object' || !('url' in cell)}
