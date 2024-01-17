@@ -3,7 +3,7 @@
     export let data;
 
 
-    console.log(JSON.stringify(data, null, 2));
+    console.log(JSON.stringify(data.searchData, null, 2));
 </script>
 <!-- mobile en tablet hero section -->
 
