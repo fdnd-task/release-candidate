@@ -71,10 +71,8 @@
     }
 
     img {
-        width: 19rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        margin-left: 2rem;
+        width: 100%;
+        padding: var(--padding);
         border-radius: 40px;
     }
 
