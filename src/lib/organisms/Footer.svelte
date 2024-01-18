@@ -1,6 +1,7 @@
 
 <script>
 import { base } from '$app/paths';
+import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
 	
 	
 </script>
@@ -138,7 +139,14 @@ import { base } from '$app/paths';
             </svg>
         </li>
     </ul>
-</div>
+
+	</div>
+
+	<div class="button"> 
+
+		<BtnPrimary href="{base}/becomeSponsor" title="Become sponsor"></BtnPrimary>
+
+	</div>
 
 </footer>
 
@@ -147,8 +155,42 @@ import { base } from '$app/paths';
 
 a {
 	font-family: var(--Apercu-Font);
+	color: white;
+	font-size: 1.25em;
+	
 }
 
+.social-icons {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 1em;
+	padding-right: 5em;
+}
 
+.navigatie {
+	list-style-type: none;
+	padding-left: 1em;
+	padding-top: 2em;
+}
 
+.informatie {
+	list-style-type: none;
+	padding-left: 1em;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.button {
+	padding-left: 1em;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.contact {
+	font-family: var(--Apercu-Font);
+	color: var(--Yellow-Primary) ;
+	font-size: 1.875em;
+	padding-bottom: 1em;
+}
 </style>
