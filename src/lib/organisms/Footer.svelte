@@ -16,6 +16,10 @@
 
 <style> 
 
+footer{
+	overflow: hidden;
+}
+
 @media only screen and (min-width: 768px) {
 
 	footer{

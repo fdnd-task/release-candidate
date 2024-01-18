@@ -15,13 +15,11 @@
         text-transform: uppercase ;
         font-size: 2em;
         display: inline-block;
-
-        padding: 1.2em 2em;
         text-decoration: none;
         text-align: center;
     }
 
-    a:hover {
+    a:hover, a:focus {
         color: var(--Yellow-Primary);
     }
 
