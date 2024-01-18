@@ -1,34 +1,41 @@
 <script>
-    export let data;
+  export let data;
 </script>
 
 <section class="image-section">
-	<img src={data.stekje.fotos[0].url} alt="foto van {data.naam}" />
-	<h1>{data.stekje.naam}</h1>
+  <img
+    src={data.stekje.fotos[0].url}
+    alt={`Foto van ${data.naam}`}
+    loading="lazy"
+  />
+  <h1>{data.stekje.naam}</h1>
 </section>
 
 <style>
-	section {
-		position: relative;
-		width: 100%;
-		background-color: var(--background-color);
-	}
+  /* Algemene styling voor de section*/
+  section {
+    position: relative;
+    width: 100%;
+    background-color: var(--background-color);
+  }
 
-	.image-section {
-		height: 90vh;
-	}
+  /* Specifieke opmaak voor het gedeelte met de img */
+  .image-section {
+    height: 90vh; /* 90% van de viewport hoogte */
+  }
 
-	img {
-		object-fit: cover;
-		width: 100%;
-		height: 100%;
-	}
+  img {
+    object-fit: cover; /* Behoudt de beeldverhouding en bedekt het gehele pagina */
+    width: 100%;
+    height: 100%;
+  }
 
-	h1 {
-		position: absolute;
-		bottom: 2rem;
-		left: 2rem;
-		color: white;
-		font-size: 5vw;
-	}
+  /* Naam van het stekje */
+  h1 {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+    font-size: 5vw;
+  }
 </style>
