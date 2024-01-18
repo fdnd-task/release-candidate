@@ -12,6 +12,7 @@
 </li>
 
 <style>
+	
 	li {
 		width: 100%;
 	}
@@ -34,4 +35,5 @@
 	a:is(:hover, :focus) {
 		background: rgba(0, 0, 0, 0.1);
 	}
+
 </style>
