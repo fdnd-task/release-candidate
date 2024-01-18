@@ -83,5 +83,7 @@
 	.player-name {
 		flex: 1;
 		white-space: nowrap;
+		color: var(--primary-font-color);
+		font-weight: 500;
 	}
 </style>
