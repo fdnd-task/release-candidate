@@ -26,7 +26,7 @@ button {
     bottom: 2rem;
     right: 2rem;
     border-radius: var(--bradius);
-    padding: 0.5rem 1.1rem;
+    padding: 0.3rem 1rem;
     margin-bottom: 2rem;
     font-size: 1rem;
     transition: 0.2s;
@@ -44,7 +44,7 @@ button:hover svg {
 
 svg {
     margin-left: 5px;
-    transform: translateY(4px) scale(0.9);
+    transform: translateY(4px) scale(0.8);
     fill: var(--text-color);
 }
 

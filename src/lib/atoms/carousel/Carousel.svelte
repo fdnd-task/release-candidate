@@ -78,7 +78,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 99.5%;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
         z-index: 1;
     }
@@ -87,7 +87,7 @@
         position: absolute;
         z-index: 1;
         width: 80%;
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: var(--text-color);
         display: flex;
         text-align: center;
@@ -95,7 +95,7 @@
         align-items: center;
         font-weight: 900;
         line-height: 1.1em;
-        /*font-size: rem;*/
+        margin-bottom: 2rem;
     }
 
     .carrousel img {
@@ -127,45 +127,23 @@
 
     /* MEDIA QUERY TABLET*/
     @media screen and (min-width: 48rem) {
-        .overlay {
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
-        }
 
         .carrousel h1 {
             width: 80%;
             height: 45%;
             font-size: 4rem;
+            margin-bottom: 5rem;
         }
     }
 
     /* MEDIA QUERY DESKTOP */
     @media screen and (min-width: 64rem) {
-        main {
-
-        }
-
-        .carrousel {
-            height: 100vh;
-            width: 100%;
-        }
-
-        .overlay {
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
-        }
-
-        .carrousel {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
 
         .carrousel h1 {
             width: 60%;
             height: 100%;
             font-size: 8vw;
-            line-height: 7rem;
+            line-height: 9rem;
         }
     }
 </style>

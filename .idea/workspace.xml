@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="518cebf7-94ac-4b26-91d7-0b6a63cd5390" name="Changes" comment="" />
+    <list default="true" id="518cebf7-94ac-4b26-91d7-0b6a63cd5390" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonDeKast.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonDeKast.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonGelijkSwappen.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonGelijkSwappen.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonLocation.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonLocation.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/carousel/Carousel.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/carousel/Carousel.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/sections/SectionFourHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/sections/SectionFourHome.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/sections/SectionOneHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/sections/SectionOneHome.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/sections/SectionThreeHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/sections/SectionThreeHome.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/atoms/sections/SectionTwoHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/sections/SectionTwoHome.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/molecules/forms/ContactForm.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/molecules/forms/ContactForm.svelte" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +27,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2b4xceQdNetRw6ozIc5DzXRGBCs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,7 +40,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "contact-formulier",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -45,6 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705488235158</updated>
       <workItem from="1705488237429" duration="354000" />
+      <workItem from="1705612074033" duration="2482000" />
     </task>
     <servers />
   </component>

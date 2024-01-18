@@ -98,14 +98,8 @@
         background-color: var(--text-color);
     }
 
-    @media screen and (max-width: 700px) {
+    @media (max-width: 768px) {
 
-        section {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            padding-right: 0;
-        }
     }
 
 

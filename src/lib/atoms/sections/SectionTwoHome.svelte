@@ -35,6 +35,7 @@
     h3 {
         color: var(--background-color);
         margin-bottom: 1rem;
+        font-size: 2rem;
     }
 
     p {
@@ -71,9 +72,11 @@
     }
 
     img {
-        width: 100%;
-        padding: var(--padding);
-        border-radius: 60px;
+        width: 75%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        border-radius: 40px;
     }
 
     /* MEDIA TABLET*/
@@ -81,6 +84,7 @@
 
         h3 {
             font-size: 3rem;
+            font-family: var(--main-font);
         }
 
         .svg-leaf {
@@ -107,10 +111,9 @@
         }
 
         img {
-            margin-top: 0rem;
             margin-bottom: 2rem;
             margin-left: 4rem;
-            width: 35rem;
+            width: 75%;
         }
     }
 
@@ -146,15 +149,15 @@
             margin-top: 3rem;
             padding-left: 4rem;
             width: 40rem;
-            height: 80vh;
+            height: 100vh;
 
         }
 
         img {
             margin-top: 7rem;
-            margin-left: 10rem;
-            width: 30rem;
-            height: 35rem;
+            margin-left: 5%;
+            width: 40%;
+
         }
     }
 </style>
