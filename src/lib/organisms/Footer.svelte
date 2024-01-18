@@ -54,7 +54,7 @@ import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
 	<div> 
 
 	<ul class="social-icons">
-        <li>
+        <li class="icon">
             <svg
                 width="20"
                 height="20"
@@ -68,7 +68,7 @@ import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
                 />
             </svg>
         </li>
-        <li>
+        <li class="icon">
             <svg
                 width="18"
                 height="18"
@@ -82,7 +82,7 @@ import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
                 />
             </svg>
         </li>
-        <li>
+        <li class="icon">
             <svg
                 width="18"
                 height="16"
@@ -96,7 +96,7 @@ import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
                 />
             </svg>
         </li>
-        <li>
+        <li class="icon">
             <svg
                 width="18"
                 height="14"
@@ -110,7 +110,7 @@ import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
                 />
             </svg>
         </li>
-        <li>
+        <li class="icon">
             <svg
                 width="18"
                 height="18"
@@ -124,7 +124,7 @@ import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
                 />
             </svg>
         </li>
-        <li>
+        <li class="icon">
             <svg
                 width="20"
                 height="18"
@@ -140,13 +140,15 @@ import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
         </li>
     </ul>
 
-	</div>
-
 	<div class="button"> 
 
 		<BtnPrimary href="{base}/becomeSponsor" title="Become sponsor"></BtnPrimary>
 
 	</div>
+
+	</div>
+
+	
 
 </footer>
 
@@ -192,5 +194,53 @@ a {
 	color: var(--Yellow-Primary) ;
 	font-size: 1.875em;
 	padding-bottom: 1em;
+}
+
+/* -----------ipad version------------ */
+
+@media (min-width: 40em) {
+
+.social-icons {
+	padding-right: 17em;
+}
+
+}
+
+@media (min-width: 48em) {
+
+	footer {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.social-icons {
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.icon {
+		padding-right: 1em;
+	}
+
+	.navigatie {
+	padding-top: 0;
+	padding-left: 5em;
+	}
+
+	.informatie {
+	padding: 0;
+	}
+
+	.button {
+	padding-top: 1em;
+	}	
+
+	.contact {
+	font-family: var(--Apercu-Font);
+	color: var(--Yellow-Primary) ;
+	font-size: 1.875em;
+	padding-top: 0;
+	}
+
 }
 </style>
