@@ -4,6 +4,8 @@
 
 	export let data;
 
+	
+
 	const { match, statistics } = data;
 
     const isActiveTab = (tab) => {
@@ -11,6 +13,12 @@
         return $page.url.hash === tab || $page.url.hash == '';
     }
 
+	//FUNCTION FOR SELECTING THE TEAM TO ADD POINTS TO
+	let activeTeam = match.team_a.name;
+
+	function selectTeam(team) {
+		activeTeam = team;
+	}
     </script>
 
     
@@ -82,6 +90,14 @@
             </section>
 
             {#if isActiveTab("#info") }
+
+			<section class="switch-team">
+				<h3>Match information</h3>
+				<button class="select-team-button" class:selected-team={activeTeam === match.team_a.name} on:click={()=> selectTeam(match.team_a.name)}>{match.team_a.name}</button>
+				<button class="select-team-button" class:selected-team={activeTeam === match.team_b.name} on:click={()=> selectTeam(match.team_b.name)}>{match.team_b.name}</button>
+			</section>
+
+			{#if activeTeam === match.team_a.name}
             <section class="team">
                 <header class="team__header">
                     <h2>
@@ -97,9 +113,10 @@
                     <PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
                 </div>
             </section>
-            {/if}
+
+			{/if}
             
-            {#if isActiveTab("#info") }
+			{#if activeTeam === match.team_b.name}
             <section class="team">
                 <header class="team__header">
                     <h2>
@@ -120,6 +137,7 @@
                     />
                 </div>
             </section>
+			{/if}
             {/if}
         </div>
     </main>
@@ -131,7 +149,7 @@
 		font-size: 12px;
 	}
 	.page {
-		height: 100vh;
+		height: 100dvh;
 		/* font-size: 0.75rem; */
 	}
 
@@ -161,11 +179,65 @@
 		height: 100%;
 	}
 
+	nav {
+		border: 1px solid white;
+		border-radius: 0.5rem;
+		background: white;
+		padding: 1em;
+	}
+	nav ul {
+		list-style: none;
+		display: flex;	
+		flex-direction: row;
+		gap: 2em;
+		
+	}
+
+	nav ul li a {
+		text-decoration: none;
+		color: #B1BBDD;
+	}
+
+	nav ul li a.active {
+		color: #444D7B;
+		font-weight: bold;
+	}
+
+	.switch-team {
+		border: 1px solid white;
+		border-radius: 0.5rem;
+		background: white;
+		padding: 1em;
+	}
+	
+	.switch-team h3 {
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 13px;
+		padding: 0.6em 0;
+	}
+
+	.switch-team .select-team-button {
+		border-radius: 25px;
+		font-weight: 700;
+		color: #444D7B;
+		border: #444D7B 1px solid;
+		background: white;
+		padding: 0.3em 1em;
+	}
+
+	.switch-team .select-team-button.selected-team {
+		color: white;
+		background: #444D7B;
+	}
+
 	.team {
 		display: flex;
 		flex-flow: column nowrap;
 		gap: 0.5em;
 	}
+
+	
 
 	.team__header {
 		margin-bottom: 0px;
@@ -174,6 +246,7 @@
 	.scoreboard,
 	.timeline,
 	.team__header {
+		display: none;
 		border: 1px solid white;
 		border-radius: 0.5rem;
 		background: white;
