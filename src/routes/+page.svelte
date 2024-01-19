@@ -4,7 +4,7 @@
     // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
     export let data;
 
-    console.log(JSON.stringify(data, null, 2));
+    console.log(JSON.stringify(data.searchData, null, 2));
 </script>
 <!-- mobile en tablet hero section -->
 
