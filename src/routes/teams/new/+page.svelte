@@ -8,12 +8,9 @@
 
 	<h2 class="sub-header-left">Add team content</h2>
 
-	<!-- <h2>Add player to team</h2> -->
-
 	<section>
 		<Form FormID="FormID" Method="get" Action="/teams" />
 	</section>
-
 	<footer><Button ButtonType="submit" FormID="FormID" ButtonText="Save" /></footer>
 </main>
 
@@ -21,7 +18,13 @@
 	main {
 		display: grid;
 		grid-template-rows: auto auto 1fr auto;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: 1fr;
+
+		grid-template-areas:
+			'h1'
+			'h2'
+			'form'
+			'footer';
 		column-gap: 2rem;
 		row-gap: 1rem;
 		padding: 4rem 4%;
@@ -30,20 +33,15 @@
 		height: 100svh;
 	}
 
-	h1,
-	h2,
-	footer {
-		grid-column: span 2;
-	}
-
 	h1 {
+		grid-area: h1;
 		font-size: 3rem;
 	}
 
 	h2 {
+		grid-area: h2;
 		font-size: 1.5rem;
 	}
-
 	section {
 		display: flex;
 		flex-direction: column;
@@ -60,6 +58,17 @@
 		padding: 0 6px 6px 6px;
 		padding-right: 1rem;
 		overflow-x: auto;
+		grid-area: form;
+		margin: -10px;
+		padding: 10px;
+		/* margin-right: 0; */
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	footer {
+		grid-area: footer;
 	}
 
 	@media (pointer: fine) {
@@ -67,20 +76,37 @@
 			padding-right: 1rem;
 		}
 
-		section::-webkit-scrollbar-track,
-		ul::-webkit-scrollbar-track {
+		section::-webkit-scrollbar-track {
+			margin: 10px 0;
 			border-radius: 10px;
 		}
 
-		section::-webkit-scrollbar,
-		ul::-webkit-scrollbar {
+		section::-webkit-scrollbar {
 			width: 12px;
 		}
 
-		section::-webkit-scrollbar-thumb,
-		ul::-webkit-scrollbar-thumb {
+		section::-webkit-scrollbar-thumb {
 			border-radius: 10px;
 			background-color: #a7a7a7;
 		}
 	}
+
+	@media only screen and (min-width: 850px) {
+		main {
+		display: grid;
+		grid-template-rows: auto auto 1fr auto;
+		grid-template-columns: repeat(2, 1fr);
+
+		grid-template-areas:
+			'h1 h1'
+			'h2 h2'
+			'form .'
+			'footer footer';
+		column-gap: 2rem;
+		row-gap: 1rem;
+		padding: 4rem 4%;
+		width: 100%;
+		height: 100%;
+	  }
+  }
 </style>

@@ -13,7 +13,6 @@
 <style>
 	svg {
 		--size: 2em;
-
 		width: var(--size);
 		height: var(--size);
 	}

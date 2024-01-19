@@ -1,4 +1,5 @@
 <script>
+	import { Fullscreen } from '$lib';
 	import PlayersList from '$lib/organisms/PlayersList.svelte';
 
 	export let data;
@@ -6,95 +7,95 @@
 	const { match, statistics } = data;
 </script>
 
-<main class="page">
-	<header class="page__header">
-		<h1>Commentator Dashboard</h1>
-	</header>
-
-	<div class="page__content">
-		<section class="team">
-			<header class="team__header">
-				<h2>
-					<img alt="" height="32" width="32" />
-					<span>{match.team_a.name}</span>
-				</h2>
-
-				<p>{match.team_a.country.name} | City</p>
-			</header>
-
-			<div class="team__content">
-				<!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
-				<PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
-			</div>
-		</section>
-
-		<section class="statistics">
-			<header class="statistics__header">
-				<h2>Statistics</h2>
-			</header>
-
-			<div class="statistics__content">
-				<section class="status">
-					<h3>Match status</h3>
-
-					<p>LIVE</p>
-					<p>Mixed | 2 | Arena | Finale</p>
-				</section>
-
-				<section class="scoreboard">
-					<h3>Scoreboard</h3>
-
-					<article>
-						<img alt="" height="64" width="64" />
-						<h4>{match.team_a.name}</h4>
-					</article>
-					<p>0 - 0</p>
-					<article>
-						<img alt="" height="64" width="64" />
-						<h4>{match.team_b.name}</h4>
-					</article>
-				</section>
-
-				<section class="timeline">
-					<h3>Timeline</h3>
-
-					<ul class="timeline-list">
-						{#each statistics as stat}
-							<li class="timeline-list__item--{stat.team}">
-								<p class="jersey-number">{stat.jersey_number}</p>
-								<p>{stat.name}</p>
-								<p>{stat.time}</p>
-
-								<p>8 - 3</p>
-							</li>
-						{/each}
-					</ul>
-				</section>
-			</div>
-		</section>
-
-		<section class="team">
-			<header class="team__header">
-				<h2>
-					<img alt="" height="32" width="32" />
-					<span>{match.team_b.name}</span>
-				</h2>
-
-				<p>{match.team_b.country.name} | City</p>
-			</header>
-
-			<div class="team__content">
-				<!-- <pre>{JSON.stringify(match.team_b, null, 2)}</pre> -->
-				<PlayersList
-					players={match.team_b.players}
-					match={match.id}
-					team={match.team_b.id}
-					reversed={true}
-				/>
-			</div>
-		</section>
-	</div>
-</main>
+<Fullscreen>
+	<main class="page">
+		<header class="page__header">
+			<h1>Commentator Dashboard</h1>
+		</header>
+	
+		<div class="page__content">
+			<section class="team">
+				<header class="team__header">
+					<h2>
+						<img alt="" height="32" width="32" />
+						<span>{match.team_a.name}</span>
+					</h2>
+	
+					<p>{match.team_a.country.name} | City</p>
+				</header>
+	
+				<div class="team__content">
+					<!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
+					<PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
+				</div>
+			</section>
+	
+			<section class="statistics">
+				<header class="statistics__header">
+					<h2>Statistics</h2>
+				</header>
+	
+				<div class="statistics__content">
+					<section class="status">
+						<h3>Match status</h3>
+						<p>LIVE</p>
+						<p>Mixed | 2 | Arena | Finale</p>
+					</section>
+	
+					<section class="scoreboard">
+						<h3>Scoreboard</h3>
+	
+						<article>
+							<img alt="" height="64" width="64" />
+							<h4>{match.team_a.name}</h4>
+						</article>
+						<p>0 - 0</p>
+						<article>
+							<img alt="" height="64" width="64" />
+							<h4>{match.team_b.name}</h4>
+						</article>
+					</section>
+	
+					<section class="timeline">
+						<h3>Timeline</h3>
+	
+						<ul class="timeline-list">
+							{#each statistics as stat}
+								<li class="timeline-list__item--{stat.team}">
+									<p class="jersey-number">{stat.jersey_number}</p>
+									<p>{stat.name}</p>
+									<p>{stat.time}</p>
+									<p>8 - 3</p>
+								</li>
+							{/each}
+						</ul>
+					</section>
+				</div>
+			</section>
+	
+			<section class="team">
+				<header class="team__header">
+					<h2>
+						<img alt="" height="32" width="32" />
+						<span>{match.team_b.name}</span>
+					</h2>
+	
+					<p>{match.team_b.country.name} | City</p>
+				</header>
+	
+				<div class="team__content">
+					<!-- <pre>{JSON.stringify(match.team_b, null, 2)}</pre> -->
+					<PlayersList
+						players={match.team_b.players}
+						match={match.id}
+						team={match.team_b.id}
+						reversed={true}
+					/>
+				</div>
+			</section>
+		</div>
+	</main>
+</Fullscreen>
 
 <style>
 	.page {
@@ -166,7 +167,6 @@
 	.jersey-number,
 	[class^='statistic-'] {
 		--size: 2.167em;
-
 		display: inline-block;
 		vertical-align: middle;
 		border: 1px solid black;

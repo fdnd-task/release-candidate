@@ -24,10 +24,10 @@
 		grid-template-columns: 1fr;
 
 		grid-template-areas:
-			'h1 h1'
-			'h2 h2'
-			'form .'
-			'footer footer';
+			'h1'
+			'h2'
+			'form'
+			'footer';
 		column-gap: 2rem;
 		row-gap: 1rem;
 		padding: 4rem 4%;
@@ -77,6 +77,7 @@
 	}
 
 	@media only screen and (min-width: 850px) {
+
 		main {
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-areas:

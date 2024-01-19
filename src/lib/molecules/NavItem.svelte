@@ -12,6 +12,7 @@
 </li>
 
 <style>
+	
 	li {
 		width: 100%;
 	}
@@ -30,8 +31,18 @@
 		width: 100%;
 		aspect-ratio: 1;
 	}
-
+	
 	a:is(:hover, :focus) {
 		background: rgba(0, 0, 0, 0.1);
 	}
+	
+	@media only screen and (max-width: 768px){
+		
+		a{
+			gap: 0;
+			padding: 0;
+			font-size: clamp(10px, 3vw, 16px ) ;
+		}
+	}
+
 </style>
