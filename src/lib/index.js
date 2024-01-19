@@ -2,4 +2,4 @@
 export { supabase } from './supabase'
 
 export { default as Fullscreen } from './atoms/Fullscreen/Fullscreen.svelte'
-export { default as Textarea } from './atoms/Textarea.svelte'
+export { default as Textarea } from './atoms/TextArea.svelte'
