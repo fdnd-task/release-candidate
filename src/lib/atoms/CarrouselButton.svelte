@@ -1,6 +1,13 @@
 
+        
+         <script>
+	
+	import CardCarrousel from "$lib/molecules/CardCarrousel.svelte";
+</script>
+        
+        
         <div class="btn-wrap">
-            <button class="news-prev-btn" onclick="prevBtn()" aria-label="Previous">
+            <button class="news-prev-btn" onClick="prevBtn()" aria-label="Previous">
                 <svg width="50" height="56" viewBox="0 0 50 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M49.8779 2.96158C48.6231 10.7315 47.8388 18.5687 46.5289 26.3357C45.6401 31.6034 45.1725 36.9414 44.4812 42.2443C44.0165 45.8088 43.6098 49.3879 42.9621 52.9202C42.3231 56.394 41.9484 56.5579 38.7883 55.2322C33.8883 53.1778 29.0377 51.0063 24.1464 48.9197C17.5734 46.1161 10.9859 43.3476 4.40129 40.5645C4.31415 40.5264 4.2183 40.503 4.12826 40.4679C1.3883 39.3714 0.0192805 37.3151 0.0212169 34.2988V23.4823H0.00379026C0.00379026 19.3911 -0.00782227 15.2998 0.00960504 11.2085C0.0183187 8.68587 0.285537 8.25568 2.6237 7.85182C9.08342 6.73389 15.5925 5.86762 22.0145 4.57117C25.9908 3.76638 30.002 3.20157 33.9783 2.42311C38.3323 1.56857 42.7036 0.801817 47.0866 0.114085C49.6803 -0.292702 50.3019 0.327715 49.8779 2.96158Z" fill="white"/>
                     <path d="M27.6667 20L29.5467 21.88L23.44 28L29.5467 34.12L27.6667 36L19.6667 28L27.6667 20Z" fill="#051A1A"/>
@@ -14,3 +21,45 @@
                     
             </button>
         </div>
+
+        <script>
+      // Zoek de carousel-sectie en alle carousel-items op
+const carouselSection = document.querySelector('.carrousel-section');
+const carouselItems = document.querySelectorAll('.carrousel-item');
+
+// Zoek de vorige en volgende knoppen op
+const prevButton = document.querySelector('.news-prev-btn');
+const nextButton = document.querySelector('.news-next-btn');
+
+// Huidige index van het zichtbare carousel-item
+let currentIndex = 0;
+
+// Voeg event listeners toe aan de knoppen
+prevButton.addEventListener('click', prevBtn);
+nextButton.addEventListener('click', nextBtn);
+
+// Functie voor het verplaatsen naar het vorige item in de carousel
+function prevBtn() {
+    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+    updateCarousel();
+}
+
+// Functie voor het verplaatsen naar het volgende item in de carousel
+function nextBtn() {
+    currentIndex = (currentIndex + 1) % carouselItems.length;
+    updateCarousel();
+}
+
+// Functie om de zichtbaarheid van carousel-items bij te werken
+function updateCarousel() {
+    carouselItems.forEach((item, index) => {
+        if (index === currentIndex) {
+            item.setAttribute('aria-hidden', 'false');
+        } else {
+            item.setAttribute('aria-hidden', 'true');
+        }
+    });
+}
+
+
+        </script>

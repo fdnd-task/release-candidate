@@ -20,5 +20,6 @@
 <MainStats {data} />
 <MainSponsor {data} />
 <MainStory {data} />
+<Carrousel />
 
 <!-- <p>PUBLIC_HYGRAPH_URL: {PUBLIC_HYGRAPH_URL}</p> -->

@@ -47,6 +47,7 @@
 
 h3 {
   font-family: "Kirang Haerang";
+  color: black;
 }
 
 
@@ -84,7 +85,7 @@ h3 {
   font-size: clamp(16px, 1.5vw, 24px);
   font-weight: 400;
   font-family: var(--paragraph-font);
-  color: var(--charcoal);
+
   padding: clamp(0.5rem, 1vw, 1vw);
 }
 
@@ -137,3 +138,12 @@ h3 {
   }
 }
 </style>
+
+<script>
+
+
+
+
+
+
+</script>
