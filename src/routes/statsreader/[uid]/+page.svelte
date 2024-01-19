@@ -63,7 +63,7 @@
 					</ul>
 				</nav>
 
-				{#if isActiveTab('#statistics')}
+				{#if isActiveTab('#statistics') }
 					<section id="statistics" class="timeline">
 						<h3>Timeline</h3>
 
@@ -470,7 +470,7 @@
 		}
 
 		.timeline {
-			display: none;
+			display: block;
 		}
 
         .team {
