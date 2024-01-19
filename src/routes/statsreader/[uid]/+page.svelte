@@ -1,20 +1,32 @@
 <script>
-	import { Fullscreen } from '$lib';
 	import PlayersList from '$lib/organisms/PlayersList.svelte';
+    import Fullscreen from '$lib/atoms/Fullscreen/Fullscreen.svelte';
+	import { page } from '$app/stores';
 
 	export let data;
 
 	const { match, statistics } = data;
+
+	const isActiveTab = (tab) => {
+		return $page.url.hash === tab || $page.url.hash == '';
+	};
+
+	//FUNCTION FOR SELECTING THE TEAM TO ADD POINTS TO
+	let activeTeam = match.team_a.name;
+
+	function selectTeam(team) {
+		activeTeam = team;
+	}
 </script>
 
-<Fullscreen>
+
+<Fullscreen> 
 <main class="page">
 	<header class="page__header">
 		<h1>Commentator Dashboard</h1>
 	</header>
 
-	<div class="page__content fluid-type">
-
+	<div class="page__content">
 		<section class="statistics">
 			<header class="statistics__header">
 				<h2>Statistics</h2>
@@ -27,7 +39,6 @@
 					<p>LIVE</p>
 					<p>Mixed | 2 | Arena | Finale</p>
 				</section>
-
 				<section class="scoreboard">
 					<h3>Scoreboard</h3>
 
@@ -35,74 +46,107 @@
 						<img alt="" height="64" width="64" />
 						<h4>{match.team_a.name}</h4>
 					</article>
-					<p>0 - 0</p>
+					<p>0 <span class="dash">-</span> 0</p>
 					<article>
 						<img alt="" height="64" width="64" />
 						<h4>{match.team_b.name}</h4>
 					</article>
 				</section>
 
-				<section class="timeline">
-					<h3>Timeline</h3>
-
-					<ul class="timeline-list">
-						{#each statistics as stat}
-							<li class="timeline-list__item--{stat.team}">
-								<p class="jersey-number">{stat.jersey_number}</p>
-								<p>{stat.name}</p>
-								<p>{stat.time}</p>
-
-								<p>8 - 3</p>
-							</li>
-						{/each}
+				<nav>
+					<ul>
+						<li><a href="#info" class:active={$page.url.hash === '#info'}>Info</a></li>
+						<li><a href="#resume" class:active={$page.url.hash === '#resume'}>Resume</a></li>
+						<li>
+							<a href="#statistics" class:active={$page.url.hash === '#statistics'}>Statistics</a>
+						</li>
 					</ul>
-				</section>
+				</nav>
+
+				{#if isActiveTab('#statistics')}
+					<section id="statistics" class="timeline">
+						<h3>Timeline</h3>
+
+						<ul class="timeline-list">
+							<p>test</p>
+							{#each statistics as stat}
+								<li class="timeline-list__item--{stat.team}">
+									<p class="jersey-number">{stat.jersey_number}</p>
+									<p>{stat.name}</p>
+									<p>{stat.time}</p>
+
+									<p>8 - 3</p>
+								</li>
+							{/each}
+						</ul>
+					</section>
+				{/if}
 			</div>
 		</section>
 
-		<section class="team">
-			<header class="team__header">
-				<h2>
-					<img alt="" height="32" width="32" />
-					<span>{match.team_a.name}</span>
-				</h2>
+		{#if isActiveTab('#info')}
+			<section class="switch-team">
+				<h3>Match information</h3>
+				<button
+					class="select-team-button"
+					class:selected-team={activeTeam === match.team_a.name}
+					on:click={() => selectTeam(match.team_a.name)}>{match.team_a.name}</button
+				>
+				<button
+					class="select-team-button"
+					class:selected-team={activeTeam === match.team_b.name}
+					on:click={() => selectTeam(match.team_b.name)}>{match.team_b.name}</button
+				>
+			</section>
 
-				<p>{match.team_a.country.name} | City</p>
-			</header>
+            <section class="team" data-selected="{activeTeam === match.team_a.name}">
+                <header class="team__header">
+                    <h2>
+                        <img alt="" height="32" width="32" />
+                        <span>{match.team_a.name}</span>
+                    </h2>
 
-			<div class="team__content">
-				<!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
-				<PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
-			</div>
-		</section>
+                    <p>{match.team_a.country.name} | City</p>
+                </header>
 
-		<section class="team">
-			<header class="team__header">
-				<h2>
-					<img alt="" height="32" width="32" />
-					<span>{match.team_b.name}</span>
-				</h2>
+                <div class="team__content">
+                    <!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
+                    <PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
+                </div>
+            </section>
 
-				<p>{match.team_b.country.name} | City</p>
-			</header>
+            <section class="team" data-selected="{activeTeam === match.team_b.name}">
+                <header class="team__header">
+                    <h2>
+                        <img alt="" height="32" width="32" />
+                        <span>{match.team_b.name}</span>
+                    </h2>
 
-			<div class="team__content">
-				<!-- <pre>{JSON.stringify(match.team_b, null, 2)}</pre> -->
-				<PlayersList
-					players={match.team_b.players}
-					match={match.id}
-					team={match.team_b.id}
-					reversed={true}
-				/>
-			</div>
-		</section>
+                    <p>{match.team_b.country.name} | City</p>
+                </header>
+
+                <div class="team__content">
+                    <!-- <pre>{JSON.stringify(match.team_b, null, 2)}</pre> -->
+                    <PlayersList
+                        players={match.team_b.players}
+                        match={match.id}
+                        team={match.team_b.id}
+                        reversed={true}
+                    />
+                </div>
+            </section>
+		{/if}
 	</div>
 </main>
-  </Fullscreen>
+
+</Fullscreen>
 
 <style>
+	main {
+		font-size: 12px;
+	}
 	.page {
-		height: 100vh;
+		height: 100dvh;
 		/* font-size: 0.75rem; */
 	}
 
@@ -111,6 +155,7 @@
 	.statistics__header,
 	.status h3,
 	.timeline h3,
+	.view-switcher h3,
 	.scoreboard h3 {
 		clip: rect(0 0 0 0);
 		position: absolute;
@@ -122,9 +167,9 @@
 	}
 
 	.page__content {
-		--columns: 1;
+		--grid-columns: 1;
 		display: grid;
-		grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+		grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
 		grid-template-areas: 
 			'statistics'
 			'team_a'
@@ -134,28 +179,83 @@
 		padding: 1rem;
 		height: 100%;
 	}
-
-	.team {
-		display: flex;
-		flex-flow: column nowrap;
-		gap: 0.5em;
-	}
-
-	.team:first-of-type {
+    .team:first-of-type {
 		grid-area: team_a;
 	}
-
 	.team:last-of-type {
 		grid-area: team_b;
 	}
 
+	nav {
+		border: 1px solid white;
+		border-radius: 0.5rem;
+		background: white;
+		padding: 1em;
+	}
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		gap: 2em;
+		list-style: none;
+	}
+
+	nav ul li a {
+		color: #b1bbdd;
+		text-decoration: none;
+	}
+
+	nav ul li a.active {
+		color: #444d7b;
+		font-weight: bold;
+	}
+
+	.switch-team {
+		border: 1px solid white;
+		border-radius: 0.5rem;
+		background: white;
+		padding: 1em;
+	}
+
+	.switch-team h3 {
+		padding: 0.6em 0;
+		font-weight: 700;
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+
+	.switch-team .select-team-button {
+		border: #444d7b 1px solid;
+		border-radius: 25px;
+		background: white;
+		padding: 0.3em 1em;
+		color: #444d7b;
+		font-weight: 700;
+	}
+
+	.switch-team .select-team-button.selected-team {
+		background: #444d7b;
+		color: white;
+	}
+
+	.team {
+		display: none;
+		flex-flow: column nowrap;
+		gap: 0.5em;
+	}
+
+    .team[data-selected="true"] {
+        display: flex;
+    }
+
 	.team__header {
+		grid-area: team_header;
 		margin-bottom: 0px;
 	}
 
 	.scoreboard,
 	.timeline,
 	.team__header {
+		display: flex;
 		border: 1px solid white;
 		border-radius: 0.5rem;
 		background: white;
@@ -183,7 +283,6 @@
 	.jersey-number,
 	[class^='statistic-'] {
 		--size: 2.167em;
-
 		display: inline-block;
 		vertical-align: middle;
 		border: 1px solid black;
@@ -226,7 +325,7 @@
 	.statistics {
 		display: flex;
 		flex-flow: column nowrap;
-		grid-area: statistics;
+        grid-area: statistics;
 	}
 
 	.statistics__content {
@@ -234,6 +333,11 @@
 		flex: 1;
 		flex-flow: column nowrap;
 		gap: 1em;
+	}
+
+	.statistics__content p {
+		color: var(--primary-font-color);
+		font-family: var(--secondary-font-family);
 	}
 
 	.status {
@@ -248,13 +352,13 @@
 		border-radius: 0.5rem;
 		background: #ef1111;
 		padding: 1em;
-		padding-left: 3em;
+		padding-left: 2em;
 		color: white;
 	}
 	.status p:nth-of-type(1)::after {
 		--size: 0.5em;
 		position: absolute;
-		top: 1em;
+		top: 1.4em;
 		left: 1em;
 		border-radius: 50%;
 		background: white;
@@ -284,6 +388,20 @@
 
 	.scoreboard p {
 		margin-block: auto;
+		color: var(--primary-font-color);
+		font-weight: 800;
+		font-size: 36px;
+		font-family: var(--primary-font-family);
+	}
+
+	.scoreboard h4 {
+		color: var(--primary-font-color);
+		font-family: var(--primary-font-family);
+		text-transform: uppercase;
+	}
+
+	.scoreboard .dash {
+		color: #b1bbdd;
 	}
 
 	.timeline {
@@ -341,49 +459,30 @@
 		grid-area: e;
 	}
 
-	@media (min-width: 768px) {
+	@media only screen and (min-width: 48rem) {
 		.page__content {
-			--columns: 3;
-			grid-template-areas: 'team_a statistics team_b';
+			--grid-columns: 3;
+            grid-template-areas: 'team_a statistics team_b';
+		}
+
+		nav {
+			display: none;
+		}
+
+		.timeline {
+			display: none;
+		}
+
+        .team {
+            display: flex;
+        }
+
+		.team__header {
+			display: inline;
+		}
+
+		.switch-team {
+			display: none;
 		}
 	}
-
-
-
-/* определения */
-:root {
-  --fz-min: 12;
-  --fz-max: 16;
-}
-
-* {
-  --fz-min-px: calc(var(--fz-min) * 1px); /* font-size-minimum */
-  --fz-max-px: calc(var(--fz-max) * 1px); /* font-size-maximum */
-  --fz-diff: calc(var(--fz-max) - var(--fz-min)); /* font-size-difference */
-  font-size: clamp(
-    var(--fz-min-px),
-    calc(var(--fz-min-px) + var(--fz-diff) * ((100vw - 320px) / (1280 - 320))),
-    var(--fz-max-px)
-  );
-}
-/* .container {
-  max-width: 1280px;
-  padding: 0 15px;
-  margin: 0 auto;
-} */
-/* а теперь юзаем  */
-
-h1 {
-  --fz-min: 28;
-  --fz-max: 40;
-  line-height: 1.2;
-}
-
-main {
-  --fz-min: 6;
-  --fz-max: 14;
-  line-height: 1.614;
-}
-
-
 </style>

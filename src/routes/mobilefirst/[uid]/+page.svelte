@@ -1,5 +1,6 @@
 <script>
 	import PlayersList from '$lib/organisms/PlayersList.svelte';
+    import Fullscreen from '$lib/atoms/Fullscreen/Fullscreen.svelte';
 	import { page } from '$app/stores';
 
 	export let data;
@@ -19,6 +20,8 @@
 	}
 </script>
 
+
+<Fullscreen> 
 <main class="page">
 	<header class="page__header">
 		<h1>Commentator Dashboard</h1>
@@ -136,6 +139,8 @@
 		{/if}
 	</div>
 </main>
+
+</Fullscreen>
 
 <style>
 	main {
