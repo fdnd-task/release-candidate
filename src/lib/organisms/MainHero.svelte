@@ -32,8 +32,6 @@
 
     .buildings{
         position: relative;
-        z-index: 3;
-
         display: flex;
         flex-direction: row;
         justify-content: center;
