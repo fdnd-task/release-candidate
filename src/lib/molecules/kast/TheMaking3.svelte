@@ -10,11 +10,7 @@
     <div class="right-content">
       <h3>... met heel veel hulp</h3>
       <p>
-        Tijdens de Groendag van de OBA Linnaeus in de zomer van 2023 is de kast
-        officieel geopend. Het idee is om elke OBA waar een Buurtcampus
-        gevestigd is een eigen stekjeskast gemaakt door kinderen uit de buurt te
-        geven, zodat in alle stadsdelen van Amsterdam buurtbewoners gratis
-        stekjes kunnen ruilen.
+        De kinderen mochten zelf de kleurontwerpen bedenken. Hierdoor heeft de kast een volledig uniek uiterlijk waar de stekjes vanuit alle kanten van de bieb te bewonderen zijn.
       </p>
     </div>
   </div>
@@ -75,7 +71,7 @@
 
   @media screen and (max-width: 700px) {
     h3 {
-      font-size: 2.5em;
+      font-size: 2em;
     }
 
     p {

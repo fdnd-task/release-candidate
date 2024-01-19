@@ -17,7 +17,7 @@
 
             <h3>Toen de kast gemaakt werd...</h3>
 			<p>
-				Een van de begeleiders van de Maakplaats 021 bedacht het ontwerp van de kast, die - met het oog op duurzaamheid - volledig gemaakt is van een gebruikte pallet en afvalhout. De kinderen mochten zelf de kleurontwerpen bedenken. Hierdoor heeft de kast een volledig uniek uiterlijk waar de stekjes vanuit alle kanten van de bieb te bewonderen zijn
+				Een van de begeleiders van de Maakplaats 021 bedacht het ontwerp van de kast, die - met het oog op duurzaamheid - volledig gemaakt is van een gebruikte pallet en afvalhout
 			</p>
 		</div>
 	</div>
@@ -80,7 +80,7 @@
 @media screen and (max-width: 700px) {
 
 h3 {
-	font-size: 2.5em;
+	font-size: 2em;
 }
 
 p {

@@ -171,7 +171,25 @@
 	@media screen and (max-width: 1122px) {
 		.menu-item {
 			font-size: 0.7em;
+			display: none;
 		}
+
+		.header-wrapper {
+			position: absolute;
+			top: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			height: 10vh;
+			width: 100%;
+			padding-right: 2em;
+			padding-left: 1em;
+			padding-top: 0em;
+		}
+
+		.mobile-none {
+		display: block;
+	}
 	}
 
 	@media screen and (max-width: 700px) {
@@ -200,6 +218,7 @@
 		ul {
 			display: none;
 		}
+
 		.mobile-none {
 		display: block;
 	}

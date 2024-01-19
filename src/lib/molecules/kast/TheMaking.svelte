@@ -7,13 +7,8 @@
     <div class="left-content">
       <h3>The making of... de kast</h3>
       <p>
-        De eerste Buurtcampus stekjeskast is gemaakt door kinderen van de
-        Maakplaats 021 in de OBA Javaplein. 
-        <br />
-        <br />
-		Hier leren kinderen uit de buurt
-        vanaf 8 jaar onder anderen 3D-printen, lasersnijden, programmeren of
-        muziekinstrumenten maken.
+        De eerste Buurtcampus stekjeskast is gemaakt door kinderen van de Maakplaats 021 in de OBA Javaplein. Hier leren kinderen uit de buurt vanaf 8 jaar onder anderen 3D-printen, lasersnijden, programmeren of muziekinstrumenten maken.
+ 
       </p>
     </div>
     <div class="right-content">
@@ -77,7 +72,7 @@
 
   @media screen and (max-width: 700px) {
     h3 {
-      font-size: 2.5em;
+      font-size: 2em;
     }
 
     p {
