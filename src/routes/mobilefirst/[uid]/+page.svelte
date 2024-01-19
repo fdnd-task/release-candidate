@@ -97,46 +97,42 @@
 				>
 			</section>
 
-			{#if activeTeam === match.team_a.name}
-				<section class="team">
-					<header class="team__header">
-						<h2>
-							<img alt="" height="32" width="32" />
-							<span>{match.team_a.name}</span>
-						</h2>
+            <section class="team" data-selected="{activeTeam === match.team_a.name}">
+                <header class="team__header">
+                    <h2>
+                        <img alt="" height="32" width="32" />
+                        <span>{match.team_a.name}</span>
+                    </h2>
 
-						<p>{match.team_a.country.name} | City</p>
-					</header>
+                    <p>{match.team_a.country.name} | City</p>
+                </header>
 
-					<div class="team__content">
-						<!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
-						<PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
-					</div>
-				</section>
-			{/if}
+                <div class="team__content">
+                    <!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
+                    <PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
+                </div>
+            </section>
 
-			{#if activeTeam === match.team_b.name}
-				<section class="team">
-					<header class="team__header">
-						<h2>
-							<img alt="" height="32" width="32" />
-							<span>{match.team_b.name}</span>
-						</h2>
+            <section class="team" data-selected="{activeTeam === match.team_b.name}">
+                <header class="team__header">
+                    <h2>
+                        <img alt="" height="32" width="32" />
+                        <span>{match.team_b.name}</span>
+                    </h2>
 
-						<p>{match.team_b.country.name} | City</p>
-					</header>
+                    <p>{match.team_b.country.name} | City</p>
+                </header>
 
-					<div class="team__content">
-						<!-- <pre>{JSON.stringify(match.team_b, null, 2)}</pre> -->
-						<PlayersList
-							players={match.team_b.players}
-							match={match.id}
-							team={match.team_b.id}
-							reversed={true}
-						/>
-					</div>
-				</section>
-			{/if}
+                <div class="team__content">
+                    <!-- <pre>{JSON.stringify(match.team_b, null, 2)}</pre> -->
+                    <PlayersList
+                        players={match.team_b.players}
+                        match={match.id}
+                        team={match.team_b.id}
+                        reversed={true}
+                    />
+                </div>
+            </section>
 		{/if}
 	</div>
 </main>
@@ -170,11 +166,20 @@
 		--grid-columns: 1;
 		display: grid;
 		grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
-		grid-template-areas: 'team_header scoreboard team_header';
+		grid-template-areas: 
+			'statistics'
+			'team_a'
+			'team_b';
 		flex: 1;
 		gap: 1em;
 		padding: 1rem;
 		height: 100%;
+	}
+    .team:first-of-type {
+		grid-area: team_a;
+	}
+	.team:last-of-type {
+		grid-area: team_b;
 	}
 
 	nav {
@@ -229,10 +234,14 @@
 	}
 
 	.team {
-		display: flex;
+		display: none;
 		flex-flow: column nowrap;
 		gap: 0.5em;
 	}
+
+    .team[data-selected="true"] {
+        display: flex;
+    }
 
 	.team__header {
 		grid-area: team_header;
@@ -312,6 +321,7 @@
 	.statistics {
 		display: flex;
 		flex-flow: column nowrap;
+        grid-area: statistics;
 	}
 
 	.statistics__content {
@@ -448,7 +458,12 @@
 	@media only screen and (min-width: 48rem) {
 		.page__content {
 			--grid-columns: 3;
+            grid-template-areas: 'team_a statistics team_b';
 		}
+
+        .team {
+            display: flex;
+        }
 
 		.team__header {
 			display: inline;
