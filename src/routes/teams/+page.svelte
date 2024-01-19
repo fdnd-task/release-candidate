@@ -1,5 +1,5 @@
 <script>
-	import Button from '$lib/atoms/link.svelte';
+	import Button from '$lib/atoms/Link.svelte';
 	import TeamCard from '$lib/molecules/TeamCard.svelte';
 </script>
 
