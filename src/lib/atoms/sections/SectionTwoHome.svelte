@@ -113,7 +113,8 @@
         img {
             margin-bottom: 2rem;
             margin-left: 4rem;
-            width: 75%;
+            width: 70%;
+            height: 90vh;
         }
     }
 
@@ -156,7 +157,8 @@
         img {
             margin-top: 7rem;
             margin-left: 5%;
-            width: 40%;
+            width: 35%;
+            height: 80vh;
 
         }
     }
