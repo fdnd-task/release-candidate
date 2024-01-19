@@ -36,7 +36,7 @@
 		LableText="Place of residence..."
 	/>
 
-	<InputTextarea InputID="Bio" LableFor="Bio" LableText="Bio..." />
+	<InputTextarea TextareaID="Bio" LableFor="Bio" LableText="Bio..." />
 </form>
 
 <style>

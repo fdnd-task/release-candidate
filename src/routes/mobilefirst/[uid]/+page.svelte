@@ -8,6 +8,7 @@
 	const { match, statistics } = data;
 
 	const isActiveTab = (tab) => {
+		console.log($page.url.hash === tab || $page.url.hash == '');
 		return $page.url.hash === tab || $page.url.hash == '';
 	};
 
@@ -63,7 +64,7 @@
 					</ul>
 				</nav>
 
-				{#if isActiveTab('#statistics') }
+				{#if isActiveTab('#statistics')}
 					<section id="statistics" class="timeline">
 						<h3>Timeline</h3>
 
@@ -255,7 +256,7 @@
 	.scoreboard,
 	.timeline,
 	.team__header {
-		display: flex;
+		display: none;
 		border: 1px solid white;
 		border-radius: 0.5rem;
 		background: white;
@@ -463,14 +464,6 @@
 		.page__content {
 			--grid-columns: 3;
             grid-template-areas: 'team_a statistics team_b';
-		}
-
-		nav {
-			display: none;
-		}
-
-		.timeline {
-			display: block;
 		}
 
         .team {

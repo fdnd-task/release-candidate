@@ -21,7 +21,7 @@
 <style>
     main{
         width: 100%;
-        margin: 3rem 2rem;
+        padding: 3rem 2rem;
     }
 
     h2{
@@ -47,7 +47,7 @@
     @media (min-width: 50rem){
 
         main{
-            margin: 5rem 4rem;
+            margin: 3rem 4rem;
         }
 
         h2{
@@ -74,7 +74,7 @@
     @media (min-width: 80rem){
 
         main{
-            margin: 8rem;
+            margin: 5rem;
         }
 
         h2{

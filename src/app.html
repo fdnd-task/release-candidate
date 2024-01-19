@@ -7,22 +7,6 @@
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div class="page">%sveltekit.body%</div>
+		<div style="display: contents;">%sveltekit.body%</div>
 	</body>
 </html>
-
-<style>
-	.page {
-		display: grid;
-		grid-template-columns: 1fr auto;
-		width: 100vw;
-		width: 100svw;
-		min-height: 600px;
-	}
-
-	@media only screen and (max-width: 768px){
-		.page{
-			flex-direction: column;
-		}
-	}
-</style>
