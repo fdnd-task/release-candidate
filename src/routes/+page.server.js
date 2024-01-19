@@ -2,9 +2,12 @@ import { gql } from 'graphql-request';
 import { hygraph } from '$lib/utils/hygraph.js';
 
 export async function load() {
+	// De openbare sleutel voor de OBA API
 	const publicKey = 'dc0e2f073c03758140452044906bc818';
+	// Opmerking: De zoekterm is momenteel uitgeschakeld (uitgecommentarieerd).
 	// const searchTerm = 'kikker';
 
+	// GraphQL-query voor het ophalen van uitleengeschiedenis
 	const query = gql`
 		query uitleengeschiedenis {
 			uitleengeschiedenis1 {
@@ -17,9 +20,10 @@ export async function load() {
 		}
 	`;
 
+	// Hygraph-request voor het ophalen van data met behulp van GraphQL-query
 	const hygraphData = await hygraph.request(query);
 
-
+	// URL-parameters voor het maken van zoekopdrachten naar boeken, e-books en luisterboeken
 	const space = "%20";
 	const bookItems = "boeken";
 	const EbookItems = "e-books";
@@ -34,21 +38,17 @@ export async function load() {
 	const defaultUrleBooks = urlBase + urlSearch + urlQuery + urlDefault + space + EbookItems + urlKey + urlOutput;
 	const defaultUrlAudioBooks = urlBase + urlSearch + urlQuery + urlDefault + space + audioItems + urlKey + urlOutput;
 
-	const responseBooks = await fetch(
-		defaultUrlBooks
-	);
+	// Fetch-requests voor het ophalen van boeken, e-books en luisterboeken
+	const responseBooks = await fetch(defaultUrlBooks);
+	const responseEBooks = await fetch(defaultUrleBooks);
+	const responseAudioBooks = await fetch(defaultUrlAudioBooks);
 
-	const responseEBooks = await fetch(
-		defaultUrleBooks
-	);
-
-	const responseAudioBooks = await fetch(
-		defaultUrlAudioBooks
-	);
+	// Het omzetten van de JSON-respons naar bruikbare objecten
 	const apiBooks = await responseBooks.json();
 	const apiAudioBooks = await responseAudioBooks.json();
 	const apiEBooks = await responseEBooks.json();
 
+	// Het retourneren van de verzamelde gegevens
 	return {
 		hygraphData,
 		apiBooks,
@@ -56,3 +56,4 @@ export async function load() {
 		apiEBooks
 	};
 }
+
