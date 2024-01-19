@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    export let data;
+</script>
+
+<ul>
+    {#each data.readingLists as book}
+        <li>
+            <h1>{book.title}</h1>
+            <h2>{book.author}</h2>
+            <img src={book.image.url} alt={book.title}>
+            <p>{book.description}</p>
+        </li>
+    {/each}
+</ul>

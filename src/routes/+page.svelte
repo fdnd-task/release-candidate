@@ -1,8 +1,10 @@
 <script>
     // Hier import ik de components die nodig zijn in deze pagina
-    import { Card,  LinkButton, Logo } from '$lib/index.js'
+    import { Card,  LinkButton, Logo, Search } from '$lib/index.js'
     // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
     export let data;
+
+    console.log(JSON.stringify(data, null, 2));
 </script>
 <!-- mobile en tablet hero section -->
 
@@ -37,6 +39,8 @@
     
 </section>
 
+<Search 
+cardData={data.hygraphData.uitleengeschiedenis1}/>
 
 <!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
 
@@ -123,23 +127,11 @@
 
 </section>
 
+
+
 <style>
 
 /* mobile first */
-
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.8em;
-}
-
-p {
-    padding: 25px 0px;
-    font-size: 1em;
-}
 
 span {
     color: var(--primary-accent-color);
@@ -245,19 +237,6 @@ span {
 
 /* laptop breakpoint */
     @media (min-width: 68em) {
-
-        h1 {
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-size: 2.2em;
-        }
-
-        p {
-            padding: 1.5em 0em;
-            font-size: 1.1em;
-        }
 
         .hero-section-large {
             padding: 9em;

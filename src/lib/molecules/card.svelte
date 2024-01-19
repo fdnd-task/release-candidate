@@ -43,7 +43,6 @@
         /* background-color:red; */
         color: var(--primary-light-color);
         box-shadow: var(--primary-dark-color) 0 0 0.625rem 0;
-    }
 
     .info > p {
         font-size: 0.9rem;
