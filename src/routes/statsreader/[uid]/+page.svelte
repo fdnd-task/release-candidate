@@ -12,21 +12,6 @@
 	</header>
 
 	<div class="page__content fluid-type">
-		<section class="team">
-			<header class="team__header">
-				<h2>
-					<img alt="" height="32" width="32" />
-					<span>{match.team_a.name}</span>
-				</h2>
-
-				<p>{match.team_a.country.name} | City</p>
-			</header>
-
-			<div class="team__content">
-				<!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
-				<PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
-			</div>
-		</section>
 
 		<section class="statistics">
 			<header class="statistics__header">
@@ -77,6 +62,22 @@
 			<header class="team__header">
 				<h2>
 					<img alt="" height="32" width="32" />
+					<span>{match.team_a.name}</span>
+				</h2>
+
+				<p>{match.team_a.country.name} | City</p>
+			</header>
+
+			<div class="team__content">
+				<!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
+				<PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
+			</div>
+		</section>
+
+		<section class="team">
+			<header class="team__header">
+				<h2>
+					<img alt="" height="32" width="32" />
 					<span>{match.team_b.name}</span>
 				</h2>
 
@@ -118,8 +119,13 @@
 	}
 
 	.page__content {
+		--columns: 1;
 		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+		grid-template-areas: 
+			'statistics'
+			'team_a'
+			'team_b';
 		flex: 1;
 		gap: 1em;
 		padding: 1rem;
@@ -130,6 +136,14 @@
 		display: flex;
 		flex-flow: column nowrap;
 		gap: 0.5em;
+	}
+
+	.team:first-of-type {
+		grid-area: team_a;
+	}
+
+	.team:last-of-type {
+		grid-area: team_b;
 	}
 
 	.team__header {
@@ -209,6 +223,7 @@
 	.statistics {
 		display: flex;
 		flex-flow: column nowrap;
+		grid-area: statistics;
 	}
 
 	.statistics__content {
@@ -321,6 +336,13 @@
 	}
 	.timeline-list__item--b p:nth-of-type(3) {
 		grid-area: e;
+	}
+
+	@media (min-width: 768px) {
+		.page__content {
+			--columns: 3;
+			grid-template-areas: 'team_a statistics team_b';
+		}
 	}
 
 
