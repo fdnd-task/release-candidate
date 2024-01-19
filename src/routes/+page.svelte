@@ -1,4 +1,10 @@
+<script>
+    import { Search } from '$lib/index.js';
+    export let data;
 
+
+    console.log(JSON.stringify(data, null, 2));
+</script>
 <!-- mobile en tablet hero section -->
 
 <section class="hero-section">
@@ -33,6 +39,8 @@
     
 </section>
 
+<Search 
+cardData={data.hygraphData.uitleengeschiedenis1}/>
 
 <!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
 
@@ -105,6 +113,8 @@
 
   
 </section>
+
+
 
 <style>
 
