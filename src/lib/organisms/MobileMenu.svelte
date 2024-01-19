@@ -4,6 +4,7 @@
 
   onMount(() => {
     let menuButton = document.querySelector(".menu-button");
+    let closeMenu = document.querySelector(".close-button");
     let mm = gsap.matchMedia();
 
     let tl = gsap.timeline({ paused: true, reversed: true });
@@ -49,23 +50,20 @@
       "<"
     );
     tl.to(
-      "button img",
-      { rotate: 360, x: -6, duration: 1.5, ease: "Expo.easeInOut", delay: 0 },
-      "<"
-    );
-    tl.to(
       ".menu-text-gsap",
       { y: 0, duration: 2, ease: "Expo.easeOut", delay: 0.6 },
       "<"
     );
-    tl.to(".number", { y: 0, duration: 1.7, ease: "Expo.easeOut" }, "<");
-    tl.to(
-      ".socials-gsap",
-      { y: 0, duration: 1.5, stagger: 0.2, delay: 0.4, ease: "Expo.easeInOut" },
-      "<"
-    );
 
     menuButton.addEventListener("click", function () {
+      if (tl.reversed()) {
+        tl.timeScale(1.5).play();
+      } else {
+        tl.timeScale(1.5).reverse();
+      }
+    });
+
+    closeMenu.addEventListener("click", function () {
       if (tl.reversed()) {
         tl.timeScale(1.5).play();
       } else {
@@ -85,36 +83,41 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <line y1="1" x2="17" y2="1" stroke="" stroke-width="2" />
-      <line
-        y1="7.61133"
-        x2="17"
-        y2="7.61133"
-        stroke=""
-        stroke-width="2"
-      />
-      <line
-        y1="14.2222"
-        x2="17"
-        y2="14.2222"
-        stroke=""
-        stroke-width="2"
-      />
+      <line y1="7.61133" x2="17" y2="7.61133" stroke="" stroke-width="2" />
+      <line y1="14.2222" x2="17" y2="14.2222" stroke="" stroke-width="2" />
     </svg>
   </button>
   <div class="menu-wrapper">
     <button class="close-button">
-        <svg width="15" height="15" viewBox="0 0 15 15" fill="" xmlns="http://www.w3.org/2000/svg">
-            <line x1="1.19685" y1="1.29289" x2="13.2177" y2="13.3137" stroke="" stroke-width="2"/>
-            <line x1="1.29289" y1="13.3139" x2="13.3137" y2="1.29307" stroke="" stroke-width="2"/>
-            </svg>
-            
+      <svg
+        width="15"
+        height="15"
+        viewBox="0 0 15 15"
+        fill=""
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="1.19685"
+          y1="1.29289"
+          x2="13.2177"
+          y2="13.3137"
+          stroke=""
+          stroke-width="2"
+        />
+        <line
+          x1="1.29289"
+          y1="13.3139"
+          x2="13.3137"
+          y2="1.29307"
+          stroke=""
+          stroke-width="2"
+        />
+      </svg>
     </button>
     <nav>
       <ul>
         <li>
-          <a class="menu-text-gsap" href="/"
-            >Home</a
-          >
+          <a class="menu-text-gsap" href="/">Home</a>
         </li>
         <li>
           <a class="menu-text-gsap" href="/stekjes_overzicht  ">Stekjes</a>
@@ -148,7 +151,7 @@
     overflow: hidden;
     opacity: 1;
     transform: translateY(-3em);
-    z-index: 999999;
+    z-index: 99999;
   }
 
   .menu-button {
@@ -162,7 +165,7 @@
     padding: 1em;
     transform: scale(1.2);
     stroke: var(--background-color-light);
-    z-index: 999999;
+    z-index: 99999;
   }
 
   .close-button {
@@ -176,6 +179,8 @@
     background-color: #ffffff00;
     transform: scale(1.1);
     padding: 1em;
+    z-index: 99999;
+    cursor: pointer;
   }
 
   nav li {
@@ -202,7 +207,6 @@
     transition: margin 0.2s;
   }
 
-
   svg {
     pointer-events: none;
   }
@@ -218,7 +222,7 @@
     }
 
     .menu-button {
-        display: block;
+      display: block;
     }
 
     nav {
@@ -231,13 +235,11 @@
     }
 
     .menu-button {
-    z-index: 2000;
-  }
+      z-index: 2000;
+    }
 
-  .close-button {
-    z-index: 2000;
-  }
-
-  
+    .close-button {
+      z-index: 2000;
+    }
   }
 </style>

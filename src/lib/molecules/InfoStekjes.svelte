@@ -68,9 +68,9 @@
     }
   }
 
-  @media (min-width: 820px) {
+  /* @media (min-width: 820px) {
     .info-Stekjes {
       width: 40%;
     }
-  }
+  } */
 </style>

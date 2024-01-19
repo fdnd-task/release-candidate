@@ -35,6 +35,7 @@
     h3 {
         color: var(--background-color);
         margin-bottom: 1rem;
+        font-size: 2rem;
     }
 
     p {
@@ -71,7 +72,7 @@
     }
 
     img {
-        width: 19rem;
+        width: 75%;
         margin-top: 1rem;
         margin-bottom: 2rem;
         margin-left: 2rem;
@@ -83,6 +84,7 @@
 
         h3 {
             font-size: 3rem;
+            font-family: var(--main-font);
         }
 
         .svg-leaf {
@@ -109,10 +111,10 @@
         }
 
         img {
-            margin-top: 0rem;
             margin-bottom: 2rem;
             margin-left: 4rem;
-            width: 35rem;
+            width: 70%;
+            height: 90vh;
         }
     }
 
@@ -148,15 +150,16 @@
             margin-top: 3rem;
             padding-left: 4rem;
             width: 40rem;
-            height: 80vh;
+            height: 100vh;
 
         }
 
         img {
             margin-top: 7rem;
-            margin-left: 10rem;
-            width: 30rem;
-            height: 35rem;
+            margin-left: 5%;
+            width: 35%;
+            height: 80vh;
+
         }
     }
 </style>

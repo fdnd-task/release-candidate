@@ -98,9 +98,9 @@
     }
   }
 
-  @media (min-width: 820px) {
+  /* @media (min-width: 820px) {
     article {
       width: 40%;
     }
-  }
+  } */
 </style>

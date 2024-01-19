@@ -9,7 +9,6 @@
 		"lint": "prettier --check .",
 		"format": "prettier --write .",
 		"gh-pages": "npm run build && npx gh-pages -d build"
-
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
@@ -25,6 +24,7 @@
 	"dependencies": {
 		"graphql": "^16.8.1",
 		"graphql-request": "^6.1.0",
-		"gsap": "^3.12.2"
+		"gsap": "^3.12.2",
+		"node-fetch": "^3.3.2"
 	}
 }

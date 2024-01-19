@@ -15,4 +15,5 @@
         "statusBar.foreground": "#1E2640",
         "statusBar.border": "#DC9750"
     }
+    "nuxt.isNuxtApp": false
 }
