@@ -5,18 +5,6 @@
 
 
 	export let FormID, Method, Action;
-
-	import { onMount } from 'svelte';
-
-	onMount(async () => {
-    document.getElementById("AddPlayer").value = "Sascha Davidson"
-    document.getElementById("BirthDate").value = "2000-08-07"
-    document.getElementById("JerseyNumber").value = "Number 7"
-    document.getElementById("BirthCountry").value = "Netherlands  "
-    document.getElementById("ResidencePlace").value = "Alkmaar"
-
-    document.getElementById("Bio").value = "Ik ben sascha, Ik ben 23 jaar oud en kom uit alkmaar. Ik speel vrisbee sinds ik 14 was en speel mee met de tournamenten sinds 2017."
-});
 </script>
 
 <form id={FormID} method={Method} action={Action}>
