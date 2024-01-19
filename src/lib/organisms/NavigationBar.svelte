@@ -37,6 +37,13 @@
 		list-style: none;
 	}
 
+	@media only screen and (max-height: 650px){
+		ul {
+		gap: 1rem;
+		min-height: 550px;
+	}
+	}
+
 	@media only screen and (max-width: 500px){
 		nav{
 			display: none;

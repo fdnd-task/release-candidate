@@ -1,12 +1,37 @@
 <script>
-	import Form from '$lib/organisms/NewPlayerForm.svelte';
+	import Form from '$lib/organisms/EditPlayerForm.svelte';
 	import Button from '$lib/atoms/button.svelte';
+	import DeleteButton from '$lib/atoms/WarningButton.svelte';
+	import DeleteForm from '$lib/organisms/DeleteForm.svelte';
+	import { onMount } from 'svelte';
 
-	import WarningButton from '$lib/atoms/WarningButton.svelte';
+	onMount(async () => {
+		if ('showModal' in document.createElement('dialog')) {
+			const showDialogBtn = document.getElementById('Delete');
+			const newDialog = document.createElement('dialog');
+			const DeleteForm = document.getElementById('DeleteFormContainer');
+
+			newDialog.classList.add('custom-dialog');
+			document.body.append(newDialog);
+			newDialog.append(DeleteForm);
+
+			if (showDialogBtn) {
+				showDialogBtn.addEventListener('click', (event) => {
+					newDialog.showModal();
+					event.preventDefault();
+				});
+			}
+
+			closeBtn.hidden = false;
+			closeBtn.addEventListener('click', () => {
+				newDialog.close();
+			});
+		}
+	});
 </script>
 
 <main>
-	<h1>New Player</h1>
+	<h1>Edit Player</h1>
 
 	<h2 class="sub-header-left">Update player content</h2>
 
@@ -15,27 +40,32 @@
 	</section>
 
 	<footer>
-		<Button ButtonType="submit" FormID="FormID" ButtonText="save" />
-		<WarningButton ButtonType="Button" FormID="unset" ButtonText="Delete" />
+		<Button ButtonType="submit" FormID="FormID" ButtonText="Save" />
+		<DeleteButton Routing="#DeleteForm" ButtonType="Button" FormID="Delete" ButtonText="Delete" />
 	</footer>
 </main>
+<div id="DeleteFormContainer" class="DeleteFormContainer">
+	<DeleteForm FormID="DeleteForm" Method="get" Action="/players" />
+	<button id="closeBtn">Close</button>
+</div>
 
 <style>
 	main {
 		display: grid;
 		grid-template-rows: auto auto 1fr auto;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: 1fr;
 
 		grid-template-areas:
-			'h1 h1'
-			'h2 h2'
-			'form .'
-			'footer footer';
+			'h1'
+			'h2'
+			'form'
+			'footer';
 		column-gap: 2rem;
 		row-gap: 1rem;
 		padding: 4rem 4%;
 		width: 100%;
-		height: 100%;
+		height: 100vh;
+		height: 100svh;
 	}
 
 	h1 {
@@ -59,7 +89,17 @@
 	}
 
 	footer {
+		display: flex;
 		grid-area: footer;
+		gap: 1rem;
+	}
+
+	.DeleteFormContainer {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		padding: 3rem;
+
 	}
 
 	@media (pointer: fine) {
@@ -75,6 +115,28 @@
 		section::-webkit-scrollbar-thumb {
 			border-radius: 10px;
 			background-color: #a7a7a7;
+		}
+	}
+
+	@media only screen and (min-width: 850px) {
+		main {
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-areas:
+				'h1 h1 h1'
+				'h2 h2 h2'
+				'form form .'
+				'footer footer footer';
+		}
+	}
+
+	@media only screen and (min-width: 1000px) {
+		main {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-areas:
+				'h1 h1'
+				'h2 h2'
+				'form .'
+				'footer footer';
 		}
 	}
 </style>

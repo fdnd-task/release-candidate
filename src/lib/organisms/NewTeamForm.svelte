@@ -39,9 +39,4 @@
 		flex-direction: column;
 		gap: 1rem;
 	}
-
-	section {
-		display: flex;
-		gap: 2rem;
-	}
 </style>
