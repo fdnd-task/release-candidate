@@ -3,7 +3,7 @@
 </script>
 
 <header>
-	<NavigationBar />
+	<!-- <NavigationBar /> -->
 </header>
 
 <slot />

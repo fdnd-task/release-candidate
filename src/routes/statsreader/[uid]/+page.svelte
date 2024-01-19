@@ -8,94 +8,97 @@
 </script>
 
 <Fullscreen>
-	<main class="page">
-		<header class="page__header">
-			<h1>Commentator Dashboard</h1>
-		</header>
-	
-		<div class="page__content">
-			<section class="team">
-				<header class="team__header">
-					<h2>
-						<img alt="" height="32" width="32" />
-						<span>{match.team_a.name}</span>
-					</h2>
-	
-					<p>{match.team_a.country.name} | City</p>
-				</header>
-	
-				<div class="team__content">
-					<!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
-					<PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
-				</div>
-			</section>
-	
-			<section class="statistics">
-				<header class="statistics__header">
-					<h2>Statistics</h2>
-				</header>
-	
-				<div class="statistics__content">
-					<section class="status">
-						<h3>Match status</h3>
-						<p>LIVE</p>
-						<p>Mixed | 2 | Arena | Finale</p>
-					</section>
-	
-					<section class="scoreboard">
-						<h3>Scoreboard</h3>
-	
-						<article>
-							<img alt="" height="64" width="64" />
-							<h4>{match.team_a.name}</h4>
-						</article>
-						<p>0 - 0</p>
-						<article>
-							<img alt="" height="64" width="64" />
-							<h4>{match.team_b.name}</h4>
-						</article>
-					</section>
-	
-					<section class="timeline">
-						<h3>Timeline</h3>
-	
-						<ul class="timeline-list">
-							{#each statistics as stat}
-								<li class="timeline-list__item--{stat.team}">
-									<p class="jersey-number">{stat.jersey_number}</p>
-									<p>{stat.name}</p>
-									<p>{stat.time}</p>
-									<p>8 - 3</p>
-								</li>
-							{/each}
-						</ul>
-					</section>
-				</div>
-			</section>
-	
-			<section class="team">
-				<header class="team__header">
-					<h2>
-						<img alt="" height="32" width="32" />
-						<span>{match.team_b.name}</span>
-					</h2>
-	
-					<p>{match.team_b.country.name} | City</p>
-				</header>
-	
-				<div class="team__content">
-					<!-- <pre>{JSON.stringify(match.team_b, null, 2)}</pre> -->
-					<PlayersList
-						players={match.team_b.players}
-						match={match.id}
-						team={match.team_b.id}
-						reversed={true}
-					/>
-				</div>
-			</section>
-		</div>
-	</main>
-</Fullscreen>
+<main class="page">
+	<header class="page__header">
+		<h1>Commentator Dashboard</h1>
+	</header>
+
+	<div class="page__content fluid-type">
+
+		<section class="statistics">
+			<header class="statistics__header">
+				<h2>Statistics</h2>
+			</header>
+
+			<div class="statistics__content">
+				<section class="status">
+					<h3>Match status</h3>
+
+					<p>LIVE</p>
+					<p>Mixed | 2 | Arena | Finale</p>
+				</section>
+
+				<section class="scoreboard">
+					<h3>Scoreboard</h3>
+
+					<article>
+						<img alt="" height="64" width="64" />
+						<h4>{match.team_a.name}</h4>
+					</article>
+					<p>0 - 0</p>
+					<article>
+						<img alt="" height="64" width="64" />
+						<h4>{match.team_b.name}</h4>
+					</article>
+				</section>
+
+				<section class="timeline">
+					<h3>Timeline</h3>
+
+					<ul class="timeline-list">
+						{#each statistics as stat}
+							<li class="timeline-list__item--{stat.team}">
+								<p class="jersey-number">{stat.jersey_number}</p>
+								<p>{stat.name}</p>
+								<p>{stat.time}</p>
+
+								<p>8 - 3</p>
+							</li>
+						{/each}
+					</ul>
+				</section>
+			</div>
+		</section>
+
+		<section class="team">
+			<header class="team__header">
+				<h2>
+					<img alt="" height="32" width="32" />
+					<span>{match.team_a.name}</span>
+				</h2>
+
+				<p>{match.team_a.country.name} | City</p>
+			</header>
+
+			<div class="team__content">
+				<!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
+				<PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
+			</div>
+		</section>
+
+		<section class="team">
+			<header class="team__header">
+				<h2>
+					<img alt="" height="32" width="32" />
+					<span>{match.team_b.name}</span>
+				</h2>
+
+				<p>{match.team_b.country.name} | City</p>
+			</header>
+
+			<div class="team__content">
+				<!-- <pre>{JSON.stringify(match.team_b, null, 2)}</pre> -->
+				<PlayersList
+					players={match.team_b.players}
+					match={match.id}
+					team={match.team_b.id}
+					reversed={true}
+				/>
+			</div>
+		</section>
+	</div>
+</main>
+  </Fullscreen>
 
 <style>
 	.page {
@@ -119,8 +122,13 @@
 	}
 
 	.page__content {
+		--columns: 1;
 		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+		grid-template-areas: 
+			'statistics'
+			'team_a'
+			'team_b';
 		flex: 1;
 		gap: 1em;
 		padding: 1rem;
@@ -131,6 +139,14 @@
 		display: flex;
 		flex-flow: column nowrap;
 		gap: 0.5em;
+	}
+
+	.team:first-of-type {
+		grid-area: team_a;
+	}
+
+	.team:last-of-type {
+		grid-area: team_b;
 	}
 
 	.team__header {
@@ -167,6 +183,7 @@
 	.jersey-number,
 	[class^='statistic-'] {
 		--size: 2.167em;
+
 		display: inline-block;
 		vertical-align: middle;
 		border: 1px solid black;
@@ -209,6 +226,7 @@
 	.statistics {
 		display: flex;
 		flex-flow: column nowrap;
+		grid-area: statistics;
 	}
 
 	.statistics__content {
@@ -322,4 +340,50 @@
 	.timeline-list__item--b p:nth-of-type(3) {
 		grid-area: e;
 	}
+
+	@media (min-width: 768px) {
+		.page__content {
+			--columns: 3;
+			grid-template-areas: 'team_a statistics team_b';
+		}
+	}
+
+
+
+/* определения */
+:root {
+  --fz-min: 12;
+  --fz-max: 16;
+}
+
+* {
+  --fz-min-px: calc(var(--fz-min) * 1px); /* font-size-minimum */
+  --fz-max-px: calc(var(--fz-max) * 1px); /* font-size-maximum */
+  --fz-diff: calc(var(--fz-max) - var(--fz-min)); /* font-size-difference */
+  font-size: clamp(
+    var(--fz-min-px),
+    calc(var(--fz-min-px) + var(--fz-diff) * ((100vw - 320px) / (1280 - 320))),
+    var(--fz-max-px)
+  );
+}
+/* .container {
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+} */
+/* а теперь юзаем  */
+
+h1 {
+  --fz-min: 28;
+  --fz-max: 40;
+  line-height: 1.2;
+}
+
+main {
+  --fz-min: 6;
+  --fz-max: 14;
+  line-height: 1.614;
+}
+
+
 </style>
