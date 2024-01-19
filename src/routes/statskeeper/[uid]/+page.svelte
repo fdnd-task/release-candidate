@@ -73,11 +73,27 @@
         }
     }
 
+	// FUNCTION FOR SHOWING THE DISC ON THE PLAYING FIELD
+
+	let discs = [];
+	
+    function placeDisc(event) {
+      const rect = event.currentTarget.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+
+      discs = [...discs, { x, y }];
+
+	  if (discs.length > 1){
+		discs.shift();
+	  }
+    }
+
+
 
 </script>
 
 <main>
-	<section>
 		<div class="score-count-wrapper">
 			<h4>ADD POINTS</h4>
 			<div class="score-count">
@@ -104,7 +120,6 @@
 				</div>
 			</div>	
 		</div>
-	</section>
 	<section class="select-team">
 		<h4>SELECT TEAM</h4>
 		<div class="select-team-buttons">
@@ -167,14 +182,30 @@
 			</div>
 		</div>
 	</section>
-	<section></section>
+	<section class="disc-position">
+		<h4>DISC POSITION</h4>
+		<button class="play-field" on:click={placeDisc}>
+			{#each discs as { x, y }, i }
+			<div class="flag" style="left: {x}px; top: {y}px; background-color: {i === 0 ? 'grey' : 'red'};"></div>
+
+			{/each}
+			<div class="endzone-left">
+				<span>ENDZONE</span>
+			</div>
+			<div class="midfield"></div>
+			<div class="endzone-right">
+				<span>ENDZONE</span>
+			</div>
+		</button>
+	</section>
 </main>
 
 <style>
 	main{
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(4, 1fr);
+		/* display: grid; */
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 		gap: 0.5rem;
 		width: 100%;
 		padding: 10px;
@@ -253,6 +284,7 @@
 		width: 50px;
 		height: 30px;
 		border-radius: 10px;
+		cursor: pointer;
 	}
 
 	.score-button:active,
@@ -270,7 +302,6 @@
 		border-radius: 10px;
 		padding: 1rem;
 		gap: 1rem;
-		height: fit-content;
 	}
 
 	.select-team-buttons{
@@ -288,6 +319,7 @@
 		color: var(--primary-font-color);
 		border-radius: 10px;
 		height: 45px;
+		cursor: pointer;
 	}
 
 	.selected-team{
@@ -303,8 +335,12 @@
 		background-color: var(--element-background-color);
 		padding: 1rem;
 		border-radius: 10px;
-		height: fit-content;
+		height: 100%;
 		gap: 1rem;
+	}
+
+	.player-list{
+		overflow: scroll;
 	}
 
 	.player{
@@ -365,11 +401,11 @@
 		background-color: #2974e4;
 	}
 
-	.blocks {
+	.turnovers {
 		background-color: #ed4444;
 	}
 
-	.turnovers {
+	.blocks {
 		background-color: #ffc738;
 	}
 
@@ -430,6 +466,113 @@
 		background-color: var(--block-by-color);
 	}
 
+	.disc-position{
+		background-color: var(--element-background-color);
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px;
+		padding: 1rem;
+		gap: 1rem;
+	}
+
+	.play-field{
+		position: relative;
+		display: flex;
+		gap: 5px;
+		background-color: transparent;
+		border: none;
+		cursor: url(/images/discPositionCursor.svg), auto;
+		height: 100%;
+	}
+
+	.endzone-left,
+	.endzone-right{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-grow: 1;
+		background-color: #BBC48F;
+		height: 40vh;
+		border-radius: 10px;
+	}
+
+	.endzone-left span,
+	.endzone-right span{
+		color: var(--primary-font-color);
+		font-family: var(--primary-font-family);
+		font-weight: 600;
+		font-size: 18px;
+	}
+
+	.endzone-left span{
+		transform: rotate(-90deg);
+	}
+
+	.endzone-right span{
+		transform: rotate(90deg);
+	}
+
+	.midfield{
+		flex-grow: 30;
+		background-color: #E4FDE1;
+		height: 100%;
+		border-radius: 10px;
+		z-index: 1;
+	}
+
+	.flag {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red; /* Set your flag color */
+      border-radius: 50%;
+	  z-index: 10;
+	  animation: pulse 1s ease-in-out infinite;
+    }
+
+	@keyframes pulse{
+		0%{
+			transform: scale(1);
+		}
+
+		50%{
+			transform: scale(1.4);
+		}
+	}
+
+	@media only screen and (min-width: 852px){
+		
+		main{
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-rows: repeat(6, 1fr);
+		}
+
+		.score-count-wrapper{
+			grid-area: 1 / 4 / 3 / 7;
+		}
+
+		.select-team{
+			grid-area: 1 / 1 / 2 / 4;
+		}
+
+		.add-stats{
+			grid-area: 2 / 1 / 7 / 4;
+		}
+
+		.disc-position{
+			grid-area: 3 / 4 / 7 / 7;	
+		}
+
+		.endzone-left,
+		.endzone-right{
+			height: 100%;
+		}
+
+	}
+
+	
+
 </style>
 
 
@@ -446,20 +589,3 @@
 
 
 
-
-
-
-
-
-	<!-- <span>{match.team_a.name}</span>
-	<span>{match.team_b.name}</span>
-	
-	
-	<p>{match.team_a.country.name} | City</p>
-	
-	<PlayersList
-	players={match.team_b.players}
-	match={match.id}
-	team={match.team_b.id}
-	reversed={true}
-	/> -->

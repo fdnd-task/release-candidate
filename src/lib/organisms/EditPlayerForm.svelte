@@ -1,42 +1,54 @@
 <script>
 	import Input from '$lib/atoms/input.svelte';
-	import InputRequired from '$lib/atoms/input-required.svelte';
 	import Textarea from '$lib/atoms/Textarea.svelte';
 	import InputDate from '$lib/atoms/InputDate.svelte';
 
+
 	export let FormID, Method, Action;
+
+	import { onMount } from 'svelte';
+
+	onMount(async () => {
+    document.getElementById("AddPlayer").value = "Sascha Davidson"
+    document.getElementById("BirthDate").value = "2000-08-07"
+    document.getElementById("JerseyNumber").value = "Number 7"
+    document.getElementById("BirthCountry").value = "Netherlands  "
+    document.getElementById("ResidencePlace").value = "Alkmaar"
+
+    document.getElementById("Bio").value = "Ik ben sascha, Ik ben 23 jaar oud en kom uit alkmaar. Ik speel vrisbee sinds ik 14 was en speel mee met de tournamenten sinds 2017."
+});
 </script>
 
 <form id={FormID} method={Method} action={Action}>
-	<InputRequired
+	<Input
 		InputType="text"
 		InputID="AddPlayer"
 		LableFor="AddPlayer"
-		LableText="* Add player ..."
+		LableText="name"
 	/>
 	<section>
 		<InputDate />
-		<InputRequired
+		<Input
 			InputType="text"
 			InputID="JerseyNumber"
 			LableFor="JerseyNumber"
-			LableText="* Jersey number..."
+			LableText="Jersey number"
 		/>
 	</section>
 	<Input
 		InputType="text"
 		InputID="BirthCountry"
 		LableFor="BirthCountry"
-		LableText="* Country of birth..."
+		LableText="Country of Birth"
 	/>
 	<Input
 		InputType="text"
 		InputID="ResidencePlace"
 		LableFor="ResidencePlace"
-		LableText="Place of residence..."
+		LableText="Place of residence"
 	/>
 
-	<Textarea InputID="Bio" LableFor="Bio" LableText="Bio..." />
+	<Textarea TextareaID="Bio" LableFor="Bio" LableText="Bio" />
 </form>
 
 <style>
@@ -52,14 +64,6 @@
 
 	section {
 		display: flex;
-		flex-direction: column;
 		gap: inherit;
 	}
-
-	@media only screen and (min-width: 1350px){
-		section{
-			flex-direction: row;
-		}
-	}
-
 </style>

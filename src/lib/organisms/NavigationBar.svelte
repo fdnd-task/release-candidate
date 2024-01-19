@@ -16,7 +16,7 @@
 </script>
 
 <nav aria-label="Main Navigation">
-    <div class="menu-contain">
+    <!-- <div class="menu-contain">
         <button class="menu-toggle" on:click={toggleMenu}>
             {#if isMenuOpen}
                 <div class="bar close"></div>
@@ -28,7 +28,7 @@
                 <div class="bar"></div>
             {/if}
         </button>
-    </div>
+    </div> -->
     <ul class={isMenuOpen ? 'open' : ''}>
         {#each items as item}
             <NavItem {item} />
@@ -37,12 +37,13 @@
 </nav>
 
 <style>
+
 nav {
-    padding: 1rem;
+    padding: 10px;
     height: 100%;
 }   
 
-.menu-toggle {
+/* .menu-toggle {
     position: absolute;
     cursor: pointer;
     flex-direction: column;
@@ -81,14 +82,13 @@ nav {
 
 .bar.close:nth-child(3) {
     display: none;
-}
+} */
 
 ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     box-shadow: var(--box-shadow);
     border-radius: 10px;
     background-color: var(--input-background-color);
@@ -99,7 +99,11 @@ ul {
 
 @media only screen and (max-width: 768px) { 
 
-    .menu-toggle {
+    ul{
+        flex-direction: row;
+    }
+
+    /* .menu-toggle {
         display: flex;
     }
 
@@ -109,9 +113,8 @@ ul {
 
     ul.open {
         display: flex;
-    }
+    } */
 }
-
 </style>
 
 

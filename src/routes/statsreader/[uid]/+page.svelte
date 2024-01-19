@@ -1,4 +1,5 @@
 <script>
+	import { Fullscreen } from '$lib';
 	import PlayersList from '$lib/organisms/PlayersList.svelte';
 
 	export let data;
@@ -6,6 +7,7 @@
 	const { match, statistics } = data;
 </script>
 
+<Fullscreen>
 <main class="page">
 	<header class="page__header">
 		<h1>Commentator Dashboard</h1>
@@ -96,6 +98,7 @@
 		</section>
 	</div>
 </main>
+  </Fullscreen>
 
 <style>
 	.page {

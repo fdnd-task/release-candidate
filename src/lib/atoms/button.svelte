@@ -5,12 +5,7 @@
 <button type={ButtonType} form={FormID}>{ButtonText}</button>
 
 <style>
-  button {
-    grid-area: button;
-  }
-
-  button {
-    grid-area: button;
+button {
     height: fit-content;
     width: fit-content;
     padding: 0.5rem 1.2rem;
@@ -20,6 +15,7 @@
     border: none;
     font-size: 1rem;
     box-shadow: var(--box-shadow);
+    font-family: var(--primary-font-family);
   }
 
   button:hover {

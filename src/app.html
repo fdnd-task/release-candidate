@@ -13,10 +13,16 @@
 
 <style>
 	.page {
-		display: flex;
-		flex-direction: row-reverse;
+		display: grid;
+		grid-template-columns: 1fr auto;
 		width: 100vw;
 		width: 100svw;
 		min-height: 600px;
+	}
+
+	@media only screen and (max-width: 768px){
+		.page{
+			flex-direction: column;
+		}
 	}
 </style>
