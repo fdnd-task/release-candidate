@@ -1,5 +1,6 @@
 <script>
-    import { Button } from '$lib/index.js';
+    import { Table, Button } from '$lib/index.js';
+    export let data;
 </script>
 
 <h1>Betalingen</h1>
@@ -35,6 +36,8 @@
         <h3>Jouw abonnement: OBA Basis</h3>
         <Button buttonText="Abonnement uitbreiden"/>
     </div>
+  
+    <Table tableData={data.paymentss}/>
 
 </section>
 
