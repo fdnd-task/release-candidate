@@ -14,7 +14,7 @@
 		<Form FormID="FormID" Method="get" Action="/players" />
 	</section>
 
-	<footer><Button ButtonType="submit" FormID="FormID" ButtonText="Save" /></footer>
+	<footer><Button ButtonType="submit" Form="FormID" ButtonText="Save" /></footer>
 </main>
 
 <style>
