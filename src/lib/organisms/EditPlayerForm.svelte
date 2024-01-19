@@ -1,6 +1,6 @@
 <script>
 	import Input from '$lib/atoms/input.svelte';
-	import Textarea from '$lib/atoms/Textarea.svelte';
+	import InputTextarea from '$lib/atoms/InputTextarea.svelte';
 	import InputDate from '$lib/atoms/InputDate.svelte';
 
 
@@ -48,7 +48,7 @@
 		LableText="Place of residence"
 	/>
 
-	<Textarea TextareaID="Bio" LableFor="Bio" LableText="Bio" />
+	<InputTextarea InputTextareaID="Bio" LableFor="Bio" LableText="Bio" />
 </form>
 
 <style>
