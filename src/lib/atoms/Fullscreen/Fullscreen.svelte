@@ -10,7 +10,7 @@
         { request: 'requestFullscreen', exit: 'exitFullscreen' }, // Standard
         { request: 'mozRequestFullScreen', exit: 'mozCancelFullScreen' },// Firefox
         { request: 'webkitRequestFullscreen', exit: 'webkitExitFullscreen' },// Safari
-        { request: 'msRequestFullscreen', exit: 'msExitFullscreen' }// IE11
+        { request: 'msRequestFullscreen', exit: 'msExitFullscreen' } // IE11
     ]
 
     onMount(() => {
