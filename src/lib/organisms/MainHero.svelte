@@ -17,14 +17,14 @@
 <style>
 
     section {
+        padding-top: 5em;
         background-image: url(/assets/bg-brazillian-kids.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-position-y: 0em;
         background-size: cover;
         overflow: hidden;
-        height: clamp(16em, 120vw, 90em);
-        padding-top: 5em;
+        height: clamp(16em, 155vw, 90em);
         display: flex;
         justify-content: center;
         align-items: top;
@@ -37,17 +37,17 @@
         justify-content: center;
         align-items: center;
         background-image: url(/assets/building.svg);
-        background-position-x: -1.5em;
+        background-position-x: -1.1em;
         background-repeat: no-repeat;
         background-size: cover;
-        width: clamp(14em, 90vw, 60em);
-        height: clamp(14em, 90vw, 60em);
+        width: clamp(14em, 84vw, 50em);
+        height: clamp(14em, 86vw, 50em);
     }
 
     .circle{
         position: absolute;
-        width: clamp(10em, 40vw, 35em);
-        height: clamp(10em, 40vw, 35em);
+        width: clamp(12em, 55vw, 35em);
+        height: clamp(12em, 55vw, 35em);
         border-radius: 50%;
         background-color: #0B3A35;
 
@@ -57,30 +57,62 @@
         align-content: flex-start;
     }
 
+    /* 650px */
+    @media (min-width: 40em)  {
 
-    /* 1000px */
-    @media (min-width: 62.5em)  {
+        section{
+            padding-top: 3em;
+        }
+    }
 
-        .buildings{
-            background-position-x: -2em;
+    /* 768px */
+    @media (min-width: 48em)  {
+
+        section{
+            padding-top: 0;
+        }
+    }
+
+    /* 900px */
+    @media (min-width: 56em)  {
+
+        .circle{
+            width: clamp(12em, 55vw, 30em);
+            height: clamp(12em, 55vw, 30em); 
         }
     }
 
     /* 1400px */
     @media (min-width: 87.5em)  {
 
-        .buildings{
-            background-position-x: -3em;
+        .circle{
+            width: clamp(12em, 55vw, 33em);
+            height: clamp(12em, 55vw, 33em);
         }
     }
 
     /* 1600px */
     @media (min-width: 100em)  {
 
-        .buildings{
-            background-position-x: -4em;
+        .circle{
+            width: clamp(12em, 55vw, 36em);
+            height: clamp(12em, 55vw, 36em);
         }
     }
+
+
+    /* 2000px */
+    @media (min-width: 125em)  {
+
+        section{
+            bottom: 5em;
+        }
+    }
+
+
+
+
+
 
 
 </style>
