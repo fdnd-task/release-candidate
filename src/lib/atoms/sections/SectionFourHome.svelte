@@ -1,3 +1,11 @@
+<script context="module" lang="ts">
+	export async function load({ params }) {
+		const res = await fetch(`/api/data`); // Adjust the API endpoint
+		const data = await res.json();
+		return { props: { data } };
+	}
+</script>
+
 <script>
 	export let data;
 </script>
@@ -43,9 +51,9 @@
 
 		<div class="flex-wrapper-recent-stekjes">
 			{#each data.stekjes.slice(0, 4) as stekje}
-			<a href={stekje.slug}>
-				<img src={stekje.fotos[0].url} alt="foto van een stekje" width="100" />
-			</a>
+				<a href={stekje.slug}>
+					<img src={stekje.fotos[0].url} alt="foto van een stekje" width="100" />
+				</a>
 			{/each}
 		</div>
 	</div>
