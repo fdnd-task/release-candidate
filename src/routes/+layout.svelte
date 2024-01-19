@@ -3,25 +3,34 @@
 </script>
 
 <header>
-	<!-- <NavigationBar /> -->
+	<NavigationBar />
 </header>
 
-<slot />
+<div>
+	<slot />
+</div>
 
 <style>
 	@import '$lib/styles/global.css';
 
-	header {
+	:global(body) {
+		display: grid;
+		grid-template-columns: auto min-content;
+		grid-template-areas: 'div header';
+		background-color: var(--background-color);
+		width: 100vw;
 		height: 100vh;
-		height: 100svh;
-		grid-area: 1/2;
-		position: sticky;
-		top: 0;
+		height: 100dvh;
+		font-family: var(--primary-font-family);
 	}
 
-	@media only screen and (max-width: 768px){
-		header{
-			height: fit-content;
-		}
+	header {
+		grid-area: header;
+		padding: 1rem 1rem 1rem 0;
+	}
+
+	div {
+		display: contents;
+		grid-area: div;
 	}
 </style>

@@ -45,7 +45,6 @@
 	--assist-by-color: #2974e4;
 	--turnover-by-color: #ed4444;
 	--block-by-color: #ffc738;
-	
 
 	/* FONTS */
 	--primary-font-family: 'Sora', sans-serif;
@@ -56,17 +55,12 @@
 	--box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
-
-body {
-	display: flex;
-	background-color: var(--background-color);
-	/* height: 100vh; */
-	font-family: var(--primary-font-family);
 }
 
 h1,
@@ -100,10 +94,10 @@ h3 {
 }
 
 .subtitle-small {
-    font-family: var(--secondary-font-family);
-    font-size: clamp(0.6rem, 1.3vw, 1.125rem);
-    font-weight: 400;
-    color: var(--primary-font-color);
+	color: var(--primary-font-color);
+	font-weight: 400;
+	font-size: clamp(0.6rem, 1.3vw, 1.125rem);
+	font-family: var(--secondary-font-family);
 }
 
 p {
@@ -115,11 +109,12 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	border: none;
-	border-radius: .8rem;
 	box-shadow: var(--box-shadow);
+	border: none;
+	border-radius: 0.8rem;
 }
 
 dialog::backdrop {
+	backdrop-filter: blur(5px);
 	background-color: rgba(0, 0, 0, 0.4);
-	backdrop-filter: blur(5px);  }
+}
