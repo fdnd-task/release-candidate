@@ -1,10 +1,10 @@
 <script>
+    // @ts-nocheck
 	export let href, title;
 </script>
 
     <a {href}> 
         {title}
-        <span><span/>
     </a>
 
 <style>
