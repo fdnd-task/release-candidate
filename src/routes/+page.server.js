@@ -19,7 +19,7 @@ export async function load() {
 
 	const hygraphData = await hygraph.request(query);
 
-  
+
   const space = "%20";
   const bookItems = "boeken";
   const EbookItems = "e-books";
@@ -33,14 +33,33 @@ export async function load() {
   const defaultUrlBooks = urlBase + urlSearch + urlQuery + urlDefault + space + bookItems + urlKey + urlOutput;
   const defaultUrleBooks = urlBase + urlSearch + urlQuery + urlDefault + space + EbookItems + urlKey + urlOutput;
   const defaultUrlAudioBooks = urlBase + urlSearch + urlQuery + urlDefault + space + audioItems + urlKey + urlOutput;
-  
-	const response = await fetch(
-		defaultUrlBooks && defaultUrleBooks && defaultUrlAudioBooks
-	);
-	const searchData = await response.json();
+  const defaultUrlSearch = urlBase + urlSearch + urlQuery +"kikker"+ urlKey + urlOutput;
+    console.log(defaultUrlSearch);
+	const responseBooks = await fetch(
+    defaultUrlBooks
+);
 
-	return {
-		hygraphData,
-		searchData
-	};
+const responseEBooks = await fetch(
+    defaultUrleBooks
+);
+
+const responseAudioBooks = await fetch(
+    defaultUrlAudioBooks
+);
+
+const search = await fetch(
+    defaultUrlSearch
+);
+const apiBooks = await responseBooks.json();
+const apiAudioBooks = await responseAudioBooks.json();
+const apiEBooks = await responseEBooks.json();
+const apiSearch = await search.json();
+return {
+    hygraphData,
+    apiBooks,
+    apiAudioBooks,
+    apiEBooks,
+    apiSearch
+};
+
 }

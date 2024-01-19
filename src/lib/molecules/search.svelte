@@ -1,7 +1,6 @@
 <script>
     import { Card } from "$lib/index.js"
     import { onMount } from 'svelte';
-
     
     export let cardData;
     let value = '';
@@ -55,7 +54,7 @@ function submitted(event) {
                         <p>{card.title}</p>
                     </li>
               {/each}
-              <button>Toon meer</button>
+              <a href={value}>Toon meer</a>
             </ul>
             {/if}
             <button on:click={closeDialog} class="close-button">Sluiten</button>
