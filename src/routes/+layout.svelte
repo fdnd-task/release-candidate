@@ -12,7 +12,11 @@
 	@import '$lib/styles/global.css';
 
 	header {
-		height: 100%;
+		height: 100vh;
+		height: 100svh;
+		grid-area: 1/2;
+		position: sticky;
+		top: 0;
 	}
 
 	@media only screen and (max-width: 768px){

@@ -1,11 +1,12 @@
 <script>
-	export let ButtonType, ButtonText, FormID;
+	import { onMount } from 'svelte';
+	export let ButtonType, ButtonText, Routing;
 </script>
 
-<button type={ButtonType} form={FormID}>{ButtonText}</button>
+<a href="{Routing}" type={ButtonType} id="Delete" >{ButtonText}</a>
 
 <style>
-	button {
+	a {
 		grid-area: button;
 		box-shadow: var(--box-shadow);
 		border: none;
@@ -16,9 +17,10 @@
 		height: fit-content;
 		color: white;
 		font-size: 1rem;
+		text-decoration: none;
 	}
 
-	button:hover {
+	a:hover {
 		background-color: hsl(0, 46%, 40%);
 	}
 </style>

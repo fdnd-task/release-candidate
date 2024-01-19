@@ -37,6 +37,7 @@
 </nav>
 
 <style>
+
 nav {
     padding: 10px;
     height: 100%;
@@ -114,7 +115,6 @@ ul {
         display: flex;
     } */
 }
-
 </style>
 
 
