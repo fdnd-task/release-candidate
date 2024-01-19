@@ -1,7 +1,7 @@
 
 
 <a href='/stekjes_overzicht'>
-<button>
+<button type="button">
     Gelijk Swappen
 
     <svg

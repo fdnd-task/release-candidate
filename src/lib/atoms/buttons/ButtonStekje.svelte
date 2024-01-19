@@ -1,4 +1,4 @@
-<button>
+<button type="button">
   Bekijk stekje
   <svg
 		width="20"

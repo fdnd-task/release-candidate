@@ -1,5 +1,5 @@
 <a href="contact">
-<button>
+<button type="button">
     Zoek locatie
 
     <svg
