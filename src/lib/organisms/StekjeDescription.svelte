@@ -274,7 +274,7 @@
 
   /* SVG'S Styling */
   span {
-    margin: 5px 3px 0 0;
+    padding: 5px 4px 0 0;
   }
 
   /*  Container styling  */
