@@ -192,15 +192,11 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
-  p {
-    color: var(--background-color);
-    font-size: 1em;
-  }
-
   a {
     text-decoration: none;
     color: var(--background-color);
   }
+
   nav a {
     font-size: 5em;
     transform: translateY(-130%);
@@ -212,6 +208,15 @@
   }
 
   @media screen and (max-width: 1122px) {
+    .menu-wrapper {
+      top: 0;
+      right: 0;
+      display: block;
+    }
+
+    .menu-button {
+      display: block;
+    }
   }
 
   @media screen and (max-width: 700px) {

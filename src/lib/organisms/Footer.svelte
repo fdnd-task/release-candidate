@@ -180,6 +180,10 @@
 		font-weight: 700;
 		/* color: var(--color-secundair); */
 	}
+
+	.right-svg {
+		display: none;
+	}
     
 	}
 

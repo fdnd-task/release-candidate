@@ -6,15 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="518cebf7-94ac-4b26-91d7-0b6a63cd5390" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonDeKast.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonDeKast.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonGelijkSwappen.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonGelijkSwappen.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonLocation.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/buttons/ButtonLocation.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/carousel/Carousel.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/carousel/Carousel.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/atoms/sections/SectionFourHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/sections/SectionFourHome.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/sections/SectionOneHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/sections/SectionOneHome.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/atoms/sections/SectionThreeHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/sections/SectionThreeHome.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/atoms/sections/SectionTwoHome.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/atoms/sections/SectionTwoHome.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/molecules/forms/ContactForm.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/molecules/forms/ContactForm.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,20 +29,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1705488235158</updated>
       <workItem from="1705488237429" duration="354000" />
-      <workItem from="1705612074033" duration="2482000" />
+      <workItem from="1705612074033" duration="2772000" />
+      <workItem from="1705657233922" duration="1175000" />
     </task>
     <servers />
   </component>
