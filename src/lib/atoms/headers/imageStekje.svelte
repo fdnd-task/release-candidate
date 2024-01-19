@@ -4,6 +4,8 @@
 
 <section class="image-section">
   <img
+    height="100%"
+    width="100%"
     src={data.stekje.fotos[0].url}
     alt={`Foto van ${data.naam}`}
     loading="lazy"
@@ -26,8 +28,6 @@
 
   img {
     object-fit: cover; /* Behoudt de beeldverhouding en bedekt het gehele pagina */
-    width: 100%;
-    height: 100%;
   }
 
   /* Naam van het stekje */
@@ -35,7 +35,7 @@
     position: absolute;
     bottom: 2rem;
     left: 2rem;
-    color: white;
-    font-size: 5vw;
+    color: var(--text-color);
+	font-size: 40px;
   }
 </style>
