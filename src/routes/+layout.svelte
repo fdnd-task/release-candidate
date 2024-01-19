@@ -27,16 +27,10 @@
 	header {
 		grid-area: header;
 		padding: 1rem 1rem 1rem 0;
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
 	}
 
 	div {
 		display: contents;
 		grid-area: div;
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
 	}
 </style>
