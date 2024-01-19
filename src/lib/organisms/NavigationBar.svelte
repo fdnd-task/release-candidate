@@ -1,22 +1,22 @@
 <script>
-    import NavItem from '$lib/molecules/NavItem.svelte';
+	import NavItem from '$lib/molecules/NavItem.svelte';
 
-    let items = [
-        { icon: 'home', label: 'Home', href: '/' },
-        { icon: 'players', label: 'Players', href: '/players' },
-        { icon: 'teams', label: 'Teams', href: '/teams' },
-        { icon: 'tournaments', label: 'Tournaments', href: '/tournaments' }
-    ];
+	let items = [
+		{ icon: 'home', label: 'Home', href: '/' },
+		{ icon: 'players', label: 'Players', href: '/players' },
+		{ icon: 'teams', label: 'Teams', href: '/teams' },
+		{ icon: 'tournaments', label: 'Tournaments', href: '/tournaments' }
+	];
 
-    let isMenuOpen = false;
+	let isMenuOpen = false;
 
-    function toggleMenu() {
-        isMenuOpen = !isMenuOpen;
-    }
+	function toggleMenu() {
+		isMenuOpen = !isMenuOpen;
+	}
 </script>
 
 <nav aria-label="Main Navigation">
-    <!-- <div class="menu-contain">
+	<!-- <div class="menu-contain">
         <button class="menu-toggle" on:click={toggleMenu}>
             {#if isMenuOpen}
                 <div class="bar close"></div>
@@ -29,21 +29,19 @@
             {/if}
         </button>
     </div> -->
-    <ul class={isMenuOpen ? 'open' : ''}>
-        {#each items as item}
-            <NavItem {item} />
-        {/each}
-    </ul>
+	<ul class={isMenuOpen ? 'open' : ''}>
+		{#each items as item}
+			<NavItem {item} />
+		{/each}
+	</ul>
 </nav>
 
 <style>
+	nav {
+		height: 100%;
+	}
 
-nav {
-    padding: 10px;
-    height: 100%;
-}   
-
-/* .menu-toggle {
+	/* .menu-toggle {
     position: absolute;
     cursor: pointer;
     flex-direction: column;
@@ -84,26 +82,25 @@ nav {
     display: none;
 } */
 
-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: var(--box-shadow);
-    border-radius: 10px;
-    background-color: var(--input-background-color);
-    height: 100%;
-    list-style: none;
-    margin: 0;
-}
+	ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		box-shadow: var(--box-shadow);
+		border-radius: 10px;
+		background-color: var(--input-background-color);
+		height: 100%;
+		list-style: none;
+	}
 
-@media only screen and (max-width: 768px) { 
+	@media only screen and (max-width: 768px) {
+		ul {
+			flex-direction: row;
+		}
 
-    ul{
-        flex-direction: row;
-    }
-
-    /* .menu-toggle {
+		/* .menu-toggle {
         display: flex;
     }
 
@@ -114,7 +111,5 @@ ul {
     ul.open {
         display: flex;
     } */
-}
+	}
 </style>
-
-
