@@ -41,9 +41,8 @@
     article:hover {
         scale: 103%;
         /* background-color:red; */
-        color: #FFFFFF;
-        box-shadow: var(--primary-dark-color) 0px 0px 10px 0px;
-    }
+        color: var(--primary-light-color);
+        box-shadow: var(--primary-dark-color) 0 0 0.625rem 0;
 
     .info > p {
         font-size: 0.9rem;

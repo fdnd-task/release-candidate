@@ -1,7 +1,8 @@
 <script>
-    import { Search } from '$lib/index.js';
+    // Hier import ik de components die nodig zijn in deze pagina
+    import { Card,  LinkButton, Logo, Search } from '$lib/index.js'
+    // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
     export let data;
-
 
     console.log(JSON.stringify(data.searchData, null, 2));
 </script>
@@ -11,14 +12,13 @@
 
     <article class="hero-text">
         <h1>
-             Welkom <span>Mark Vos</span> bij OBA!
-         </h1>
-         <p> Ontdek een wereld vol kennis en verhalen. Onze collectie staat tot uw beschikking, en ons team helpt u graag bij uw zoektocht naar wijsheid. Laat de pagina's uw gids zijn op een avontuurlijke reis door het geschreven woord.</p>
+            Welkom <span>Mark Vos</span> bij OBA!
+        </h1>
+        <p> Ontdek een wereld vol kennis en verhalen. Onze collectie staat tot uw beschikking, en ons team helpt u graag bij uw zoektocht naar wijsheid. Laat de pagina's uw gids zijn op een avontuurlijke reis door het geschreven woord.</p>
     </article>
     
     <section class="hero-image">
-        <img src="/oba.png" alt="oba logo" width="100%">
-
+        <img src="{Logo}" alt="oba logo" width="100%">
     </section>
 
 </section>
@@ -32,9 +32,9 @@
 
     <article class="hero-text">
         <h1>
-             Welkom <span>Mark Vos</span> bij OBA!
-         </h1>
-         <p> Ontdek een wereld vol kennis en verhalen. Onze collectie staat tot uw beschikking, en ons team helpt u graag bij uw zoektocht naar wijsheid. Laat de pagina's uw gids zijn op een avontuurlijke reis door het geschreven woord.</p>
+        Welkom <span>Mark Vos</span> bij OBA!
+        </h1>
+        <p> Ontdek een wereld vol kennis en verhalen. Onze collectie staat tot uw beschikking, en ons team helpt u graag bij uw zoektocht naar wijsheid. Laat de pagina's uw gids zijn op een avontuurlijke reis door het geschreven woord.</p>
     </article>
     
 </section>
@@ -48,14 +48,19 @@ cardData={data.hygraphData.uitleengeschiedenis1}/>
     <article class="readinglist-text">  
         <h2>
         Jouw recente leeslijst: <span>boeken<span>
-         </h2>
+        </h2>
         <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog lezen!</p>
     </article>
 
     <section class="readinglist-carousel">
-        <!-- carousel plaatsen -->
+        <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
+        <Card 
+            bookAuthor={data.uitleengeschiedenis1[0].author}
+            bookTitle={data.uitleengeschiedenis1[0].title}
+            bookUrl={data.uitleengeschiedenis1[0].image?.url}
+        />
     </section>
-    <a href='/' class="oba-button">Bekijk Leeslijst</a>
+    <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
     
 </section>
 
@@ -63,15 +68,19 @@ cardData={data.hygraphData.uitleengeschiedenis1}/>
     <article class="readinglist-text">  
         <h2>
         Jouw recente leeslijst: <span>e-boeken<span>
-         </h2>
+        </h2>
         <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog lezen via jouw telefoon of e-reader!</p>
     </article>
 
     <section class="readinglist-carousel">
-           <!-- carousel plaatsen -->
+        <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
+        <Card 
+            bookAuthor={data.uitleengeschiedenis1[1].author}
+            bookTitle={data.uitleengeschiedenis1[1].title}
+            bookUrl={data.uitleengeschiedenis1[1].image?.url}
+        />
     </section>
-
-    <a href='/' class="oba-button">Bekijk Leeslijst</a>
+    <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
 
 </section>
 
@@ -79,15 +88,19 @@ cardData={data.hygraphData.uitleengeschiedenis1}/>
     <article class="readinglist-text">  
         <h2>
         Jouw recente leeslijst: <span>luisterboeken<span>
-         </h2>
+        </h2>
         <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog luisteren!</p>
     </article>
 
     <section class="readinglist-carousel">
-        <!-- carousel plaatsen -->
+        <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
+        <Card 
+            bookAuthor={data.uitleengeschiedenis1[2].author}
+            bookTitle={data.uitleengeschiedenis1[2].title}
+            bookUrl={data.uitleengeschiedenis1[2].image.url}
+        />
     </section>
-
-    <a href='/' class="oba-button">Bekijk Leeslijst</a>
+    <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
 </section>
 
 
@@ -108,42 +121,17 @@ cardData={data.hygraphData.uitleengeschiedenis1}/>
     </section>
 
     <section class="about-text">
-          <a href='https://www.oba.nl/' class="oba-button">Meer bekijken</a>
+        <a href='https://www.oba.nl/' class="oba-button">Meer bekijken</a>
     </section>
 
-  
+
 </section>
 
 
 
 <style>
 
-/* :root { */
-         /* die blauw ipv rood, gebruikt voor span */
-		/* --primary-accent-color: #0064C8;  */
-        /* achtergrondkleur website */
-		/* --primary-background-color: #F2F5FF ; */
-        /* net niet zwart, voor achtergrond kleur buttons en primary tekst kleur */
-		/* --primary-dark-color: #222222; */
-        /* gewoon wit */
-		/* --primary-light-color: #FFFFFF; */
-	/* } */
-
 /* mobile first */
-
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.8em;
-}
-
-p {
-    padding: 25px 0px;
-    font-size: 1em;
-}
 
 span {
     color: var(--primary-accent-color);
@@ -250,19 +238,6 @@ span {
 /* laptop breakpoint */
     @media (min-width: 68em) {
 
-        h1 {
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-size: 2.2em;
-        }
-
-        p {
-            padding: 1.5em 0em;
-            font-size: 1.1em;
-        }
-
         .hero-section-large {
             padding: 9em;
             display: grid;
@@ -271,6 +246,11 @@ span {
             / 1fr 1fr;
             gap: 30px;
 
+        }
+
+        .extraPadding {
+            max-width: 100%;
+            padding: 0 2rem;
         }
 
         .hero-section-large img {
@@ -298,9 +278,5 @@ span {
             "text carousel" 1fr
             / 1fr 1fr;
         }
-
-
-
     }
-    
 </style>
