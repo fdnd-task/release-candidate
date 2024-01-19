@@ -33,6 +33,9 @@ export { default as MainStats } from './organisms/MainStats.svelte'
 export { default as MainSponsor } from './organisms/MainSponsor.svelte'
 export { default as MainStory } from './organisms/MainStory.svelte'
 
+export { default as PromiseHero } from './organisms/PromiseHero.svelte'
+export { default as PromiseIntro } from './organisms/PromiseIntro.svelte'
+
 export { default as Footer } from './organisms/Footer.svelte'
 
 
