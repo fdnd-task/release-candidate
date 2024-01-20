@@ -24,33 +24,42 @@
 <style>
     
     table {
-        border: 1px solid var(--primary-dark-color);
+        /* border: 1px solid var(--primary-dark-color); */
         border-collapse: collapse;
         margin: 0;
         padding: 0;
-        width: 100%;
+        width: 70vw;
         table-layout: fixed;
+        border-radius: var(--primary-table-border-radius);
     }
 
-    table tr {
+    table td {
         background-color: var(--primary-light-color);
         border: 1px solid var(--primary-table-border-color);
         padding: .35rem;
     }
 
-    table tr:first-of-type {
+    table td:first-of-type {
         border-top-left-radius: var(--primary-table-border-radius);
         border-top-right-radius: var(--primary-table-border-radius);
     }
 
-    table tr:last-of-type {
+    table td:last-of-type {
         border-bottom-left-radius: var(--primary-table-border-radius);
         border-top-right-radius: var(--primary-table-border-radius);
     }
 
-    table td {
+    table td:first-child {
         padding: .625rem;
         text-align: center;
+    }
+
+    table td:not(:first-child) {
+        padding: .625rem;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
 @media screen and (max-width: 40rem) {
