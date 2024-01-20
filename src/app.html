@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<title>OBA Mijnomgeving</title>
 
 		<!-- font -->
 
@@ -30,6 +31,8 @@
 			--primary-dark-color: #222222;
 			/* gewoon wit */
 			--primary-light-color: #ffffff;
+			/* border-radius voor tables */
+			--primary-table-border-radius: 1rem;
 		}
 
 		body {
@@ -54,6 +57,7 @@
 		p {
 			padding: 25px 0px;
 			font-size: 1em;
+			max-width: 70ch;
 		}
 
 		@media (min-width: 68em) {
@@ -64,7 +68,7 @@
 			h2 {
 				font-size: 2.2em;
 			}
-      
+
 			p {
 				padding: 1.5em 0em;
 				font-size: 1.1em;
