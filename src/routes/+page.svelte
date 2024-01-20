@@ -120,6 +120,7 @@ cardData={data.hygraphData.uitleengeschiedenis1}/>
             />
         {/each}
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
+    </section>
 </section>
 
 
