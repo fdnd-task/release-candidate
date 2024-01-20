@@ -1,7 +1,6 @@
 <script>
     // Hier import ik de components die nodig zijn in deze pagina
     import { Card,  LinkButton, Logo, Search } from '$lib/index.js'
-	import { slide } from 'svelte/transition';
     // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
     export let data;
 
@@ -9,7 +8,6 @@
     console.log(JSON.stringify(data.apiEBooks.results[0], null, 2))
     // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
 
-    console.log(JSON.stringify(data.searchData, null, 2));
 </script>
 <!-- mobile en tablet hero section -->
 
@@ -53,7 +51,7 @@
 </section>
 
 <Search 
-cardData={data.hygraphData.uitleengeschiedenis1}/>
+cardData={data.apiBooks.results}/>
 
 <!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
 
@@ -119,6 +117,7 @@ cardData={data.hygraphData.uitleengeschiedenis1}/>
             />
         {/each}
     <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
+    </section>
 </section>
 
 

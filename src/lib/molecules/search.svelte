@@ -21,7 +21,8 @@ function submitted(event) {
 
     // // Filter the cardData based on the search value
     const searchValue = value.toLowerCase();
-    const filteredCards = Object.values(cardData).filter(card => card.title.toLowerCase().indexOf(searchValue) !== -1);
+    const filteredCards = Object.values(cardData).filter(card => card.frabl.key1.toLowerCase().includes(searchValue));
+    // const filteredCards = Object.values(cardData).filter(card => card.frabl.key1.toLowerCase() === searchValue);
 
     if (filteredCards.length === 0) {
       // Als er geen overeenkomende resultaten zijn, toon een foutmelding
@@ -37,7 +38,7 @@ function submitted(event) {
 <section>
   <div on:click={openDialog} class="button">
     <form action="" on:submit={submitted}>
-      <input type="text" placeholder="Search.." name="search" bind:value >
+      <input type="text" placeholder="Search.." name="search" bind:value autocomplete="off">
       <button type="submit">Search</button>
    </form> 
   </div>
@@ -50,13 +51,13 @@ function submitted(event) {
               <ul>
               {#each Object.values(cardData) as card}
                     <li>
-                        <img src="{card.image.url}" alt="foto van {card.title}" loading="lazy" width="50" height="50">
-                        <p>{card.title}</p>
+                        <img src="{card.coverimages[0]}" alt="foto van {card.frabl.key1}" loading="lazy" width="50" height="50">
+                        <p>{card.frabl.key1}</p>
                     </li>
               {/each}
-              <a href={value}>Toon meer</a>
             </ul>
             {/if}
+            <a href={value}>Toon meer</a>
             <button on:click={closeDialog} class="close-button">Sluiten</button>
             
         </div>   
