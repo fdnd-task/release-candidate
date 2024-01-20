@@ -49,7 +49,7 @@
         width: clamp(12em, 55vw, 35em);
         height: clamp(12em, 55vw, 35em);
         border-radius: 50%;
-        background-color: #0B3A35;
+        background-color: #122423;
 
         display: flex;
         justify-content: center;
