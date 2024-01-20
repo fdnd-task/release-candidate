@@ -1,10 +1,12 @@
 <script>
     import { Table, Button } from '$lib/index.js';
     export let data;
+    
+    const tellerstand = data.subscriptionCounters[0];
+
 </script>
 
 <h1>Betalingen</h1>
-
 
 <section>
     <h2>Tegoed</h2>
@@ -15,7 +17,7 @@
         Hieronder kan je via IDEAL tegoed op je OBA-pas zetten.
     </p>
     <div>
-        <h3>Jouw tegoed: €24.50</h3>
+        <h3>Jouw tegoed: €{data.balances[0].balance}</h3>
         <Button buttonText="Toevoegen aan tegoed"/>
     </div>
 </section>
@@ -26,25 +28,30 @@
         Hieronder vind je alles wat je dit jaar nog kan doen met je abonnement.
     </p>
     <ul>
-        <li>Uitleningen boeken: 8 van de 20</li>
-        <li>Uitleningen e-books: 6 van de 6</li>
-        <li>Beschikbare films: 4 van de 5</li>
-        <li>Korting op activiteiten: 50%</li>
-        <li>Computertijd: 3 uur per dag</li>
+        <li>Uitleningen boeken: {tellerstand.bookCurrent} van de {tellerstand.bookMax}</li>
+        <li>Uitleningen e-books: {tellerstand.ebookCurrent} van de {tellerstand.ebookMax}</li>
+        <li>Beschikbare films: {tellerstand.movieCurrent} van de {tellerstand.movieMax}</li>
+        <li>Korting op activiteiten: {tellerstand.activityDiscount}%</li>
+        <li>Computertijd: {tellerstand.computerTime} uur per dag</li>
     </ul>
     <div>
-        <h3>Jouw abonnement: OBA Basis</h3>
+        <h3>Jouw abonnement: OBA {tellerstand.subscriptionType}</h3>
         <Button buttonText="Abonnement uitbreiden"/>
     </div>
-  
-    <Table tableData={data.paymentss}/>
+
+</section>
+
+<section>
+
+    <h2>Betaalgeschiedenis</h2>
+    <Table tableData={data.paymentHistories }/>
 
 </section>
 
 <style>
 
     section{
-        height: 30rem;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         padding: 0 1.5em;
@@ -52,6 +59,10 @@
 
     section > *{
         max-width: 35rem;
+    }
+
+    section:last-of-type{
+        margin-bottom: 10rem;
     }
 
     section:nth-of-type(2){
@@ -105,9 +116,6 @@
 /* laptop breakpoint */
 @media (min-width: 68em) {
     
-
-
 }
-
 
 </style>

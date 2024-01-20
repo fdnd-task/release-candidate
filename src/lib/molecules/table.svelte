@@ -24,79 +24,69 @@
 <style>
     
     table {
-        /* border: 1px solid var(--primary-dark-color); */
         border-collapse: collapse;
-        margin: 0;
-        padding: 0;
-        width: 70vw;
+        width: 100%;
         table-layout: fixed;
+        border-radius: 1rem;
         border-radius: var(--primary-table-border-radius);
     }
 
-    table td {
+    tr {
         background-color: var(--primary-light-color);
-        border: 1px solid var(--primary-table-border-color);
         padding: .35rem;
+        border-bottom: 1px #D9D9D9 solid;
     }
 
-    table td:first-of-type {
-        border-top-left-radius: var(--primary-table-border-radius);
-        border-top-right-radius: var(--primary-table-border-radius);
+    tr:last-of-type{
+        border-bottom: none;
     }
-
-    table td:last-of-type {
-        border-bottom-left-radius: var(--primary-table-border-radius);
-        border-top-right-radius: var(--primary-table-border-radius);
-    }
-
-    table td:first-child {
-        padding: .625rem;
-        text-align: center;
-    }
-
-    table td:not(:first-child) {
+    
+    td {
         padding: .625rem;
         text-align: left;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
-@media screen and (max-width: 40rem) {
-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
+    tr:first-of-type > td:first-of-type{
+        border-top-left-radius: var(--primary-table-border-radius);
+    }
 
-    table td:nth-of-type(1) {
-        border-radius: var(--primary-table-border-radius);
+    tr:first-of-type > td:last-of-type{
+        border-top-right-radius: var(--primary-table-border-radius);
+    }
+
+    tr:last-of-type > td:first-of-type{
+        border-bottom-left-radius: var(--primary-table-border-radius);
+    }
+    
+    tr:last-of-type > td:last-of-type{
+        border-bottom-right-radius: var(--primary-table-border-radius);
+    }
+
+
+    @media screen and (max-width: 40rem) {
+
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
     }
 
     table {
         border: 0;
     }
 
-    /* table td:first-of-type {
-        display: none;
-    } */
-
-    table tr {
-        border-bottom: 1px solid var(--primary-table-border-color);
+    tr {
         display: block;
         margin-bottom: .625rem;
+        border-radius: var(--primary-table-border-radius);
+        border-bottom: none;
     }
 
-    table td {
-        border-bottom: 1px solid var(--primary-table-border-color);
+    td {
         display: block;
         font-size: .8rem;
         text-align: left;
-    }
-
-    table td:last-child {
-        border-bottom: 0;
     }
 }
 
