@@ -42,7 +42,7 @@
 		</div>
 
 		<div class="flex-wrapper-recent-stekjes">
-			{#each data.stekjes.slice(0, 4) as stekje}
+			{#each data.stekjes.slice(1,5) as stekje}
 				<a href={stekje.slug}>
 					<img src={stekje.fotos[0].url} alt="foto van een stekje" width="100" />
 				</a>
