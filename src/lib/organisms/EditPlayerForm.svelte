@@ -1,8 +1,7 @@
 <script>
 	import Input from '$lib/atoms/input.svelte';
-	import {InputTextarea} from '$lib';
+	import InputTextarea from '$lib/atoms/InputTextarea.svelte';
 	import InputDate from '$lib/atoms/InputDate.svelte';
-
 
 	export let FormID, Method, Action;
 </script>

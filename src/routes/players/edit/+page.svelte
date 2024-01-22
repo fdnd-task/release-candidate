@@ -1,7 +1,7 @@
 <script>
 	import Form from '$lib/organisms/EditPlayerForm.svelte';
 	import Button from '$lib/atoms/button.svelte';
-	import DeleteButton from '$lib/atoms/WarningButton.svelte';
+	import Link from '$lib/atoms/Link.svelte';
 	import DeleteForm from '$lib/organisms/DeleteForm.svelte';
 	import { onMount } from 'svelte';
 
@@ -40,13 +40,16 @@
 	</section>
 
 	<footer>
-		<Button ButtonType="submit" FormID="FormID" ButtonText="Save" />
-		<DeleteButton Routing="#DeleteForm" ButtonType="Button" FormID="Delete" ButtonText="Delete" />
+		<Button ButtonType="submit" Form="FormID" ButtonText="Save" />
+		<Link severity="warning" Routing="#DeleteForm" ID="Delete" Text="Delete" />
 	</footer>
 </main>
 <div id="DeleteFormContainer" class="DeleteFormContainer">
 	<DeleteForm FormID="DeleteForm" Method="get" Action="/players" />
-	<button id="closeBtn">Close</button>
+	<div class="ButtonContainer">
+		<Button severity="ghost" ButtonType="button" ID="closeBtn" ButtonText="Cancel" />
+		<Button severity="warning" ButtonType="submit" Form="DeleteForm" ButtonText="Contineu" />
+	</div>
 </div>
 
 <style>
@@ -99,7 +102,12 @@
 		flex-direction: column;
 		gap: 2rem;
 		padding: 3rem;
+	}
 
+	.ButtonContainer {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
 	}
 
 	@media (pointer: fine) {

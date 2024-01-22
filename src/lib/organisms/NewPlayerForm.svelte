@@ -1,7 +1,7 @@
 <script>
 	import Input from '$lib/atoms/input.svelte';
 	import InputRequired from '$lib/atoms/input-required.svelte';
-	import {InputTextarea} from '$lib';
+	import InputTextarea from '$lib/atoms/InputTextarea.svelte';
 	import InputDate from '$lib/atoms/InputDate.svelte';
 
 	export let FormID, Method, Action;
@@ -36,7 +36,7 @@
 		LableText="Place of residence..."
 	/>
 
-	<InputTextarea InputID="Bio" LableFor="Bio" LableText="Bio..." />
+	<InputTextarea TextareaID="Bio" LableFor="Bio" LableText="Bio..." />
 </form>
 
 <style>
