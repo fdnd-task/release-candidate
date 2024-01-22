@@ -1,10 +1,13 @@
 <script>
-  export let LableText, LableFor, InputType, InputID
+  export let Text, For, Type, ID;
+  export let value = "";
+  export let Required = "";
+  export let placeholder = "";
 </script>
 
 <div class="input-container">
-  <input type={InputType} id={InputID} autocomplete="off" placeholder="" required />
-  <label for={LableFor}>{LableText}</label>
+  <input type={Type} id={ID} autocomplete="off" placeholder="{placeholder}" value="{value}" Required="{Required}" />
+  <label for={For}>{Text}</label>
 </div>
 
 <style>

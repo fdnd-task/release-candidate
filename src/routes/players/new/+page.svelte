@@ -1,8 +1,6 @@
 <script>
 	import Form from '$lib/organisms/NewPlayerForm.svelte';
 	import Button from '$lib/atoms/button.svelte';
-	import InputRequired from '$lib/atoms/input-required.svelte';
-	import TeamCard from '$lib/molecules/TeamCard.svelte';
 </script>
 
 <main>

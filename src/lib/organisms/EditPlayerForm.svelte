@@ -1,6 +1,6 @@
 <script>
 	import Input from '$lib/atoms/input.svelte';
-	import InputTextarea from '$lib/atoms/InputTextarea.svelte';
+	import Textarea from '$lib/atoms/Textarea.svelte';
 	import InputDate from '$lib/atoms/InputDate.svelte';
 
 	export let FormID, Method, Action;
@@ -8,49 +8,53 @@
 
 <form id={FormID} method={Method} action={Action}>
 	<Input
-		InputType="text"
-		InputID="AddPlayer"
-		LableFor="AddPlayer"
-		LableText="name"
+		Type="text"
+		ID="AddPlayer"
+		For="AddPlayer"
+		Text="Name"
+		Value="Mark Evens"
 	/>
-	<section>
-		<InputDate />
-		<Input
-			InputType="text"
-			InputID="JerseyNumber"
-			LableFor="JerseyNumber"
-			LableText="Jersey number"
-		/>
-	</section>
-	<Input
-		InputType="text"
-		InputID="BirthCountry"
-		LableFor="BirthCountry"
-		LableText="Country of Birth"
-	/>
-	<Input
-		InputType="text"
-		InputID="ResidencePlace"
-		LableFor="ResidencePlace"
-		LableText="Place of residence"
+	<InputDate
+		DDValue="08"
+		MMValue="09" 
+		YYYYValue="2002"
 	/>
 
-	<InputTextarea TextareaID="Bio" LableFor="Bio" LableText="Bio" />
+	<Input
+		Type="text"
+		ID="JerseyNumber"
+		For="JerseyNumber"
+		Text="Jersey number"
+		Value="Number 5"
+	/>
+	<Input
+		Type="text"
+		ID="BirthCountry"
+		For="BirthCountry"
+		Text="Country of Birth"
+		Value="Japan"
+	/>
+	<Input
+		Type="text"
+		ID="ResidencePlace"
+		For="ResidencePlace"
+		Text="Place of residence"
+		Value="Tokio"
+	/>
+
+	<Textarea 
+		ID="Bio" 
+		For="Bio" 
+		Text="Bio" 
+		Value="Data van de speeler"
+		/>
+
 </form>
 
 <style>
 	form {
-		grid-area: form;
-	}
-
-	form {
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-	}
-
-	section {
-		display: flex;
-		gap: inherit;
 	}
 </style>

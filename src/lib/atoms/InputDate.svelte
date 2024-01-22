@@ -1,17 +1,19 @@
 <script>
-	export let LableText, LableFor, InputType, InputID;
+	export let DDValue = "";
+	export let MMValue = "";
+	export let YYYYValue = "";
 </script>
 
 <div class="DateOfBirth-container">
 	<legend >Date of birth</legend>
 	<div class="input-container">
-		<input type="tekst" id="Day" autocomplete="bday-day" placeholder="DD" inputmode="numeric" />
+		<input type="tekst" id="Day" autocomplete="bday-day" placeholder="DD" value="{DDValue}" inputmode="numeric" />
 		<label for="Day">Welke dag ben je geboren</label>
 		/
-		<input type="tekst" id="Month" autocomplete="bday-month" placeholder="MM" inputmode="numeric" />
+		<input type="tekst" id="Month" autocomplete="bday-month" value="{MMValue}" placeholder="MM" inputmode="numeric" />
 		<label for="Month">Welke maand ben je geboren</label>
 		/
-		<input type="tekst" id="Year" autocomplete="bday-year" placeholder="YYYY" inputmode="numeric" />
+		<input type="tekst" id="Year" autocomplete="bday-year" value="{YYYYValue}" placeholder="YYYY" inputmode="numeric" />
 		<label for="Jaar">Welke jaar ben je geboren</label>
 	</div>
 </div>

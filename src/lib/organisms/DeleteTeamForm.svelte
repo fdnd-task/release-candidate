@@ -1,5 +1,4 @@
 <script>
-	import Input from '$lib/atoms/input-required.svelte';
 	import { onMount } from 'svelte';
 	import InputNoLabel from '$lib/atoms/input-NoLabel.svelte';
 
@@ -19,10 +18,11 @@
 	<p>Enter the team name team name” to continue:</p>
 
 	<InputNoLabel
-		InputType="text"
-		InputID="DeletePlayer"
-		LableFor="DeletePlayer"
-		LableText=""
+		Type="text"
+		ID="DeletePlayer"
+		For="DeletePlayer"
+		Text=""
+		placeholder="Name of player"
 	/>
 </form>
 

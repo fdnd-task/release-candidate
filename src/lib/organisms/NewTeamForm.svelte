@@ -1,24 +1,24 @@
 <script>
 	import Input from '$lib/atoms/input.svelte';
-	import InputRequired from '$lib/atoms/input-required.svelte';
 	import UplaodInput from '$lib/atoms/UploadInput.svelte';
 
 	export let FormID, Method, Action;
 </script>
 
 <form id={FormID} method={Method} action={Action}>
-	<InputRequired
-		InputType="text"
-		InputID="TeamName"
-		LableFor="TeamName"
-		LableText="* Team name..."
+	<Input
+		Type="text"
+		ID="TeamName"
+		For="TeamName"
+		Text="* Team name..."
+		Required="required"
 	/>
 
 	<Input
-		InputType="text"
-		InputID="CountryOfOrigin"
-		LableFor="CountryOfOrigin"
-		LableText="Country of origin..."
+		Type="text"
+		ID="CountryOfOrigin"
+		For="CountryOfOrigin"
+		Text="Country of origin..."
 	/>
 
 	<UplaodInput
@@ -30,10 +30,6 @@
 </form>
 
 <style>
-	form {
-		grid-area: form;
-	}
-
 	form {
 		display: flex;
 		flex-direction: column;

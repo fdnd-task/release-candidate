@@ -1,10 +1,12 @@
 <script>
-  export let TextareaID, LableFor, LableText;
+  export let ID, For, Text;
+  export let Value ="";
+  export let Required ="";
 </script>
 
 <div class="input-container">
-  <textarea id={TextareaID} autocomplete="off" placeholder="" />
-  <label for={LableFor}>{LableText}</label>
+  <textarea id={ID} autocomplete="off" placeholder="" Required="{Required}" value="{Value}" />
+  <label for={For}>{Text}</label>
 </div>
 
 <style>
