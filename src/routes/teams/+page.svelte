@@ -1,5 +1,5 @@
 <script>
-	import Button from '$lib/atoms/Link.svelte';
+	import Link from '$lib/atoms/Link.svelte';
 	import TeamCard from '$lib/molecules/TeamCard.svelte';
 </script>
 
@@ -8,7 +8,7 @@
 
 	<h2 class="sub-header-left">Add and change teams</h2>
 	<div class="NewTeams">
-		<Button severity="primary-button" Routing="Teams/new" Text="+ new team" />
+		<Link severity="primary-button" Routing="Teams/new" Text="+ new team" />
 	</div>
 	<div class="CardContainer">
 		<ul>
