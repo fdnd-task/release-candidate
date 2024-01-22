@@ -57,13 +57,15 @@
 				</a>
 			{/each}
 		</div>
+	</div>
 </main>
 
 <style>
 	h5 {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		color: var(--background-color);
 		margin-bottom: 1rem;
+		line-height: 2.5rem;
 	}
 
 	p {
