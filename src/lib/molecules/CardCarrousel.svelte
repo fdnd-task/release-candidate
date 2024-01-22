@@ -122,6 +122,7 @@ h3 {
   h3{
     font-size: 1.5em;
   }
+ 
 }
 
 @media only screen and (max-width: 601px){
