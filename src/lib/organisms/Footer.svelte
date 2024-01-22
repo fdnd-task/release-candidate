@@ -1,7 +1,7 @@
 
 <script>
 import { base } from '$app/paths';
-import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
+import  { BtnSecondary, BtnPrimary } from '$lib/index.js'
 	
 	
 </script>
@@ -149,7 +149,7 @@ import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
 
 <style> 
 
-footer{
+footer {
 	overflow: hidden;
 }
 
@@ -242,5 +242,5 @@ a {
 	padding-top: 0;
 	}
 
-}
+}}
 </style>

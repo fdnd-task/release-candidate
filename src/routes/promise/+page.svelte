@@ -1,3 +1,10 @@
+<script>
+    import { PromiseHero, PromiseIntro } from '$lib/index.js';    
+</script>
+
+
+
 <svelte:head> <title>INK - Promise page</title> </svelte:head>
 
-<h1>Our Promise</h1>
+<PromiseHero />
+<PromiseIntro />
