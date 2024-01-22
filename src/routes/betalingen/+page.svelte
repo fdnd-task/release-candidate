@@ -54,15 +54,11 @@
         height: fit-content;
         display: flex;
         flex-direction: column;
-        padding: 0 1.5em;
+        padding: 0 1.5em 2.5rem 1.5rem;
     }
 
     section > *{
         max-width: 35rem;
-    }
-
-    section:last-of-type{
-        margin-bottom: 10rem;
     }
 
     section:nth-of-type(2){
@@ -75,9 +71,9 @@
     }
 
     h2{
-        margin-top: 5rem;
+        padding-top: 2.5rem;
         padding-bottom: 1.5rem;
-    }
+    }   
 
     h3{
         padding: 1.5rem 0;
