@@ -3,16 +3,23 @@
     export let bookUrl
     export let bookTitle
     export let bookAuthor
+    export let bookDetailLink
 </script>
-<article class="background-image" style="background-image: url('{bookUrl}');">
-    <!-- In de html elementen benoem ik lege js variabeles en deze geef ik leeg mee aan de pagina waar dit component wordt gebruikt -->
-    <section class="info">
-        <p class="p__title">{bookTitle}</p>
-        <p>{bookAuthor}</p>
-    </section>
-</article>
+<a href="{bookDetailLink}">
+    <article class="background-image" style="background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url('{bookUrl}');">
+        <!-- In de html elementen benoem ik lege js variabeles en deze geef ik leeg mee aan de pagina waar dit component wordt gebruikt -->
+        <section class="info">
+            <p class="p__title">{bookTitle}</p>
+            <p>{bookAuthor}</p>
+        </section>
+    </article>
+</a>
 
 <style>
+    a {
+        text-decoration: none;
+        color: var(--primary-light-color);
+    }
     article {
         position: relative;
         display: flex;
@@ -34,7 +41,7 @@
         box-shadow: 0 4px 6px 1px #ccc;
         scroll-snap-align: start;
         scroll-margin: 5px;
-        
+        background-color: linear-gradient(to top, transparent, #000000);
     }
 
     article img {
@@ -66,6 +73,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        mix-blend-mode: normal;
     }
 
     .p__title {

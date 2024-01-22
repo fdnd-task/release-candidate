@@ -5,7 +5,7 @@
     export let data;
 
     // console.log(JSON.stringify(data.apiBooks, null, 2));
-    // console.log(JSON.stringify(data.apiEBooks.results[0], null, 2))
+    console.log(JSON.stringify(data.apiEBooks.results[0], null, 2))
     // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
 
 </script>
@@ -45,6 +45,7 @@
                     bookAuthor={book.authors}
                     bookTitle={book.titles}
                     bookUrl={book.coverimages}
+                    bookDetailLink={book.detailLink}
                 />
             {/each}
             </article>
@@ -58,6 +59,7 @@
             bookAuthor={book.authors}
             bookTitle={book.titles}
             bookUrl={book.coverimages}
+            bookDetailLink={book.detailLink}
         />
     {/each}
 
@@ -94,6 +96,7 @@ cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBook
                 bookAuthor={book.authors}
                 bookTitle={book.titles}
                 bookUrl={book.coverimages}
+                bookDetailLink={book.detailLink}
             />
         {/each}
 
@@ -147,6 +150,7 @@ section{
 section:nth-child(2n+1){
     background-color: var(--primary-light-color);
 }
+
 article{
     padding: 4rem 0;
 }
