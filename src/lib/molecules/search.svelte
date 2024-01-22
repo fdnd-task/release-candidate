@@ -50,11 +50,13 @@ console.log(cardData)
                 <h2>{error}</h2>
                 {:else}
               <ul>
-              {#each Object.values(cardData) as card}
-                    <li>
-                        <img src="{card.coverimages[0]}" alt="foto van {card.frabl.key1}" loading="lazy" width="50" height="50">
-                        <p>{card.frabl.key1}</p>
-                    </li>
+              {#each Object.values(cardData) as card}  
+                  <a href={card.detailLink}>
+                      <li>
+                          <img src="{card.coverimages[0]}" alt="foto van {card.frabl.key1}" loading="lazy" width="50" height="50">
+                          <p>{card.frabl.key1}</p>
+                      </li>
+                    </a>
               {/each}
             </ul>
             {/if}

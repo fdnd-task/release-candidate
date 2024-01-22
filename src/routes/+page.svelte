@@ -62,7 +62,16 @@
     {/each}
 
     </article>
-    <article>
+    
+</section>
+
+<Search 
+cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBooks.results)}/>
+
+<!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
+
+<section class="readinglist-books-section">
+    <article class="readinglist-text">  
         <h2>
             Jouw recente leeslijst: <span>e-boeken<span>
             </h2>
