@@ -1,8 +1,8 @@
 <script>
-	import Form from '$lib/organisms/EditPlayerForm.svelte';
+	import Form from '$lib/organisms/EditTeamForm.svelte';
 	import Button from '$lib/atoms/button.svelte';
 	import Link from '$lib/atoms/Link.svelte';
-	import DeleteForm from '$lib/organisms/DeletePlayerForm.svelte';
+	import DeleteForm from '$lib/organisms/DeleteTeamForm.svelte';
 	import { onMount } from 'svelte';
 
 	onMount(async () => {
@@ -31,9 +31,9 @@
 </script>
 
 <main>
-	<h1>Edit Player</h1>
+	<h1>Edit team</h1>
 
-	<h2 class="sub-header-left">Update player content</h2>
+	<h2 class="sub-header-left">Update team content</h2>
 
 	<section>
 		<Form FormID="FormID" Method="get" Action="/players" />
