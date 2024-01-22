@@ -5,7 +5,7 @@
     export let data;
 
     // console.log(JSON.stringify(data.apiBooks, null, 2));
-    console.log(JSON.stringify(data.apiEBooks.results[0], null, 2))
+    // console.log(JSON.stringify(data.apiEBooks.results[0], null, 2))
     // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
 
 </script>

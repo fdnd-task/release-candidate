@@ -39,7 +39,7 @@ console.log(cardData)
 <section>
   <div on:click={openDialog} class="button">
     <form action="" on:submit={submitted}>
-      <input type="text" placeholder="Search.." name="search" bind:value >
+      <input type="text" placeholder="Search.." name="search" bind:value autocomplete="off">
       <button type="submit" >Search</button>
    </form> 
   </div>
