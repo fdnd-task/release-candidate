@@ -26,12 +26,7 @@ import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
 				<div class="link-container">
 					<li><a class="promise" href="{base}/promise">SPONSOR</a></li>
 				</div>
-				<div class="link-container">
-					<li><a class="promise" href="{base}/promise">CONTACT</a></li>
-				</div>
-				<div class="link-container">
-					<li><a class="promise" href="{base}/promise">FAQ</a></li>
-				</div>
+				 
 			</ul>
 		</nav>
 	</div>
