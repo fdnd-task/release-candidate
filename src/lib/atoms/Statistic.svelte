@@ -24,37 +24,19 @@
 	}
 
 	.goals {
-		--color: #18d02b;
-		
-		@supports (--css: variables) {
-		--color: var(--scored-by-color-enhanced);
-	}
+		--color: var(--scored-by-color);
 	}
 	
-
 	.assists {
-		--color: #2974e4;
-
-		@supports (--css: variables) {
-			--color: var(--assisted-by-color-enhanced);
-		}
+		--color: var(--assist-by-color);	
 	}
 
-
 	.blocks {
-		--color: #ed4444;
-
-		@supports (--css: variables) {
-			--color: var(--blocked-by-color-enhanced);
-		}
+		--color: var(--block-by-color);
 	}
 
 	.turnovers {
-		--color: #ffc738;
-
-		@supports (--css: variables) {
-			--color: var(--turnover-by-color-enhanced);
-		}
+		--color: var(--turnover-by-color);
 	}
 
 	span:empty {
