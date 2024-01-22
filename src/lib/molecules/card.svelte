@@ -66,7 +66,6 @@
         left: 0;
         bottom: 0;
         padding: .5rem;
-
     }
     .info > p {
         font-size: 0.9rem;

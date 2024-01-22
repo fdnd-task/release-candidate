@@ -103,6 +103,18 @@ cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBook
         </article>
 
 
+    <section class="readinglist-carousel">
+        <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
+        {#each data.apiAudioBooks.results.slice(0, 5) as book}
+            <Card 
+                bookAuthor={book.authors}
+                bookTitle={book.titles}
+                bookUrl={book.coverimages}
+                bookDetailLink={book.detailLink}
+            />
+        {/each}
+    <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
+    </section>
 </section>
 
 
@@ -214,9 +226,6 @@ span{
     width: 50%;
 }
 }
-
-
-
 
 
 </style>
