@@ -149,6 +149,11 @@ import  {BtnSecondary, BtnPrimary } from '$lib/index.js'
 
 <style> 
 
+footer{
+	overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
 
 a {
 	font-family: var(--Apercu-Font);
