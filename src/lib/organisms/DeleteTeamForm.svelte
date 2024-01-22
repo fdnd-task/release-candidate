@@ -11,12 +11,12 @@
 </script>
 
 <form id={FormID} method={Method} action={Action}>
-	<h2>Delete Player</h2>
-	<p>This player will be deleted, along with all the data thas is collected. </p>
+	<h2>Delete team</h2>
+	<p>This team will be deleted, along with all the data thas is collected. </p>
 	<div class="WarningContainer">
 		<b>Warning:</b> This action is not reversible. Please be certain.
 	</div>
-	<p>Enter the Players name “Player name” to continue:</p>
+	<p>Enter the team name team name” to continue:</p>
 
 	<InputNoLabel
 		InputType="text"
