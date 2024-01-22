@@ -15,8 +15,9 @@ function closeDialog() {
   showDialog = false;
   error = '';
 }
+console.log(cardData)
 
-function submitted(event) {
+ function submitted(event) {
     event.preventDefault();
 
     // // Filter the cardData based on the search value
@@ -38,8 +39,8 @@ function submitted(event) {
 <section>
   <div on:click={openDialog} class="button">
     <form action="" on:submit={submitted}>
-      <input type="text" placeholder="Search.." name="search" bind:value autocomplete="off">
-      <button type="submit">Search</button>
+      <input type="text" placeholder="Search.." name="search" bind:value >
+      <button type="submit" >Search</button>
    </form> 
   </div>
   {#if showDialog}
@@ -75,6 +76,7 @@ function submitted(event) {
         background-color: var(--primary-accent-color);
         color: var(--primary-light-color);
         text-decoration: none;
+        z-index: 999;
         
           
     }
@@ -89,6 +91,7 @@ function submitted(event) {
         border-radius: 0.625rem;
         padding: 1rem;
         overflow-y: auto;
+        z-index: 999;
     }
     form{
     text-align: center;

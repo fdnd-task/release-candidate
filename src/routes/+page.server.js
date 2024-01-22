@@ -11,14 +11,17 @@ export async function load() {
 	const query = gql`
 		query uitleengeschiedenis {
 			uitleengeschiedenis1 {
+                id
 				author
 				image {
 					url
 				}
 				title
 			}
+          
 		}
 	`;
+    
 
 	// Hygraph-request voor het ophalen van data met behulp van GraphQL-query
 	const hygraphData = await hygraph.request(query);
@@ -38,7 +41,6 @@ export async function load() {
     const defaultUrleBooks = urlBase + urlSearch + urlQuery + urlDefault + space + EbookItems + urlKey + urlOutput;
     const defaultUrlAudioBooks = urlBase + urlSearch + urlQuery + urlDefault + space + audioItems + urlKey + urlOutput;
     const defaultUrlSearch = urlBase + urlSearch + urlQuery +"kikker"+ urlKey + urlOutput;
-
 
     // Fetch-requests voor het ophalen van boeken, e-books en luisterboeken 
 
@@ -66,11 +68,17 @@ export async function load() {
 
 
         // Het retourneren van de verzamelde gegevens
+
     return {
+     
         hygraphData,
         apiBooks,
         apiAudioBooks,
         apiEBooks,
-        apiSearch
-    };
+        apiSearch,
+          // andere gegevens die je wilt doorgeven aan de component
+      
+      };
 }
+
+
