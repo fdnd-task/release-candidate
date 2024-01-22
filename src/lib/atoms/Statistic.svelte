@@ -25,18 +25,36 @@
 
 	.goals {
 		--color: #18d02b;
+		
+		@supports (--css: variables) {
+		--color: var(--scored-by-color-enhanced);
 	}
+	}
+	
 
 	.assists {
 		--color: #2974e4;
+
+		@supports (--css: variables) {
+			--color: var(--assisted-by-color-enhanced);
+		}
 	}
+
 
 	.blocks {
 		--color: #ed4444;
+
+		@supports (--css: variables) {
+			--color: var(--blocked-by-color-enhanced);
+		}
 	}
 
 	.turnovers {
 		--color: #ffc738;
+
+		@supports (--css: variables) {
+			--color: var(--turnover-by-color-enhanced);
+		}
 	}
 
 	span:empty {
