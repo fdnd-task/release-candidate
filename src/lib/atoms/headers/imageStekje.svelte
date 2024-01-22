@@ -35,6 +35,7 @@
     position: absolute;
     bottom: 2rem;
     left: 2rem;
+    right: 2rem;
     color: var(--text-color);
 	font-size: 40px;
   }
