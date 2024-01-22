@@ -1,49 +1,52 @@
 
 
 
-    <div class="carrousel-section" role="region" aria-label="Carousel">
-        <article class="carrousel-item" aria-hidden="false">
-            <div class="carrousel-item-image">
-                <enhanced:img src= "./assets/image 252.png" alt="children playing"/> 
-            </div>
-            <h3>Iaculis nulla a nam pharetra augue congue.</h3>
-        </article>
-        <article class="carrousel-item" aria-hidden="false">
-            <div class="carrousel-item-image">
-                <img src="/assets/image 253.png" alt="children playing">
-            </div>
-            <h3>Iaculis nulla a nam pharetra augue congue.</h3>
-        </article>
-        <article class="carrousel-item" aria-hidden="false">
-            <div class="carrousel-item-image">
-                <img src="/assets/image 254.png" alt="children playing">
-            </div>
-            <h3>Iaculis nulla a nam pharetra augue congue.</h3>
-        </article>
-        <article class="carrousel-item" aria-hidden="false">
-            <div class="carrousel-item-image">
-                <img src="/assets/image 252.png" alt="children playing">
-            </div>
-            <h3>Iaculis nulla a nam pharetra augue congue.</h3>
-        </article>
-        <article class="carrousel-item" aria-hidden="false">
-            <div class="carrousel-item-image">
-                <img src="/assets/image 253.png" alt="children playing">
-            </div>
-            <h3>Iaculis nulla a nam pharetra augue congue.</h3>
-        </article>
-        <article class="carrousel-item" aria-hidden="false">
-            <div class="carrousel-item-image">
-                <img src="/assets/image 254.png" alt="children playing">
-            </div>
-            <h3>Iaculis nulla a nam pharetra augue congue.</h3>
-        </article>
-
-    </div>
-
+<section class="carrousel-section" role="region" aria-label="Carousel">
+  <article class="carrousel-item" aria-hidden="false">
+      <div class="carrousel-item-image">
+        <img src="/assets/image 255.jpeg" alt="children playing">
+      </div>
+      <h3>Talented youths dream of a football career in Brazil, a national passion.</h3>
+      <a href="#">Read more</a>
+  </article>
+  <article class="carrousel-item" aria-hidden="false">
+      <div class="carrousel-item-image">
+          <img src="/assets/image 256.jpeg" alt="children playing">
+      </div>
+      <h3>Brazilian youth academies hone skills for high-level competitions. </h3>
+      <a href="#">Read more</a>
+  </article>
+  <article class="carrousel-item" aria-hidden="false">
+      <div class="carrousel-item-image">
+          <img src="/assets/image 257.jpeg" alt="children playing">
+      </div>
+      <h3>In Rio's favelas, football provides hope and a positive escape. </h3>
+      <a href="#">Read more</a>
+  </article>
+  <article class="carrousel-item" aria-hidden="false">
+      <div class="carrousel-item-image">
+          <img src="/assets/image 252.jpeg" alt="children playing">
+      </div>
+      <h3>Youth club rivalry in Brazil is intense, players devoted to team colors. </h3>
+      <a href="#">Read more</a>
+  </article>
+  <article class="carrousel-item" aria-hidden="false">
+      <div class="carrousel-item-image">
+          <img src="/assets/image 253.jpeg" alt="children playing">
+      </div>
+      <h3>The Brazilian youth championship attracts scouts from global clubs. </h3>
+      <a href="#">Read more</a>
+  </article>
+  <article class="carrousel-item" aria-hidden="false">
+      <div class="carrousel-item-image">
+          <img src="/assets/image 254.jpeg" alt="children playing">
+      </div>
+      <h3>Young football prospects in Brazil juggle success, education, and family. </h3>
+      <a href="#">Read more</a>
+  </article>
+</section>
 
 <style>
-
 
 h3 {
   font-family: "Kirang Haerang";
@@ -58,8 +61,8 @@ h3 {
   overflow: auto;
   width: 100%;
   margin: 4% 0 2% 0;
-  transition: 0.2s ease-in;
-  scroll-snap-type: x mandatory;
+  /* transition: 0.2s ease-in;
+  scroll-snap-type: x mandatory; */
 }
 
 .carrousel-item {
@@ -78,7 +81,8 @@ h3 {
   padding: clamp(0.5rem, 1vw, 1vw);
   margin-right: 16px;
   box-sizing: border-box;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
+  max-width: 33.33%;
 }
 
 .carrousel-item > h3 {
@@ -104,46 +108,44 @@ h3 {
   object-position: top;
 }
 
-@container (max-width: 600px) {
-  .carousel {
-    height: 150vw;
+@media only screen and (max-width: 600px) {
+  .carrousel-item {
+    width:100%; 
+    height:100%;
   }
-
-  .carousel-section {
-    padding: 0;
-  }
-
-  .carousel-item {
-    width: 80%;
-    margin-right: 1rem;
-  }
-  .carousel > h2 {
-    font-size: 30em;
-  }
-  .carousel-item > h3 {
-    font-size: 30em;
+  .carrousel-item-image {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+  h3{
+    font-size: 1.5em;
   }
 }
 
-@container (min-width: 601px) and (max-width: 1024px) {
-  .carousel {
-    height: 100vw;
-    background-size: cover;
+@media only screen and (max-width: 601px){
+  .carrousel-item {
+    max-width: 100%;
+    max-height:100%;
+  }
+  h3{
+    font-size: 16px;
+  }
+  .carrousel-item-image{
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
-@container (min-width: 1025px) {
-  .carousel {
-    background-size: cover;
+  @media only screen and (max-width: 1024px) {
+  .carrousel-item {
+    max-width: 90%; 
+    max-height:100%;
+  }
+
+  h3{
+    font-size: 1.5em;
   }
 }
 </style>
-
-<script>
-
-
-
-
-
-
-</script>

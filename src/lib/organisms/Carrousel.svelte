@@ -46,4 +46,28 @@ h2 {
   overflow-x: hidden;
 }
 
+
+/* Media query voor mobiele apparaten */
+@media only screen and (max-width: 600px) {
+  .carrousel {
+    height: 150vw;
+    background-size: cover;
+  }
+}
+
+/* Media query voor tabletten */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .carrousel {
+    height: 100vw;
+    background-size: cover;
+  }
+}
+
+/* Media query voor desktops */
+@media only screen and (min-width: 1025px) {
+  .carrousel {
+    background-size: cover;
+  }
+}
+
 </style>
