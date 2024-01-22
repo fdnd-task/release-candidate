@@ -43,8 +43,8 @@
 
 
     h1 {
-        font-size: 4em;
-        padding: 1.5em;
+        font-size: clamp(2.3em, 11vw, 5.5em);
+        padding: 1.1em;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -81,10 +81,9 @@
         align-items: flex-end;
     }
 
-    .title-legends{
-        color: var(--Yellow-Primary);
-        margin: 0 0 0 auto;
-        width: fit-content;
+
+    .title-where{
+        padding-left: .55em;
     }
 
     .title-the-real {
@@ -93,6 +92,11 @@
         gap: 2vw;
     }
 
+    .title-legends{
+        color: var(--Yellow-Primary);
+        margin: 0 0 0 auto;
+        width: fit-content;
+    }
     .title-where span:nth-of-type(1),
     .title-where span:nth-of-type(2),
     .title-the-real>div:nth-of-type(2) span:nth-of-type(2) {
@@ -127,4 +131,7 @@
     h1 > div{
         padding: .1em;
     }
+
+
+
 </style>
