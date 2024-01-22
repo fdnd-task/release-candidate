@@ -5,7 +5,8 @@
 		PlayerCarrousel,
 		MainStats,
 		MainSponsor,
-		MainStory
+		MainStory,
+		Carrousel
 	} from '../lib/index.js';
 	// import { PUBLIC_HYGRAPH_URL } from '$env/static/public';
 	export let data;
@@ -19,5 +20,6 @@
 <MainStats {data} />
 <MainSponsor {data} />
 <MainStory {data} />
+<Carrousel />
 
 <!-- <p>PUBLIC_HYGRAPH_URL: {PUBLIC_HYGRAPH_URL}</p> -->
