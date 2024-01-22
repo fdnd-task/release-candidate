@@ -18,7 +18,8 @@
 <style>
 	section {
 		display: inline-block;
-		margin: 4em 0;
+		position: relative;
+		bottom: 8em;
 	}
 
 	/* ============== INTRO ABOUT - SECTION START ==============*/
@@ -35,8 +36,6 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center center;
-
-		margin: 12vw 0 0 0;
 		padding: 0 14vw;
 	}
 
@@ -85,6 +84,12 @@
 	@media (min-width: 1000px) {
 		.intro-text {
 			font-size: 2.7em;
+		}
+	}
+
+	@media (min-width: 1350px) {
+		section {
+			bottom: 21em;
 		}
 	}
 
