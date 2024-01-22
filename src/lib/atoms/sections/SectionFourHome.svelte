@@ -42,12 +42,10 @@
 		</div>
 
 		<div class="flex-wrapper-recent-stekjes">
-			{#each data.stekjes as stekje, index}
-				{#if index < 4}
-					<a href={stekje.slug}>
-						<img src={stekje.fotos[0].url} alt="foto van een stekje" width="100" />
-					</a>
-				{/if}
+			{#each data.stekjes.slice(0, 4) as stekje}
+				<a href={stekje.slug}>
+					<img src={stekje.fotos[0].url} alt="foto van een stekje" width="100" />
+				</a>
 			{/each}
 		</div>
 </main>
