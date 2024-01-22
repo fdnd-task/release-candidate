@@ -1,5 +1,14 @@
 <script>
 	export let data;
+	import { onMount } from "svelte";
+
+	let stekjesToShow = [];
+	
+	onMount(() => {
+		const stekjes = data.stekjes;
+		stekjesToShow = stekjes.slice(0, 4)
+	});
+
 </script>
 
 <main>
@@ -42,7 +51,7 @@
 		</div>
 
 		<div class="flex-wrapper-recent-stekjes">
-			{#each data.stekjes.slice(1,5) as stekje}
+			{#each stekjesToShow as stekje}
 				<a href={stekje.slug}>
 					<img src={stekje.fotos[0].url} alt="foto van een stekje" width="100" />
 				</a>
