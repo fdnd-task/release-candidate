@@ -3,23 +3,15 @@ import { supabase } from '$lib/supabase';
 export async function load({ params }) {
     const matchRequest = await supabase
         .from('matches')
-        .select('*, team_a (*, country (*)), team_b (*, country (*)), tournament (*)')
+        .select(`
+            *,
+            lineups (*, ...player (*)), 
+            team_a (*, country (*)), 
+            team_b (*, country (*)), 
+            tournament (*)
+        `)
         .eq('id', params.uid)
         .single()
-
-    // Fetch the lineups for team_a
-    const playersTeamA = await supabase
-        .from('lineups')
-        .select('*, ...player (*)')
-        .eq('team', matchRequest.data.team_a.id)
-        .eq('match', params.uid)
-
-    // Fetch the lineups for team_b
-    const playersTeamB = await supabase
-        .from('lineups')
-        .select('*, ...player (*)')
-        .eq('team', matchRequest.data.team_b.id)
-        .eq('match', params.uid)
 
     const statisticsRequest = await supabase
         .from('statistics')
@@ -27,9 +19,12 @@ export async function load({ params }) {
         .eq('match', params.uid)
 
     // Add the lineups to the match data
-    matchRequest.data.team_a.players = playersTeamA.data;
-    matchRequest.data.team_b.players = playersTeamB.data;
+    matchRequest.data.team_a.players = matchRequest.data.lineups.filter(lineup => lineup.team === matchRequest.data.team_a.id);
+    matchRequest.data.team_b.players = matchRequest.data.lineups.filter(lineup => lineup.team === matchRequest.data.team_b.id);
 
-    return { match: matchRequest.data, statistics: statisticsRequest.data }
+    return { 
+        match: matchRequest.data, 
+        statistics: statisticsRequest.data 
+    }
 }
 
