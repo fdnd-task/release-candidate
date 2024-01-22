@@ -35,6 +35,10 @@
 		--Header-Font: 'Kirang Haerang', sans-serif;
 	}
 
+	:global(html) {
+        scroll-behavior: smooth;
+    }
+
 	:global(body) {
 		background-color: var(--Bg-Dark-Blue);
 		color: var(--White);
