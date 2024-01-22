@@ -51,7 +51,7 @@
 </section>
 
 <Search 
-cardData={data.apiBooks.results}/>
+cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBooks.results)}/>
 
 <!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
 
