@@ -1,9 +1,6 @@
-
 <script>
-import { base } from '$app/paths';
-import  { BtnSecondary, BtnPrimary } from '$lib/index.js'
-	
-	
+	import { base } from '$app/paths';
+	import  { BtnPrimary } from '$lib/index.js'	
 </script>
 
 <footer> 
