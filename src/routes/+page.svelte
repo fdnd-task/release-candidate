@@ -180,7 +180,7 @@ span{
   }
 }
 
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 45rem) {
     section{
     height: 65vh;
     display: flex;
