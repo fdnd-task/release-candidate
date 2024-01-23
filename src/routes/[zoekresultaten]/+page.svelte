@@ -2,7 +2,8 @@
     export let data;
     console.log(data.results)
     const results = data.results
-    import { Card } from '$lib/index.js';
+    import { Card } from '$lib/index.js'
+    
 </script>
 
 <section>
@@ -15,5 +16,5 @@
         <!-- <h1>{result.frabl.key1}</h1> -->
     </a>
     {/each}
-    {data}
+
 </section>
