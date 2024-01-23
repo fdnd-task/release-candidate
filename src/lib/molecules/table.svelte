@@ -8,10 +8,10 @@
             {#each Object.values(tableData) as row}
                 <tr>
                     {#if 'image' in row}
-                        <td><img src={row.image.url} width="50px" alt="afbeelding van {row.title}" loading="lazy"></td>
+                        <td class="with-image"><img src={row.image.url} width="50px" alt="afbeelding van {row.title}" loading="lazy"></td>
                     {/if}
-                    {#each Object.values(row) as cell}
-                        {#if typeof cell !== 'object' || !('url' in cell)}
+                    {#each Object.entries(row) as [key, cell]}
+                        {#if (typeof cell !== 'object' || !('url' in cell)) && key !== 'detailLink'}
                             <td>{cell}</td>
                         {/if}
                     {/each}
@@ -44,6 +44,13 @@
     td {
         padding: .625rem;
         text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    td.with-image{
+        text-align: center;
     }
 
     tr:first-of-type > td:first-of-type{
@@ -87,6 +94,10 @@
         display: block;
         font-size: .8rem;
         text-align: left;
+    }
+
+    td.with-image{
+        display: none;
     }
 }
 
