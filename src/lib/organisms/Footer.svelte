@@ -26,12 +26,7 @@ import  { BtnSecondary, BtnPrimary } from '$lib/index.js'
 				<div class="link-container">
 					<li><a class="promise" href="{base}/promise">SPONSOR</a></li>
 				</div>
-				<div class="link-container">
-					<li><a class="promise" href="{base}/promise">CONTACT</a></li>
-				</div>
-				<div class="link-container">
-					<li><a class="promise" href="{base}/promise">FAQ</a></li>
-				</div>
+				 
 			</ul>
 		</nav>
 	</div>
@@ -158,6 +153,38 @@ footer {
 	overflow: hidden;
 }
 
+a { 
+	font-family: var(--Apercu-Font);
+	color: white;
+	font-size: 1.25em;
+	padding-left: 1em;
+}
+
+.contact {
+	font-family: var(--Apercu-Font);
+	color: var(--Yellow-Primary) ;
+	font-size: 1.875em;
+	padding-bottom: 1em;
+	padding-left: 0.5em;
+	padding-top: 0.5em;
+}
+
+.button {
+	padding-left: 1em;
+	padding-bottom: 2em;
+}
+
+.social-icons {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 1em;
+	padding-right: 5em;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+}
+
+
 @media only screen and (min-width: 768px) {
 
 a {
@@ -199,6 +226,7 @@ a {
 	color: var(--Yellow-Primary) ;
 	font-size: 1.875em;
 	padding-bottom: 1em;
+	padding-top: 0em;
 }
 
 /* -----------ipad version------------ */
@@ -216,6 +244,9 @@ a {
 	footer {
 		display: flex;
 		justify-content: space-between;
+		padding-bottom: 3em;
+		padding-top: 3em;
+		
 	}
 
 	.social-icons {
