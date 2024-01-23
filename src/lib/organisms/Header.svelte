@@ -38,9 +38,17 @@ header::before{
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 1em 2em;
+    padding: 1em;
     position: relative;
     margin: 0 auto;
+}
+
+/* 650px */
+@media (min-width: 40em)  {
+
+    .container{
+        padding: 1em 2em;
+    }
 }
 
 </style>

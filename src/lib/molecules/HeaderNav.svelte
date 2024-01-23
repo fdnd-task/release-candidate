@@ -1,6 +1,27 @@
 <script>
 	import { NavLogo, NavLink, BtnPrimary } from '$lib/index.js';
 	import { base } from '$app/paths';
+    import { onMount } from 'svelte';
+
+    // Mobile Navbar closing 
+
+    let checked = false; 
+
+    onMount(() => {
+
+        let navLinks = document.querySelectorAll('ul a');
+
+        // Function to close the menu
+        function closeMenu() {
+            checked = false;
+        }
+
+        // Event listener for link clicks
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', closeMenu);
+        });
+    });
+    
 </script>
 
 
@@ -11,7 +32,7 @@
 	</a>
 
     <!-- Hamburger -->
-    <input class="menuBtn" type="checkbox" id="menuBtn" aria-label="Navigation menu" />
+    <input bind:checked={checked} class="menuBtn" type="checkbox" id="menuBtn" aria-label="Navigation menu" />
     <label class="menuIcon" for="menuBtn">
         <span class="navicon"></span>
     </label>
@@ -69,8 +90,8 @@
         align-items: center;
         justify-content: center;
         float: right;
-        width: 2em;
-        height: 2em;
+        width: 1.6em;
+        height: 1.6em;
         position: relative;
         z-index: 99;
         top: .6em;
@@ -87,7 +108,7 @@
         height: 0.1em;
         position: relative;
         transition: background .1s ease-out;
-        width: 1.3em;
+        width: 1.1em;
     }
 
     /* Top/bottom line - Hamburger */
@@ -143,6 +164,21 @@
     .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:before,
     .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:after {
         top: 0;
+    }
+
+    /* 640px */
+
+    @media (min-width: 40em) {
+
+        .menuIcon {
+            width: 2em;
+            height: 2em;
+        }
+
+        .menuIcon .navicon {
+            width: 1.3em;
+        }
+
     }
 
     /* 48em = 768px */
