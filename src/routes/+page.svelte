@@ -12,7 +12,7 @@
 
 <header>
     <Search 
-    cardData={data.hygraphData.uitleengeschiedenis1}/>
+    cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBooks.results)}/>
     <!-- menu  -->
 </header>
 
@@ -53,7 +53,15 @@
 
 
 <section>   
-      <article class="carousel">
+    <article class="readinglist-text">  
+        <h2>
+            Jouw recente leeslijst: <span>e-boeken<span>
+            </h2>
+            <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog lezen via jouw telefoon of e-reader!</p>
+            <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
+    </article>
+
+    <article class="carousel">
         {#each data.apiEBooks.results.slice(0, 5) as book}
         <Card 
             bookAuthor={book.authors}
@@ -67,58 +75,30 @@
     
 </section>
 
-<Search 
-cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBooks.results)}/>
 
 <!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
 
 <section class="readinglist-books-section">
-    <article class="readinglist-text">  
-        <h2>
-            Jouw recente leeslijst: <span>e-boeken<span>
-            </h2>
-            <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog lezen via jouw telefoon of e-reader!</p>
-            <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
-    </article>
+    <article>
+        <h2> Jouw recente leeslijst: <span>luisterboeken<span></h2>
+        <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog luisteren!</p>
+        <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
+        </article>
+    <article class="carousel">
+        {#each data.apiAudioBooks.results.slice(0, 5) as book}
+        <Card 
+            bookAuthor={book.authors}
+            bookTitle={book.titles}
+            bookUrl={book.coverimages}
+            bookDetailLink={book.detailLink}
+        />
+    {/each}
 
+    </article>
 
 </section>
 
 <section>
-        <article>
-            <h2> Jouw recente leeslijst: <span>luisterboeken<span></h2>
-            <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog luisteren!</p>
-            <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
-            </article>
-        <article class="carousel">
-            {#each data.apiAudioBooks.results.slice(0, 5) as book}
-            <Card 
-                bookAuthor={book.authors}
-                bookTitle={book.titles}
-                bookUrl={book.coverimages}
-                bookDetailLink={book.detailLink}
-            />
-        {/each}
-
-        </article>
-
-
-    <section class="readinglist-carousel">
-        <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
-        {#each data.apiAudioBooks.results.slice(0, 5) as book}
-            <Card 
-                bookAuthor={book.authors}
-                bookTitle={book.titles}
-                bookUrl={book.coverimages}
-                bookDetailLink={book.detailLink}
-            />
-        {/each}
-    <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
-    </section>
-</section>
-
-
-<section class="about-section">
     <article class="about-text"> 
         <h2>
         Ontdek de Wereld van Leren bij <span>OBA!</span>
@@ -134,11 +114,8 @@ cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBook
         <!-- carousel plaatsen -->
     </section>
 
-        
-
-
+    
 </section>
-
 
 
 
@@ -205,13 +182,18 @@ span{
 
 @media only screen and (min-width: 40rem) {
     section{
-    height: 65hv;
+    height: 65vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 4rem;
     }
+
+    section:nth-of-type(odd):not(.hero-text):not(:last-child) {
+        flex-direction: row-reverse;
+    }
+
     section:nth-child(2){
         width: 85%;
     }
