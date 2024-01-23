@@ -40,7 +40,8 @@
 		
 		a{
 			gap: 0;
-			padding: 0;
+			padding: 1rem 0;
+			aspect-ratio: unset;
 			font-size: clamp(10px, 3vw, 16px ) ;
 		}
 	}

@@ -19,6 +19,7 @@
 		DDValue="08"
 		MMValue="09" 
 		YYYYValue="2002"
+		Hidden="hidden"
 	/>
 
 	<Input
@@ -53,6 +54,8 @@
 		For="Bio" 
 		Text="Bio" 
 		Value="Data van de speeler"
+		Hidden="hidden"
+
 		/>
 
 </form>

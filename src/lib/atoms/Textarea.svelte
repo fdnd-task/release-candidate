@@ -2,11 +2,12 @@
   export let ID, For, Text;
   export let Value ="";
   export let Required ="";
+  export let Hidden ="";
 </script>
 
 <div class="container">
   <textarea id={ID} autocomplete="off" placeholder="" Required="{Required}" value="{Value}" />
-  <label for={For}>{Text} <span>(Optioneel)</span></label>
+  <label for={For}>{Text} <span hidden="{Hidden}">(Optioneel)</span></label>
 </div>
 
 <style>

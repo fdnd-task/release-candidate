@@ -2,10 +2,11 @@
 	export let DDValue = "";
 	export let MMValue = "";
 	export let YYYYValue = "";
+	export let Hidden ="";
 </script>
 
 <div class="DateOfBirth-container">
-	<legend >Date of birth <span>(Optioneel)</span></legend>
+	<legend >Date of birth <span hidden="{Hidden}">(Optioneel)</span></legend>
 	<div class="input-container">
 		<input type="tekst" id="Day" autocomplete="bday-day" placeholder="DD" value="{DDValue}" inputmode="numeric" />
 		<label for="Day">Welke dag ben je geboren</label>

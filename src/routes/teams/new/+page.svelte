@@ -42,22 +42,8 @@
 		grid-area: h2;
 		font-size: 1.5rem;
 	}
+	
 	section {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-		padding: 7px;
-		overflow-x: hidden;
-	}
-
-	ul {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 1rem;
-		margin: 0 -6px -6px -6px;
-		padding: 0 6px 6px 6px;
-		padding-right: 1rem;
-		overflow-x: auto;
 		grid-area: form;
 		margin: -10px;
 		padding: 10px;
