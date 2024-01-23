@@ -12,7 +12,7 @@
         src={stekje.fotos[0].url}
         loading="lazy"
         height="60vh"
-        width="25%"
+        width="24%"
         alt="een volwassen {stekje.naam} stekje "
       />
       <a href={stekje.slug}>
@@ -29,12 +29,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center;
   }
   article {
     position: relative;
-    min-height: 60vh;
-    width: 25%;
+    min-height: 50vh;
+    width: 24%;
     padding: 1rem;
     border-radius: var(--bradius);
     overflow: hidden;
@@ -92,15 +91,27 @@
     z-index: 1;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 425px) {
     article {
       width: 100%;
     }
   }
 
-  /* @media (min-width: 820px) {
+  @media (min-width: 425px) {
     article {
-      width: 40%;
+      width: 100%;
     }
-  } */
+  }
+
+  @media (min-width: 768px) {
+    article {
+      width: 47%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    article {
+      width: 24%;
+    }
+  }
 </style>

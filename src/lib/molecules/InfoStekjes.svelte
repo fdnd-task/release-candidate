@@ -29,7 +29,7 @@
     background-color: var(--background-color-light);
     border-radius: var(--bradius);
     width: 25%;
-    height: 60vh;
+    height: 30vh;
     padding: var(--padding);
     overflow: hidden;
     margin-top: 1rem;
@@ -62,15 +62,29 @@
     transform: rotate(-10deg);
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 425px) {
     .info-Stekjes {
       width: 100%;
     }
   }
 
-  /* @media (min-width: 820px) {
+  @media (min-width: 425px) {
     .info-Stekjes {
-      width: 40%;
+      width: 100%;
     }
-  } */
+  }
+
+  @media (min-width: 768px) {
+    .info-Stekjes {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .info-Stekjes {
+      width: 24%;
+      height: 50vh;
+    }
+  }
 </style>
