@@ -112,6 +112,7 @@
   @media (min-width: 1024px) {
     article {
       width: 24%;
+      min-height: 60vh;
     }
   }
 </style>

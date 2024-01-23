@@ -84,7 +84,7 @@
   @media (min-width: 1024px) {
     .info-Stekjes {
       width: 24%;
-      height: 50vh;
+      min-height: 60vh;
     }
   }
 </style>
