@@ -9,7 +9,5 @@ export async function load({ params }) {
 	const urlOutput = '&refine=true&output=json';
 	const defaultUrlSearch = urlBase + urlSearch + urlQuery + zoekresultaten + urlKey + urlOutput;
 
-	const search = (await fetch(defaultUrlSearch)).json();
-
-	return search;
+	return (await fetch(defaultUrlSearch)).json();
 }
