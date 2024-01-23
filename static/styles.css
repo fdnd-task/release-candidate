@@ -1,0 +1,52 @@
+:root {
+	/* die blauw ipv rood, gebruikt voor span */
+	--primary-accent-color: #0064c8;
+	/* achtergrondkleur website */
+	--primary-background-color: #f2f5ff;
+	/* net niet zwart, voor achtergrond kleur buttons en primary tekst kleur */
+	--primary-dark-color: #222222;
+	/* gewoon wit */
+	--primary-light-color: #ffffff;
+	/* border-radius voor tables */
+	--primary-table-border-radius: 1rem;
+}
+
+body {
+	background-color: var(--primary-background-color);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+p {
+	padding: 25px 0px;
+	font-size: 1em;
+	max-width: 70ch;
+}
+
+@media (min-width: 68em) {
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 2.2em;
+	}
+
+	p {
+		padding: 1.5em 0em;
+		font-size: 1.1em;
+	}
+}

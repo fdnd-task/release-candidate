@@ -1,7 +1,6 @@
 <script>
     import { Card } from "$lib/index.js"
     import { onMount } from 'svelte';
-
     
     export let cardData;
     let value = '';
@@ -16,13 +15,15 @@ function closeDialog() {
   showDialog = false;
   error = '';
 }
+console.log(cardData)
 
-function submitted(event) {
+ function submitted(event) {
     event.preventDefault();
 
     // // Filter the cardData based on the search value
     const searchValue = value.toLowerCase();
-    const filteredCards = Object.values(cardData).filter(card => card.title.toLowerCase().indexOf(searchValue) !== -1);
+    const filteredCards = Object.values(cardData).filter(card => card.frabl.key1.toLowerCase().includes(searchValue));
+    // const filteredCards = Object.values(cardData).filter(card => card.frabl.key1.toLowerCase() === searchValue);
 
     if (filteredCards.length === 0) {
       // Als er geen overeenkomende resultaten zijn, toon een foutmelding
@@ -38,8 +39,8 @@ function submitted(event) {
 <section>
   <div on:click={openDialog} class="button">
     <form action="" on:submit={submitted}>
-      <input type="text" placeholder="Search.." name="search" bind:value >
-      <button type="submit">Search</button>
+      <input type="text" placeholder="Search.." name="search" bind:value autocomplete="off">
+      <button type="submit" >Search</button>
    </form> 
   </div>
   {#if showDialog}
@@ -49,15 +50,17 @@ function submitted(event) {
                 <h2>{error}</h2>
                 {:else}
               <ul>
-              {#each Object.values(cardData) as card}
-                    <li>
-                        <img src="{card.image.url}" alt="foto van {card.title}" loading="lazy" width="50" height="50">
-                        <p>{card.title}</p>
-                    </li>
+              {#each Object.values(cardData) as card}  
+                  <a href={card.detailLink}>
+                      <li>
+                          <img src="{card.coverimages[0]}" alt="foto van {card.frabl.key1}" loading="lazy" width="50" height="50">
+                          <p>{card.frabl.key1}</p>
+                      </li>
+                    </a>
               {/each}
-              <button>Toon meer</button>
             </ul>
             {/if}
+            <a href={value}>Toon meer</a>
             <button on:click={closeDialog} class="close-button">Sluiten</button>
             
         </div>   
@@ -75,6 +78,7 @@ function submitted(event) {
         background-color: var(--primary-accent-color);
         color: var(--primary-light-color);
         text-decoration: none;
+        z-index: 999;
         
           
     }
@@ -89,6 +93,7 @@ function submitted(event) {
         border-radius: 0.625rem;
         padding: 1rem;
         overflow-y: auto;
+        z-index: 999;
     }
     form{
     text-align: center;

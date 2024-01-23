@@ -3,34 +3,45 @@
     export let bookUrl
     export let bookTitle
     export let bookAuthor
+    export let bookDetailLink
 </script>
-
-<article>
-    <!-- In de html elementen benoem ik lege js variabeles en deze geef ik leeg mee aan de pagina waar dit component wordt gebruikt -->
-    <img src="{bookUrl}" alt="foto van {bookTitle}" loading="lazy">
-    <section class="info">
-        <p class="p__title">{bookTitle}</p>
-        <p>{bookAuthor}</p>
-    </section>
-</article>
+<a href="{bookDetailLink}">
+    <article class="background-image" style="background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url('{bookUrl}');">
+        <!-- In de html elementen benoem ik lege js variabeles en deze geef ik leeg mee aan de pagina waar dit component wordt gebruikt -->
+        <section class="info">
+            <p class="p__title">{bookTitle}</p>
+            <p>{bookAuthor}</p>
+        </section>
+    </article>
+</a>
 
 <style>
-
+    a {
+        text-decoration: none;
+        color: var(--primary-light-color);
+    }
     article {
         position: relative;
         display: flex;
         flex-direction: column;
-        margin: 1rem 3rem 1rem 0;
-        width: 12rem;
+        margin: 1rem 1rem 1rem 0;
+        width: 15rem;
         height: 20rem;
         padding: 1rem;
         border-radius: 0.5rem;
-        background-color: var(--primary-accent-color);
-        color: var(--primary-light-color);
         scroll-snap-align: start;
         transition: 0.3s;
         justify-content: space-between;
         flex-basis: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 3 0 200px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px 1px #ccc;
+        scroll-snap-align: start;
+        scroll-margin: 5px;
+        background-color: linear-gradient(to top, transparent, #000000);
     }
 
     article img {
@@ -43,23 +54,32 @@
         /* background-color:red; */
         color: var(--primary-light-color);
         box-shadow: var(--primary-dark-color) 0 0 0.625rem 0;
-    }    
-
+    }
+    .info{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(var(--primary-dark-color), 0.8);
+        margin: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: .5rem;
+    }
     .info > p {
         font-size: 0.9rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        mix-blend-mode: normal;
     }
 
     .p__title {
         font-weight: bold;
     }
 
-    .info  {
-        display: flex;
-        flex-direction: column;
-    }
+
 
     @media (max-width: 40em) {
 
