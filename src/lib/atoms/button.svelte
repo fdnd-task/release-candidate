@@ -1,9 +1,10 @@
 <script>
 	export let ButtonType, ButtonText, Form, ID;
 	export let severity = 'primary';
+	export let Hidden ="";
 </script>
 
-<button class={severity} id="{ID}" type={ButtonType} form={Form}>{ButtonText}</button>
+<button class={severity} id="{ID}" type={ButtonType} form={Form} hidden="{Hidden}">{ButtonText}</button>
 
 <style>
 	button {

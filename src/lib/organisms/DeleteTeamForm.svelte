@@ -19,10 +19,11 @@
 
 	<InputNoLabel
 		Type="text"
-		ID="DeletePlayer"
-		For="DeletePlayer"
-		Text=""
-		placeholder="Name of player"
+		ID="DeleteTeam"
+		For="DeleteTeam"
+		Text="Name of team"
+		placeholder="Name of team"
+		Required="required"
 	/>
 </form>
 

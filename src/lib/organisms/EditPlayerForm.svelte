@@ -13,6 +13,7 @@
 		For="AddPlayer"
 		Text="Name"
 		Value="Mark Evens"
+		Hidden="hidden"
 	/>
 	<InputDate
 		DDValue="08"
@@ -26,6 +27,8 @@
 		For="JerseyNumber"
 		Text="Jersey number"
 		Value="Number 5"
+		Hidden="hidden"
+
 	/>
 	<Input
 		Type="text"
@@ -33,6 +36,8 @@
 		For="BirthCountry"
 		Text="Country of Birth"
 		Value="Japan"
+		Hidden="hidden"
+
 	/>
 	<Input
 		Type="text"
@@ -40,6 +45,7 @@
 		For="ResidencePlace"
 		Text="Place of residence"
 		Value="Tokio"
+		Hidden="hidden"
 	/>
 
 	<Textarea 

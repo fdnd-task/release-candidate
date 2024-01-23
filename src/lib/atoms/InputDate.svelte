@@ -5,7 +5,7 @@
 </script>
 
 <div class="DateOfBirth-container">
-	<legend >Date of birth</legend>
+	<legend >Date of birth <span>(Optioneel)</span></legend>
 	<div class="input-container">
 		<input type="tekst" id="Day" autocomplete="bday-day" placeholder="DD" value="{DDValue}" inputmode="numeric" />
 		<label for="Day">Welke dag ben je geboren</label>
@@ -33,6 +33,8 @@
 		padding: 0 1.5rem;
 		font-size: 12px;
 		font-family: var(--tertiary-font-family);
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.input-container {
@@ -111,4 +113,9 @@
 	input::-webkit-inner-spin-button {
 		-webkit-appearance: none;
 	}
+
+	span{
+    font-size: 12px;
+    color: gray;
+  }
 </style>

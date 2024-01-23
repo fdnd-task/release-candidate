@@ -47,8 +47,8 @@
 <div id="DeleteFormContainer" class="DeleteFormContainer">
 	<DeleteForm FormID="DeleteForm" Method="get" Action="/players" />
 	<div class="ButtonContainer">
-		<Button severity="ghost" ButtonType="button" ID="closeBtn" ButtonText="Cancel" />
-		<Button severity="warning" ButtonType="submit" Form="DeleteForm" ButtonText="Contineu" />
+		<Button severity="ghost" Hidden="hidden" ButtonType="button" ID="closeBtn" ButtonText="Cancel" />
+		<Button severity="warning" ButtonType="submit" Form="DeleteForm" ButtonText="Continue" />
 	</div>
 </div>
 

@@ -10,7 +10,9 @@
 		Type="text"
 		ID="TeamName"
 		For="TeamName"
-		Text="* team name..."
+		Text="Name"
+		Value="Inazuma Eleven"
+		Required="required"
 
 	/>
 
@@ -18,7 +20,8 @@
 		Type="text"
 		ID="CountryOfOrigin"
 		For="CountryOfOrigin"
-		Text="Country of origin..."
+		Text="Country of origin"
+		Hidden="hidden"
 	/>
 
 	<UplaodInput 

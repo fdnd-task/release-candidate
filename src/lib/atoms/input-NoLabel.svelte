@@ -5,13 +5,13 @@
   export let placeholder = "";
 </script>
 
-<div class="input-container">
+<div class="container">
   <input type={Type} id={ID} autocomplete="off" placeholder="{placeholder}" value="{value}" Required="{Required}" />
   <label for={For}>{Text}</label>
 </div>
 
 <style>
-  .input-container {
+  .container {
     position: relative;
     width: 100%;
   }

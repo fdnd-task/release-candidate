@@ -23,6 +23,7 @@
 		For="DeletePlayer"
 		Text="Delete player"
 		placeholder="Name of team"
+		Required="required"
 
 	/>
 </form>
