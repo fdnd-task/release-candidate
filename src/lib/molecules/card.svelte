@@ -39,7 +39,6 @@
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 6px 1px #ccc;
-        scroll-snap-align: start;
         scroll-margin: 5px;
         background-color: linear-gradient(to top, transparent, #000000);
     }
@@ -51,7 +50,6 @@
     
     article:hover {
         scale: 103%;
-        /* background-color:red; */
         color: var(--primary-light-color);
         box-shadow: var(--primary-dark-color) 0 0 0.625rem 0;
     }
@@ -72,7 +70,6 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        mix-blend-mode: normal;
     }
 
     .p__title {
