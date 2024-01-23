@@ -1,6 +1,27 @@
 <script>
 	import { NavLogo, NavLink, BtnPrimary } from '$lib/index.js';
 	import { base } from '$app/paths';
+    import { onMount } from 'svelte';
+
+    // Mobile Navbar closing 
+
+    let checked = false; 
+
+    onMount(() => {
+
+        let navLinks = document.querySelectorAll('ul a');
+
+        // Function to close the menu
+        function closeMenu() {
+            checked = false;
+        }
+
+        // Event listener for link clicks
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', closeMenu);
+        });
+    });
+    
 </script>
 
 
@@ -11,7 +32,7 @@
 	</a>
 
     <!-- Hamburger -->
-    <input class="menuBtn" type="checkbox" id="menuBtn" aria-label="Navigation menu" />
+    <input bind:checked={checked} class="menuBtn" type="checkbox" id="menuBtn" aria-label="Navigation menu" />
     <label class="menuIcon" for="menuBtn">
         <span class="navicon"></span>
     </label>
