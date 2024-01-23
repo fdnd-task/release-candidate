@@ -15,7 +15,7 @@ export async function load({ params }) {
 
     const statisticsRequest = await supabase
         .from('statistics')
-        .select('*')
+        .select('*, match (*), player (*), lineup (*)')
         .eq('match', params.uid)
 
     // Add the lineups to the match data

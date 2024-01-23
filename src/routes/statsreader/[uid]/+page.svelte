@@ -1,6 +1,6 @@
 <script>
 	import PlayersList from '$lib/organisms/PlayersList.svelte';
-    import Fullscreen from '$lib/atoms/Fullscreen/Fullscreen.svelte';
+	import { Fullscreen, Timeline } from '$lib';
 	import { page } from '$app/stores';
 
 	export let data;
@@ -19,126 +19,109 @@
 	}
 </script>
 
+<Fullscreen>
+	<main class="page">
+		<header class="page__header">
+			<h1>Commentator Dashboard</h1>
+		</header>
 
-<Fullscreen> 
-<main class="page">
-	<header class="page__header">
-		<h1>Commentator Dashboard</h1>
-	</header>
+		<div class="page__content">
+			<section class="statistics">
+				<header class="statistics__header">
+					<h2>Statistics</h2>
+				</header>
 
-	<div class="page__content">
-		<section class="statistics">
-			<header class="statistics__header">
-				<h2>Statistics</h2>
-			</header>
+				<div class="statistics__content">
+					<section class="status">
+						<h3>Match status</h3>
 
-			<div class="statistics__content">
-				<section class="status">
-					<h3>Match status</h3>
-
-					<p>LIVE</p>
-					<p>Mixed | 2 | Arena | Finale</p>
-				</section>
-				<section class="scoreboard">
-					<h3>Scoreboard</h3>
-
-					<article>
-						<img alt="" height="64" width="64" />
-						<h4>{match.team_a.name}</h4>
-					</article>
-					<p>0 <span class="dash">-</span> 0</p>
-					<article>
-						<img alt="" height="64" width="64" />
-						<h4>{match.team_b.name}</h4>
-					</article>
-				</section>
-
-				<nav>
-					<ul>
-						<li><a href="#info" class:active={$page.url.hash === '#info'}>Info</a></li>
-						<li><a href="#resume" class:active={$page.url.hash === '#resume'}>Resume</a></li>
-						<li>
-							<a href="#statistics" class:active={$page.url.hash === '#statistics'}>Statistics</a>
-						</li>
-					</ul>
-				</nav>
-
-				{#if isActiveTab('#statistics') }
-					<section id="statistics" class="timeline">
-						<h3>Timeline</h3>
-
-						<ul class="timeline-list">
-							<p>test</p>
-							{#each statistics as stat}
-								<li class="timeline-list__item--{stat.team}">
-									<p class="jersey-number">{stat.jersey_number}</p>
-									<p>{stat.name}</p>
-									<p>{stat.time}</p>
-
-									<p>8 - 3</p>
-								</li>
-							{/each}
-						</ul>
+						<p>LIVE</p>
+						<p>Mixed | 2 | Arena | Finale</p>
 					</section>
-				{/if}
-			</div>
-		</section>
+					<section class="scoreboard">
+						<h3>Scoreboard</h3>
 
-		{#if isActiveTab('#info')}
-			<section class="switch-team">
-				<h3>Match information</h3>
-				<button
-					class="select-team-button"
-					class:selected-team={activeTeam === match.team_a.name}
-					on:click={() => selectTeam(match.team_a.name)}>{match.team_a.name}</button
-				>
-				<button
-					class="select-team-button"
-					class:selected-team={activeTeam === match.team_b.name}
-					on:click={() => selectTeam(match.team_b.name)}>{match.team_b.name}</button
-				>
+						<article>
+							<img alt="" height="64" width="64" />
+							<h4>{match.team_a.name}</h4>
+						</article>
+						<p>0 <span class="dash">-</span> 0</p>
+						<article>
+							<img alt="" height="64" width="64" />
+							<h4>{match.team_b.name}</h4>
+						</article>
+					</section>
+
+					<nav>
+						<ul>
+							<li><a href="#info" class:active={$page.url.hash === '#info'}>Info</a></li>
+							<li><a href="#resume" class:active={$page.url.hash === '#resume'}>Resume</a></li>
+							<li>
+								<a href="#statistics" class:active={$page.url.hash === '#statistics'}>Statistics</a>
+							</li>
+						</ul>
+					</nav>
+
+					{#if isActiveTab('#statistics')}
+						<Timeline {statistics} />
+					{/if}
+				</div>
 			</section>
 
-            <section class="team" data-selected="{activeTeam === match.team_a.name}">
-                <header class="team__header">
-                    <h2>
-                        <img alt="" height="32" width="32" />
-                        <span>{match.team_a.name}</span>
-                    </h2>
+			{#if isActiveTab('#info')}
+				<section class="switch-team">
+					<h3>Match information</h3>
+					<button
+						class="select-team-button"
+						class:selected-team={activeTeam === match.team_a.name}
+						on:click={() => selectTeam(match.team_a.name)}>{match.team_a.name}</button
+					>
+					<button
+						class="select-team-button"
+						class:selected-team={activeTeam === match.team_b.name}
+						on:click={() => selectTeam(match.team_b.name)}>{match.team_b.name}</button
+					>
+				</section>
 
-                    <p>{match.team_a.country.name} | City</p>
-                </header>
+				<section class="team" data-selected={activeTeam === match.team_a.name}>
+					<header class="team__header">
+						<h2>
+							<img alt="" height="32" width="32" />
+							<span>{match.team_a.name}</span>
+						</h2>
 
-                <div class="team__content">
-                    <!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
-                    <PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
-                </div>
-            </section>
+						<p>{match.team_a.country.name} | City</p>
+					</header>
 
-            <section class="team" data-selected="{activeTeam === match.team_b.name}">
-                <header class="team__header">
-                    <h2>
-                        <img alt="" height="32" width="32" />
-                        <span>{match.team_b.name}</span>
-                    </h2>
+					<div class="team__content">
+						<!-- <pre>{JSON.stringify(match.team_a, null, 2)}</pre> -->
+						<PlayersList players={match.team_a.players} match={match.id} team={match.team_a.id} />
+					</div>
+				</section>
 
-                    <p>{match.team_b.country.name} | City</p>
-                </header>
+				<section class="team" data-selected={activeTeam === match.team_b.name}>
+					<header class="team__header">
+						<h2>
+							<img alt="" height="32" width="32" />
+							<span>{match.team_b.name}</span>
+						</h2>
 
-                <div class="team__content">
-                    <!-- <pre>{JSON.stringify(match.team_b, null, 2)}</pre> -->
-                    <PlayersList
-                        players={match.team_b.players}
-                        match={match.id}
-                        team={match.team_b.id}
-                        reversed={true}
-                    />
-                </div>
-            </section>
-		{/if}
-	</div>
-</main>
+						<p>{match.team_b.country.name} | City</p>
+					</header>
 
+					<div class="team__content">
+						<!-- <pre>{JSON.stringify(match.team_b, null, 2)}</pre> -->
+						<PlayersList
+							players={match.team_b.players}
+							match={match.id}
+							team={match.team_b.id}
+							reversed={true}
+						/>
+					</div>
+				</section>
+			{/if}
+		</div>
+	</main>
 </Fullscreen>
 
 <style>
@@ -154,7 +137,6 @@
 	.page__header,
 	.statistics__header,
 	.status h3,
-	.timeline h3,
 	.view-switcher h3,
 	.scoreboard h3 {
 		clip: rect(0 0 0 0);
@@ -170,7 +152,7 @@
 		--grid-columns: 1;
 		display: grid;
 		grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
-		grid-template-areas: 
+		grid-template-areas:
 			'statistics'
 			'team_a'
 			'team_b';
@@ -179,7 +161,7 @@
 		padding: 1rem;
 		height: 100%;
 	}
-    .team:first-of-type {
+	.team:first-of-type {
 		grid-area: team_a;
 	}
 	.team:last-of-type {
@@ -243,9 +225,9 @@
 		gap: 0.5em;
 	}
 
-    .team[data-selected="true"] {
-        display: flex;
-    }
+	.team[data-selected='true'] {
+		display: flex;
+	}
 
 	.team__header {
 		grid-area: team_header;
@@ -253,7 +235,6 @@
 	}
 
 	.scoreboard,
-	.timeline,
 	.team__header {
 		display: flex;
 		border: 1px solid white;
@@ -280,52 +261,10 @@
 		flex: 1;
 	}
 
-	.jersey-number,
-	[class^='statistic-'] {
-		--size: 2.167em;
-		display: inline-block;
-		vertical-align: middle;
-		border: 1px solid black;
-		border-radius: calc(1em - 0.5em);
-		padding: 0.5em;
-		width: var(--size);
-		height: var(--size);
-		line-height: 1;
-		text-align: center;
-	}
-
-	[class^='statistic-'] {
-		--color: white;
-		border-color: var(--color);
-		background: var(--color);
-
-		color: white;
-	}
-
-	.statistic-goals {
-		--color: #18d02b;
-	}
-
-	.statistic-assists {
-		--color: #2974e4;
-	}
-
-	.statistic-blocks {
-		--color: #ed4444;
-	}
-
-	.statistic-turnovers {
-		--color: #ffc738;
-	}
-
-	[class^='statistic-']:empty {
-		--color: #f4f5fa;
-	}
-
 	.statistics {
 		display: flex;
+		grid-area: statistics;
 		flex-flow: column nowrap;
-        grid-area: statistics;
 	}
 
 	.statistics__content {
@@ -404,65 +343,10 @@
 		color: #b1bbdd;
 	}
 
-	.timeline {
-		flex: 1;
-	}
-
-	.timeline-list {
-		display: grid;
-		grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr) auto minmax(0, 1fr) minmax(0, 1fr) auto;
-		grid-template-areas: 'a b c d e f g';
-		grid-auto-rows: min-content;
-		gap: 0.5em;
-		list-style: none;
-	}
-
-	[class^='timeline-list__item'] {
-		display: grid;
-		grid-template-columns: subgrid;
-		grid-column: 1 / -1;
-	}
-
-	[class^='timeline-list__item'] p {
-		margin-block: auto;
-	}
-
-	[class^='timeline-list__item'] p:nth-of-type(1) {
-		grid-area: a;
-	}
-	[class^='timeline-list__item'] p:nth-of-type(2) {
-		grid-area: b;
-	}
-	[class^='timeline-list__item'] p:nth-of-type(3) {
-		grid-area: c;
-	}
-	[class^='timeline-list__item'] p:nth-of-type(4) {
-		grid-area: d;
-		text-align: center;
-	}
-
-	.timeline-list__item--b * {
-		text-align: right;
-	}
-
-	.timeline-list__item--b p:first-child {
-		text-align: center;
-	}
-
-	.timeline-list__item--b p:nth-of-type(1) {
-		grid-area: g;
-	}
-	.timeline-list__item--b p:nth-of-type(2) {
-		grid-area: f;
-	}
-	.timeline-list__item--b p:nth-of-type(3) {
-		grid-area: e;
-	}
-
 	@media only screen and (min-width: 48rem) {
 		.page__content {
 			--grid-columns: 3;
-            grid-template-areas: 'team_a statistics team_b';
+			grid-template-areas: 'team_a statistics team_b';
 		}
 
 		nav {
@@ -473,9 +357,9 @@
 			display: block;
 		}
 
-        .team {
-            display: flex;
-        }
+		.team {
+			display: flex;
+		}
 
 		.team__header {
 			display: inline;
