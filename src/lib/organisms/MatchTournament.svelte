@@ -1,28 +1,43 @@
-<div class="match-contain">
-    <p class="subtitle-small">Mixed | Arena | Finale</p>
-    <div class="match">
-        <div class="wrapper">
-            <p class="time-label">12:45</p>
-            <div class="teams">
-                <div>
-                    <img src="../images/team-logo-dog.png" alt="Logo Dog">
-                    <p>Dog</p>
-                </div>
-                <p class="score-label">18-12</p>
-                <div>
-                    <img src="../images/team-logo-camel.png" alt="Logo Camel">
-                    <p>Camel</p>
-                </div>
-            </div>
-        </div>
-        <a class="add-points-button" href="/">Add points</a>
-    </div>
-</div>
+<script>
+    export let match;
+    console.log(match);
+</script>
+
+
+<ol>
+    <li>
+        <a class="match-contain" href="/statsreader/{match.id}">
+            <p class="subtitle-small">Mixed | Arena | Finale</p>
+            <article class="match">
+                <section class="wrapper">
+                    <p class="time-label">12:45</p>
+                    <section class="teams">
+                        <section>
+                            <img src="../images/team-logo-dog.png" alt="Team Logo: Dog">
+                            <p> {match.team_a.name} </p>
+                        </section>
+                        <p class="score-label">18-12</p>
+                        <section>
+                            <img src="../images/team-logo-camel.png" alt="Team Logo: Camel">
+                            <p>{match.team_b.name}</p>
+                        </section>
+                    </section>
+                </section>
+                <a class="add-points-button" href="/statskeeper/{match.id}">Add Points</a>
+            </article>
+        </a>
+    </li>
+</ol>
+
 
 <style>
 
+    ol{
+        list-style-type: none;
+    }
+
     .match-contain{
-        margin-top: 1rem;
+        text-decoration: none;
     }
 
     .subtitle-small{
@@ -65,7 +80,7 @@
         flex-direction: column;
     }
 
-    .teams div{
+    .teams section{
         display: flex;
     }
 
@@ -95,21 +110,40 @@
         background-color: var(--block-by-color);
         border-radius: 20px;
         padding: 0.5rem;
+        border: solid 2px var(--block-by-color);
+    }
+
+    .add-points-button:hover {
+        color: var(--block-by-color);
+        background-color: var(--element-background-color);
+        border: solid 2px var(--block-by-color);
+        transition: ease-in 0.2s;
+    }
+
+    .add-points-button:focus {
+        color: var(--block-by-color);
+        background-color: var(--element-background-color);
+        outline: none;
+        border: solid 2px var(--block-by-color);
+        box-shadow: var(--box-shadow);
     }
 
     @media (min-width: 50rem){
 
+        ol{
+            margin-right: 5rem;
+        }
+
         .match-contain{
             position: relative;
             align-items: center;
+            margin-bottom: 10rem;
         }
 
         .subtitle-small{
-            position: absolute;
-            font-size: 0.8rem;
-            font-weight: 600;
-            top: 30%;
-            right: 25%;
+            font-size: 1rem;
+            margin: 0.5rem 1rem;
+            padding-top: 1rem;
         }
 
         .time-label{
@@ -133,9 +167,8 @@
 
     @media (min-width: 70rem){
 
-        .subtitle-small{
-            font-size: 0.8rem;
-            right: 15%;
+        .match-contain{
+            margin-right: 10rem;
         }
 
         .time-label{
@@ -147,7 +180,7 @@
             margin-left: 8rem;
         }
 
-        .teams > div:first-child{
+        .teams > section:first-child{
             flex-direction: row-reverse;
         }
 
