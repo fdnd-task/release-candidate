@@ -54,7 +54,15 @@
 
 
 <section>   
-      <article class="carousel">
+    <article class="readinglist-text">  
+        <h2>
+            Jouw recente leeslijst: <span>e-boeken<span>
+            </h2>
+            <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog lezen via jouw telefoon of e-reader!</p>
+            <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
+    </article>
+
+    <article class="carousel">
         {#each data.apiEBooks.results.slice(0, 5) as book}
         <Card 
             bookAuthor={book.authors}
@@ -69,56 +77,29 @@
 </section>
 
 
-
 <!-- leeslijst sections zijn precies dezelfde classes, want opmaak is exact hetzelfde elke keer -->
 
 <section class="readinglist-books-section">
-    <article class="readinglist-text">  
-        <h2>
-            Jouw recente leeslijst: <span>e-boeken<span>
-            </h2>
-            <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog lezen via jouw telefoon of e-reader!</p>
-            <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
-    </article>
+    <article>
+        <h2> Jouw recente leeslijst: <span>luisterboeken<span></h2>
+        <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog luisteren!</p>
+        <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
+        </article>
+    <article class="carousel">
+        {#each data.apiAudioBooks.results.slice(0, 5) as book}
+        <Card 
+            bookAuthor={book.authors}
+            bookTitle={book.titles}
+            bookUrl={book.coverimages}
+            bookDetailLink={book.detailLink}
+        />
+    {/each}
 
+    </article>
 
 </section>
 
 <section>
-        <article>
-            <h2> Jouw recente leeslijst: <span>luisterboeken<span></h2>
-            <p> Deze boeken heb je toegevoegd aan jouw leeslijst en wil je ooit nog luisteren!</p>
-            <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
-            </article>
-        <article class="carousel">
-            {#each data.apiAudioBooks.results.slice(0, 5) as book}
-            <Card 
-                bookAuthor={book.authors}
-                bookTitle={book.titles}
-                bookUrl={book.coverimages}
-                bookDetailLink={book.detailLink}
-            />
-        {/each}
-
-        </article>
-
-
-    <section class="readinglist-carousel">
-        <!-- Hier gebruik ik de card molecule die ik heb gemaakt, en geef ik de data mee die ik heb gequery in de page.server -->
-        {#each data.apiAudioBooks.results.slice(0, 5) as book}
-            <Card 
-                bookAuthor={book.authors}
-                bookTitle={book.titles}
-                bookUrl={book.coverimages}
-                bookDetailLink={book.detailLink}
-            />
-        {/each}
-    <LinkButton buttonText="Bekijk Leeslijst" buttonLink="#"/>
-    </section>
-</section>
-
-
-<section class="about-section">
     <article class="about-text"> 
         <h2>
         Ontdek de Wereld van Leren bij <span>OBA!</span>
@@ -134,11 +115,8 @@
         <!-- carousel plaatsen -->
     </section>
 
-        
-
-
+    
 </section>
-
 
 
 
@@ -151,10 +129,6 @@ header{
 section{
     margin: 2rem auto;
     padding: 1rem;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    grid-gap: .7em;
-    grid-row:  21rem 15rem ; */
     display: flex;
     flex-direction: column;
 }
@@ -166,6 +140,12 @@ section:nth-child(2n+1){
 article{
     padding: 4rem 0;
 }
+
+p{
+    padding: 2rem 0;
+
+}
+
 .logo{
     padding: 0;
 }
@@ -203,28 +183,33 @@ span{
   }
 }
 
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 45rem) {
     section{
-    height: 65hv;
+    height: 65vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 4rem;
     }
+
+    section:nth-of-type(odd):not(.hero-text):not(:last-child) {
+        flex-direction: row-reverse;
+    }
+
     section:nth-child(2){
         width: 85%;
     }
     article{
     width: 45%;
     padding: 5rem 0;
-}
-.logo{
-    position: absolute;
-    top:0   ;
-    right: 0;
-    width: 50%;
-}
+    }
+    .logo{
+        position: absolute;
+        top:0   ;
+        right: 0;
+        width: 50%;
+  }
 }
 
 
