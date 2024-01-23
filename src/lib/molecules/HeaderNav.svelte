@@ -69,8 +69,8 @@
         align-items: center;
         justify-content: center;
         float: right;
-        width: 2em;
-        height: 2em;
+        width: 1.6em;
+        height: 1.6em;
         position: relative;
         z-index: 99;
         top: .6em;
@@ -87,7 +87,7 @@
         height: 0.1em;
         position: relative;
         transition: background .1s ease-out;
-        width: 1.3em;
+        width: 1.1em;
     }
 
     /* Top/bottom line - Hamburger */
@@ -143,6 +143,21 @@
     .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:before,
     .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:after {
         top: 0;
+    }
+
+    /* 640px */
+
+    @media (min-width: 40em) {
+
+        .menuIcon {
+            width: 2em;
+            height: 2em;
+        }
+
+        .menuIcon .navicon {
+            width: 1.3em;
+        }
+
     }
 
     /* 48em = 768px */

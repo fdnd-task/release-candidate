@@ -22,12 +22,14 @@
         background-repeat: no-repeat;
         background-position: center;
         background-position-y: 0em;
+        background-position-x: -16em;
         background-size: cover;
         overflow: hidden;
-        height: clamp(16em, 155vw, 90em);
+        height: clamp(16em, 155vw, 65em);
         display: flex;
         justify-content: center;
-        align-items: top;
+        align-items: center;
+        padding-bottom: 13em;
     }
 
     .buildings{
@@ -76,6 +78,12 @@
     /* 900px */
     @media (min-width: 56em)  {
 
+        section{
+            background-position-x: 0;
+            height: clamp(16em, 155vw, 80em);
+            padding-bottom: 30em;
+        }
+
         .circle{
             width: clamp(12em, 55vw, 30em);
             height: clamp(12em, 55vw, 30em); 
@@ -84,6 +92,7 @@
 
     /* 1400px */
     @media (min-width: 87.5em)  {
+
 
         .circle{
             width: clamp(12em, 55vw, 33em);
