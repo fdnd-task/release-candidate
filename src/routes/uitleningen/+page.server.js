@@ -12,6 +12,7 @@ export async function load() {
             author
             category
             inleverdatum
+            detailLink
         }
     }
 `

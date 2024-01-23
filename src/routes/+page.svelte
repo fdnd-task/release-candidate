@@ -151,10 +151,6 @@ header{
 section{
     margin: 2rem auto;
     padding: 1rem;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    grid-gap: .7em;
-    grid-row:  21rem 15rem ; */
     display: flex;
     flex-direction: column;
 }
@@ -221,7 +217,7 @@ span{
 }
 .logo{
     position: absolute;
-    top:0   ;
+    top: 0;
     right: 0;
     width: 50%;
 }
