@@ -31,7 +31,6 @@ h2 {
 }
 
 p {
-	padding: 25px 0px;
 	font-size: 1em;
 	max-width: 70ch;
 }
@@ -46,7 +45,6 @@ p {
 	}
 
 	p {
-		padding: 1.5em 0em;
 		font-size: 1.1em;
 	}
 }

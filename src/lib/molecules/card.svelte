@@ -35,11 +35,9 @@
         flex-basis: 100%;
         background-repeat: no-repeat;
         background-size: cover;
-        flex: 3 0 200px;
-        padding: 20px;
+        scroll-margin: 5px;
         border-radius: 10px;
         box-shadow: 0 4px 6px 1px #ccc;
-        scroll-margin: 5px;
         background-color: linear-gradient(to top, transparent, #000000);
     }
 
@@ -70,6 +68,10 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    p:last-child{
+        padding-top: 1rem;
     }
 
     .p__title {

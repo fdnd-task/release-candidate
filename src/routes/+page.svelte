@@ -143,6 +143,12 @@ section:nth-child(2n+1){
 article{
     padding: 4rem 0;
 }
+
+p{
+    padding: 2rem 0;
+
+}
+
 .logo{
     padding: 0;
 }
@@ -200,13 +206,14 @@ span{
     article{
     width: 45%;
     padding: 5rem 0;
-}
-.logo{
-    position: absolute;
-    top:0   ;
-    right: 0;
-    width: 50%;
-}
+    }
+    .logo{
+        position: absolute;
+        top:0   ;
+        right: 0;
+        width: 50%;
+    }
+
 }
 
 
