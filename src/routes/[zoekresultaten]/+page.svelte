@@ -8,16 +8,15 @@
 </script>
 
 <h1>Resultaten voor: </h1>
-
 <main>
-
 <section>
     {#each results as result}
     <a href={result.detailLink}>
         <Card             
             bookAuthor={result.authors[0]}
             bookTitle={result.frabl.key1}
-            bookUrl={result.coverimages[0]}/>
+            bookUrl={result.coverimages[0]}
+            />
     </a>
     {/each}
 </section>

@@ -16,21 +16,28 @@ function closeDialog() {
   showDialog = false;
   error = '';
 }
-console.log(cardData)
+// console.log(cardData)
 
- function submitted(event) {
+onMount(() => {
+    const searchInput = document.getElementById('zoekinput');
+
+    searchInput.addEventListener('input', submitted);
+
+    return () => {
+      // Cleanup event listener when component is unmounted
+      searchInput.removeEventListener('input', submitted);
+    };
+  });
+
+  function submitted(event) {
     event.preventDefault();
 
-    // // Filter the cardData based on the search value
-    const searchValue = value.toLowerCase();
+    const searchValue = event.target.value.toLowerCase();
     const filteredCards = Object.values(cardData).filter(card => card.frabl.key1.toLowerCase().includes(searchValue));
-    // const filteredCards = Object.values(cardData).filter(card => card.frabl.key1.toLowerCase() === searchValue);
 
     if (filteredCards.length === 0) {
-      // Als er geen overeenkomende resultaten zijn, toon een foutmelding
       error = 'Geen resultaten gevonden';
     } else {
-      // Update de cardData met de gefilterde resultaten en reset de foutmelding
       cardData = filteredCards;
       error = '';
     }
@@ -40,7 +47,7 @@ console.log(cardData)
 <section>
   <div on:click={openDialog} class="button">
     <form action="" on:submit={submitted}>
-      <input type="text" placeholder="Zoek.." name="search" bind:value autocomplete="off">
+      <input id="zoekinput" type="text" placeholder="Zoek.." name="search" bind:value autocomplete="off">
       <button type="submit" ><img src={Searchsvg} alt="submit" width="35"></button>
    </form> 
   </div>
