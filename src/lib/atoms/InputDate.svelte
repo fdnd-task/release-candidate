@@ -1,17 +1,20 @@
 <script>
-	export let LableText, LableFor, InputType, InputID;
+	export let DDValue = "";
+	export let MMValue = "";
+	export let YYYYValue = "";
+	export let Hidden ="";
 </script>
 
 <div class="DateOfBirth-container">
-	<legend >Date of birth</legend>
+	<legend >Date of birth <span hidden="{Hidden}">(Optioneel)</span></legend>
 	<div class="input-container">
-		<input type="tekst" id="Day" autocomplete="bday-day" placeholder="DD" inputmode="numeric" />
+		<input type="tekst" id="Day" autocomplete="bday-day" placeholder="DD" value="{DDValue}" inputmode="numeric" />
 		<label for="Day">Welke dag ben je geboren</label>
 		/
-		<input type="tekst" id="Month" autocomplete="bday-month" placeholder="MM" inputmode="numeric" />
+		<input type="tekst" id="Month" autocomplete="bday-month" value="{MMValue}" placeholder="MM" inputmode="numeric" />
 		<label for="Month">Welke maand ben je geboren</label>
 		/
-		<input type="tekst" id="Year" autocomplete="bday-year" placeholder="YYYY" inputmode="numeric" />
+		<input type="tekst" id="Year" autocomplete="bday-year" value="{YYYYValue}" placeholder="YYYY" inputmode="numeric" />
 		<label for="Jaar">Welke jaar ben je geboren</label>
 	</div>
 </div>
@@ -31,6 +34,8 @@
 		padding: 0 1.5rem;
 		font-size: 12px;
 		font-family: var(--tertiary-font-family);
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.input-container {
@@ -109,4 +114,9 @@
 	input::-webkit-inner-spin-button {
 		-webkit-appearance: none;
 	}
+
+	span{
+    font-size: 12px;
+    color: gray;
+  }
 </style>

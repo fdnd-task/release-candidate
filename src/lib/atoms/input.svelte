@@ -1,14 +1,18 @@
 <script>
-  export let LableText, LableFor, InputType, InputID;
+  export let Text, For, Type, ID;
+  export let Value = "";
+  export let Required = "";
+  export let placeholder = "";
+  export let Hidden ="";
 </script>
 
-<div class="input-container">
-  <input type={InputType} id={InputID} autocomplete="off" placeholder="" />
-  <label for={LableFor}>{LableText}</label>
+<div class="container">
+  <input type={Type} id={ID} autocomplete="off" placeholder="{placeholder}" Value="{Value}" required="{Required}"/>
+  <label for={For}>{Text} <span hidden="{Hidden}">(Optioneel)</span></label>
 </div>
 
 <style>
-  .input-container {
+  .container {
     position: relative;
     width: 100%;
     margin-top: 1.5rem;
@@ -18,9 +22,12 @@
     position: absolute;
     top: 1rem;
     left: 1.5rem;
+    right: 1.5rem;
     transition: 0.3s ease-in-out;
     cursor: text;
     font-family: var(--tertiary-font-family);
+    display: flex;
+    justify-content: space-between;
   }
 
   input {
@@ -46,5 +53,14 @@
   div input:not(:placeholder-shown) ~ label {
     top: -1.3rem;
     font-size: 12px;
+  }
+
+  span{
+    font-size: 12px;
+    color: gray;
+  }
+
+  .container input:required ~ label span{
+    display: none;
   }
 </style>

@@ -1,14 +1,17 @@
 <script>
-  export let TextareaID, LableFor, LableText;
+  export let ID, For, Text;
+  export let Value ="";
+  export let Required ="";
+  export let Hidden ="";
 </script>
 
-<div class="input-container">
-  <textarea id={TextareaID} autocomplete="off" placeholder="" />
-  <label for={LableFor}>{LableText}</label>
+<div class="container">
+  <textarea id={ID} autocomplete="off" placeholder="" Required="{Required}" value="{Value}" />
+  <label for={For}>{Text} <span hidden="{Hidden}">(Optioneel)</span></label>
 </div>
 
 <style>
-  .input-container {
+  .container {
     position: relative;
     width: 100%;
     margin-top: 1.5rem;
@@ -18,9 +21,12 @@
     position: absolute;
     top: 1rem;
     left: 1.5rem;
+    right: 1.5rem;
     transition: 0.3s ease-in-out;
     cursor: text;
     font-family: var(--tertiary-font-family);
+    display: flex;
+    justify-content: space-between;
   }
 
   textarea:hover,
@@ -54,5 +60,18 @@
   div textarea:not(:placeholder-shown) ~ label {
     top: -1.3rem;
     font-size: 12px;
+  }
+
+  .container input:required ~ label span{
+    display: none;
+  }
+
+  span{
+    font-size: 12px;
+    color: gray;
+  }
+
+  .container input:required ~ label span{
+    display: none;
   }
 </style>
