@@ -93,6 +93,7 @@
 
 </script>
 
+<title>Statskeeper</title>
 <main>
 		<div class="score-count-wrapper">
 			<h4>ADD POINTS</h4>
@@ -132,16 +133,18 @@
 		<ul class="player-list">
 			{#if activeTeam === match.team_a.name}
 				{#each match.team_a.players as player}
+				<li>
 					<button class="player" class:selected-player={activePlayer === player.id} on:click={()=> selectPlayer(player.id)}>
 						<span class="jersey-number">{player.jersey_number}</span>
-						<span class="player-name">{player.firstname} {player.lastname}</span>
-						<div class="stats">
-							<span class="statkeeper-stat goals">{playerStats[player.id]?.points || ''}</span>
-							<span class="statkeeper-stat assists">{playerStats[player.id]?.assists || ''}</span>
-							<span class="statkeeper-stat turnovers">{playerStats[player.id]?.turnovers || ''}</span>
-							<span class="statkeeper-stat blocks">{playerStats[player.id]?.blocks || ''}</span>
-						</div>
+							<span class="player-name">{player.firstname} {player.lastname}</span>
+							<div class="stats">
+								<span class="statkeeper-stat goals">{playerStats[player.id]?.points || ''}</span>
+								<span class="statkeeper-stat assists">{playerStats[player.id]?.assists || ''}</span>
+								<span class="statkeeper-stat turnovers">{playerStats[player.id]?.turnovers || ''}</span>
+								<span class="statkeeper-stat blocks">{playerStats[player.id]?.blocks || ''}</span>
+							</div>
 					</button>
+				</li>
 				{/each}
 			{/if}
 			{#if activeTeam === match.team_b.name}
@@ -201,6 +204,7 @@
 </main>
 
 <style>
+
 	main{
 		/* display: grid; */
 		display: flex;
@@ -210,6 +214,7 @@
 		width: 100%;
 		padding: 10px;
 		background-color: var(--background-color);
+		height: 100dvh;
 	}
 
 	h4{
@@ -285,6 +290,7 @@
 		height: 30px;
 		border-radius: 10px;
 		cursor: pointer;
+		touch-action: manipulation;
 	}
 
 	.score-button:active,
@@ -340,6 +346,7 @@
 	}
 
 	.player-list{
+		height: 30dvh;
 		overflow: scroll;
 	}
 
@@ -546,6 +553,10 @@
 			display: grid;
 			grid-template-columns: repeat(6, 1fr);
 			grid-template-rows: repeat(6, 1fr);
+		}
+
+		.player-list{
+			height: 100%;
 		}
 
 		.score-count-wrapper{
