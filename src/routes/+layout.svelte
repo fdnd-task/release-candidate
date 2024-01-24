@@ -32,9 +32,14 @@
 		--Black: #000;
 
 		--Apercu-Font: 'Apercu pro', sans-serif;
-		--Paragraph-Font: 'Jubilat', serif;
 		--Header-Font: 'Kirang Haerang', sans-serif;
+		--Paragraph-Font: 'Jubilat', serif;
+		--Paragraph2Font: 'Inter', sans-serif;
 	}
+
+	:global(html) {
+        scroll-behavior: smooth;
+    }
 
 	:global(body) {
 		background-color: var(--Bg-Dark-Blue);

@@ -5,12 +5,12 @@
 </script>
 
 {#each data.homepages as homepage}
-	<section class="intro-about">
+	<section  id="intro-about">
 		<div class="intro">
 			<p class="intro-text">
 				{homepage.mainIntroAboutUs.introTextAbout}
 			</p>
-			<BtnSecondary href="{base}/about" title="About Us " class="btn-About"></BtnSecondary>
+			<BtnSecondary href="{base}/about" title="About Us"></BtnSecondary>
 		</div>
 	</section>
 {/each}
@@ -18,7 +18,8 @@
 <style>
 	section {
 		display: inline-block;
-		margin: 4em 0;
+		position: relative;
+		bottom: 8em;
 	}
 
 	/* ============== INTRO ABOUT - SECTION START ==============*/
@@ -35,8 +36,6 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center center;
-
-		margin: 12vw 0 0 0;
 		padding: 0 14vw;
 	}
 
@@ -88,9 +87,19 @@
 		}
 	}
 
+	@media (min-width: 1350px) {
+		section {
+			bottom: 21em;
+		}
+	}
+
 	@media (min-width: 1500px) {
 		.intro-text {
 			font-size: 2.5em;
 		}
 	}
+
+
+
+	
 </style>

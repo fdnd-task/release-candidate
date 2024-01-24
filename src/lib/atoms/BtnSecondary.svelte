@@ -1,4 +1,5 @@
 <script>
+    // @ts-nocheck
 	export let href, title;
 </script>
 
@@ -28,4 +29,5 @@
         color: var(--White);
     }
 
-</style>
+</style> 
+
