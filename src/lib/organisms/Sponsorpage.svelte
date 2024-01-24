@@ -1,5 +1,5 @@
 <script>
-  import { Sponsoroptions } from "$lib/index.js";
+
 </script>
 
 <main>
