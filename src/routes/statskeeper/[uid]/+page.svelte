@@ -492,6 +492,10 @@
 		height: 100%;
 	}
 
+	.play-field:active{
+		background-color: transparent;
+	}
+
 	.endzone-left,
 	.endzone-right{
 		display: flex;
