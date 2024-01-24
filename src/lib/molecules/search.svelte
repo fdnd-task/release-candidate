@@ -1,6 +1,7 @@
 <script>
     import { Card } from "$lib/index.js"
     import { onMount } from 'svelte';
+    import {Searchsvg} from "$lib/index.js"
     
     export let cardData;
     let value = '';
@@ -15,21 +16,28 @@ function closeDialog() {
   showDialog = false;
   error = '';
 }
-console.log(cardData)
+// console.log(cardData)
 
- function submitted(event) {
+onMount(() => {
+    const searchInput = document.getElementById('zoekinput');
+
+    searchInput.addEventListener('input', submitted);
+
+    return () => {
+      // Cleanup event listener when component is unmounted
+      searchInput.removeEventListener('input', submitted);
+    };
+  });
+
+  function submitted(event) {
     event.preventDefault();
 
-    // // Filter the cardData based on the search value
-    const searchValue = value.toLowerCase();
+    const searchValue = event.target.value.toLowerCase();
     const filteredCards = Object.values(cardData).filter(card => card.frabl.key1.toLowerCase().includes(searchValue));
-    // const filteredCards = Object.values(cardData).filter(card => card.frabl.key1.toLowerCase() === searchValue);
 
     if (filteredCards.length === 0) {
-      // Als er geen overeenkomende resultaten zijn, toon een foutmelding
       error = 'Geen resultaten gevonden';
     } else {
-      // Update de cardData met de gefilterde resultaten en reset de foutmelding
       cardData = filteredCards;
       error = '';
     }
@@ -39,13 +47,17 @@ console.log(cardData)
 <section>
   <div on:click={openDialog} class="button">
     <form action="" on:submit={submitted}>
-      <input type="text" placeholder="Search.." name="search" bind:value autocomplete="off">
-      <button type="submit" >Search</button>
+      <input id="zoekinput" type="text" placeholder="Zoek.." name="search" bind:value autocomplete="off">
+      <button type="submit" ><img src={Searchsvg} alt="submit" width="35"></button>
    </form> 
   </div>
   {#if showDialog}
         <div class="model">
-                <p>You are searching: <span>{value}</span></p> 
+                <p>Je zoekt: <span>{value}</span></p> 
+                <article>
+                  <a href={value}>Toon meer</a>
+                  <button on:click={closeDialog}>Sluiten</button>
+                  </article>
             {#if error}
                 <h2>{error}</h2>
                 {:else}
@@ -60,26 +72,25 @@ console.log(cardData)
               {/each}
             </ul>
             {/if}
-            <a href={value}>Toon meer</a>
-            <button on:click={closeDialog} class="close-button">Sluiten</button>
-            
+          
         </div>   
 {/if}
 
 </section>
 
 <style>
+
     .button{
         all: unset;
         position: fixed;
         left: 25%;
         top: 0;
-        padding: 2rem;
+        padding: 1rem;
+        border-radius: 0 0 1rem 1rem;
         background-color: var(--primary-accent-color);
         color: var(--primary-light-color);
         text-decoration: none;
         z-index: 999;
-        
           
     }
     .model{
@@ -97,10 +108,12 @@ console.log(cardData)
     }
     form{
     text-align: center;
-    }
+    display: flex;
+    align-items: center;
+}
 
     input{
-        padding: 1rem .5rem; 
+        padding: .8rem .2rem; 
     }
     button{
         all: unset;
@@ -108,6 +121,12 @@ console.log(cardData)
        background-color: var(--primary-accent-color);
        color: var(--primary-light-color);
     }
+    article a{
+      all: unset;
+        padding: 1rem .5rem;
+       background-color: var(--primary-accent-color);
+       color: var(--primary-light-color);
+    } 
     .close-button{
       position: absolute;
       right: 3%;
@@ -132,5 +151,12 @@ console.log(cardData)
     h2{
         padding: 1.5rem ;
         text-align: center;
+    }
+    article{
+      display: flex;
+    align-items: center;
+    top: 85%;
+    justify-content: space-between;
+      position: sticky;
     }
 </style>

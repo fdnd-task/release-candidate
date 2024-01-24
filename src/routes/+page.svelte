@@ -1,6 +1,6 @@
 <script>
     // Hier import ik de components die nodig zijn in deze pagina
-    import { Card,  LinkButton, Logo, Search } from '$lib/index.js'
+    import { Card,  LinkButton, Logo, Search, Nav } from '$lib/index.js'
     // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
     export let data;
 
@@ -10,10 +10,11 @@
 
 </script>
 
-<header>
-    <Search 
-    cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBooks.results)}/>
-    <!-- menu  -->
+<header> 
+     <Nav />
+     <Search 
+     cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBooks.results)}/>
+  
 </header>
 
 
