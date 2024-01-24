@@ -4,14 +4,14 @@
 	// export let data;
 </script>
 
- 
+
 <section class="intro-about"> 
 
-   <h1 class="title"> <span style=" color: black;"> Our Ultimate </span> <br> <span style=" color: white;"> goal</span> <img src="/assets/Accuracy.png" alt="icon"></h1> 
+    <h1 class="title"> <span style=" color: black;"> Our Ultimate </span> <br> <span style=" color: white;"> goal</span> <img src="/assets/Accuracy.png" alt="icon"></h1> 
 
     
-   <div class="paragraph-intro"> 
-          <div>  <img class= "line" src="/assets/Line.png" alt="line"> </div>
+    <div class="paragraph-intro"> 
+            <div>  <img class= "line" src="{base}/assets/Line.png" alt="line"> </div>
         <div> <p class="intro-paragrap-1"> Our ultimate goal is to provide a secure and nurturing environment where the youth can flourish. By engaging them in sports and community activities, we are sowing the seeds of hope and optimism. 
         
             </p>
