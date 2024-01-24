@@ -1,6 +1,7 @@
+
 <main>
 	<!-- svelte-ignore a11y-missing-attribute -->
-	<a href="/tournaments/[uid]" class="currentTournament">
+	<a href="/tournaments" class="currentTournament">
 		<h2>Current Tournament</h2>
 		<p class="subtitle-small">Check the current tournaments</p>
 	</a>
