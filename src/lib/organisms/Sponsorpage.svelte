@@ -1,5 +1,5 @@
 <script>
-
+	import { base } from '$app/paths';
 </script>
 
 <main>
@@ -8,7 +8,7 @@
       <h2 class="sponsorpage-span-h2">
         Become a <span class="yellow">sponsor</span>
       </h2>
-      <a href="#sponsorpage">
+      <a href="{base}#sponsorpage">
         <svg
           class="arrow"
           xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@
           can provide crucial equipment to aspiring athletes. <br />
           Help us make a difference today.
         </p>
-        <a href="/payment">
+        <a href="{base}/payment">
           <button class="sponsor-button sponsor-page-button green">
             Choose sponsor
           </button>
@@ -74,7 +74,7 @@
           provide vital financial support to individuals in need. <br />
           Help us make a difference today
         </p>
-        <a href="/payment">
+        <a href="{base}/payment">
           <button class="sponsor-button sponsor-page-button">
             Choose sponsor
           </button>
@@ -107,7 +107,7 @@
           essential clothing to those in need.<br />
           Help us make a difference today.
         </p>
-        <a href="/payment">
+        <a href="{base}/payment">
           <button class="sponsor-button sponsor-page-button">
             Choose sponsor
           </button>
