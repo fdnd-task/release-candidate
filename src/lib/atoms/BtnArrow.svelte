@@ -31,8 +31,8 @@
     }
 
     svg{
-        width: clamp(1.5em, 4vw, 10em);
-        height: clamp(1.5em, 4vh, 10em);    
+        width: clamp(2em, 4vw, 10em);
+        height: clamp(2em, 4vh, 10em);    
     }
 
     /* 500px */
@@ -43,5 +43,30 @@
             height: clamp(1.5em, 6vh, 10em);   
         }
     }
+
+    /* 500px */
+    @media (min-width: 31em)  {
+
+        a{
+            padding: 1em;
+        }
+
+        svg{
+            width: clamp(1.5em, 6vw, 10em);
+            height: clamp(1.5em, 6vh, 10em);   
+        }
+
+    }
+
+
+    /* 768px */
+    @media (min-width: 48em)  {
+
+    a{
+        padding: 1.5em;
+    }
+
+    }
+
 
 </style>

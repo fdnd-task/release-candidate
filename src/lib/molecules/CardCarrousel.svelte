@@ -1,48 +1,48 @@
 
 
 
-<section class="carrousel-section" role="region" aria-label="Carousel">
+<section class="carrousel-section"  aria-label="Carousel">
   <article class="carrousel-item" aria-hidden="false">
       <div class="carrousel-item-image">
         <img src="/assets/image 255.jpeg" alt="children playing">
       </div>
       <h3>Talented youths dream of a football career in Brazil, a national passion.</h3>
-      <a href="#">Read more</a>
+      <p>Read more</p>
   </article>
-  <article class="carrousel-item" aria-hidden="false">
+  <article class="carrousel-item"  aria-hidden="false">
       <div class="carrousel-item-image">
           <img src="/assets/image 256.jpeg" alt="children playing">
       </div>
       <h3>Brazilian youth academies hone skills for high-level competitions. </h3>
-      <a href="#">Read more</a>
+      <p>Read more</p>
   </article>
-  <article class="carrousel-item" aria-hidden="false">
+  <article class="carrousel-item"  aria-hidden="false">
       <div class="carrousel-item-image">
           <img src="/assets/image 257.jpeg" alt="children playing">
       </div>
       <h3>In Rio's favelas, football provides hope and a positive escape. </h3>
-      <a href="#">Read more</a>
+      <p>Read more</p>
   </article>
-  <article class="carrousel-item" aria-hidden="false">
+  <article class="carrousel-item"  aria-hidden="false">
       <div class="carrousel-item-image">
           <img src="/assets/image 252.jpeg" alt="children playing">
       </div>
       <h3>Youth club rivalry in Brazil is intense, players devoted to team colors. </h3>
-      <a href="#">Read more</a>
+      <p>Read more</p>
   </article>
-  <article class="carrousel-item" aria-hidden="false">
+  <article class="carrousel-item"  aria-hidden="false">
       <div class="carrousel-item-image">
           <img src="/assets/image 253.jpeg" alt="children playing">
       </div>
       <h3>The Brazilian youth championship attracts scouts from global clubs. </h3>
-      <a href="#">Read more</a>
+      <p>Read more</p>
   </article>
-  <article class="carrousel-item" aria-hidden="false">
+  <article class="carrousel-item"  aria-hidden="false">
       <div class="carrousel-item-image">
           <img src="/assets/image 254.jpeg" alt="children playing">
       </div>
       <h3>Young football prospects in Brazil juggle success, education, and family. </h3>
-      <a href="#">Read more</a>
+      <p>Read more</p>
   </article>
 </section>
 
@@ -122,6 +122,7 @@ h3 {
   h3{
     font-size: 1.5em;
   }
+ 
 }
 
 @media only screen and (max-width: 601px){

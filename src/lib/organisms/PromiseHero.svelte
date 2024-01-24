@@ -15,7 +15,6 @@
 </section>
 
 <style>
-
 .heroPromise {
     width: 100%;
     height: 50vh;
@@ -23,6 +22,7 @@
     text-align: center;
 }
 
+/* Background image */
 .heroPromise::before {
   content: "";
   background: url(/assets/PromiseHeroImg800x1200.jpg) ;
@@ -38,7 +38,6 @@
 }
 
 .heroPromiseWrapper {
-    /* width: 80%; */
     position: relative;
     top: 50%;
     left: 50%;
@@ -54,6 +53,7 @@
 
 .heroPromiseWrapper > p {
     width: 80%;
+    font-family: var(--Apercu-Font);
 }
 
 .btnArrow {

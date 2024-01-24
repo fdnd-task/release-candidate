@@ -23,6 +23,7 @@
 
 	:global(:root) {
 		--Bg-Dark-Blue: #051d1d;
+		--Charcoal: #051A1A;
 
 		--Yellow-Primary: #ffda1d;
 		--Blue-Secondary: #3dbae1;
@@ -31,8 +32,9 @@
 		--Black: #000;
 
 		--Apercu-Font: 'Apercu pro', sans-serif;
-		--Paragraph-Font: 'Jubilat', serif;
 		--Header-Font: 'Kirang Haerang', sans-serif;
+		--Paragraph-Font: 'Jubilat', serif;
+		--Paragraph2Font: 'Inter', sans-serif;
 	}
 
 	:global(html) {
