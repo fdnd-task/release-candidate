@@ -6,10 +6,18 @@
 	export let data;
 
 	const { match, statistics } = data;
+	let active;
 
-	const isActiveTab = (tab) => {
-		return $page.url.hash === tab || $page.url.hash == '';
-	};
+	// const isActiveTab = (tab) => {
+	// 	console.log($page.url.hash);
+	// 	return $page.url.hash === tab || $page.url.hash == '';
+	// };
+
+	let activeSectionIndex = 0;
+
+	function setActiveSection(index) {
+		activeSectionIndex = index;
+	}
 
 	//FUNCTION FOR SELECTING THE TEAM TO ADD POINTS TO
 	let activeTeam = match.team_a.name;
@@ -54,22 +62,41 @@
 
 					<nav>
 						<ul>
-							<li><a href="#info" class:active={$page.url.hash === '#info'}>Info</a></li>
-							<li><a href="#resume" class:active={$page.url.hash === '#resume'}>Resume</a></li>
 							<li>
-								<a href="#statistics" class:active={$page.url.hash === '#statistics'}>Statistics</a>
+								<a
+									href="#info"
+									class:selected={activeSectionIndex === 0}
+									on:click={() => setActiveSection(0)}>Info</a
+								>
+							</li>
+							<li>
+								<a
+									href="#resume"
+									class:selected={activeSectionIndex === 1}
+									on:click={() => setActiveSection(1)}>Resume</a
+								>
+							</li>
+							<li>
+								<a
+									href="#statistics"
+									class:selected={activeSectionIndex === 2}
+									on:click={() => setActiveSection(2)}>Statistics</a
+								>
 							</li>
 						</ul>
 					</nav>
 
-					{#if isActiveTab('#statistics')}
+					<!-- {#if isActiveTab('#statistics')} -->
+					<div style="display: {activeSectionIndex === 2 ? 'block' : 'none'}"> 
 						<Timeline {statistics} />
-					{/if}
+					</div>
+					<!-- {/if} -->
 				</div>
 			</section>
 
-			{#if isActiveTab('#info')}
-				<section class="switch-team">
+			<!-- {#if isActiveTab('#info')} -->
+			<section style="display: {activeSectionIndex === 0 ? 'block' : 'none'}">
+				<section class="switch-team" >
 					<h3>Match information</h3>
 					<button
 						class="select-team-button"
@@ -119,7 +146,8 @@
 						/>
 					</div>
 				</section>
-			{/if}
+			</section>
+			<!-- {/if} -->
 		</div>
 	</main>
 </Fullscreen>
