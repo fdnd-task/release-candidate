@@ -7,6 +7,8 @@
     console.log(tournament, matches);
 </script>
 
+<title>Tournament Overview</title>
+
 <main>
     <div>
         <h2>{tournament.name}</h2>
@@ -16,8 +18,10 @@
         <h4 class="subtitle-large">All matches</h4>
         <div class="green-separator"></div>
     </div>
-    {#each matches as match}
-        <MatchTournament {match} />
+    {#each matches as match (match.id)}
+        <a href="{match.link}" aria-label="{`View details for ${match.team_a.name} and ${match.team_b.name}`}">
+            <MatchTournament {match} />
+        </a>
     {/each}
 </main>
 

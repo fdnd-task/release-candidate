@@ -5,6 +5,8 @@
     console.log(tournaments);
 </script>
 
+<title>All Tournaments</title>
+
 <main>
     <div class="intro-heading">
         <h2>All Tournaments</h2>
@@ -36,6 +38,14 @@
         margin-bottom: 2rem;
     }
 
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle-medium {
+        font-size: 1rem;
+    }
+
     li{
         list-style-type: none;
     }
@@ -44,6 +54,10 @@
         background-color: var(--element-background-color);
         text-decoration: none;
         text-align: center;
+    }
+
+    a:focus{
+        outline-color: var(--button-background-color);
     }
 
     .tournament-contain{
@@ -55,10 +69,6 @@
 
     .tournament-contain:hover{
         background-color: var(--hover-background-color);
-    }
-
-    h2 {
-        font-size: 1.8rem;
     }
 
     .subtitle-large {
