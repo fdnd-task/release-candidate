@@ -13,12 +13,12 @@
                     <p class="time-label">12:45</p>
                     <section class="teams">
                         <section>
-                            <img src="../images/team-logo-dog.png" alt="Team Logo: Dog">
+                            <img src="../images/team-logo-dog.png" loading="lazy" alt= "Team Logo: A">
                             <p> {match.team_a.name} </p>
                         </section>
                         <p class="score-label">18-12</p>
                         <section>
-                            <img src="../images/team-logo-camel.png" alt="Team Logo: Camel">
+                            <img src="../images/team-logo-camel.png" loading="lazy" alt="Team Logo: B">
                             <p>{match.team_b.name}</p>
                         </section>
                     </section>
@@ -40,9 +40,12 @@
         text-decoration: none;
     }
 
+    .match-contain:focus{
+        outline-color: var(--button-background-color);
+    }
+
     .subtitle-small{
         font-size: 0.7rem;
-        color: var(--bio-player-font-color);
         font-weight: bold;
         text-align: right;
         margin: 0.5rem 1rem;
@@ -121,11 +124,10 @@
     }
 
     .add-points-button:focus {
-        color: var(--block-by-color);
-        background-color: var(--element-background-color);
+        color: var(--button-background-color);
+        background-color: transparent;
         outline: none;
-        border: solid 2px var(--block-by-color);
-        box-shadow: var(--box-shadow);
+        border: solid 2px var(--button-background-color);
     }
 
     @media (min-width: 50rem){
