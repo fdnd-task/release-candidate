@@ -18,7 +18,7 @@
 
     section {
         padding-top: 5em;
-        background-image: url(/assets/bg-brazillian-kids.jpg);
+        background-image: url(/assets/bg-brazillian-kids.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-position-y: 0em;
