@@ -1,5 +1,5 @@
 <script>
-    import { PromiseHero, PromiseIntro } from '$lib/index.js';    
+    import { PromiseHero, PromiseIntro, PromisePrinciples } from '$lib/index.js';
 </script>
 
 
@@ -8,3 +8,4 @@
 
 <PromiseHero />
 <PromiseIntro />
+<PromisePrinciples />

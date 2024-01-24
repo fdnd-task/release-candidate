@@ -5,11 +5,15 @@ import { hygraph } from '$lib/utils/hygraph.js'
 
 export async function load() {
     let query = gql`
-        query HomeQuery {
+        query Homepages {
             homepages {
-                introMain {
-                    bgVideo {
-                    url
+                createdAt
+                id
+                publishedAt
+                updatedAt
+                heroMain {
+                    bgImg {
+                        url
                     }
                 }
                 mainIntroAboutUs {
@@ -47,11 +51,12 @@ export async function load() {
                     titleStory3
                     subTextStory
                     storyVideo {
-                    url
+                        url
                     }
                 }
             }
         }
+        
     `
     return await hygraph.request(query)
 }

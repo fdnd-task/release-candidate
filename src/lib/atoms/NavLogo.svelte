@@ -6,11 +6,20 @@
 
 <style>
 	.logo {
-		height: 3.5em;
-		width: 3.5em;
+		height: 2.5em;
+		width: 2.5em;
 	}
 
 	.logo:hover {
 		scale: 1.1;
 	}
+
+	/* 650px */
+	@media (min-width: 40em)  {
+		.logo {
+			height: 3.5em;
+			width: 3.5em;
+		}
+	}
 </style>
+

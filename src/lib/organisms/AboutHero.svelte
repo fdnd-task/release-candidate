@@ -4,28 +4,28 @@
 	// export let data;
 </script>
 
-<section class="heroPromise">
-    <div class="heroPromiseWrapper">
-        <h1>Our <span style=" color: var(--Blue-Secondary);">promise</span></h1>
-        <p>We strive to create a level playing field for all, and we work to ensure that everyone has the opportunity to succeed.</p>
+<section class="heroAbout">
+    <div class="heroAboutWrapper">
+        <h1>About <span style=" color: var(--Yellow-Primary);">us</span></h1>
+        <p> At INK, we're on a mission to transform the lives of young individuals.</p>
         <div class="btnArrow">
-            <BtnArrow  href="{base}#introPromise" />
+            <BtnArrow  href="{base}#introAbout" />
         </div>
     </div>
 </section>
 
 <style>
-.heroPromise {
+
+.heroAbout {
     width: 100%;
     height: 50vh;
     display: block;
     text-align: center;
 }
 
-/* Background image */
-.heroPromise::before {
+.heroAbout::before {
   content: "";
-  background: url(/assets/PromiseHeroImg800x1200.jpg) ;
+  background: url(/assets/INK-content3.png) ;
   background-position: center;
   background-size: cover;
   opacity: 0.5;
@@ -37,7 +37,8 @@
   z-index: -1;   
 }
 
-.heroPromiseWrapper {
+.heroAboutWrapper {
+    /* width: 80%; */
     position: relative;
     top: 50%;
     left: 50%;
@@ -47,13 +48,12 @@
     align-items: center;
 }
 
-.heroPromiseWrapper > h1 {
+.heroAboutWrapper > h1 {
     color: var(--White);
 }
 
-.heroPromiseWrapper > p {
+.heroAboutWrapper > p {
     width: 80%;
-    font-family: var(--Apercu-Font);
 }
 
 .btnArrow {
@@ -62,4 +62,3 @@
 }
 
 </style>
-  
