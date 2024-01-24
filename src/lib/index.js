@@ -5,4 +5,4 @@ export { default as Fullscreen } from './atoms/Fullscreen/Fullscreen.svelte'
 export { default as Timeline } from './organisms/Timeline/Timeline.svelte'
 export { default as TimelineRow } from './molecules/TimelineRow/TimelineRow.svelte'
 export { default as JerseyNumber } from './atoms/JerseyNumber.svelte'
-export { default as InputTextarea } from './atoms/InputTextarea.svelte'
+
