@@ -4,42 +4,42 @@
 <section class="carrousel-section"  aria-label="Carousel">
   <article class="carrousel-item" aria-hidden="false">
       <div class="carrousel-item-image">
-        <img src="/assets/image 255.jpeg" alt="children playing">
+        <img src="/assets/image 255.jpeg" loading="lazy" alt="children playing">
       </div>
       <h3>Talented youths dream of a football career in Brazil, a national passion.</h3>
       <p>Read more</p>
   </article>
   <article class="carrousel-item"  aria-hidden="false">
       <div class="carrousel-item-image">
-          <img src="/assets/image 256.jpeg" alt="children playing">
+          <img src="/assets/image 256.jpeg" loading="lazy" alt="children playing">
       </div>
       <h3>Brazilian youth academies hone skills for high-level competitions. </h3>
       <p>Read more</p>
   </article>
   <article class="carrousel-item"  aria-hidden="false">
       <div class="carrousel-item-image">
-          <img src="/assets/image 257.jpeg" alt="children playing">
+          <img src="/assets/image 257.jpeg" loading="lazy" alt="children playing">
       </div>
       <h3>In Rio's favelas, football provides hope and a positive escape. </h3>
       <p>Read more</p>
   </article>
   <article class="carrousel-item"  aria-hidden="false">
       <div class="carrousel-item-image">
-          <img src="/assets/image 252.jpeg" alt="children playing">
+          <img src="/assets/image 252.jpeg" loading="lazy" alt="children playing">
       </div>
       <h3>Youth club rivalry in Brazil is intense, players devoted to team colors. </h3>
       <p>Read more</p>
   </article>
   <article class="carrousel-item"  aria-hidden="false">
       <div class="carrousel-item-image">
-          <img src="/assets/image 253.jpeg" alt="children playing">
+          <img src="/assets/image 253.jpeg" loading="lazy" alt="children playing">
       </div>
       <h3>The Brazilian youth championship attracts scouts from global clubs. </h3>
       <p>Read more</p>
   </article>
   <article class="carrousel-item"  aria-hidden="false">
       <div class="carrousel-item-image">
-          <img src="/assets/image 254.jpeg" alt="children playing">
+          <img src="/assets/image 254.jpeg" loading="lazy" alt="children playing">
       </div>
       <h3>Young football prospects in Brazil juggle success, education, and family. </h3>
       <p>Read more</p>
@@ -94,7 +94,7 @@ h3 {
 }
 
 .carrousel-item-image {
-  width: 100%;
+  max-width: 100%;
   height: 60%;
   overflow: hidden;
   border-radius: 5px;
@@ -102,8 +102,8 @@ h3 {
 
 .carrousel-item .carrousel-item-image > img {
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
   object-position: top;
 }
@@ -121,6 +121,10 @@ h3 {
 }
   h3{
     font-size: 1.5em;
+  }
+  .carrousel-item .carrousel-item-image > img{
+    max-width: 100%;
+   max-height: 100%;
   }
  
 }
