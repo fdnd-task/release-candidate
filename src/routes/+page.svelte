@@ -1,21 +1,21 @@
 <script>
     // Hier import ik de components die nodig zijn in deze pagina
-    import { Card,  LinkButton, Logo, Search, Nav } from '$lib/index.js'
+    import { Card, Nav, LinkButton, Logo, Search } from '$lib/index.js'
     // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
+    // export let hygraphData;
     export let data;
-
-    // console.log(JSON.stringify(data.apiBooks, null, 2));
-    console.log(JSON.stringify(data.apiEBooks.results[0], null, 2))
+    console.log(JSON.stringify(data, null, 2))
     // Hier export ik de data zodat ik de data vanuit hygraph kan gebruiken die ik query in de page.server
 
 </script>
 
-<header> 
-     <Nav />
-     <Search 
-     cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBooks.results)}/>
-  
+<header>
+    <Nav />
+    <Search 
+    cardData={data.apiBooks.results.concat(data.apiEBooks.results, data.apiAudioBooks.results)}/>
+    <!-- menu  -->
 </header>
+ 
 
 
 <section  class="hero-text">
@@ -204,12 +204,14 @@ span{
     width: 45%;
     padding: 5rem 0;
     }
+    
     .logo{
-        position: absolute;
-        top:0   ;
-        right: 0;
         width: 50%;
-  }
+    }
+}
+
+/* laptop breakpoint */
+@media (min-width: 68em) {
 }
 
 
