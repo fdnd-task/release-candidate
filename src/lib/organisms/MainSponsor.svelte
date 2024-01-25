@@ -7,7 +7,7 @@
 
 <section>
 	{#each data.homepages as homepage}
-		<section>
+		<article>
 			<div class="sponsorCenterText">
 				<h2>
 					{homepage.becomeSponsor.titleSponsor}
@@ -17,23 +17,21 @@
 				</p>
 				<BtnPrimary href="{base}/becomeSponsor" title="Become sponsor"></BtnPrimary>
 			</div>
-		</section>
+		</article>
 	{/each}
 </section>
 
 <style>
 	section {
-		height: 75vw;
+		height: clamp(42em, 130vw, 52em);
 		width: 100vw;
-
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
-		background-image: url(/assets/blue-mask.svg);
+		background-image: url(/assets/BlueBg1.svg);
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
 		padding: 0 14vw;
@@ -42,6 +40,7 @@
 	.sponsorCenterText {
 		text-align: center;
 		max-width: 37.5em;
+		height: 16em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -58,6 +57,26 @@
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 		font-family: var(--Apercu-Font);
+	}
+
+    /* 425px */
+    @media (min-width: 26.5em)  {
+
+		.sponsorCenterText{
+			height: 12em;
+		}
+	}
+
+	/* 1000px */
+	@media (min-width: 62.5em)  {
+
+		section{
+			height: clamp(60em, 130vw, 100em);
+		}
+
+		.sponsorCenterText{
+			height: 18em;
+		}
 	}
 
 </style>

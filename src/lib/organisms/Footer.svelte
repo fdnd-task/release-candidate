@@ -9,21 +9,22 @@
 
 	<div class="navigatie">
 		<nav>
-			<ul class="footer-navbar">
-				<li class="contact">MORE</li>
-				<div class="link-container">
+			<ul class="footerNavbar">
+				<li>
+					<h2>MORE</h2>
+				</li>
+				<div class="linkContainer">
 					<li><a href="{base}/">HOME</a></li>
 				</div>
-				<div class="link-container">
+				<div class="linkContainer">
 					<li><a href="{base}/about">ABOUT</a></li>
 				</div>
-				<div class="link-container">
+				<div class="linkContainer">
 					<li><a class="promise" href="{base}/promise">PROMISE</a></li>
 				</div>
-				<div class="link-container">
+				<div class="linkContainer">
 					<li><a class="promise" href="{base}/promise">SPONSOR</a></li>
 				</div>
-				 
 			</ul>
 		</nav>
 	</div>
@@ -31,12 +32,14 @@
 	<!-- --------------PHONE NUMBER AND EMAIL---------------- -->
 
 	<div class="informatie">
-		<ul class="contact-info">
-			<li class="contact">CONTACT</li>
-			<div class="link-contact">
+		<ul class="contactInfo">
+			<li>
+				<h2>CONTACT</h2>
+			</li>
+			<div class="linkContact">
 				<li><a class="tel" href="tel:+31 20 1234679">+31 20 1234679</a></li> 
 			</div>
-			<div class="link-contact">
+			<div class="linkContact">
 				<li><a href="mailto:info@ink.org">info@ink.org</a></li>
 			</div>
 		</ul>
@@ -45,7 +48,7 @@
 <!------------------------SOCIAL ICONS--------------------------- -->
 	<div> 
 
-	<ul class="social-icons">
+	<ul class="socialIcons">
         <li class="icon">
             <svg
                 width="20"
@@ -146,134 +149,121 @@
 
 <style> 
 
-footer {
-	overflow: hidden;
-}
-
-a { 
-	font-family: var(--Apercu-Font);
-	color: white;
-	font-size: 1.25em;
-	padding-left: 1em;
-}
-
-.contact {
-	font-family: var(--Apercu-Font);
-	color: var(--Yellow-Primary) ;
-	font-size: 1.875em;
-	padding-bottom: 1em;
-	padding-left: 0.5em;
-	padding-top: 0.5em;
-}
-
-.button {
-	padding-left: 1em;
-	padding-bottom: 2em;
-}
-
-.social-icons {
-	list-style-type: none;
-	display: flex;
-	justify-content: space-between;
-	padding-left: 1em;
-	padding-right: 5em;
-	padding-top: 1em;
-	padding-bottom: 0.5em;
-}
-
-
-@media only screen and (min-width: 768px) {
-
-a {
-	font-family: var(--Apercu-Font);
-	color: white;
-	font-size: 1.25em;
-	
-}
-
-.social-icons {
-	list-style-type: none;
-	display: flex;
-	justify-content: space-between;
-	padding-left: 1em;
-	padding-right: 5em;
-}
-
-.navigatie {
-	list-style-type: none;
-	padding-left: 1em;
-	padding-top: 2em;
-}
-
-.informatie {
-	list-style-type: none;
-	padding-left: 1em;
-	padding-top: 3em;
-	padding-bottom: 3em;
-}
-
-.button {
-	padding-left: 1em;
-	padding-top: 3em;
-	padding-bottom: 3em;
-}
-
-.contact {
-	font-family: var(--Apercu-Font);
-	color: var(--Yellow-Primary) ;
-	font-size: 1.875em;
-	padding-bottom: 1em;
-	padding-top: 0em;
-}
-
-/* -----------ipad version------------ */
-
-@media (min-width: 40em) {
-
-.social-icons {
-	padding-right: 17em;
-}
-
-}
-
-@media (min-width: 48em) {
-
 	footer {
-		display: flex;
-		justify-content: space-between;
-		padding-bottom: 3em;
-		padding-top: 3em;
-		position: relative;
+		overflow: hidden;
+		font-family: var(--Apercu-Font);
 	}
 
-	.social-icons {
-	display: flex;
-	justify-content: space-between;
+	a { 
+		color: white;
+		font-size: 1.25em;
+		padding-left: 1em;
 	}
 
-	.icon {
-		padding-right: 1em;
-	}
-
-	.navigatie {
-	padding-top: 0;
-	padding-left: 5em;
-	}
-
-	.informatie {
-	padding: 0;
+	footer h2 {
+		color: var(--Yellow-Primary) ;
+		font-family: var(--Header-Font);
+		letter-spacing: .1em;
+		font-size: 1.8em;
+		padding: 0.5em;
 	}
 
 	.button {
-	padding-top: 1em;
-	}	
-
-	.contact {
-	font-family: var(--Apercu-Font);
-	color: var(--Yellow-Primary) ;
-	font-size: 1.875em;
-	padding-top: 0;
+		padding-left: 1em;
+		padding-bottom: 2em;
 	}
 
-}}
+	.socialIcons {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		padding: 1.5em;
+		max-width: 15em;
+	}
+
+
+	@media (min-width: 768px) {
+
+		a {
+			color: white;
+			font-size: 1.25em;
+		}
+
+		.socialIcons {
+			list-style-type: none;
+			display: flex;
+			justify-content: space-between;
+			padding-left: 1em;
+			padding-right: 5em;
+		}
+
+		.navigatie {
+			list-style-type: none;
+			padding-left: 1em;
+			padding-top: 2em;
+		}
+
+		.informatie {
+			list-style-type: none;
+			padding-left: 1em;
+			padding-top: 3em;
+			padding-bottom: 3em;
+		}
+
+		.button {
+			padding-left: 1em;
+			padding-top: 3em;
+			padding-bottom: 3em;
+		}
+
+		footer h2 {
+			font-size: 1.875em;
+		}
+
+	/* -----------ipad version------------ */
+
+	@media (min-width: 40em) {
+
+		.socialIcons {
+			padding-right: 17em;
+		}
+	}
+
+	@media (min-width: 48em) {
+
+		footer {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 3em;
+			padding-top: 3em;
+			position: relative;
+		}
+
+		.socialIcons {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.icon {
+			padding-right: 1em;
+		}
+
+		.navigatie {
+			padding-top: 0;
+			padding-left: 5em;
+		}
+
+		.informatie {
+			padding: 0;
+		}
+
+		.button {
+			padding-top: 1em;
+		}	
+
+		footer h2 {
+			font-size: 1.875em;
+			padding-top: 0;
+		}
+	}}
 </style>
