@@ -86,6 +86,7 @@
             display: flex;
             padding-top: 4em;
             padding-left: 35%;
+            width: 1200px;
         }
 
         p {
