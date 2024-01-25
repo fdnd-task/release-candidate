@@ -1,16 +1,15 @@
 
 <script>
 
-	import {CardCarrousel, ImageCarrousel, CarrouselButton} from '$lib/index.js'
+	import {CardCarrousel, ImageCarrousel} from '$lib/index.js'
 	
 </script>
 
 
 <section class="carrousel">
-    <h2>Stay up to date</h2>
-<CardCarrousel />
-<ImageCarrousel />
-<CarrouselButton />
+  <h2>Stay up to date</h2>
+    <CardCarrousel />
+    <ImageCarrousel />
 </section>
 
 
@@ -43,14 +42,14 @@ h2 {
   background-size: contain;
   background-position: center;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 
 /* Media query voor mobiele apparaten */
 @media only screen and (max-width: 600px) {
   .carrousel {
-    height: 150vw;
+    height: 180vw;
     background-size: cover;
   }
 }
