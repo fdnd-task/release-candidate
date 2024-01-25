@@ -1,10 +1,11 @@
 <script>
 	// export let data;
+    import { base } from '$app/paths';
 </script>
 
 <section  class="principlesPromise">
     <h2>Our <span style=" color: var(--Blue-Secondary);">principles</span></h2>
-        <img src="/assets/PromisePrinciples.svg" alt="">
+        <img src="{base}/assets/PromisePrinciples.svg" alt="">
         <ol>
             <li>We provide training and resources to our staff to help them understand and respect cultural differences.</li>
             <li>We develop and implement policies that protect children from harm.</li>
