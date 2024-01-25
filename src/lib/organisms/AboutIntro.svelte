@@ -34,12 +34,14 @@
     .introAbout {
         height: 492px;
         background-image: url(/assets/Group-165.png);
+        background-repeat: no-repeat;
     }
 
     .title {
         padding-top: 100px;
         font-size: 42px;
         padding-left: 1em;
+        width: 300px;
     }
 
 
