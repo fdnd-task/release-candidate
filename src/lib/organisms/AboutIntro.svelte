@@ -31,7 +31,7 @@
 
 .title {
     padding-top: 100px;
-    font-size: 50px;
+    font-size: 5em;
     padding-left: 1em;
 }
 
@@ -43,6 +43,7 @@ p {
     padding-right: 2em;
     float: right;
     font-size: 12px;
+    font-family: var(--Paragraph-Font);
     
 }
 

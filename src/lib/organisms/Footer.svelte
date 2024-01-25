@@ -139,7 +139,7 @@
 	</div>
 </footer>
 
-<style> 
+<style>
 
 	footer {
 		overflow: hidden;
