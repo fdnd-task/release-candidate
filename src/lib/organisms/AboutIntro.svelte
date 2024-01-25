@@ -8,8 +8,7 @@
 <section class="intro-about"> 
 
    <h1 class="title"> <span style=" color: black;"> Our Ultimate </span>  <span style=" color: white;"> goal</span> <img class="morale" src="/assets/Accuracy.png" alt="icon"></h1> 
-
-    
+ 
    <div class="paragraph-intro"> 
           <div>  <img class= "line" src="/assets/Line.png" alt="line"> </div>
         <div> <p class="intro-paragraph-1"> Our ultimate goal is to provide a secure and nurturing environment where the youth can flourish. By engaging them in sports and community activities, we are sowing the seeds of hope and optimism. 
