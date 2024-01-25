@@ -18,7 +18,8 @@
         </div>
         <div> 
             <p class="introParagraph-1"> 
-                Our ultimate goal is to provide a secure and nurturing environment where the youth can flourish. By engaging them in sports and community activities, we are sowing the seeds of hope and optimism. 
+                Our ultimate goal is to provide a secure and nurturing environment where the youth can flourish. 
+                By engaging them in sports and community activities, we are sowing the seeds of hope and optimism. 
             </p>
             <p class="introParagraph-2">  
                 Together, we can score a goal for education, empowerment, and a brighter future.
