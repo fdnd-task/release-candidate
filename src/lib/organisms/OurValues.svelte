@@ -26,10 +26,11 @@
 
 </div>
 
-<div class="paragraph-intro">
+<div class="paragraph-intro"> 
     <div class="line-2">  <img class= "line" src="/assets/Line-blue.png" alt="line"> </div>
   <div class="paragraph"> 
-    <p class="intro-paragraph-1"> At INK, we believe that these values are the foundation of a just and equitable society.
+    <p class="intro-paragraph-1"> At INK, we believe that these values are the foundation of a just and equitable society. 
+
   
       </p>
 
@@ -90,7 +91,8 @@
     }
 
     .line-2 {
-        margin-top: 10px;
+        margin-top: 10px; 
+    } 
     
     @media (min-width: 48em) {
 
@@ -143,4 +145,6 @@
        }
        
        }
+
+    
 </style>
