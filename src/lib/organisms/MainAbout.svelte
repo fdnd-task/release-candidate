@@ -23,7 +23,7 @@
 		position: relative;
 		bottom: 8em;
 		background-size: cover;
-		height: 100vh;
+		height: clamp(20em, 64vw, 62em);
 	}
 
 	/* ============== INTRO ABOUT - SECTION START ==============*/
