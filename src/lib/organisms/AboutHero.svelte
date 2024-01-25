@@ -28,14 +28,17 @@
         height: 50vh;
         display: block;
         text-align: center;
+        font-family: var(--Apercu-Font);
     }
 
     .heroAbout::before {
         content: "";
-        background: url(/assets/INK-content3.png) ;
+        background: url(/assets/bg-soccer-field.webp) ;
         background-position: center;
         background-size: cover;
-        opacity: 0.5;
+        background-repeat: no-repeat;
+        height: clamp(43em, 64vw, 62em);
+        opacity: 0.2;
         top: 0;
         left: 0;
         bottom: 0;
@@ -45,7 +48,6 @@
     }
 
     .heroAboutWrapper {
-        /* width: 80%; */
         position: relative;
         top: 50%;
         left: 50%;
@@ -53,6 +55,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
 
     .heroAboutWrapper > h1 {
@@ -61,11 +64,22 @@
 
     .heroAboutWrapper > p {
         width: 80%;
+        padding-bottom: 1em;
     }
 
     .btnArrow {
         display: flex;
         justify-content: center;
+    }
+
+
+    /* 1000px */
+    @media (min-width: 62.5em) {
+
+        .heroAbout::before {
+            height: clamp(92em, 74vw, 119em);
+            background-position-y: -24em;
+        }
     }
 
 </style>
