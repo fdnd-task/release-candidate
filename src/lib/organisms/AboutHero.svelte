@@ -32,7 +32,7 @@
 
     .heroAbout::before {
         content: "";
-        background: url(/assets/INK-content3.png) ;
+        background: url(/assets/bg-soccer-field.webp) ;
         background-position: center;
         background-size: cover;
         opacity: 0.5;
