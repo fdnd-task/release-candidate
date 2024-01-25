@@ -25,7 +25,7 @@
 /* Background image */
 .heroPromise::before {
   content: "";
-  background: url(/assets/PromiseHeroImg800x1200.jpg) ;
+  background: url(/assets/PromiseHeroImg800x1200.jpg);
   background-position: center;
   background-size: cover;
   opacity: 0.5;
@@ -59,6 +59,18 @@
 .btnArrow {
     display: flex;
     justify-content: center;
+}
+
+    @media only screen and (min-width: 560px) { 
+        .heroPromise::before {
+            background: url(/assets/PromiseHeroImg560x1200.jpg);
+        }
+}
+
+    @media only screen and (min-width: 640px) { 
+        .heroPromise::before {
+            background: url(/assets/PromiseHeroImg1920x1080.jpg);
+    }
 }
 
 </style>
