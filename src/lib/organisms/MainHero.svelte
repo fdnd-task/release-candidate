@@ -9,7 +9,7 @@
     <div class="buildings" aria-label="building illustration">
         <div class="circle">
             <HeroTitle />
-			<BtnArrow href="{base}#intro-about" />
+			<BtnArrow href="{base}#introAbout" />
         </div>
     </div>
 </section>
@@ -18,7 +18,7 @@
 
     section {
         padding-top: 5em;
-        background-image: url(/assets/bg-brazillian-kids.jpg);
+        background-image: url(/assets/bg-brazillian-kids.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-position-y: 0em;

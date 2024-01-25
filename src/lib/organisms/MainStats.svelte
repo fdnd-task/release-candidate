@@ -1,4 +1,5 @@
 <script>
+    // @ts-nocheck
     import { Stats } from '$lib/index.js'
     export let data
 </script>
@@ -7,7 +8,7 @@
 
     {#each data.homepages as homepage }
 
-        <div class="text-area">
+        <div class="textArea">
             <h2>{homepage.growingNumbers.titleNumbers}  
                 <span class="yellow">{homepage.growingNumbers.titleNumbers2}</span> 
                 <span>{homepage.growingNumbers.titleNumbers3}</span> 
@@ -28,7 +29,7 @@
         font-family: var(--Paragraph-Font);
     }
 
-    .text-area {
+    .textArea {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -40,7 +41,7 @@
         font-size: 3em;
     }
 
-    .text-area p {
+    .textArea p {
         max-width: 35%;
         border-left: solid 1px var(--Yellow-Primary);
         height: max-content;
@@ -51,14 +52,15 @@
     .yellow{
         color: var(--Yellow-Primary);
     }
-
-    @media only screen and (max-width: 600px) {
+    
+    /* 600px */
+    @media (max-width: 37.5em) {
 
         section {
             padding: 2em;
         }
 
-        .text-area {
+        .textArea {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -72,7 +74,7 @@
             font-size: 2.5em;
         }
 
-        .text-area p {
+        .textArea p {
             margin-left: 0;
             margin-top: 10%;
             max-width: 90%;

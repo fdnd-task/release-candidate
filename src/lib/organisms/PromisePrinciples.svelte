@@ -1,10 +1,11 @@
 <script>
 	// export let data;
+    import { base } from '$app/paths';
 </script>
 
 <section  class="principlesPromise">
     <h2>Our <span style=" color: var(--Blue-Secondary);">principles</span></h2>
-        <img src="/assets/PromisePrinciples.svg" alt="">
+        <img src="{base}/assets/PromisePrinciples.svg" alt="">
         <ol>
             <li>We provide training and resources to our staff to help them understand and respect cultural differences.</li>
             <li>We develop and implement policies that protect children from harm.</li>
@@ -17,12 +18,13 @@
 
 <style>
 .principlesPromise {
-    width: 80%;
+    width: 70%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 3em auto;
+    margin: 3em auto 13em auto;
 }
 
 .principlesPromise > img {
@@ -39,7 +41,6 @@
 .principlesPromise > ol {
     padding: 1em;
     font-family: var(--Paragraph2Font);
-    /* padding: 0; */
     list-style-position: inside;
 }
 
@@ -53,12 +54,24 @@ li::marker {
     color: var(--Blue-Secondary);
 }
 
-/* .principlesPromise > p {
-    color: var(--White);
-    font-family: var(--Paragraph-Font);
-    text-align: center;
-    width: 80%;
-    border-left: 3px var(--Yellow-Primary) solid;
-} */
+    @media only screen and (min-width: 560px) { 
+        .principlesPromise {
+            height: 20vh;
+            margin: 3em auto 15em auto;
+        }
+		.principlesPromise > ol {
+			width: 25em;
+		}
+}
+
+	@media only screen and (min-width: 640px) { 
+        .principlesPromise {
+            background-image: url(/assets/PromiseprinciplesBackground.svg);
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+}
+
+
 </style>
     
