@@ -1,34 +1,56 @@
 <script>
-	import { BtnArrow } from '$lib/index.js';
     import { base } from '$app/paths';
 	// export let data;
 </script>
 
-
 <section class="ourValues">
 
-    <h1 class="title"> <span style=" color: white;">Our</span> <span style=" color: var(--Blue-Secondary);">Values</span> <img class="morale" src="/assets/Morale.png" alt="morale"> </h1>
+    <h1 class="title"> 
+        <span style=" color: white;">Our</span> 
+        <span style=" color: var(--Blue-Secondary);">Values</span> 
+        <img class="morale" src="{base}/assets/Morale.png" alt="morale"> 
+    </h1>
     <div class="values">
-        <div class="values-1"> 
-            <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Respect </h4>
-            <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Protect</h4>
-            <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Humanity </h4>
+        <div class="values1"> 
+            <h4>  
+                <img src="{base}/assets/Checkbox.png" alt=""> 
+                Respect 
+            </h4>
+            <h4>  
+                <img src="{base}/assets/Checkbox.png" alt=""> 
+                Protect
+            </h4>
+            <h4>  
+                <img src="{base}/assets/Checkbox.png" alt=""> 
+                Humanity 
+            </h4>
         </div>
-        <div class="values-2"> 
-            <h4>  <img src="{base}/assets/Checkbox.png" alt="">Transparency </h4>
-            <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Fairness</h4>
-            <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Equality</h4>
+        <div class="values2"> 
+            <h4>  
+                <img src="{base}/assets/Checkbox.png" alt="">
+                Transparency 
+            </h4>
+            <h4>  
+                <img src="{base}/assets/Checkbox.png" alt=""> 
+                Fairness
+            </h4>
+            <h4>  
+                <img src="{base}/assets/Checkbox.png" alt=""> 
+                Equality
+            </h4>
         </div>
     </div>
 
     <div class="paragraphIntro"> 
-        <div class="line-2">  <img class= "line" src="{base}/assets/Line-blue.png" alt="line"> </div>
+        <div class="line2">  
+            <img class= "line" src="{base}/assets/Line-blue.png" alt="line"> 
+        </div>
         <div class="paragraph"> 
-            <p class="introParagraph-1"> 
+            <p class="introParagraph1"> 
                 At INK, we believe that these values are the 
                 foundation of a just and equitable society. 
             </p>
-            <p class="introParagraph-2">  
+            <p class="introParagraph2">  
                 We are committed to upholding these values in all of our work, 
                 including our programs, our partnerships, and our interactions 
                 with our stakeholders.
@@ -75,15 +97,15 @@
         padding-left: 1em;
     }
 
-    .introParagraph-1 {
+    .introParagraph1 {
         margin-bottom: 1em;
     }
 
-    .introParagraph-2 {
+    .introParagraph2 {
         margin-top: 1em;
     }
 
-    .line-2 {
+    .line2 {
         margin-top: 10px; 
     } 
 
