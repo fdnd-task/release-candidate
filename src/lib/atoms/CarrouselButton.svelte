@@ -1,11 +1,10 @@
 
         
-         <!-- <script>
+  
 	
-	import CardCarrousel from "$lib/molecules/CardCarrousel.svelte";
-</script> -->
+
         
-<!-- <script>
+<script>
 
     function prevBtn() {
     console.log('Previous button clicked');
@@ -18,7 +17,7 @@
     document.querySelector('.news-prev-btn').addEventListener('click', prevBtn);
     document.querySelector('.news-next-btn').addEventListener('click', nextBtn);
 
-</script> -->
+</script>
 
         
         <div class="btn-wrap">
