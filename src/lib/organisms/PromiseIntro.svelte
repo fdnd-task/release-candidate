@@ -1,11 +1,12 @@
 <script>
 	// export let data;
+	import { base } from '$app/paths';
 </script>
 
 
 	<section  class="introPromise">
 		<h2>Our <span style=" color: var(--Yellow-Primary);">commitment</span></h2>
-			<img src="/assets/HandInHeart.svg" alt="">
+			<img src="{base}/assets/HandInHeart.svg" alt="">
 			<p>At INK, we are committed to embedding our values into the very fabric of our work.</p>
 			<p>Ensuring they permeate every aspect of our programs, initiatives, and interactions with our stakeholders.</p>
 	</section>

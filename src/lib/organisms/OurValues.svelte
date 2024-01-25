@@ -12,17 +12,17 @@
 <div class="values">
 
     <div class="values-1"> 
-      <h4>  <img src="/assets/Checkbox.png" alt=""> Respect </h4>
-      <h4>  <img src="/assets/Checkbox.png" alt=""> Protect</h4>
-      <h4>  <img src="/assets/Checkbox.png" alt=""> Humanity </h4>
+      <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Respect </h4>
+      <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Protect</h4>
+      <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Humanity </h4>
 
     </div>
 
     <div class="values-2"> 
 
-        <h4>  <img src="/assets/Checkbox.png" alt="">Transparency </h4>
-        <h4>  <img src="/assets/Checkbox.png" alt=""> Fairness</h4>
-        <h4>  <img src="/assets/Checkbox.png" alt=""> Equality</h4>
+        <h4>  <img src="{base}/assets/Checkbox.png" alt="">Transparency </h4>
+        <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Fairness</h4>
+        <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Equality</h4>
         
     </div>
 

@@ -4,7 +4,7 @@
 	// export let data;
 </script>
 
- 
+
 <section class="intro-about"> 
 
    <h1 class="title"> <span style=" color: black;"> Our Ultimate </span>  <span style=" color: white;"> goal</span> <img class="morale" src="/assets/Accuracy.png" alt="icon"></h1> 
