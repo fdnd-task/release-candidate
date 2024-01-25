@@ -6,7 +6,7 @@
 
 <section class="heroAbout">
     <div class="heroAboutWrapper">
-        <h1>About <span style=" color: var(--Yellow-Primary);">us</span></h1>
+        <h1>ABOUT <span style=" color: var(--Yellow-Primary);">US</span></h1>
         <p> At INK, we're on a mission to transform the lives of young individuals.</p>
         <div class="btnArrow">
             <BtnArrow  href="{base}#introAbout" />
@@ -15,6 +15,10 @@
 </section>
 
 <style>
+
+h1 {
+    font-size: 7.5em;
+}
 
 .heroAbout {
     width: 100%;

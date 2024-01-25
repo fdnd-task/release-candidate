@@ -144,21 +144,25 @@
 
 </footer>
 
-<style> 
+<style>
+
+.footer-navbar {
+	font-family: var(--Header-Font);
+}
 
 footer {
 	overflow: hidden;
 }
 
 a { 
-	font-family: var(--Apercu-Font);
+	font-family: var(--Header-Font);
 	color: white;
 	font-size: 1.25em;
 	padding-left: 1em;
 }
 
 .contact {
-	font-family: var(--Apercu-Font);
+	font-family: var(--Header-Font);
 	color: var(--Yellow-Primary) ;
 	font-size: 1.875em;
 	padding-bottom: 1em;
@@ -185,7 +189,7 @@ a {
 @media only screen and (min-width: 768px) {
 
 a {
-	font-family: var(--Apercu-Font);
+	font-family: var(--Header-Font);
 	color: white;
 	font-size: 1.25em;
 	
@@ -219,7 +223,7 @@ a {
 }
 
 .contact {
-	font-family: var(--Apercu-Font);
+	font-family: var(--Header-Font);
 	color: var(--Yellow-Primary) ;
 	font-size: 1.875em;
 	padding-bottom: 1em;
@@ -237,6 +241,8 @@ a {
 }
 
 @media (min-width: 48em) {
+
+
 
 	footer {
 		display: flex;
@@ -269,8 +275,7 @@ a {
 	}	
 
 	.contact {
-	font-family: var(--Apercu-Font);
-	color: var(--Yellow-Primary) ;
+
 	font-size: 1.875em;
 	padding-top: 0;
 	}

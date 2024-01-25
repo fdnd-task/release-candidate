@@ -86,6 +86,10 @@
     .line-2 {
         margin-top: 10px; 
     } 
+
+    p {
+        font-family: var(--Paragraph-Font);
+    }
     
     @media (min-width: 48em) {
 
