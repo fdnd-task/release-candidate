@@ -1,4 +1,5 @@
 <script>
+	// @ts-nocheck
 	import { BtnPrimary } from '$lib/index.js';
 	import { base } from '$app/paths';
 	export let data;
@@ -7,11 +8,10 @@
 <section>
 	{#each data.homepages as homepage}
 		<section>
-			<div class="sponsor-center-text">
+			<div class="sponsorCenterText">
 				<h2>
 					{homepage.becomeSponsor.titleSponsor}
 				</h2>
-
 				<p>
 					{homepage.becomeSponsor.subTextSponsor}
 				</p>
@@ -36,13 +36,12 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center center;
-
 		padding: 0 14vw;
 	}
 
-	.sponsor-center-text {
+	.sponsorCenterText {
 		text-align: center;
-		max-width: 600px;
+		max-width: 37.5em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -61,30 +60,4 @@
 		font-family: var(--Apercu-Font);
 	}
 
-	@media only screen and (min-width: 1441px) {
-		section {
-			background-repeat: no-repeat;
-
-			background-position: center center;
-			align-items: center;
-			display: flex;
-			height: 75vw;
-			width: 100vw;
-		}
-	}
-
-	@media only screen and (max-width: 950px) {
-		section {
-			background-size: cover;
-			height: 90vh;
-		}
-	}
-
-	@media only screen and (max-width: 550px) {
-		section {
-			padding: 0 9vw;
-			background-size: cover;
-			height: 90vh;
-		}
-	}
 </style>

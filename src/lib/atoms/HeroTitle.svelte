@@ -2,14 +2,14 @@
 
 </script>
 <h1>
-    <div class="title-where word">
+    <div class="titleWhere word">
         <span style="--i:1">W</span>
         <span style="--i:2">H</span>
         <span style="--i:3">E</span>
         <span style="--i:4">R</span>
         <span style="--i:5">E</span>
     </div>
-    <div class="title-the-real word">
+    <div class="titleTheReal word">
         <div>
             <span style="--i:6">T</span>
             <span style="--i:7">H</span>
@@ -22,7 +22,7 @@
             <span style="--i:12">L</span>
         </div>
     </div>
-    <div class="title-legends word">
+    <div class="titleLegends word">
         <span style="--i:13">L</span>
         <span style="--i:14">E</span>
         <span style="--i:15">G</span>
@@ -31,7 +31,7 @@
         <span style="--i:18">D</span>
         <span style="--i:19">S</span>
     </div>
-    <div class="title-begin word">
+    <div class="titleBegin word">
         <span style="--i:20">B</span>
         <span style="--i:22">E</span>
         <span style="--i:23">G</span>
@@ -72,59 +72,59 @@
         }
     }
 
-    .title-where,
-    .title-the-real,
-    .title-the-real div,
-    .title-legends,
-    .title-begin {
+    .titleWhere,
+    .titleTheReal,
+    .titleTheReal div,
+    .titleLegends,
+    .titleBegin {
         display: flex;
         align-items: flex-end;
     }
 
 
-    .title-where{
+    .titleWhere{
         padding-left: .55em;
     }
 
-    .title-the-real {
+    .titleTheReal {
         width: fit-content;
         margin: 0 0 0 auto;
         gap: 2vw;
     }
 
-    .title-legends{
+    .titleLegends{
         color: var(--Yellow-Primary);
         margin: 0 0 0 auto;
         width: fit-content;
     }
-    .title-where span:nth-of-type(1),
-    .title-where span:nth-of-type(2),
-    .title-the-real>div:nth-of-type(2) span:nth-of-type(2) {
+    .titleWhere span:nth-of-type(1),
+    .titleWhere span:nth-of-type(2),
+    .titleTheReal>div:nth-of-type(2) span:nth-of-type(2) {
         font-size: clamp(1em, 9.5vw, 10,5em);
     }
 
 
-    .title-legends span {
+    .titleLegends span {
         font-size: clamp(1em, 8vw, 144px);
     }
 
-    .title-legends span:nth-of-type(1),
-    .title-legends span:nth-of-type(7) {
+    .titleLegends span:nth-of-type(1),
+    .titleLegends span:nth-of-type(7) {
         font-size: clamp(1em, 7vw, 128px);
     }
 
 
-    .title-legends span:nth-of-type(4) {
+    .titleLegends span:nth-of-type(4) {
         font-size: clamp(1em, 5.2vw, 104px);
     }
 
-    .title-begin {
+    .titleBegin {
         width: fit-content;
         margin: 0 auto;
     }
 
-    .title-begin span:nth-of-type(2),
-    .title-begin span:nth-of-type(3) {
+    .titleBegin span:nth-of-type(2),
+    .titleBegin span:nth-of-type(3) {
         font-size: clamp(1em, 5.8vw, 112px);
     }
 
