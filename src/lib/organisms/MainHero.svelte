@@ -9,7 +9,7 @@
     <div class="buildings" aria-label="building illustration">
         <div class="circle">
             <HeroTitle />
-			<BtnArrow href="{base}#intro-about" />
+			<BtnArrow href="{base}#introAbout" />
         </div>
     </div>
 </section>
