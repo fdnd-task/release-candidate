@@ -1,4 +1,5 @@
 <script>
+    // @ts-nocheck
     export let data
 </script>
 
@@ -6,7 +7,7 @@
 
     {#each data.homepages as homepage }
 
-        <div class="story-wrapper">
+        <div class="storyWrapper">
             <h2>
                 {homepage.ourStory.titleStory}
                 <span class="yellow">{homepage.ourStory.titleStory2}</span> 
@@ -15,7 +16,7 @@
             <p>{homepage.ourStory.subTextStory}</p>    
         </div>
 
-        <div class="story-video">
+        <div class="storyVideo">
             <video width="100%" height="100%" loop muted autoplay>
                 <source src="{homepage.ourStory.storyVideo.url}" type="video/mp4">
             </video>
@@ -23,8 +24,8 @@
         
     {/each}
 
-    <div class="roll-container">
-        <p class="roll-text">Where the real <span class="yellow">legends</span> begin</p>
+    <div class="rollContainer">
+        <p class="rollText">Where the real <span class="yellow">legends</span> begin</p>
     </div>
 
 </section>
@@ -37,7 +38,7 @@
         overflow: hidden;
     }
 
-    .story-wrapper {
+    .storyWrapper {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -53,20 +54,20 @@
         color: var(--Yellow-Primary);
     }
 
-    .story-wrapper p{
+    .storyWrapper p{
         max-width: 35%;
         border-left: solid 1px var(--Yellow-Primary);
         padding-left: 1%;
         font-family: var(--Apercu-Font);
     }
 
-    .story-video {
+    .storyVideo {
         margin-top: 7em;
         display: flex;
         justify-content: center;
     }
 
-    .story-video video {
+    .storyVideo video {
 
         width: fit-content;
         -webkit-mask-image: url(/assets/story-shape.svg);
@@ -81,13 +82,12 @@
         margin-bottom: 12em;
     }
 
-    .roll-container {
+    .rollContainer {
         height: 15em;
     }
 
-    .roll-text {
-        width: 100vh;
-        font-size: 6em;
+    .rollText {
+        font-size: 5.5em;
         font-family: var(--Paragraph-Font);
         margin-bottom: 8em;
     
@@ -111,18 +111,20 @@
         from { -webkit-transform: translateX(-100%); }
         to { -webkit-transform: translateX(100%); }
     }
-
-    @media only screen and (max-width: 900px) {
-        .roll-text {
+    
+    /* 900px */
+    @media  (max-width: 56.25em) {
+        .rollText {
         font-size: 4em;
         }
 
-        .roll-container {
+        .rollContainer {
         height: 8em;
     }
     }
 
-    @media only screen and (max-width: 600px) {
+    /* 600px */
+    @media (max-width: 37.5em) {
         
         section {
             padding: 2em;
@@ -133,7 +135,7 @@
             font-size: 2.5em;
         }
 
-        .story-wrapper{
+        .storyWrapper{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -142,7 +144,7 @@
             margin-top: 20%;
         }
 
-        .story-wrapper p{
+        .storyWrapper p{
             max-width: 100%;
             margin-left: 0;
             margin-top: 10%;
@@ -151,7 +153,7 @@
             padding-left: 0;
         }
 
-        .roll-text {
+        .rollText {
         font-size: 3em;
         }
     }

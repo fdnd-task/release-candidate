@@ -8,7 +8,6 @@ export { default as BtnPrimary } from './atoms/BtnPrimary.svelte'
 export { default as BtnSecondary } from './atoms/BtnSecondary.svelte'
 export { default as NavLink } from './atoms/NavLink.svelte'
 export { default as HeroTitle } from './atoms/HeroTitle.svelte'
-export { default as FooterButton } from './atoms/FooterButton.svelte'
 
 // export { default as HeadTitle } from "./atoms/HeadTitle.svelte";
 export { default as CarrouselButton } from "./atoms/CarrouselButton.svelte";
@@ -18,10 +17,6 @@ export { default as ImageCarrousel } from "./atoms/ImageCarrousel.svelte";
 
 export { default as HeaderNav } from "./molecules/HeaderNav.svelte";
 export { default as Stats } from "./molecules/Stats.svelte";
-export { default as FooterLinks } from "./molecules/FooterLinks.svelte";
-export { default as FooterContact } from "./molecules/FooterContact.svelte";
-export { default as FooterExtra } from "./molecules/FooterExtra.svelte";
-
 export { default as CardCarrousel } from "./molecules/CardCarrousel.svelte";
 
 // ========== Organisms ==========

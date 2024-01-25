@@ -1,13 +1,15 @@
 <script>
+// @ts-nocheck
 	import { BtnSecondary } from '$lib/index.js';
 	import { base } from '$app/paths';
 	export let data;
 </script>
 
+
 {#each data.homepages as homepage}
-	<section  id="intro-about">
+	<section  id="introAbout">
 		<div class="intro">
-			<p class="intro-text">
+			<p class="introText">
 				{homepage.mainIntroAboutUs.introTextAbout}
 			</p>
 			<BtnSecondary href="{base}/about" title="About Us"></BtnSecondary>
@@ -20,6 +22,8 @@
 		display: inline-block;
 		position: relative;
 		bottom: 8em;
+		background-size: cover;
+		height: clamp(20em, 64vw, 62em);
 	}
 
 	/* ============== INTRO ABOUT - SECTION START ==============*/
@@ -39,7 +43,7 @@
 		padding: 0 14vw;
 	}
 
-	.intro-text {
+	.introText {
 		display: flex;
 		flex-direction: column;
 		color: var(--Black);
@@ -48,53 +52,42 @@
 		line-height: 96%;
 	}
 
-	@media only screen and (max-width: 550px) {
-		.intro {
-			padding: 0 9vw;
-			background-size: cover;
-			height: 80vh;
-		}
-	}
 
-	@media only screen and (max-width: 950px) {
-		section {
-			background-size: cover;
-			height: 100vh;
-		}
-	}
-
-	@media (min-width: 600px) {
-		.intro-text {
+	/* 600px */
+	@media (min-width: 37.5em) {
+		.introText {
 			font-size: 1.5em;
 		}
 	}
-
-	@media (min-width: 800px) {
-		.intro-text {
+	/* 800px */
+	@media (min-width: 50em) {
+		.introText {
 			font-size: 1.7em;
 		}
 	}
-
-	@media (min-width: 1000px) {
-		.intro-text {
+	
+	/* 1000px */
+	@media (min-width: 62.5em) {
+		.introText {
 			font-size: 2em;
 		}
 	}
 
-	@media (min-width: 1000px) {
-		.intro-text {
+	/* 1350px */
+	@media (min-width: 84.3em) {
+		section {
+			bottom: 21em;
+		}
+
+		.introText {
 			font-size: 2.7em;
 		}
 	}
 
-	@media (min-width: 1350px) {
-		section {
-			bottom: 21em;
-		}
-	}
+	/* 1500px */
 
-	@media (min-width: 1500px) {
-		.intro-text {
+	@media (min-width: 93.75em) {
+		.introText {
 			font-size: 2.5em;
 		}
 	}
