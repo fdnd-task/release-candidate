@@ -10,19 +10,19 @@
     <h1 class="title"> <span style=" color: white;">Our</span> <span style=" color: var(--Blue-Secondary);">Values</span> <img class="morale" src="/assets/Morale.png" alt="morale"> </h1>
     <div class="values">
         <div class="values-1"> 
-            <h4>  <img src="/assets/Checkbox.png" alt=""> Respect </h4>
-            <h4>  <img src="/assets/Checkbox.png" alt=""> Protect</h4>
-            <h4>  <img src="/assets/Checkbox.png" alt=""> Humanity </h4>
+            <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Respect </h4>
+            <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Protect</h4>
+            <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Humanity </h4>
         </div>
         <div class="values-2"> 
-            <h4>  <img src="/assets/Checkbox.png" alt="">Transparency </h4>
-            <h4>  <img src="/assets/Checkbox.png" alt=""> Fairness</h4>
-            <h4>  <img src="/assets/Checkbox.png" alt=""> Equality</h4>
+            <h4>  <img src="{base}/assets/Checkbox.png" alt="">Transparency </h4>
+            <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Fairness</h4>
+            <h4>  <img src="{base}/assets/Checkbox.png" alt=""> Equality</h4>
         </div>
     </div>
 
     <div class="paragraphIntro"> 
-        <div class="line-2">  <img class= "line" src="/assets/Line-blue.png" alt="line"> </div>
+        <div class="line-2">  <img class= "line" src="{base}/assets/Line-blue.png" alt="line"> </div>
         <div class="paragraph"> 
             <p class="introParagraph-1"> 
                 At INK, we believe that these values are the 
