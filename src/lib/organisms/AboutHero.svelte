@@ -20,7 +20,7 @@
 <style>
 
     h1 {
-        font-size: 7.5em;
+        font-size: 52px;
     }
 
     .heroAbout {

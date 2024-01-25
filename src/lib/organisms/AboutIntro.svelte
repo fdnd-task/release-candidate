@@ -38,7 +38,7 @@
 
     .title {
         padding-top: 100px;
-        font-size: 5em;
+        font-size: 42px;
         padding-left: 1em;
     }
 
