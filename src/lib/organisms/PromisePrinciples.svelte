@@ -18,12 +18,16 @@
 
 <style>
 .principlesPromise {
-    width: 80%;
+    width: 70%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 3em auto;
+    margin: 3em auto 3em auto;
+    background-image: url(/assets/PromiseprinciplesBackground.svg);
+    background-repeat: no-repeat;
+
 }
 
 .principlesPromise > img {
@@ -54,12 +58,10 @@ li::marker {
     color: var(--Blue-Secondary);
 }
 
-/* .principlesPromise > p {
-    color: var(--White);
-    font-family: var(--Paragraph-Font);
-    text-align: center;
-    width: 80%;
-    border-left: 3px var(--Yellow-Primary) solid;
-} */
+@media only screen and (min-width: 560px) { 
+		.principlesPromise > ol {
+			width: 30em;
+		}
+		}
 </style>
     
