@@ -19,19 +19,17 @@
     </div>
 
     <div class="values-2"> 
-
         <h4>  <img src="/assets/Checkbox.png" alt="">Transparency </h4>
         <h4>  <img src="/assets/Checkbox.png" alt=""> Fairness</h4>
         <h4>  <img src="/assets/Checkbox.png" alt=""> Equality</h4>
-        
     </div>
 
 </div>
 
-<div class="paragraph-intro"> 
+<div class="paragraph-intro">
     <div class="line-2">  <img class= "line" src="/assets/Line-blue.png" alt="line"> </div>
   <div class="paragraph"> 
-    <p class="intro-paragraph-1"> At INK, we believe that these values are the foundation of a just and equitable society. 
+    <p class="intro-paragraph-1"> At INK, we believe that these values are the foundation of a just and equitable society.
   
       </p>
 
@@ -54,8 +52,6 @@
         justify-content: center;
         
     }
-
-
 
     .values {
         display: flex;
@@ -88,14 +84,14 @@
     .intro-paragraph-1 {
         margin-bottom: 1em;
     }
+  
     .intro-paragraph-2 {
         margin-top: 1em;
     }
 
     .line-2 {
         margin-top: 10px;
-    }
-
+    
     @media (min-width: 48em) {
 
         .our-values{
@@ -147,9 +143,4 @@
        }
        
        }
-
-    
-    
-
-    
 </style>
