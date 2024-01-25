@@ -30,7 +30,8 @@
 
 <div class="paragraph-intro"> 
     <div class="line-2">  <img class= "line" src="/assets/Line-blue.png" alt="line"> </div>
-  <div class="paragraph"> <p class="intro-paragraph-1"> At INK, we believe that these values are the foundation of a just and equitable society. 
+  <div class="paragraph"> 
+    <p class="intro-paragraph-1"> At INK, we believe that these values are the foundation of a just and equitable society. 
   
       </p>
 
@@ -49,6 +50,8 @@
         font-size: 50px;
         float: center;
         padding-top: 3em;
+        display: flex;
+        justify-content: center;
         
     }
 
@@ -61,7 +64,7 @@
     }
 
     h4 {
-        font-family: var(JubilatMedium-Roman);
+        font-family: var(--JubilatMedium-Roman);
         padding: 1em;
         align-content: center;
         font-size: 1.1em;
@@ -83,7 +86,7 @@
     }
 
     .intro-paragraph-1 {
-margin-bottom: 1em;
+        margin-bottom: 1em;
     }
     .intro-paragraph-2 {
         margin-top: 1em;
@@ -93,6 +96,60 @@ margin-bottom: 1em;
         margin-top: 10px;
     }
 
+    @media (min-width: 48em) {
+
+        .our-values{
+            background-image: url(/assets/Group-84.svg);
+            padding-left: 10em;
+            padding-right: 10em;
+            padding-bottom: 5em;
+            height: 1500px;
+        }
+
+        .values {
+            padding: 9em;
+        }
+
+       p {
+        font-size: 35px;
+       }
+
+       h4 {
+        font-size: 30px;
+       }
+
+       .paragraph {
+        width: 1189px;
+        padding-right: 9em;
+        
+       }
+
+       .line {
+        height: 169px;
+       
+       }
+
+       .paragraph-intro {
+        
+        padding-bottom: 8em;
+        
+       }
+
+       h1 {
+        font-size: 80px;
+        display: flex;
+        justify-content: center;
+       }
+
+       .morale {
+        width: 79px;
+        height: 79px;
+       }
+       
+       }
+
+    
     
 
+    
 </style>

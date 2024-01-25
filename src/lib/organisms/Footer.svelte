@@ -243,7 +243,7 @@ a {
 		justify-content: space-between;
 		padding-bottom: 3em;
 		padding-top: 3em;
-		
+		position: relative;
 	}
 
 	.social-icons {
