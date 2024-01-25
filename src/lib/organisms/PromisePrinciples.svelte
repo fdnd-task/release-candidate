@@ -19,15 +19,12 @@
 <style>
 .principlesPromise {
     width: 70%;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3em auto 3em auto;
-    background-image: url(/assets/PromiseprinciplesBackground.svg);
-    background-repeat: no-repeat;
-
+    margin: 3em auto 13em auto;
 }
 
 .principlesPromise > img {
@@ -44,7 +41,6 @@
 .principlesPromise > ol {
     padding: 1em;
     font-family: var(--Paragraph2Font);
-    /* padding: 0; */
     list-style-position: inside;
 }
 
@@ -58,10 +54,24 @@ li::marker {
     color: var(--Blue-Secondary);
 }
 
-@media only screen and (min-width: 560px) { 
+    @media only screen and (min-width: 560px) { 
+        .principlesPromise {
+            height: 20vh;
+            margin: 3em auto 15em auto;
+        }
 		.principlesPromise > ol {
-			width: 30em;
+			width: 25em;
 		}
-		}
+}
+
+	@media only screen and (min-width: 640px) { 
+        .principlesPromise {
+            background-image: url(/assets/PromiseprinciplesBackground.svg);
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+}
+
+
 </style>
     

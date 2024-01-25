@@ -45,18 +45,33 @@
 	border-left: 3px var(--Yellow-Primary) solid;
 }
 
-	@media only screen and (min-width: 560px) { 
+	@media only screen and (min-width: 480px) {
 		.introPromise {
-			height: 100vh;
+			height: 80vh;
+			background-size: cover;
 		}
 		.introPromise > p {
-			width:26em;
+			width: 26em;
 		}
 }
 
-@media only screen and (min-width: 640px) { 		
+	@media only screen and (min-width: 560px) { 
+		.introPromise {
+			background-image: url(/assets/BlueBackground1920x1080.png);
+			background-size: contain;
+		}
 		.introPromise > p {
-			width: 40em;
+			width: 26em;
+		}
+}
+
+	@media only screen and (min-width: 640px) { 
+		.introPromise {
+			background-size: contain;
+			height: 100vh;
+		}
+		.introPromise > p {
+			width: 30em;
 		}
 }
 
