@@ -9,7 +9,7 @@
         <h1>Our <span style=" color: var(--Blue-Secondary);">promise</span></h1>
         <p>We strive to create a level playing field for all, and we work to ensure that everyone has the opportunity to succeed.</p>
         <div class="btnArrow">
-            <BtnArrow  href="{base}#introPromise" />
+            <BtnArrow href="{base}#introPromise" />
         </div>
     </div>
 </section>
