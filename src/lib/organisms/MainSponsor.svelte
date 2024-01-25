@@ -71,7 +71,7 @@
 	@media (min-width: 62.5em)  {
 
 		section{
-			height: clamp(60em, 130vw, 100em);
+			height: clamp(60em, 130vw, 75em);
 		}
 
 		.sponsorCenterText{

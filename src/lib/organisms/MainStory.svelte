@@ -87,8 +87,7 @@
     }
 
     .rollText {
-        width: 100vh;
-        font-size: 6em;
+        font-size: 5.5em;
         font-family: var(--Paragraph-Font);
         margin-bottom: 8em;
     
