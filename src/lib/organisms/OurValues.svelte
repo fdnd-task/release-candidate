@@ -91,7 +91,8 @@
     }
 
     .line-2 {
-        margin-top: 10px; } 
+        margin-top: 10px; 
+    } 
     
     @media (min-width: 48em) {
 
