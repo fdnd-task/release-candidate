@@ -47,6 +47,11 @@ npm run dev
 # Or when you want to open the browser directly with the correct URL.
 npm run dev --open
 ```
+4. Make sure to fill in .env with the required database keys & url.
+```env
+PUBLIC_SUPABASE_URL="https://put_unique_url_here.supabase.co"
+PUBLIC_SUPABASE_ANON_KEY="put_anon_key_here"
+```
 
 
 <h2 id="sources">🌍 Sources</h2>
