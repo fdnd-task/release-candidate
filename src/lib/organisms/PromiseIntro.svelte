@@ -19,7 +19,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url(/assets/BlueBackground.svg);
+	background-image: url(/assets/BlueBackground800x1200.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -43,6 +43,22 @@
 	width: 80%;
 	border-left: 3px var(--Yellow-Primary) solid;
 }
+
+	@media only screen and (min-width: 560px) { 
+		.introPromise {
+			height: 100vh;
+		}
+		.introPromise > p {
+			width:26em;
+		}
+}
+
+@media only screen and (min-width: 640px) { 		
+		.introPromise > p {
+			width: 40em;
+		}
+}
+
 
 
 </style>
