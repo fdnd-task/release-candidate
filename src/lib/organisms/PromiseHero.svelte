@@ -31,7 +31,7 @@
     /* Background image */
     .heroPromise::before {
         content: "";
-        background: url(/assets/PromiseHeroImg800x1200.jpg);
+        background: url(/assets/PromiseHeroImg800x1200.webp);
         background-position: center;
         background-size: cover;
         opacity: 0.5;
@@ -69,13 +69,14 @@
 
         @media (min-width: 560px) { 
             .heroPromise::before {
-                background: url(/assets/PromiseHeroImg560x1200.jpg);
+                background: url(/assets/PromiseHeroImg560x1200.webp);
             }
     }
 
         @media (min-width: 640px) { 
             .heroPromise::before {
-                background: url(/assets/PromiseHeroImg1920x1080.jpg);
+                background: url(/assets/PromiseHeroImg1920x1080.webp);
+                background-position: center;
         }
     }
 
