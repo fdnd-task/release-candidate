@@ -1,7 +1,7 @@
-<script>
+<!-- <script>
  import { currentPosition, prevBtn, nextBtn } from '$lib/cardCarrousel';
  import cards from "$lib/molecules/CardCarrousel.svelte";
- import PlayerCarrousel from '$lib/organisms/PlayerCarrousel.svelte';
+ 
 </script>
         
 
@@ -44,4 +44,4 @@
 
  
  
-</style>
+</style> -->

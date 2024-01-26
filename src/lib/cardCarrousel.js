@@ -11,3 +11,5 @@ export function prevBtn() {
 export function nextBtn() {
   currentPosition.update((current) => Math.min(current + 1, cards.length - 1));
 }
+
+

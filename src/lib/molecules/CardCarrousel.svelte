@@ -23,12 +23,12 @@
               <img src={`${base}/assets/${card.image}`}  loading="lazy" alt="children playing">
           </div>
           <h3>{card.title}</h3>
-          <p>Read more</p>
+          <!-- <p>Read more</p> -->
       </article>
   {/each}
 </section>
 
-<CarrouselButton />
+<!-- <CarrouselButton /> -->
 
 
 

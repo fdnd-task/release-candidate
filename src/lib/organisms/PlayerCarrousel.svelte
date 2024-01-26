@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     // @ts-nocheck
     export let data
     import { CarrouselButton } from '$lib/index.js';
@@ -44,9 +44,6 @@
     </ul>
   </section>
    
-
-
-
 <CarrouselButton />
 <style>
 
@@ -141,4 +138,4 @@
 
 
 
-</style>
+</style> -->
