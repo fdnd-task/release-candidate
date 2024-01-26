@@ -3,7 +3,7 @@
 	import { base } from '$app/paths';
 </script>
 
-<section  class="introPromise">
+<section class="introPromise" id="introPromise">
 	<h2>
 		Our 
 		<span style=" color: var(--Yellow-Primary);">commitment</span>

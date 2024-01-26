@@ -4,6 +4,7 @@
 
 export { default as NavLogo } from './atoms/NavLogo.svelte'
 export { default as BtnArrow } from './atoms/BtnArrow.svelte'
+export { default as BtnArrowBlue } from './atoms/BtnArrowBlue.svelte'
 export { default as BtnPrimary } from './atoms/BtnPrimary.svelte'
 export { default as BtnSecondary } from './atoms/BtnSecondary.svelte'
 export { default as NavLink } from './atoms/NavLink.svelte'

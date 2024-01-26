@@ -1,5 +1,5 @@
 <script>
-	import { BtnArrow } from '$lib/index.js';
+	import { BtnArrowBlue } from '$lib/index.js';
     import { base } from '$app/paths';
 	// export let data;
 </script>
@@ -15,7 +15,7 @@
             ensure that everyone has the opportunity to succeed.
         </p>
         <div class="btnArrow">
-            <BtnArrow href="{base}#introPromise" />
+            <BtnArrowBlue href="{base}#introPromise" />
         </div>
     </div>
 </section>
