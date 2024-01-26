@@ -15,7 +15,7 @@
             ensure that everyone has the opportunity to succeed.
         </p>
         <div class="btnArrow">
-            <BtnArrowBlue href="{base}#introPromise" />
+            <BtnArrowBlue href="{base}/promise/#introPromise" />
         </div>
     </div>
 </section>
