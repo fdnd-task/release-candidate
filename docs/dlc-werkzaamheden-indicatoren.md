@@ -1,4 +1,4 @@
-# DLC werkzaamheden verdeeld over de indicatoren
+# DLC werkzaamheden i.c.m. indicatoren
 
 
 ## Analyseren
