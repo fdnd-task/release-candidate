@@ -2,12 +2,16 @@
 
 
 ## Analyseren
+- 
 
 ## Ontwerpen
+- 
 
 ## Bouwen
+- 
 
 ## Testen
+- 
 
 ## Integreren
-
+- 
