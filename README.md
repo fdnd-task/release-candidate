@@ -2,10 +2,10 @@
 
 Het programma van FDND is te bekijken op https://programma.fdnd.nl/. Hier is informatie te vinden over de semesters en de sprints die het curriculum van FDND vormen. Aan ons is nu de taak om deze website om te bouwen zodat deze beter past bij de studenten.
 
-`Netlify Status`
+[![Netlify Status](https://api.netlify.com/api/v1/badges/701e5b8a-bc87-45f7-a3d3-d8800d084214/deploy-status)](https://app.netlify.com/sites/fdnd-programma/deploys)
 
 ## Screenshot
-De website live bekijken kan ook! Klik hiervoor op de link: `Live Link here`
+De website live bekijken kan ook! Klik hiervoor op de link: [FDND Programma website](https://fdnd-programma.netlify.app/)
 
 ![image](https://github.com/user-attachments/assets/8b02d733-98d2-45e9-83c6-6c7356bd148a)
 
