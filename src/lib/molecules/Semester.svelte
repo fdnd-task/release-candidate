@@ -14,47 +14,47 @@
 </section>
 
 <style>
-  section.semester {
+  .semester {
     padding: 0;
     border: none;
     scroll-snap-align: start;
   }
 
-  section.semester a {
+  .semester a {
     color: var(--blueberry);
     text-decoration: none;
     display: inline-block;
     margin: 0 -0.5rem 0.5rem;
   }
 
-  section.semester a:focus { color: var(--blueberry); }
+  .semester a:focus { color: var(--blueberry); }
 
   ol {
     list-style: none;
     padding: 0.5rem;
     margin-top: -1em;
-    width: 100%;
+    width: 350px;
   }
 
-  :global(section.semester h2) {
+  :global(.semester h2) {
     line-height: 1.1;
     font-size: 1.25rem;
   }
 
-  :global(section.semester h2 > span) {
+  :global(.semester h2 > span) {
     font-size: 0.6em;
     letter-spacing: 0;
     text-transform: uppercase;
   }
 
   @media (min-width: 960px) {
-    section.semester > a {
+    .semester > a {
       color: var(--blueberry);
       text-decoration: none;
       display: inline-block;
     }
 
-    section.semester > a:focus { color: var(--blueberry); }
+    .semester > a:focus { color: var(--blueberry); }
 
     ol {
       list-style: none;

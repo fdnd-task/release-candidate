@@ -93,7 +93,9 @@
   h2 { margin: 0; padding: 3rem 1.25rem 1.5rem; }
   .semester-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    overflow: scroll;
+    gap: 2.75em;
     scroll-snap-type: x mandatory;
     padding: 1rem 1rem 2rem 0rem;
   }
@@ -105,9 +107,7 @@
   }
   @media (min-width: 600px) {
     .semester-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 2rem;
+      gap: 3rem;
     }
   }
   @media (min-width: 1250px) {

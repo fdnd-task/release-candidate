@@ -152,6 +152,9 @@
   }
 
   @media (min-width: 25em) {
-    li a, li span { width: 100%; }
+    li {
+      width: 100%;
+      height: 4.75rem;
+    }
   }
 </style>
