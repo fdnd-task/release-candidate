@@ -41,14 +41,15 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    margin-top: 0;
     border: 2px solid var(--turquoise);
     border-radius: var(--rounded);
     box-shadow: -4px 4px var(--lavender);
     margin-top: 0.6em;
     background: var(--white);
     width: 100%;
-    height: 5rem;
+    height: 3.75rem;
     overflow: hidden;
   }
 
@@ -67,9 +68,7 @@
     transition: all 0.3s ease-in;
   }
 
-  @media (prefers-reduced-motion: reduce) {
-     li a { transition: none; } 
-  }
+  @media (prefers-reduced-motion: reduce) { li a { transition: none; }  }
 
   li a span {
     display: flex;
@@ -153,9 +152,6 @@
   }
 
   @media (min-width: 25em) {
-    li a,
-    li span {
-      width: 100%;
-    }
+    li a, li span { width: 100%; }
   }
 </style>

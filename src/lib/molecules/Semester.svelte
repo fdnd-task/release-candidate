@@ -24,7 +24,7 @@
     color: var(--blueberry);
     text-decoration: none;
     display: inline-block;
-    margin: 0 0 0.5rem;
+    margin: 0 -0.5rem 0.5rem;
   }
 
   section.semester a:focus { color: var(--blueberry); }
@@ -32,6 +32,7 @@
   ol {
     list-style: none;
     padding: 0.5rem;
+    margin-top: -1em;
     width: 100%;
   }
 

@@ -95,7 +95,7 @@
     display: flex;
     flex-direction: column;
     scroll-snap-type: x mandatory;
-    padding: 1rem 2rem 2rem 0rem;
+    padding: 1rem 1rem 2rem 0rem;
   }
   label {
     color: var(--blueberry);
