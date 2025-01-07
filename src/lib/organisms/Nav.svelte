@@ -2,12 +2,12 @@
   import { page } from "$app/stores";
   let navItems = [
     {
-      href: "/static-web/look-and-feel",
-      title: "Sprint 4",
+      href: "/static-web/the-startup",
+      title: "Sprint 6",
     },
     {
-      href: "/workflow-tooling-frameworks/dont-repeat-yourself",
-      title: "Sprint 16",
+      href: "/workflow-tooling-frameworks/release-candidate",
+      title: "Sprint 18",
     },
   ];
 </script>

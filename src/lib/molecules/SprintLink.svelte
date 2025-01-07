@@ -35,10 +35,7 @@
 {/if}
 
 <style>
-  a:focus,
-  a:hover {
-    background-position: left bottom;
-  }
+  a:focus, a:hover { background-position: left bottom; }
 
   li {
     display: flex;
@@ -64,20 +61,14 @@
     position: relative;
     height: 100%;
     width: 100%;
-    background: linear-gradient(
-      to right,
-      var(--turquoise) 50%,
-      var(--white) 50%
-    );
+    background: linear-gradient( to right, var(--turquoise) 50%, var(--white) 50% );
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.3s ease-in;
   }
 
   @media (prefers-reduced-motion: reduce) {
-    li a {
-      transition: none;
-    }
+     li a { transition: none; } 
   }
 
   li a span {
