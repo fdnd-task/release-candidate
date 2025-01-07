@@ -115,7 +115,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 3rem;
-      padding: 2rem 3rem 2rem 1rem;
+      padding: 2rem 1rem 2rem 1rem;
     }
     h2 { padding-left: 2rem; }
   }
