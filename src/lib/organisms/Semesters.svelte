@@ -93,9 +93,11 @@
   h2 { margin: 0; padding: 3rem 1.25rem 1.5rem; }
   .semester-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    overflow: scroll;
+    gap: 2.75em;
     scroll-snap-type: x mandatory;
-    padding: 1rem 2rem 2rem 0rem;
+    padding: 1rem 1rem 2rem 0rem;
   }
   label {
     color: var(--blueberry);
@@ -105,9 +107,7 @@
   }
   @media (min-width: 600px) {
     .semester-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 2rem;
+      gap: 3rem;
     }
   }
   @media (min-width: 1250px) {
@@ -115,7 +115,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 3rem;
-      padding: 2rem 3rem 2rem 1rem;
+      padding: 2rem 1rem 2rem 1rem;
     }
     h2 { padding-left: 2rem; }
   }

@@ -1,5 +1,5 @@
 <script>
-  import Heading from "$lib/organisms/Heading.svelte";
+  import Heading from "$lib/molecules/Heading.svelte";
   import Topics from "$lib/molecules/Topics.svelte";
   let { title, sprintNumber, content, startdate, topics } = $props();
 </script>

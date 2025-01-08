@@ -1,5 +1,5 @@
 <script>
-  import Heading from "$lib/organisms/Heading.svelte";
+  import Heading from "$lib/molecules/Heading.svelte";
   import { prettyDate, longDate } from "$lib/utils/date.js";
   let { weekPlans } = $props();
   const checkKeywords = (content) => {
