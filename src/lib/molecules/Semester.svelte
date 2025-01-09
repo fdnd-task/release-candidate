@@ -5,32 +5,22 @@
   let { semester } = $props();
 
   onMount(() => {
-    // Code inside onMount runs when the component is first rendered
-    const observerOptions = {
-      root: null, // Setting the root to the viewport
-      rootMargin: "0px", // No margin around the root
-      threshold: 0.5, // Trigger callback when 50% of the element is visible
-    };
-
-    const observerCallback = (entries) => {
-      // Callback function for the IntersectionObserver
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // If the element is in view
-          entry.target.classList.add("focused"); // Add the 'focused' class
-        } else {
-          // If the element is out of view
-          entry.target.classList.remove("focused"); // Remove the 'focused' class
-        }
-      });
-    };
-
     const observer = new IntersectionObserver(
-      observerCallback,
-      observerOptions,
-    ); // Creating a new IntersectionObserver with the callback and options
-    const semesters = document.querySelectorAll(".semester"); // Selecting all elements with the class 'semester'
-    semesters.forEach((semester) => observer.observe(semester)); // Observing each 'semester' element
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("focused", entry.isIntersecting);
+        });
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      },
+    );
+
+    document
+      .querySelectorAll(".semester")
+      .forEach((semester) => observer.observe(semester));
   });
 </script>
 
