@@ -5,16 +5,20 @@
   let { semester } = $props();
 
   onMount(() => {
+    // Create a new IntersectionObserver instance
     const observer = new IntersectionObserver(
       (entries) => {
+        // For each entry (element being observed)
         entries.forEach((entry) => {
+          // Toggle the "focused" class based on whether the element is intersecting
           entry.target.classList.toggle("focused", entry.isIntersecting);
         });
       },
       {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.5,
+        // Observer options
+        root: null, // Use the viewport as the root
+        rootMargin: "0px", // No margin around the root
+        threshold: 0.5, // Trigger when 50% of the element is visible
       },
     );
 
