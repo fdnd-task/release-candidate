@@ -146,7 +146,6 @@
     color: var(--blueberry);
   }
 
-  .day div { margin-left: 0; }
 
   .day :global(p) {
     --border: var(--white);
@@ -167,11 +166,8 @@
     opacity: 1;
   }
 
-  .day :global(.sprintplanning) { --border: var(--lavender); }
 
-  .day :global(.workshop) { --border: var(--turquoise); }
 
-  .day :global(.opdrachtgever), .day :global(.code-review), .day :global(.review), .day :global(.retrospect), .day :global(.kickoff), .day :global(.wrap-up) { --border: var(--call-to-action); }
 
   @media (min-width: 630px) {
     .week {
@@ -184,6 +180,9 @@
       height: auto;
       max-height: 300px;
       overflow-y: auto;
+
+      scrollbar-color: var(--lavender) #e0e0e0;
+      scrollbar-width: thin;
     }
   }
 </style>
