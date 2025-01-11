@@ -107,6 +107,7 @@
 
   section > :global(h2) {
     padding-bottom: 0;
+    margin: 0.5em 0 0 0;
   }
 
   .week-container {
@@ -146,7 +147,6 @@
     color: var(--blueberry);
   }
 
-
   .day :global(p) {
     --border: var(--white);
     position: relative;
@@ -165,9 +165,6 @@
     background-color: var(--border);
     opacity: 1;
   }
-
-
-
 
   @media (min-width: 630px) {
     .week {
