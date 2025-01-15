@@ -2,7 +2,7 @@
 
 For the Code & Design Review of the second week we will be joined by a number of external reviewers. These reviewers all have their own expertise. Use this to your advantage.
 
-The reviews will be done on a team level. We will be holding four rounds of reviews of 30 minutes each. After the 30 minutes you will go with your team to the next reviewer.
+The reviews will be done on a team level. We will be holding 4 review rounds of 30 minutes each. After the 30 minutes you will go to the next reviewer with your team.
 
 ## Reviewers
 
@@ -25,7 +25,7 @@ The reviews will be done on a team level. We will be holding four rounds of revi
 15. **Dorien** - _Proces, data architecture, file structure_
 
 ## Preperation fase
-This time we will be reviewing the entire repo on a 'collegea' level. To get the most out of the reviews we expect a number of things to be prepared before friday:
+This time we will be reviewing the entire repo on a 'junior developer' level. To get the most out of the reviews we expect a number of things to be prepared before friday:
 
 1. Pre-release candidate on [agency repo](https://github.com/fdnd-agency)
 3. Live link
