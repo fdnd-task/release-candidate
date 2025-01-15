@@ -5,6 +5,10 @@ For the Code & Design Review of the second week we will be joined by a number of
 The reviews will be done on a team level. We will be holding four rounds of reviews of 30 minutes each. After the 30 minutes you will go with your team to the next reviewer.
 
 ## Reviewers
+
+![reviewers](https://github.com/user-attachments/assets/0c3fe336-bb55-4c5d-b040-ecf687f714ec)
+
+
 1. **Jad Joubran** - _performance/JS_
 2. **Joost** - _JS + SvelteKit_ 
 3. **Hidde de Vries** - _Accessibility_ 
