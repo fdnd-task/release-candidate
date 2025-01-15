@@ -27,7 +27,7 @@ The reviews will be done on a team level. We will be holding four rounds of revi
 ## Preperation fase
 This time we will be reviewing the entire repo on a 'collegea' level. To get the most out of the reviews we expect a number of things to be prepared before friday:
 
-1. Pre-release candidate on agency repo
+1. Pre-release candidate on [agency repo](https://github.com/fdnd-agency)
 3. Live link
 4. Signup for the rounds in the excel file thats available on teams
 5. Prepare questions
