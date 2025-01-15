@@ -6,8 +6,7 @@ The reviews will be done on a team level. We will be holding four rounds of revi
 
 ## Reviewers
 
-![reviewers](https://github.com/user-attachments/assets/0c3fe336-bb55-4c5d-b040-ecf687f714ec)
-
+![reviewers](https://github.com/user-attachments/assets/25c67cd6-7a86-4a18-9e0e-34603467f59a)
 
 1. **Jad Joubran** - _performance/JS_
 2. **Joost** - _JS + SvelteKit_ 
