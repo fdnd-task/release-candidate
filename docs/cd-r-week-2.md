@@ -30,4 +30,5 @@ This time we will be reviewing the entire repo on a 'collegea' level. To get the
 1. Pre-release candidate branch (probably the main branch)
 2. Live link
 3. Signup for the rounds in the excel file thats available on teams
+4. Prepare questions
 
