@@ -1,8 +1,8 @@
 # CD-R Week 2
 
-For the Code & Design Review of the second week we will be joined by a number of external reviewers. These reviewers all have their own expertise. Use this to your advantage.
+For the Code & Design Review of the second week we will be joined by a number of external reviewers 😎. These reviewers all have their own expertise. Use this to your advantage.
 
-The reviews will be done on a team level. We will be holding 4 review rounds of 30 minutes each. After the 30 minutes you will go to the next reviewer with your team.
+The reviews will be done on a team level. We will be holding 4 review rounds of 30 minutes each. After the 30 minutes 🔔 you will go to the next reviewer with your team.
 
 ## Reviewers
 
@@ -32,3 +32,28 @@ This time we will be reviewing the entire repo on a 'junior developer' level. To
 3. Signup for the rounds in the excel file thats available on teams
 4. Prepare questions
 
+## Reviewers information
+
+Hi there 👋 we are super exited, and thankful, that you are joining our Code & Design reviews today. The students have prepared their repo for you to review with your expertise. There is a schedule of 4 rounds with different teams each round. You will have your own table, the teams will come to you. Please write your name and expertise on the board you're sitting at. 
+
+Repo's can be found on our [FDND agency organisation](https://github.com/fdnd-agency), as are the live links. We will be using the release-candidate branches. Feel free to shoot issues on their repo's.
+
+Please review the students as if they were your junior collegea, don't hold back 🤓.
+
+| Reviewer                              | Round 1              | Round 2        | Round 3            | Round 4         
+|:-----------------------------------|:------------------------|:------------------|:----------------------|:-------------------
+| **Jad Joubran** - _Performance/JS_      | Wogo                  | Mediahuis/Triple | Deloitte             | Oncollaboration   
+| **Joost** - _JS + SvelteKit_            | DDA                   | Qatar museums    | FDND Programma       | Mediahuis/Triple  
+| **Hidde de Vries** - _Accessibility_    | FDND Programma        | Bieb in Bloei    | WLW                  | Qatar museums     
+| **Charley** - _Design: process, branding, sketches_ |      -                 | Oncollaboration  | Drop and Heal        | Accesdash         
+| **Thijs Reijgersberg** - _Big codebases/long term projects_| Mediahuis/Triple      | Deloitte         | Oncollaboration      | FDND Programma    
+| **Justus** - _Refactoring_               | Visual Thinking       | WLW              | Tumi Mundo           | Deloitte          
+| **Julia Miocene** - _CSS, UX/UI_         | Bieb in Bloei         | Accesdash        | DDA                  | Drop and Heal     
+| **Cyd** - _Animation & Pixel perfectness_| Accesdash             | Redpers          | Qatar museums        |            -       
+| **Egor Kloos** - _Web Components, CSS, HTML, Lit, Style Dictionary, Static generators (e.g., 11ty)_ | Qatar museums | Drop and Heal     | Redpers | WLW             
+| **Koop** - _Interaction, Design details_ | Oncollaboration       | FDND Programma   | Mediahuis/Triple     | Bieb in Bloei     
+| **Susan Lau** - _Coding style, maintainability, architecture, SSR/CSR_ | Redpers          | Visual Thinking  | Accesdash            | Tumi Mundo        
+| **Krijn** - _Progressive enhancement_    | Drop and Heal         |         -         | Wogo                 | Visual Thinking   
+| **Tom Greuter** - _Components, JS, architecture_                | Tumi Mundo            | DDA              | Visual Thinking      | Wogo              
+| **Suus** - _?_                           | Deloitte              | Wogo             | Bieb in Bloei        | Redpers           
+| **Dorien** - _Process, data architecture, file structure_  | WLW                   | Tumi Mundo       |         -             | DDA               
