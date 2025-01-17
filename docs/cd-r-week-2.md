@@ -50,10 +50,10 @@ Please review the students as if they were your junior collegea, don't hold back
 | **Justus** - _Refactoring_               | Visual Thinking       | -              | Tumi Mundo           | Deloitte          
 | **Julia Miocene** - _CSS, UX/UI_         | Bieb in Bloei         | Accesdash        | DDA                  | Drop and Heal     
 | **Cyd** - _Animation & Pixel perfectness_| Accesdash             | Redpers          | Qatar museums        |            -       
-| **Egor Kloos** - _Web Components, CSS, HTML, Lit, Style Dictionary, Static generators (e.g., 11ty)_ | Qatar museums | Drop and Heal     | Redpers | WLW             
+| **Egor Kloos** - _Web Components, CSS, HTML, Lit, Style Dictionary, Static generators (e.g., 11ty)_ | Qatar museums | Drop and Heal     | Redpers | -             
 | **~Koop~ Dion (2 rounds)** - _Interaction, Design details_ | Oncollaboration       | FDND Programma   | Mediahuis/Triple     | Bieb in Bloei     
 | **Susan Lau** - _Coding style, maintainability, architecture, SSR/CSR_ | Redpers          | Visual Thinking  | Accesdash            | Tumi Mundo        
 | **Krijn** - _Progressive enhancement_    | Drop and Heal         |         DDA         | Wogo                 | Visual Thinking   
 | **Dave Bitter** - _Components, JS, architecture_                | Tumi Mundo            | -              | -      | Wogo              
 | **Suus** - _?_                           | Deloitte              | Wogo             | Bieb in Bloei        | Redpers           
-| **Dorien** - _Process, data architecture, file structure_  | WLW                   | Tumi Mundo       |         -             | DDA               
+| **Dorien** - _Process, data architecture, file structure_  | -                   | Tumi Mundo       |         -             | DDA               
