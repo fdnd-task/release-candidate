@@ -54,6 +54,6 @@ Please review the students as if they were your junior collegea, don't hold back
 | **~Koop~ Dion (2 rounds)** - _Interaction, Design details_ | Oncollaboration       | FDND Programma   | Mediahuis/Triple     | Bieb in Bloei     
 | **Susan Lau** - _Coding style, maintainability, architecture, SSR/CSR_ | Redpers          | Visual Thinking  | Accesdash            | Tumi Mundo        
 | **Krijn** - _Progressive enhancement_    | Drop and Heal         |         DDA         | Wogo                 | Visual Thinking   
-| **Dave Bitter** - _Components, JS, architecture_                | Tumi Mundo            | -              | Visual Thinking      | Wogo              
+| **Dave Bitter** - _Components, JS, architecture_                | Tumi Mundo            | -              | -      | Wogo              
 | **Suus** - _?_                           | Deloitte              | Wogo             | Bieb in Bloei        | Redpers           
-| **Dorien** - _Process, data architecture, file structure_  | WLW                   | Tumi Mundo       |         -             | DDA               
+| **Dorien** - _Process, data architecture, file structure_  | WLW                   | Tumi Mundo       |         Visual Thinking             | DDA               
