@@ -44,7 +44,7 @@ Please review the students as if they were your junior collegea, don't hold back
 |:-----------------------------------|:------------------------|:------------------|:----------------------|:-------------------
 | **Jad Joubran** - _Performance/JS_      | Wogo                  | Mediahuis/Triple | Deloitte             | Oncollaboration   
 | **Joost** - _JS + SvelteKit_            | DDA                   | Qatar museums    | FDND Programma       | Mediahuis/Triple  
-| **Hidde de Vries** - _Accessibility_    | FDND Programma        | Bieb in Bloei    | WLW                  | Qatar museums     
+| **Hidde de Vries** - _Accessibility_    | FDND Programma        | Bieb in Bloei    | Visual Thinking                  | Qatar museums     
 | **Charley** - _Design: process, branding, sketches_ |      -                 | Oncollaboration  | Drop and Heal        | Accesdash         
 | **Thijs Reijgersberg** - _Big codebases/long term projects_| Mediahuis/Triple      | Deloitte         | Oncollaboration      | FDND Programma    
 | **Justus** - _Refactoring_               | Visual Thinking       | WLW              | Tumi Mundo           | Deloitte          
@@ -56,4 +56,4 @@ Please review the students as if they were your junior collegea, don't hold back
 | **Krijn** - _Progressive enhancement_    | Drop and Heal         |         DDA         | Wogo                 | Visual Thinking   
 | **Dave Bitter** - _Components, JS, architecture_                | Tumi Mundo            | -              | -      | Wogo              
 | **Suus** - _?_                           | Deloitte              | Wogo             | Bieb in Bloei        | Redpers           
-| **Dorien** - _Process, data architecture, file structure_  | WLW                   | Tumi Mundo       |         Visual Thinking             | DDA               
+| **Dorien** - _Process, data architecture, file structure_  | WLW                   | Tumi Mundo       |         -             | DDA               
