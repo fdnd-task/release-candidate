@@ -47,7 +47,7 @@ Please review the students as if they were your junior collegea, don't hold back
 | **Hidde de Vries** - _Accessibility_    | FDND Programma        | Bieb in Bloei    | Visual Thinking                  | Qatar museums     
 | **Charley** - _Design: process, branding, sketches_ |      -                 | Oncollaboration  | Drop and Heal        | Accesdash         
 | **Thijs Reijgersberg** - _Big codebases/long term projects_| Mediahuis/Triple      | Deloitte         | Oncollaboration      | FDND Programma    
-| **Justus** - _Refactoring_               | Visual Thinking       | WLW              | Tumi Mundo           | Deloitte          
+| **Justus** - _Refactoring_               | Visual Thinking       | -              | Tumi Mundo           | Deloitte          
 | **Julia Miocene** - _CSS, UX/UI_         | Bieb in Bloei         | Accesdash        | DDA                  | Drop and Heal     
 | **Cyd** - _Animation & Pixel perfectness_| Accesdash             | Redpers          | Qatar museums        |            -       
 | **Egor Kloos** - _Web Components, CSS, HTML, Lit, Style Dictionary, Static generators (e.g., 11ty)_ | Qatar museums | Drop and Heal     | Redpers | WLW             
