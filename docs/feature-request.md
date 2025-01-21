@@ -5,8 +5,7 @@
 2. Ureninschatting x 60 is je offerte bedrag
 3. Zet de uren en het bedrag op het bord onder je naam
 
-<img width="501" alt="image" src="https://github.com/user-attachments/assets/85310a8a-fad8-4305-93a8-f2317e9e7dc8" />
-
+![section-aanbod](https://github.com/user-attachments/assets/5160d2bb-2e12-4fa5-8673-8c7feb7803f0)
 
 ## Stap 2: Bouwen
 !! Zet een timer
