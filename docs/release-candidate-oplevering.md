@@ -42,7 +42,7 @@ Een goede documentatie is cruciaal voor de overdraagbaarheid van het project. Co
      ```
    - **Belangrijke scripts:** Leg uit wat de belangrijkste NPM-scripts zijn, bijvoorbeeld `npm run build`, `npm run dev`, en `npm run preview`.
    - **Link naar live omgeving:** Als er een gehoste versie is, voeg de URL toe.
-   - **Teamleden:** Voeg de namen van de huidige teamleden en hun rol toe.
+   - **Teamleden:** Voeg de namen van de huidige teamleden en hun rol toe, en link naar de GitHub profiles van de teamleden ⚠️ 
 
 3. **CONTRIBUTING.md:**  
    Voeg een bestand toe met richtlijnen voor het bijdragen aan het project:
