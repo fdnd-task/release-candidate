@@ -5,9 +5,7 @@ Op naar de _release candidate_ voor jouw opdrachtgever. Ontwerp en ontwikkel een
 
 ## Context
 
-Deze leertaak hoort bij sprint 18 Let's JAM. Dit is een leertaak die je individueel of in een team uitvoert.
-
-In het college _S18W1-01-Sprintplanning-Lets-JAM_ wordt de opdracht uitgelegd.
+Deze leertaak hoort bij sprint 18 Let's JAM. Dit is een leertaak die je individueel of in een team uitvoert. In het college _S18W1-01-Sprintplanning-Lets-JAM_ wordt de opdracht uitgelegd.
 
 ## Doel van deze opdracht
 
