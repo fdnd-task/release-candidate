@@ -2,6 +2,14 @@
 
 Tijdens de wrap-up van deze sprint zorgen jullie ervoor dat de repository van jullie project op FDND Agency overzichtelijk, compleet en overdraagbaar is. Een nieuw team kan dan in de volgende fase het project probleemloos oppakken.
 
+Op deze pagina:
+1. [De repository opruimen](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#1-de-repository-opruimen)
+2. [Documentatie bijwerken](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#2-documentatie-bijwerken)
+3. [Checklist voor overdraagbaarheid](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#3-checklist-voor-overdraagbaarheid)
+4. [Laatste sprint review en feedback](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#4-laatste-sprint-review-en-feedback)
+5. [In- of opruimen en ordenen van het GitHub Project Board op FDND Agency](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#5-in--of-opruimen-en-ordenen-van-het-github-project-board-op-fdnd-agency)
+6. [Handover documenteren](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#6-handover-documenteren)
+
 ---
 
 ### 1. **De repository opruimen**
@@ -74,11 +82,7 @@ Een goede documentatie is cruciaal voor de overdraagbaarheid van het project. Co
      API_BASE_URL=https://cms.example.com
      API_KEY=1234567890abcdef
      ```
-
-4. **Openstaande issues en to-do’s:**  
-   - Documenteer alle openstaande issues of taken in GitHub Issues op de FDND Agency repository.
-
-5. **Dependencies updaten:**  
+4. **Dependencies updaten:**  
    - Controleer of alle npm-dependencies up-to-date zijn en of er geen kwetsbaarheden zijn met `npm audit`.
 
 ---
