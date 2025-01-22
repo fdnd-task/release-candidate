@@ -3,7 +3,8 @@
 ## Praatje Dorien 
 
 ## Praatje Joost
-Volg de opdrachten uit de presentatie.
+
+Zie [release-candidate-oplevering.md](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md)
 
 ## Poster maken voor de expo
 
