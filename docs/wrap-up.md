@@ -1,6 +1,8 @@
 # Wrap up
 
 ## Praatje Dorien 
+Inschattingen oefening, als je zin hebt probeer het eens te maken: [opdracht](https://github.com/fdnd-task/release-candidate/blob/main/docs/feature-request.md)
+
 
 ## Praatje Joost
 
