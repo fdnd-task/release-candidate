@@ -102,9 +102,9 @@ Een goede documentatie is cruciaal voor de overdraagbaarheid van het project. Co
 2. **Openstaande taken ordenen:**  
    - Zorg dat openstaande taken duidelijk zijn en verplaats deze naar de ToDo kolom in het FDND Agency project board.
    - Voeg duidelijke beschrijvingen toe aan taken zodat het helder is wat er nog moet gebeuren.
-   - Als het goed is staan er geen taken meer in de "In Progress", "Ready for Review" en "Done" kolom ⚠️
+   - Als het goed is staan er geen taken in de "In Progress", "Ready for Review" en "Done" kolom ⚠️
      
-     M.a.w. er staan geen taken meer open, als het goed is ⚠️
+     M.a.w. er staan geen taken meer open na deze sprint ⚠️
 
 3. **Labels en assignees bijwerken:** 
    - Geef taken met labels een MoSCoW prioriteit.
