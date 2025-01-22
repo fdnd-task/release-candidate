@@ -1,6 +1,6 @@
 **Release Candidate afronden en overdraagbaar maken**
 
-Tijdens de wrap-up van deze sprint zorgen jullie ervoor dat de repository van jullie project op FDND Agency overzichtelijk, compleet en overdraagbaar is. Een nieuw team kan dan volgend semester het project probleemloos oppakken.
+Tijdens de wrap-up van deze sprint zorgen jullie ervoor dat de repository van jullie project op FDND Agency overzichtelijk, compleet en overdraagbaar is. Een nieuw team kan dan in de volgende fase het project probleemloos oppakken.
 
 ---
 
@@ -15,7 +15,7 @@ Tijdens de wrap-up van deze sprint zorgen jullie ervoor dat de repository van ju
    - Zorg voor een consistente structuur binnen de `src` folder.
 
 3. **Branch management:**  
-   - Zorg dat de `release-candidate` branch de meest actuele, stabiele en werkende versie van het project bevat.
+   - Zorg dat de `release-candidate` branch op FDND Agency de meest actuele, stabiele en werkende versie van het project bevat.
    - Merge eventuele openstaande branches die klaar zijn, of sluit branches die niet meer nodig zijn.
 
 ---
@@ -100,9 +100,11 @@ Een goede documentatie is cruciaal voor de overdraagbaarheid van het project. Co
    - Verplaats voltooide items naar de kolom "Done" (of een soortgelijke kolom) en sluit deze indien mogelijk. 
 
 2. **Openstaande taken ordenen:**  
-   - Zorg dat openstaande taken duidelijk zijn en verplaats deze naar de juiste kolom (bijv. "ToDo", "Ready for Review", "Done"). 
+   - Zorg dat openstaande taken duidelijk zijn en verplaats deze naar de ToDo kolom in het FDND Agency project board.
    - Voeg duidelijke beschrijvingen toe aan taken zodat het helder is wat er nog moet gebeuren.
-   - Als het goed is staan er geen taken meer in de "In Progress" kolom ⚠️
+   - Als het goed is staan er geen taken meer in de "In Progress", "Ready for Review" en "Done" kolom ⚠️
+     
+     M.a.w. er staan geen taken meer open, als het goed is ⚠️
 
 3. **Labels en assignees bijwerken:** 
    - Geef taken met labels een MoSCoW prioriteit.
