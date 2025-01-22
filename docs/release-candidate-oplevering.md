@@ -7,7 +7,7 @@ Op deze pagina:
 2. [Documentatie bijwerken](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#2-documentatie-bijwerken)
 3. [Checklist voor overdraagbaarheid](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#3-checklist-voor-overdraagbaarheid)
 4. [Laatste sprint review en feedback](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#4-laatste-sprint-review-en-feedback)
-5. [In- of opruimen en ordenen van het GitHub Project Board op FDND Agency](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#5-in--of-opruimen-en-ordenen-van-het-github-project-board-op-fdnd-agency)
+5. [In- of opruimen en ordenen van het project board op FDND Agency](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#5-in--of-opruimen-en-ordenen-van-het-project-board-op-fdnd-agency)
 6. [Handover documenteren](https://github.com/fdnd-task/release-candidate/blob/main/docs/release-candidate-oplevering.md#6-handover-documenteren)
 
 ---
@@ -94,7 +94,7 @@ Een goede documentatie is cruciaal voor de overdraagbaarheid van het project. Co
 
 ---
 
-### 5. **In- of opruimen en ordenen van het GitHub Project Board op FDND Agency**
+### 5. **In- of opruimen en ordenen van het project board op FDND Agency**
 
 0. **Verplaats items naar het FDND Agency Project Board**
    - Verplaats zonnodig alle items van het project board van de eigen github repo naar het betreffende project board op FDND Agency 
