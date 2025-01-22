@@ -27,8 +27,9 @@ Doorloop de fasen van de DLC zoals je dat je de afgelopen anderhalf jaar hebt ei
 Deze sprint worden een aantal workshops en code/design reviews georganiseerd:
 - [Code/design review - week 1](cr-r-week-1.md)
 - [Code/design review - week 2](cr-r-week-2.md)
-<!-- - [Feature Request](feature-request.md) -->
 - [Release Candidate Oplevering](release-candidate-oplevering.md)
+<!-- - [Feature Request](feature-request.md) -->
+
 
 ## Criteria
 
