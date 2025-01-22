@@ -15,8 +15,6 @@ In semester 3 heb je veel geleerd over het inzetten van workflow, tools en frame
 
 ## Werkwijze
 
-Deze opdracht gaat over alle fasen van de DLC **Analyseren**, **Ontwerpen**, **Bouwen**, **Testen** en **Integreren** 
-
 Je werkt vanuit (gedocumenteerde) conventies, principes en code afspraken aan componenten. Je richt je daarbij eerst op de core functionaliteiten goed werkend krijgen en dan enhancen.
 
 Je werkt met branches en pull request requirements per component. Een component is pas _release candidate_ waardig als het uitvoerig getest is, denk aan usability, a11y, performance en responsiveness.
@@ -24,6 +22,13 @@ Je werkt met branches en pull request requirements per component. Een component 
 Leg focus op het planbord, het in kaart brengen en toewijzen van taken. Maak daarbijn afspraken over het reviewen van code. Je controleert elkaars code in het pull request, een ander teamlid moet jouw code reviewen op code conventies, a11y, PE en responsive...
 
 Doorloop de fasen van de DLC zoals je dat je de afgelopen anderhalf jaar hebt eigen gemaakt en documenteer al jouw bevindingen in de README en de Wiki.
+
+
+Deze sprint worden een aantal workshops en code/design reviews georganiseerd:
+- [Code/design review - week 1](cr-r-week-1.md)
+- [Code/design review - week 2](cr-r-week-2.md)
+<!-- - [Feature Request](feature-request.md) -->
+- [Release Candidate Oplevering](release-candidate-oplevering.md)
 
 ## Criteria
 
