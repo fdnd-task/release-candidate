@@ -9,8 +9,10 @@ Tijdens deze sprint zorgen jullie ervoor dat de repository van jullie project op
 ## Workflow
 
 ### Project board
-- Zorg dat alle taken correct zijn geprioriteerd, afgerond en gedocumenteerd.
-- Markeer alle resterende taken als "Done" of geef een duidelijke status (bijv. "Won't Fix" met uitleg).
+- Zorg dat alle stories correct zijn geprioriteerd, afgerond en gedocumenteerd.
+- Markeer alle resterende stories als "Done" of geef een duidelijke status (bijv. "Won't Fix" met uitleg).
+
+M.a.w. er staan geen taken meer open na deze sprint ⚠️
 
 ### Branch management
 - Zorg dat alle relevante branches worden samengevoegd in de dev branch. 
@@ -45,6 +47,7 @@ Een goede documentatie is cruciaal voor de overdraagbaarheid van het project. Co
 - Gebruikershandleiding.
 - Link naar de live versie (indien beschikbaar).
 - Voeg een changelog toe waarin alle belangrijke wijzigingen worden vermeld.
+- Voeg links naar gerelateerde documentatie (bijv. `CONTRIBUTING.md`, `HANDOVER.md` en technische documentatie) toe aan de taken waar nodig.
 - **Teamleden:** Voeg de namen van de huidige teamleden en hun rol toe, en link naar de GitHub profiles van de teamleden ⚠️ 
 
 ### CONTRIBUTING.md
