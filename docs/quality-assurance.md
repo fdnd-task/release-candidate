@@ -2,9 +2,9 @@
 
 Tijdens deze sprint zorgen jullie ervoor dat de repository van jullie project op FDND Agency overzichtelijk, compleet en overdraagbaar is. Een nieuw team kan dan in de volgende fase het project probleemloos oppakken.
 
-1. Workflow
-2. Documentatie
-3. Code/Design
+1. [Workflow](#workflow)
+2. [Documentatie](#documentatie)
+3. [Code/Design](#codedesign)
 
 ## Workflow
 
