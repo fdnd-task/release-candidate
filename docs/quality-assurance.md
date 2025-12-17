@@ -42,7 +42,7 @@ Dit is de about section in Github:
 
 ![About section](about-section.png)
 
-   - Zorg in voor een korte beschrijving van het project.
+   - Zorg voor een korte beschrijving van het project.
    - Zorg voor een link naar de live site.
 
 ### README.md
@@ -57,9 +57,9 @@ Dit is de about section in Github:
 
 ### CONTRIBUTING.md
 Check of `CONTRIBUTING.md` up to date is en de onderstaande richtlijnen bevat:
-- Hoe nieuwe branches moeten worden aangemaakt (bijv. `feature/[naam]`).
-- Hoe commits gemaakt moeten worden (bijv. “Gebruik duidelijke commitberichten in de vorm van: [type]: [beschrijving]”).
-- Hoe pull requests moeten worden aangemaakt en gereviewd.
+- Hoe worden nieuwe branches aangemaakt (bijv. `feature/[naam]`).
+- Hoe worden commits gemaakt (bijv. “Gebruik duidelijke commitberichten in de vorm van: [type]: [beschrijving]”).
+- Hoe worden pull requests aangemaakt en gereviewd.
 - Code conventies
 - Definitions of ready & done
 
@@ -78,32 +78,34 @@ Voeg een aparte map `docs/` toe voor technische documentatie:
 - Configuratie van het CMS: Welke contenttypes zijn er, hoe zijn ze ingesteld, en hoe werkt de koppeling met de front-end?
 - Eventuele API-documentatie als er externe API’s worden gebruikt.
 
-
 ## CODE/DESIGN
 
 ### Code kwaliteit:
-- Zorg dat de code voldoet aan de afgesproken code conventies 
+- Zorg dat de code voldoet aan de afgesproken code conventies.
 - Verwijder overbodige of ongebruikte code.
 - Optimaliseer de code waar mogelijk (bijv. DRY).
 - Verwijder ongebruikte bestanden en mappen uit de repository.
 - Controleer op testbestanden, tijdelijke bestanden (zoals `.DS_Store` of `node_modules`, als ze per ongeluk zijn gepusht) en verwijder deze.
 - Controleer of alle bestanden en mappen logisch geordend zijn en duidelijke namen hebben.
 
-### Performance optimalisatie:
-Controleer op laadtijden en optimaliseer afbeeldingen en assets. Test de toepassing met tools zoals Lighthouse om performance en toegankelijkheid te verbeteren.
-
 ### Responsiveness:
 Controleer of de toepassing goed werkt op verschillende schermformaten (mobiel, tablet, desktop). Pas eventuele inconsistenties in het design aan.
-
-### Complexe interacties:
-- Zorg dat interactieve elementen (bijv. formulieren, animaties, drag-and-drop functionaliteit) intuïtief en foutloos werken.
-- Check of alle mogelijke states geïmplementeerd zijn.
-- Test edge cases en zorg dat er duidelijke foutmeldingen zijn waar nodig.
 
 ### Toegankelijkheid (a11y):
 - Controleer of de toepassing voldoet aan WCAG-richtlijnen.
 - Test de toepassing met een screenreader en zorg dat alle interactieve elementen toegankelijk zijn.
 - Controleer of je goed rekening houd met preferences van de gebruiker.
+
+### Performance optimalisatie:
+Controleer op laadtijden en optimaliseer afbeeldingen en assets. Test de toepassing met tools zoals Lighthouse om performance en toegankelijkheid te verbeteren.
+
+### Progressive Enhancement
+Controleer op verouderde browsers en browserversies. Test met verouderde devices (bijvoorbeeld uit het device lab).
+
+### Complexe interacties:
+- Zorg dat interactieve elementen (bijv. formulieren, animaties, drag-and-drop functionaliteit) intuïtief en foutloos werken.
+- Check of alle mogelijke states geïmplementeerd zijn.
+- Test edge cases en zorg dat er duidelijke foutmeldingen zijn waar nodig.
 
 ### Design consistentie:
 - Controleer of alle componenten consistent zijn qua stijl en gedrag.
