@@ -1,41 +1,85 @@
 # Quality assurance
 
-Aan het eind van deze sprint voldoet jullie project aan onderstaande punten.
+Tijdens deze sprint zorgen jullie ervoor dat de repository van jullie project op FDND Agency overzichtelijk, compleet en overdraagbaar is. Een nieuw team kan dan in de volgende fase het project probleemloos oppakken.
+
+1. Workflow
+2. Documentatie
+3. Code/Design
 
 ## Workflow
-Finale review van het GitHub Project Board:
+
+### Project board
 - Zorg dat alle taken correct zijn geprioriteerd, afgerond en gedocumenteerd.
 - Markeer alle resterende taken als "Done" of geef een duidelijke status (bijv. "Won't Fix" met uitleg).
 
-### Branch management:
-- Zorg dat alle branches worden samengevoegd in de dev branch. 
+### Branch management
+- Zorg dat alle relevante branches worden samengevoegd in de dev branch. 
 - Verwijder oude, ongebruikte branches om de repository schoon te houden. Alleen de main en dev blijven staan (dit zijn zogenaamde evergreen branches)
+- Maak een `release-candidate` branch vanaf dev
  
-### Code reviews:
+### Code reviews
 - Voer een laatste teamcode-review uit om consistentie, leesbaarheid en kwaliteit te waarborgen.
 - Documenteer eventuele uitzonderingen of keuzes in de codebase.
 
-### Documentatie:
-Update de README met:
+### Deployment
+Zorg dat de toepassing live staat op een platform zoals Netlify, Vercel, of een eigen server (FDND Netlify). Test de live versie grondig en zorg dat deze overeenkomt met de verwachtingen van de opdrachtgever.
+
+## Documentatie
+
+Een goede documentatie is cruciaal voor de overdraagbaarheid van het project. Controleer en/of maak de volgende onderdelen:
+
+- [About sectie](#about-sectie)
+- [README.md](#readmemd)
+- [CONTRIBUTING.md](#contributingmd)
+- [HANDOVER.md](#handovermd)
+- [Technische documentatie](#technische-documentatie)
+
+### About sectie
+   - Zorg in voor een korte beschrijving van het project.
+   - Zorg voor een link naar de live site.
+
+### README.md
 - Een duidelijke beschrijving van het project.
+- Gebruikte technieken (Tip: [shields](https://shields.io/))
 - Installatie-instructies.
 - Gebruikershandleiding.
 - Link naar de live versie (indien beschikbaar).
 - Voeg een changelog toe waarin alle belangrijke wijzigingen worden vermeld.
-- Zorg dat er een overdrachtsdocument is voor de opdrachtgever (`HANDOVER.md`).
+- **Teamleden:** Voeg de namen van de huidige teamleden en hun rol toe, en link naar de GitHub profiles van de teamleden ⚠️ 
 
-### Deployment:
-Zorg dat de toepassing live staat op een platform zoals Netlify, Vercel, of een eigen server (FDND Netlify). Test de live versie grondig en zorg dat deze overeenkomt met de verwachtingen van de opdrachtgever.
+### CONTRIBUTING.md
+Check of `CONTRIBUTING.md` up to date is en de onderstaande richtlijnen bevat:
+- Hoe nieuwe branches moeten worden aangemaakt (bijv. `feature/[naam]`).
+- Hoe commits gemaakt moeten worden (bijv. “Gebruik duidelijke commitberichten in de vorm van: [type]: [beschrijving]”).
+- Hoe pull requests moeten worden aangemaakt en gereviewd.
+- Code conventies
+- Definitions of ready & done
 
-### Feedback verwerken:
-Verzamel feedback van de opdrachtgever en pas eventuele laatste wijzigingen toe. Documenteer welke feedback is verwerkt en welke niet (met uitleg) in issues.
+### HANDOVER.md
+Schrijf een korte samenvatting in de repository (bijv. `HANDOVER.md`) waarin jullie het project introduceren aan de volgende groep:
+- Wat is de huidige status van het project?
+- Wat zijn de belangrijkste features die al werken?
+- Wat zijn de grootste aandachtspunten of uitdagingen?
+- Wat wordt aangeraden als eerste stap voor het volgende team?
+
+### Technische documentatie
+Voeg een aparte map `docs/` toe voor technische documentatie:
+- Uitleg over hoe de code is gestructureerd.
+- Datamodel (tip: [mermaid](https://mermaid.live/edit))
+- Beschrijving van belangrijke componenten en hoe ze werken.
+- Configuratie van het CMS: Welke contenttypes zijn er, hoe zijn ze ingesteld, en hoe werkt de koppeling met de front-end?
+- Eventuele API-documentatie als er externe API’s worden gebruikt.
 
 
 ## CODE/DESIGN
+
 ### Code kwaliteit:
 - Zorg dat de code voldoet aan de afgesproken code conventies 
 - Verwijder overbodige of ongebruikte code.
 - Optimaliseer de code waar mogelijk (bijv. DRY).
+- Verwijder ongebruikte bestanden en mappen uit de repository.
+- Controleer op testbestanden, tijdelijke bestanden (zoals `.DS_Store` of `node_modules`, als ze per ongeluk zijn gepusht) en verwijder deze.
+- Controleer of alle bestanden en mappen logisch geordend zijn en duidelijke namen hebben.
 
 ### Performance optimalisatie:
 Controleer op laadtijden en optimaliseer afbeeldingen en assets. Test de toepassing met tools zoals Lighthouse om performance en toegankelijkheid te verbeteren.
