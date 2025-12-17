@@ -37,6 +37,11 @@ Een goede documentatie is cruciaal voor de overdraagbaarheid van het project. Co
 - [Technische documentatie](#technische-documentatie)
 
 ### About sectie
+
+Dit is de about section in Github:
+
+![About section](about-section.png)
+
    - Zorg in voor een korte beschrijving van het project.
    - Zorg voor een link naar de live site.
 
