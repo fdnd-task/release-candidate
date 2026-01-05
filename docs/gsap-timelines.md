@@ -129,4 +129,5 @@ Werkvormen toevoegen (analyseren/experimenteren/voorbeelden uit eigen code laten
 Voorbeeld code refactor Luuk
 Sollicitatie / interview vragen JavaScript
 Sources panel met JavaScript Debugger
+AI als tutor blog van Ellenoor
 -->
