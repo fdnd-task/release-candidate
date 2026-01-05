@@ -124,3 +124,9 @@ els.ch3Trigger.addEventListener("click", () => { ch3.restart() })
 ```
 
 
+<!--
+Werkvormen toevoegen (analyseren/experimenteren/voorbeelden uit eigen code laten zien/presenteren)
+Voorbeeld code refactor Luuk
+Sollicitatie / interview vragen JavaScript
+Sources panel met JavaScript Debugger
+-->
