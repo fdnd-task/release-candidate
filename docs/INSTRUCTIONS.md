@@ -17,15 +17,16 @@ Je werkt vanuit (gedocumenteerde) conventies, principes en code afspraken aan co
 
 Je werkt met branches en pull request requirements per component. Een component is pas _release candidate_ waardig als het uitvoerig getest is, denk aan usability, a11y, performance en responsiveness.
 
-Leg focus op het planbord, het in kaart brengen en toewijzen van taken. Maak daarbijn afspraken over het reviewen van code. Je controleert elkaars code in het pull request, een ander teamlid moet jouw code reviewen op code conventies, a11y, PE en responsive...
+Leg focus op het planbord, het in kaart brengen en toewijzen van taken. Maak daarbij afspraken over het reviewen van code. Je controleert elkaars code in het pull request, een ander teamlid moet jouw code reviewen op code conventies, a11y, PE, performance en responsiveness…
 
 Doorloop de fasen van de DLC zoals je dat je de afgelopen anderhalf jaar hebt eigen gemaakt en documenteer al jouw bevindingen in de README en de Wiki.
 
 Deze sprint worden een aantal workshops en code/design reviews georganiseerd:
+- [Over hosting, DNS en databases](hosting-dns-databases.md)
 - [Code/design review - week 1](cr-r-week-1.md)
 - [Code/design review - week 2](cr-r-week-2.md)
 - [Release Candidate Oplevering](release-candidate-oplevering.md)
-<!-- - [Feature Request](feature-request.md) -->
+
 
 
 ## Criteria
@@ -34,7 +35,8 @@ Focus sprint 18 - De focus van deze sprint ligt op het ontwerpen en ontwikkelen 
 
 Deze opdracht is done als:
 - [ ] je hebt gewerkt volgens de verschillende fases van de development-lifecycle
-- [ ] jouw werk is gedocumenteerd in de Readme en Wiki
+- [ ] jouw werk navolgbaar is gedocumenteerd in issues, commits en pull-requests
+- [ ] jouw werk overdraagbaar is door middel van heldere documentatie in o.a. CONTRIBUTING.md en README.md
 - [ ] je een complexe, gebruiksvriendelijke en interactieve webapplicatie hebt ontworpen en ontwikkeld
 - [ ] de site een onderbouwde oplossing een voor de design challenge van een opdrachtgever biedt
 - [ ] de site op Github staat en een live url heeft
