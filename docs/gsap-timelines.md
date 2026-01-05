@@ -10,7 +10,7 @@ Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) e
 - Bedenk en schets een screenplay voor Chapter 4 
 - Zoek zo nodig online (royalty free) SVG bestanden of andere graphics. Of maak ze zelf 
 - Vul de HTML aan met jouw graphics en of andere HTML elementen 
-- Voeg een `chapter-four.js` module toe (hergebruik de code uit een van de andere hoofdstukken) 
+- Voeg een `chapter-four.js` module toe (hergebruik de code uit een van de andere hoofdstukken) en pas `script.js` aan zodat het nieuwe hoofdstuk aan het verhaal wordt toegevoegd.
 
 
 ## Opdracht: JavaScript prompt challenge
