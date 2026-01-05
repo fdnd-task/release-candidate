@@ -12,6 +12,11 @@ Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) e
 - Vul de HTML aan met jouw graphics en of andere HTML elementen 
 - Voeg een `chapter-four.js` module toe (hergebruik de code uit een van de andere hoofdstukken) en pas `script.js` aan zodat het nieuwe hoofdstuk aan het verhaal wordt toegevoegd.
 
+### Bronnen
+
+[GSAP timelines](https://gsap.com/docs/v3/GSAP/Timeline)
+[GSAP nested timelines](https://gsap.com/docs/v3/GSAP/Timeline/#nesting)
+
 
 ## Opdracht: JavaScript prompt challenge
 
