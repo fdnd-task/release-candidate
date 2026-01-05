@@ -13,7 +13,7 @@ Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) e
 - Voeg een `chapter-four.js` module toe (hergebruik de code uit een van de andere hoofdstukken) 
 - Importeer de module in `script.js` en 
 
-## Opdracht: JavaScript analyseren 
+## Opdracht: JavaScript prompt challenge
 
 Met behulp van Chat GPT gaan we de vanilla JavaScript code analyseren.
 
