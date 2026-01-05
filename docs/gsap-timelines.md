@@ -3,7 +3,7 @@
 Tijdens de workshop leer je hoe je met GSAP (nested) timelines structuur kan geven aan complexe animaties.   
 Door de vanilla JavaScript code te analyseren krijg je een beter beeld van hoe JavaScript werkt. 
 
-## Opdracht Chapter 4 toevoegen
+## Opdracht: Chapter 4 toevoegen
 
 Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) en voeg een 4e hoofstuk toe aan het ruimteverhaal.
 
@@ -13,7 +13,7 @@ Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) e
 - Voeg een `chapter-four.js` module toe (hergebruik de code uit een van de andere hoofdstukken) 
 - Importeer de module in `script.js` en 
 
-## JavaScript analyseren
+## Opdracht: JavaScript analyseren 
 
 Met behulp van Chat GPT gaan we de vanilla JavaScript code analyseren.
 
