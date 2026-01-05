@@ -11,7 +11,7 @@ Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) e
 - Zoek zo nodig online (royalty free) SVG bestanden of andere graphics. Of maak ze zelf 
 - Vul de HTML aan met jouw graphics en of andere HTML elementen 
 - Voeg een `chapter-four.js` module toe (hergebruik de code uit een van de andere hoofdstukken) 
-- Importeer de module in `script.js` en 
+
 
 ## Opdracht: JavaScript prompt challenge
 
