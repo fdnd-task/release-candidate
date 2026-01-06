@@ -15,13 +15,13 @@ Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) e
 
 ### Bronnen
 
-[GSAP timelines](https://gsap.com/docs/v3/GSAP/Timeline)
+[GSAP timelines](https://gsap.com/docs/v3/GSAP/Timeline)  
 [GSAP nested timelines](https://gsap.com/docs/v3/GSAP/Timeline/#nesting)
 
 
 ## Opdracht: JavaScript prompt challenge
 
-Met behulp van Chat GPT ga je vanilla JavaScript code analyseren met behulp van AI. 
+Met behulp van [Claude](https://claude.ai/) of [Chat GPT](https://chatgpt.com/) ga je de vanilla JavaScript code analyseren. 
 In teams van 4 studenten bestudeer je deze JavaScript onderwerpen: Objects, Functions, Asynchronous & Modules
 
 * Elk team, krijgt een onderwerp met voorbeeld code toegewezen
@@ -165,6 +165,11 @@ els.ch3Trigger.addEventListener("click", () => { ch3.restart() })
 ```
 </details>
 
+### Bronnen
+
+* [ChatGPT as my coding mentor](https://techhub.iodigital.com/articles/chatgpt-as-my-coding-mentor) (van oud FDND student Ellenoor Bok)
+* [Prompt engineering guide](https://www.promptingguide.ai/)
+* [JavaScript interview guestions 2025](https://www.interviewbit.com/javascript-interview-questions/)
 <!--
 Werkvormen toevoegen (analyseren/experimenteren/voorbeelden uit eigen code laten zien/presenteren)
 Voorbeeld code refactor Luuk
