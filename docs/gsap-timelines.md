@@ -28,7 +28,7 @@ Met behulp van Chat GPT ga je vanilla JavaScript code analyseren. In teams van 4
 * Aan de hand van de voorbeeld code schrijf je prompts om een van de concepten van het betreffende onderwerp te analyseren
 * Schrijf op welke prompts je hebt gebruikt en in hoeverre je de uitleg snapt
 * Met je team bespreek je je bevindingen en de onderlinge samenhang van de concepten
-* Met je team leg je uit wat de concepten betekenen en welke prompts je hebben geholpen om het te snappen
+* Met je team leg je uit aan de tribe wat de concepten betekenen en welke prompts je hebben geholpen om het te snappen
 
 ### I. Objecten
 
