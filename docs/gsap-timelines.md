@@ -114,7 +114,10 @@ function tlRocket() {
 ```
 </details>
 
-### III. Promise, Async
+<details>
+ <summary>
+   III. Promise, Async
+ </summary> 
 
 **Concepten**   
 `Promise`, `Async` en `Await`
@@ -130,9 +133,12 @@ tl.then(() => {
   console.log('tl sequence ready')
 })
 ```
+</details>
 
-
-### IV. Modules; Deferred, Scoped, Async & Strict Mode
+<details>
+  <summary>
+    IV. Modules; Deferred, Scoped, Async & Strict Mode
+  </summary>
 
 **Concepten **  
 `Module`, `Deferred`, `Scoped`, `Async`, `Top-Level Await` en `Strict Mode` zijn?
@@ -153,7 +159,7 @@ ch1.play()
 els.ch2Trigger.addEventListener("click", () =>{ ch2.restart() }) 
 els.ch3Trigger.addEventListener("click", () => { ch3.restart() })
 ```
-
+</details>
 
 <!--
 Werkvormen toevoegen (analyseren/experimenteren/voorbeelden uit eigen code laten zien/presenteren)
