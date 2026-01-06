@@ -32,7 +32,7 @@ Met behulp van Chat GPT ga je vanilla JavaScript code analyseren. In teams van 4
 
 <details>
   <summary>
-    ### I. Objecten
+    I. Objecten
   </summary>summry
 
 
@@ -59,7 +59,7 @@ export function chapterOne() {
 <details>
 
 <summary>
-  ### II. Functions, Scope, Hoisting
+  II. Functions, Scope, Hoisting
 </summary>
 
 **Concepten**  
