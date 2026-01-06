@@ -21,7 +21,8 @@ Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) e
 
 ## Opdracht: JavaScript prompt challenge
 
-Met behulp van Chat GPT ga je vanilla JavaScript code analyseren. In teams van 4 studenten bestuderen we onderstaande JavaScript concepten. 
+Met behulp van Chat GPT ga je vanilla JavaScript code analyseren met behulp van AI. 
+In teams van 4 studenten bestudeer je deze JavaScript onderwerpen: Objects, Functions, Asynchronous & Modules
 
 * Elk team, krijgt een onderwerp met voorbeeld code toegewezen
 * Je verdeeld de concepten in je team
@@ -30,9 +31,12 @@ Met behulp van Chat GPT ga je vanilla JavaScript code analyseren. In teams van 4
 * Met je team bespreek je je bevindingen en de onderlinge samenhang van de concepten
 * Met je team leg je uit aan de tribe wat de concepten betekenen en welke prompts je hebben geholpen om het te snappen
 
+
+### Onderwerpen
+
 <details>
   <summary>
-    I. Objecten
+    I. Objects
   </summary>summry
 
 
@@ -59,7 +63,7 @@ export function chapterOne() {
 <details>
 
 <summary>
-  II. Functions, Scope, Hoisting
+  II. Functions
 </summary>
 
 **Concepten**  
