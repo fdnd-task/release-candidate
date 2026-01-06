@@ -11,7 +11,7 @@ Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) e
 - Zoek zo nodig online (royalty free) SVG bestanden of andere graphics. Of maak ze zelf 
 - Vul de HTML aan met jouw graphics en of andere HTML elementen 
 - Voeg een `chapter-four.js` module toe (hergebruik de code uit een van de andere hoofdstukken) en pas `script.js` aan zodat het nieuwe hoofdstuk aan het verhaal wordt toegevoegd (demo).
-- Animeer jouw verhaal met GSAP nested timelines
+- Animeer jouw verhaal met tweens in GSAP nested timelines
 
 ### Bronnen
 
