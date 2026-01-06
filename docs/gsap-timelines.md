@@ -3,14 +3,14 @@
 Tijdens de workshop leer je hoe je met GSAP (nested) timelines structuur kan geven aan complexe animaties.   
 Door de vanilla JavaScript code te analyseren krijg je een beter beeld van hoe JavaScript werkt. 
 
-## Opdracht: Chapter 4 toevoegen
+## Opdracht: Scene 4 toevoegen
 
-Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) en voeg een 4e hoofstuk toe aan het ruimteverhaal.
+Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) en voeg een 4e scene toe aan het ruimteverhaal.
 
-- Bedenk en schets een screenplay voor Chapter 4 
+- Bedenk en schets een screenplay voor scene 4 
 - Zoek zo nodig online (royalty free) SVG bestanden of andere graphics. Of maak ze zelf 
 - Vul de HTML aan met jouw graphics en of andere HTML elementen 
-- Voeg een `chapter-four.js` module toe (hergebruik de code uit een van de andere hoofdstukken) en pas `script.js` aan zodat het nieuwe hoofdstuk aan het verhaal wordt toegevoegd (demo).
+- Voeg een `scene-four.js` module toe (hergebruik de code uit een van de andere hoofdstukken) en pas `script.js` aan zodat de nieuwe scene aan het verhaal wordt toegevoegd (live coding)
 - Animeer jouw verhaal met tweens in GSAP nested timelines
 
 ### Bronnen
@@ -34,7 +34,7 @@ In teams van 4 studenten bestudeer je deze JavaScript onderwerpen: Objects, Func
 
 ### Prompt strategy van oud student Ellenoor Bok (@EBok1)
 
-Deze tips, over hoe goede uitleg te krijgen van ChatGPT, schreef Ellenoor in haar blog [ChatGPT as my coding mentor](https://techhub.iodigital.com/articles/chatgpt-as-my-coding-mentor). 
+Deze tips, over hoe goede uitleg te krijgen van ChatGPT, schreef Ellenoor in haar blog: [ChatGPT as my coding mentor](https://techhub.iodigital.com/articles/chatgpt-as-my-coding-mentor). 
 
 1. Set context: "I'm a junior developer learning React..."
 2. Set my level: "Explain this like I'm new to React" or "Use simple analogies."
