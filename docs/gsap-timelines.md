@@ -24,8 +24,9 @@ Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) e
 Met behulp van [Claude](https://claude.ai/) of [Chat GPT](https://chatgpt.com/) ga je de vanilla JavaScript code analyseren. 
 In teams van 4 studenten bestudeer je deze JavaScript onderwerpen: Objects, Functions, Asynchronous & Modules
 
+### Instructies
 * Elk team, krijgt een onderwerp met voorbeeld code toegewezen
-* Je verdeeld de concepten in je team
+* Verdeel de concepten in je team
 * Aan de hand van de voorbeeld code schrijf je prompts om een van de concepten van het betreffende onderwerp te analyseren
 * Schrijf op welke prompts je hebt gebruikt en in hoeverre je de uitleg snapt
 * Met je team bespreek je je bevindingen en de onderlinge samenhang van de concepten
