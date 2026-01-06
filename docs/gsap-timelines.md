@@ -20,12 +20,21 @@ Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) e
 
 ## Opdracht: JavaScript prompt challenge
 
-Met behulp van Chat GPT gaan we de vanilla JavaScript code analyseren.
+Met behulp van Chat GPT ga je vanilla JavaScript code analyseren. In teams van 4 studenten bestuderen we onderstaande JavaScript concepten. 
 
-### I. Objecten, Context, Dot Notation, Chaining
+* Elk team, krijgt een onderwerp met voorbeeld code toegewezen
+* Je verdeeld de concepten in je team
+* Aan de hand van de voorbeeld code schrijf je prompts om een van de concepten van het betreffende onderwerp te analyseren
+* Schrijf op welke prompts je hebt gebruikt en in hoeverre je de uitleg snapt
+* Met je team bespreek je je bevindingen en de onderlinge samenhang van de concepten
+* Met je team leg je uit wat de concepten betekenen en welke prompts je hebben geholpen om het te snappen
 
-Prompt: Kan je aan de hand van de onderstaande code uitleggen wat de javascript concepten: `Object`, `Context`, `Dot Notation` en `Chaining` zijn?
+### I. Objecten
 
+**Concepten**  
+`Object`, `Context`, `Dot Notation`, `Chaining`
+
+**Voorbeeld code**  
 ```js
 const tlChapterOne = gsap.timeline({ defaults: {duration: 1 } })
 
@@ -42,8 +51,10 @@ export function chapterOne() {
 
 ### II. Functions, Scope, Hoisting
 
-Prompt: Kan je aan de hand van de onderstaande code uitleggen wat de javascript concepten: `Function`, `Scope` en `Hoisting` zijn?
+**Concepten**  
+`Function`, `Return Statement`, `Scope`, `Hoisting`
 
+**Voorbeeld code**  
 ```js
 const tlChapterOne = gsap.timeline({ defaults: {duration: 1 } })
 
@@ -94,8 +105,10 @@ function tlRocket() {
 
 ### III. Promise, Async
 
-Prompt: Kan je aan de hand van de onderstaande code uitleggen wat de javascript concepten: `Promise` en `Async` zijn?
+**Concepten**   
+`Promise`, `Async` en `Await`
 
+**Voorbeeld code**  
 ```js
 const tl = gsap.timeline({})
   
@@ -110,8 +123,10 @@ tl.then(() => {
 
 ### IV. Modules; Deferred, Scoped, Async & Strict Mode
 
-Prompt: Kan je aan de hand van de onderstaande code uitleggen wat de javascript concepten: `Module`, `Deferred`, `Scoped`, `Async`, `Top-Level Await` en `Strict Mode` zijn?
+**Concepten **  
+`Module`, `Deferred`, `Scoped`, `Async`, `Top-Level Await` en `Strict Mode` zijn?
 
+**Voorbeeld code**  
 ```js
 import { chapterOne } from './chapter-one.js'
 import { chapterTwo } from './chapter-two.js'
