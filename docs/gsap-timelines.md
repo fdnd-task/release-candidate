@@ -30,7 +30,11 @@ Met behulp van Chat GPT ga je vanilla JavaScript code analyseren. In teams van 4
 * Met je team bespreek je je bevindingen en de onderlinge samenhang van de concepten
 * Met je team leg je uit aan de tribe wat de concepten betekenen en welke prompts je hebben geholpen om het te snappen
 
-### I. Objecten
+<details>
+  <summary>
+    ### I. Objecten
+  </summary>summry
+
 
 **Concepten**  
 `Object`, `Context`, `Dot Notation`, `Chaining`
@@ -49,8 +53,14 @@ export function chapterOne() {
   return tlChapterOne;
 }
 ```
+</details>
 
-### II. Functions, Scope, Hoisting
+
+<details>
+
+<summary>
+  ### II. Functions, Scope, Hoisting
+</summary>
 
 **Concepten**  
 `Function`, `Return Statement`, `Scope`, `Hoisting`
@@ -102,7 +112,7 @@ function tlRocket() {
   return tl 
 } 
 ```
-
+</details>
 
 ### III. Promise, Async
 
