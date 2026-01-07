@@ -30,17 +30,6 @@ In teams van 4 studenten bestudeer je deze JavaScript onderwerpen: Objects, Func
 * Met je team bespreek je je bevindingen en de onderlinge samenhang van de concepten
 * Met je team leg je uit aan de tribe wat de concepten betekenen en welke prompts je hebben geholpen om het te snappen
 
-### Prompt strategy van oud student Ellenoor Bok (@EBok1)
-
-Deze tips, over hoe goede uitleg te krijgen van ChatGPT, schreef Ellenoor in haar blog: [ChatGPT as my coding mentor](https://techhub.iodigital.com/articles/chatgpt-as-my-coding-mentor). 
-
-1. Set context: "I'm a junior developer learning React..."
-2. Set my level: "Explain this like I'm new to React" or "Use simple analogies."
-3. Set expectations: "Don't show me code yet just explain the concept."
-4. Ask specifically: Focus on one concept at a time
-5. Request examples: "Can you show me a simple example?"
-6. Dig deeper: "Why do I need this? What's the concept behind it?"
-
 ### Onderwerpen
 
 <details>
@@ -173,6 +162,17 @@ els.ch2Trigger.addEventListener("click", () =>{ ch2.restart() })
 els.ch3Trigger.addEventListener("click", () => { ch3.restart() })
 ```
 </details>
+
+### Prompt strategy van oud student Ellenoor Bok (@EBok1)
+
+Deze tips, over hoe goede uitleg te krijgen van ChatGPT, schreef Ellenoor in haar blog: [ChatGPT as my coding mentor](https://techhub.iodigital.com/articles/chatgpt-as-my-coding-mentor). 
+
+1. Set context: "I'm a junior developer learning React..."
+2. Set my level: "Explain this like I'm new to React" or "Use simple analogies."
+3. Set expectations: "Don't show me code yet just explain the concept."
+4. Ask specifically: Focus on one concept at a time
+5. Request examples: "Can you show me a simple example?"
+6. Dig deeper: "Why do I need this? What's the concept behind it?"
 
 ### Bronnen
 
