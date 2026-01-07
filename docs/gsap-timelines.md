@@ -10,8 +10,7 @@ Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) e
 - Bedenk en schets een screenplay voor scene 4 
 - Zoek zo nodig online (royalty free) SVG bestanden of andere graphics. Of maak ze zelf 
 - Vul de HTML aan met jouw graphics en of andere HTML elementen 
-- Voeg een `scene-four.js` module toe (hergebruik de code uit een van de andere hoofdstukken) en pas `script.js` aan zodat de nieuwe scene aan het verhaal wordt toegevoegd (live coding)
-- Animeer jouw verhaal met tweens in GSAP nested timelines
+- De Scene 4 module staat klaar (`scene-four.js`), animeer jouw verhaal met tweens in GSAP nested timelines
 
 ### Bronnen
 
