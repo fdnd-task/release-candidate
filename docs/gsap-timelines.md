@@ -5,8 +5,7 @@ Door de vanilla JavaScript code te analyseren krijg je een beter beeld van hoe J
 
 ## Opdracht: Scene 4 toevoegen
 
-Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) en voeg een 4e scene toe aan het ruimteverhaal.
-
+- Fork de [GSAP-timelines repository](https://github.com/joostf/GSAP-timelines/) en voeg een 4e scene toe aan het ruimteverhaal.
 - Bedenk en schets een screenplay voor scene 4 
 - Zoek zo nodig online (royalty free) SVG bestanden of andere graphics. Of maak ze zelf 
 - Vul de HTML aan met jouw graphics en of andere HTML elementen 
