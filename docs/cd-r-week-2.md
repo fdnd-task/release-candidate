@@ -5,7 +5,7 @@ For the Code & Design Review of the second week we will be joined by a number of
 The reviews will be done on a team level. We will be holding 4 review rounds of 30 minutes each. After the 30 minutes 🔔 you will go to the next reviewer with your team.
 
 ## Reviewers
-
+<!--
 ![reviewers](https://github.com/user-attachments/assets/25c67cd6-7a86-4a18-9e0e-34603467f59a)
 
 1. **Jad Joubran** - _performance/JS_
@@ -57,3 +57,4 @@ Please review the students as if they were your junior collegea, don't hold back
 | **Dave Bitter** - _Components, JS, architecture_                | Tumi Mundo            | -              | -      | Wogo              
 | **Suus** - _?_                           | Deloitte              | Wogo             | Bieb in Bloei        | Redpers           
 | **Dorien** - _Process, data architecture, file structure_  | -                   | Tumi Mundo       |         -             | -               
+-->
