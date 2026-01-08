@@ -16,4 +16,4 @@ Voorafgaand aan deze Code/Design review heb je bepaald waar je graag feedback op
 | Miledoni | Nebula | Oncollaboration |
 
 
-Inventariseer hoeveel openstaande issues en/of PR's er zijn om feedback op te geven. Begin vervolgens met een eerste vraagstuk ga daar met groep in overleg over. Eén iemand deelt zijn scherm, en een ander zoekt informatie op en iemand anders schiet issues in met feedback. Rouleer deze taken per openstaande issue of PR die jullie behandelen. 
+Inventariseer hoeveel openstaande issues en/of PR's er zijn om feedback op te geven. Ga ze allemaal één voor één langs. Eén iemand deelt zijn scherm (degene van wie de vraag komt), een ander zoekt informatie op en weer iemand anders schiet issues in met feedback. Rouleer deze taken per openstaande issue of PR die jullie behandelen. 
