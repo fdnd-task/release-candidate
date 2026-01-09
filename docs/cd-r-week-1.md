@@ -13,7 +13,7 @@ Voorafgaand aan deze Code/Design review heb je bepaald waar je graag feedback op
 | AdConnect | Bijlmerchronicles | Embassy of the free mind | Milledoni |
 | Bajeslab | Design for Recognition | Buurtcampuskrant | Nebula
 | Footguard | Civic Social Media Toolbox | Herstelkompas | Oncollaboration
-| SnappThis |  |  |
+| SnappThis |  |  | Leren met AI |
 
 
 Inventariseer hoeveel openstaande issues en/of PR's er zijn om feedback op te geven. Ga ze allemaal één voor één langs. Eén iemand deelt zijn scherm (degene van wie de vraag komt), een ander zoekt informatie op en weer iemand anders schiet issues in met feedback. Rouleer deze taken per openstaande issue of PR die jullie behandelen. 
