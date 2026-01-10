@@ -30,10 +30,10 @@ This time we will be reviewing the entire repo on a 'junior developer' level. To
 Hi there 👋
 We’re super excited — and very grateful — that you’re joining our Code & Design Reviews today.
 
-The students have prepared their repositories for you to review using your expertise. There will be four review rounds, each with different teams. You’ll have your own table, and the teams will rotate and come to you.
+The students have prepared their repositories for you to review using your expertise. There will be 4 review rounds, each with different teams. You’ll have your own table, and the teams will rotate and come to you.
 
-All repositories and live links can be found in our FDND Agency organisation
-. We’ll be reviewing the release-candidate branches. Feel free to open issues directly in the students’ repositories.
+All repositories and live links can be found in our [FDND Agency](https://github.com/fdnd-agency) organisation
+. We’ll be reviewing the dev branches. Feel free to open issues directly in the students’ repositories.
 
 Please review the students as if they were your junior colleagues — don’t hold back 🤓 
 
