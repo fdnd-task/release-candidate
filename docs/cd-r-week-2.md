@@ -18,7 +18,7 @@ The reviews will be done on a team level. We will be holding 4 review rounds of 
 10. **Marc Stalfoort** - _Html semantics, Accessibility_
 11. **Dave Bitter** - _JS frameworks, Component-based bouwen, Full stack_
 
-## Preperation fase
+## Preperations
 This time we will be reviewing the entire repo on a 'junior developer' level. To get the most out of the reviews we expect a number of things to be prepared before friday:
 
 1. Get most branches merged to the dev branch, you will look at the dev branch with the reviewers
