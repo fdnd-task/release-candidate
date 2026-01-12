@@ -4,7 +4,6 @@ For the Code & Design Review of the second week we will be joined by a number of
 
 The reviews will be done on a team level. We will be holding 4 review rounds of 30 minutes each. After the 30 minutes 🔔 you will go to the next reviewer with your team.
 
-<!-->
 ## Reviewers
 
 1. **Anneke Sinnema** - _Semantiek, Accessibility, Netwerken/solliciteren/freelancen_
@@ -54,7 +53,7 @@ Accessibility | Embassy of the free mind | Milledoni | Sron - Nebula xplorer | B
 | **Ivana Setiawan** 
 Full-stack, Database/schema, Technical planning & execution | Footguard | Oncollaboration | AdConnect | BijlmerChronicles |
 | **Jules Ernst** 
-Accessibility | Herstelkompas | SnappThis | Bajeslab | Designing for Recognition |
+Accessibility, HTML + CSS | Herstelkompas | SnappThis | Bajeslab | Designing for Recognition |
 | **Ronny Hendriks** 
 Accessibility, Code semantics, Assistive tech testing | Milledoni | Sron - Nebula xplorer | Buurtcampuskrant | Civic social media toolbox |
 | **Stefan Barac** 
@@ -63,4 +62,3 @@ Accessibility, Usabiity, Service Design | Oncollaboration | AdConnect | BijlmerC
 Html semantics, Accessibility | SnappThis | Bajeslab | Embassy of the free mind | Milledoni |
 | **Dave Bitter** 
 JS frameworks, Component-based bouwen, Full stack | Sron - Nebula xplorer | Designing for Recognition | Footguard | Oncollaboration |
--->
