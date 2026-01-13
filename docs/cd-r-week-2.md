@@ -36,6 +36,8 @@ All repositories and live links can be found in our [FDND Agency](https://github
 
 Please review the students as if they were your junior colleagues — don’t hold back 🤓 
 
+Location: 4th floor (FDND Studio) of the [Theo Thijssenhuis](https://www.hva.nl/locaties/theo-thijssenhuis).
+
 # Expert Reviews Schema
 
 | Prof (expertise) | Ronde 1 | Ronde 2 | Ronde 3 | Ronde 4 |
@@ -62,3 +64,5 @@ Accessibility, Usabiity, Service Design | Oncollaboration | AdConnect | BijlmerC
 Html semantics, Accessibility | SnappThis | Bajeslab | Embassy of the free mind | Milledoni |
 | **Dave Bitter** 
 JS frameworks, Component-based bouwen, Full stack | Sron - Nebula xplorer | Designing for Recognition | Footguard | Oncollaboration |
+
+
