@@ -21,4 +21,9 @@ Is het echt klaar? Stop de timer! Zet het aantal gemaakte uren onder je inschatt
 - [Kleine ondernemersregeling](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/kleineondernemersregeling)
 - [Dutch digital agencies](https://dutchdigitalagencies.com/)
 - Modelovereenkomsten freelance, [Belastingdienst](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/ondernemen/modelovereenkomsten-in-plaats-van-var/modelovereenkomst-zoeken/algemene-modelovereenkomsten-downloaden)
-- 
+- [Uren tracker - Toggl](https://toggl.com/)
+- [Boekhoudprogramma - Moneybird](https://www.moneybird.nl/aanmelden?referrer=ea5bb0b6f4)
+- [Boekhoudprogramma - Informer](https://www.informer.nl/)
+- [ZZP uurtarief onderzoek - KNAB](https://bieb.knab.nl/ondernemen/zzp-uurtarieven-2025-alle-relevante-cijfers-per-sector-beroep-en-specialisatie)
+- [Uurtarief onderzoek 2024 - The Good list](https://drive.google.com/file/d/19BwNtHfx0_cha8JNwu1JeoWg2HBo8e3Y/view)
+- [Rates onderzoek 2025 - The Good list](https://drive.google.com/file/d/1hj7Iz2Vzxi9oljiwAs5vWi6FOF4nuAlQ/view)
