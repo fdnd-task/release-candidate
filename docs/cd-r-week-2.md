@@ -8,7 +8,7 @@ The reviews will be done on a team level. We will be holding 4 review rounds of 
 
 1. **Anneke Sinnema** - _Semantiek, Accessibility, Netwerken/solliciteren/freelancen_
 2. **Adrian Holovaty** - _Frontend JavaScript, Backend Python/Django, Interactive interfaces_
-3. **Marcel Fleuren** - _General development_
+3. **Marcel Fleuren** - _Frontend Design & Development_
 4. **Susan Lau** - _Components, DRY, Coding style_
 5. **Hidde de Vries** - _Accessibility_
 6. **Ivana Setiawan** - _Full-stack, Database/schema, Technical planning & execution_	
