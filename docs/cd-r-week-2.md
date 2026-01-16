@@ -8,7 +8,7 @@ The reviews will be done on a team level. We will be holding 4 review rounds of 
 
 1. **Anneke Sinnema** - _Semantiek, Accessibility, Netwerken/solliciteren/freelancen_
 2. **Adrian Holovaty** - _Frontend JavaScript, Backend Python/Django, Interactive interfaces_
-3. **Thijs Reijgersberg** - _General development_
+3. **Marcel Fleuren** - _General development_
 4. **Susan Lau** - _Components, DRY, Coding style_
 5. **Hidde de Vries** - _Accessibility_
 6. **Ivana Setiawan** - _Full-stack, Database/schema, Technical planning & execution_	
@@ -46,7 +46,7 @@ Location: 4th floor (FDND Studio) of the [Theo Thijssenhuis](https://www.hva.nl/
 Semantiek, Accessibility, Netwerken/solliciteren/freelancen | Buurtcampuskrant | Civic social media toolbox | Herstelkompas | SnappThis |
 | **Adrian Holovaty** 
 Frontend JavaScript, Backend Python/Django, Interactive interfaces | BijlmerChronicles | Embassy of the free mind | Milledoni | Sron - Nebula xplorer |
-| **Thijs Reijgersberg** 
+| **Marcel Fleuren** 
 General development | Designing for Recognition | Footguard | Oncollaboration | AdConnect |
 | **Susan Lau** 
 Components, DRY, Coding style | Civic social media toolbox | Herstelkompas | SnappThis | Bajeslab |
