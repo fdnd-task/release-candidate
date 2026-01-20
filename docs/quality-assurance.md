@@ -17,7 +17,6 @@ M.a.w. er staan geen taken meer open na deze sprint ⚠️
 ### Branch management
 - Zorg dat alle relevante branches worden samengevoegd in de dev branch. 
 - Verwijder oude, ongebruikte branches om de repository schoon te houden. Alleen de main en dev blijven staan (dit zijn zogenaamde evergreen branches)
-- Maak een `release-candidate` branch vanaf dev, dit gebeurt aan het einde van de sprint en leggen we verder uit in sprint 18. 
  
 ### Code reviews
 - Voer een laatste teamcode-review uit om consistentie, leesbaarheid en kwaliteit te waarborgen.
