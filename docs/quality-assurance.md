@@ -77,6 +77,7 @@ Voeg een aparte map `docs/` toe voor technische documentatie:
 - Beschrijving van belangrijke componenten en hoe ze werken.
 - Configuratie van het CMS: Welke contenttypes zijn er, hoe zijn ze ingesteld, en hoe werkt de koppeling met de front-end?
 - Eventuele API-documentatie als er externe API’s worden gebruikt.
+- Zorg voor een goede example.env en draag bestaande variables over via een bericht aan Joost
 
 ## CODE/DESIGN
 
