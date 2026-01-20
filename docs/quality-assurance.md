@@ -23,6 +23,9 @@ M.a.w. er staan geen taken meer open na deze sprint ⚠️
 - Voer een laatste teamcode-review uit om consistentie, leesbaarheid en kwaliteit te waarborgen.
 - Documenteer eventuele uitzonderingen of keuzes in de codebase.
 
+### Code structuur
+- Zorg ervoor dat je een uniforme manier van het structureren van je code gebruikt (denk aan components)
+
 ### Deployment
 Zorg dat de toepassing live staat op een platform zoals Netlify, Vercel, of een eigen server (FDND Netlify). Test de live versie grondig en zorg dat deze overeenkomt met de verwachtingen van de opdrachtgever.
 
